@@ -1,2 +1,2 @@
-# Tale-of Hedy
+# Hedy's Tale
  
