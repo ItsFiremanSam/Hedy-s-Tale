@@ -350,7 +350,7 @@ PrefabInstance:
     - target: {fileID: 6139544521331900092, guid: ed5b595ccbfd8004e94289c335bf34c3,
         type: 3}
       propertyPath: DrawGizmos
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6139544521331900093, guid: ed5b595ccbfd8004e94289c335bf34c3,
         type: 3}
@@ -543,7 +543,7 @@ PrefabInstance:
     - target: {fileID: 6139544521331900092, guid: ed5b595ccbfd8004e94289c335bf34c3,
         type: 3}
       propertyPath: DrawGizmos
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6139544521331900093, guid: ed5b595ccbfd8004e94289c335bf34c3,
         type: 3}
