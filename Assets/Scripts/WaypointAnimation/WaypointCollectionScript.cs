@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 /// <summary>
@@ -33,6 +34,8 @@ public class WaypointCollectionScript : MonoBehaviour
     {
         if (transform.parent.GetComponent<AnimationTrigger>().DrawGizmos && Subject != null)
         {
+            GUIStyle style = new GUIStyle();
+            style.normal.textColor = Color.black;
             for (int i = 0; i < transform.childCount; i++)
             {
                 Vector2 pos1 = GetLastPos(i, false);
@@ -46,15 +49,20 @@ public class WaypointCollectionScript : MonoBehaviour
                 }
                 else
                 {
-                    if (ShowMoveGizmos)
+                    if (ShowNonMovingGizmos)
                     {
-                        Gizmos.color = Color.green;
+                        Gizmos.color = Color.magenta;
                         Gizmos.DrawLine(GetLastPos(i, true), pos2);
                     }
                 }
 
-                if (curWaypoint.WaypointToWaitOn != null) GizmosArrow.Draw(curWaypoint.transform.position, curWaypoint.WaypointToWaitOn.transform.position, Color.red);
-
+                if (curWaypoint.WaypointToWaitOn != null) GizmosArrow.Draw(curWaypoint.WaypointToWaitOn.transform.position, pos2, Color.red);
+                if (ShowTalkGizmos && curWaypoint.TalkAction.Seconds > 0)
+                {
+                    string message = curWaypoint.TalkAction.Message;
+                    if (message == "") message = "*** ERROR: EMPTY MESSAGE ***";
+                    Handles.Label(curWaypoint.transform.position, message, style);
+                }
             }
             if (ShowMoveGizmos && ReturnToOrigin) GizmosArrow.Draw(GetLastPos(transform.childCount - 1, false), Subject.transform.position, Color.blue);
         }
