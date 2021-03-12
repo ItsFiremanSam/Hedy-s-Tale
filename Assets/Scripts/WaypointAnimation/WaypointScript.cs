@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -40,7 +41,7 @@ public class WaypointScript : MonoBehaviour
     }
 }
 
-[System.Serializable]
+[Serializable]
 public struct TalkAction
 {
     public string Message;
