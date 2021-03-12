@@ -7,7 +7,7 @@ using UnityEngine;
 /// </summary>
 public class AnimationController
 {
-    AnimatableEntity _subject;
+    private AnimatableEntity _subject;
     float _speed;
     WaypointScript[] _waypoints;
 
