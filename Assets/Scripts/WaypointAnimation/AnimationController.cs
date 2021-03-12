@@ -15,7 +15,7 @@ public class AnimationController
     private bool _returnToOrigin;
     private Vector3 _originPosition;
 
-    bool _isAtEnd = false;
+    private bool _isAtEnd = false;
 
     public AnimationController(AnimatableEntity subject, float speed, WaypointScript[] waypoints, bool returnToOrigin)
     {
