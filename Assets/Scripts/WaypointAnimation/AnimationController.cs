@@ -13,7 +13,7 @@ public class AnimationController
 
     // If true, will return the subject to its position before the animation
     private bool _returnToOrigin;
-    Vector3 _originPosition;
+    private Vector3 _originPosition;
 
     bool _isAtEnd = false;
 
