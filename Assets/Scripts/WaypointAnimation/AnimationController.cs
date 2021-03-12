@@ -9,7 +9,7 @@ public class AnimationController
 {
     private AnimatableEntity _subject;
     private float _speed;
-    WaypointScript[] _waypoints;
+    private WaypointScript[] _waypoints;
 
     // If true, will return the subject to its position before the animation
     bool _returnToOrigin;
