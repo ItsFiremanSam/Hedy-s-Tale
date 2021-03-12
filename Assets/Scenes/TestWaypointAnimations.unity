@@ -25402,6 +25402,7 @@ GameObject:
   - component: {fileID: 1638218260}
   - component: {fileID: 1638218263}
   - component: {fileID: 1638218262}
+  - component: {fileID: 1638218265}
   m_Layer: 0
   m_Name: Hedy
   m_TagString: Untagged
@@ -25424,6 +25425,7 @@ MonoBehaviour:
   Speed: 400
   speechBubble: {fileID: 814168557}
   CinematicBars: {fileID: 719478671}
+  animator: {fileID: 1638218265}
   AnimationActive: 0
 --- !u!4 &1638218261
 Transform:
@@ -25539,6 +25541,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1638218265
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1638218259}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 216c5a66db245f84f868f975b6f4f395, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &1640227633 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7344574210087128628, guid: 995ed82f08fab5a429bf61729c08763c,
