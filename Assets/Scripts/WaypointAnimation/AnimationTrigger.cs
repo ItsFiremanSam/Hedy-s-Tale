@@ -15,7 +15,7 @@ public class AnimationTrigger : MonoBehaviour
 
     List<AnimationController> _animationControllers;
     bool _activated;
-    PlayerMovement _mp;
+    PlayerMovement _playerMovement;
 
     /// <summary>
     /// Checks if the player collided with its collider 
@@ -24,7 +24,7 @@ public class AnimationTrigger : MonoBehaviour
     /// <param name="collision"></param>
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!_activated && (_mp = collision.gameObject.GetComponent<PlayerMovement>()) != null && !_mp.AnimationActive)
+        if (!_activated && (_playerMovement = collision.gameObject.GetComponent<PlayerMovement>()) != null && !_playerMovement.AnimationActive)
         {
             _animationControllers = new List<AnimationController>();
             foreach (WaypointCollectionScript wps in GetComponentsInChildren<WaypointCollectionScript>())
@@ -34,7 +34,7 @@ public class AnimationTrigger : MonoBehaviour
                 _animationControllers.Add(ac);
             }
             _activated = true;
-            _mp.AnimationActive = true;
+            _playerMovement.AnimationActive = true;
         }
     }
 
@@ -45,13 +45,10 @@ public class AnimationTrigger : MonoBehaviour
     /// </summary>
     private void FixedUpdate()
     {
-        if (_activated)
+        if (_activated && IsAnimationDone())
         {
-            if (IsAnimationDone())
-            {
-                _mp.AnimationActive = false;
-                gameObject.SetActive(false);
-            }
+            _playerMovement.AnimationActive = false;
+            gameObject.SetActive(false);
         }
     }
 

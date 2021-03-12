@@ -11,12 +11,12 @@ public class PlayerMovement : AnimatableEntity
     [HideInInspector]
     public bool AnimationActive;
 
-    Rigidbody2D _rb;
-    Vector2 _curVel;
+    Rigidbody2D _rigidBody;
+    Vector2 _currentVelocity;
 
     private void Awake()
     {
-        _rb = GetComponent<Rigidbody2D>();
+        _rigidBody = GetComponent<Rigidbody2D>();
     }
 
     private void Update()
@@ -36,15 +36,15 @@ public class PlayerMovement : AnimatableEntity
 
     private void FixedUpdate()
     {
-        _rb.velocity = _curVel;
-        _curVel = Vector2.zero;
+        _rigidBody.velocity = _currentVelocity;
+        _currentVelocity = Vector2.zero;
     }
 
-    bool Move(Vector2 vel)
+    bool Move(Vector2 velocity)
     {
-        if (_curVel != Vector2.zero) return false;
+        if (_currentVelocity != Vector2.zero) return false;
 
-        _curVel = vel;
+        _currentVelocity = velocity;
         return true;
     }
 

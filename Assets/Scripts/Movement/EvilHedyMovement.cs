@@ -8,25 +8,25 @@ public class EvilHedyMovement : AnimatableEntity
 
     public Text speechBubble;
 
-    Rigidbody2D _rb;
-    Vector2 _curVel;
+    Rigidbody2D _rigidBody;
+    Vector2 _currentVelocity;
 
     private void Awake()
     {
-        _rb = GetComponent<Rigidbody2D>();
+        _rigidBody = GetComponent<Rigidbody2D>();
     }
 
     private void FixedUpdate()
     {
-        _rb.velocity = _curVel;
-        _curVel = Vector2.zero;
+        _rigidBody.velocity = _currentVelocity;
+        _currentVelocity = Vector2.zero;
     }
 
-    bool Move(Vector2 vel)
+    bool Move(Vector2 velocity)
     {
-        if (_curVel != Vector2.zero) return false;
+        if (_currentVelocity != Vector2.zero) return false;
 
-        _curVel = vel;
+        _currentVelocity = velocity;
         return true;
     }
 
@@ -39,16 +39,16 @@ public class EvilHedyMovement : AnimatableEntity
         while (true)
         {
             // Will move towards the direction of the new position
-            Vector2 velNorm = (pos - (Vector2)transform.position).normalized * speed * Time.fixedDeltaTime;
-            Vector2 vel = (pos - (Vector2)transform.position) * speed * Time.fixedDeltaTime;
+            Vector2 normalizedVelocity = (pos - (Vector2)transform.position).normalized * speed * Time.fixedDeltaTime;
+            Vector2 velocity = (pos - (Vector2)transform.position) * speed * Time.fixedDeltaTime;
 
             // If the position is closer by than a single step in the right direction, take the last step and return
-            if (velNorm.sqrMagnitude > vel.sqrMagnitude)
+            if (normalizedVelocity.sqrMagnitude > velocity.sqrMagnitude)
             {
-                while (!Move(vel)) yield return null;
+                while (!Move(velocity)) yield return null;
                 break;
             }
-            while (!Move(velNorm)) yield return null;
+            while (!Move(normalizedVelocity)) yield return null;
         }
     }
 
