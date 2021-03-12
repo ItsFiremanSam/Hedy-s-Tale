@@ -8,7 +8,7 @@ using UnityEngine;
 public class AnimationController
 {
     private AnimatableEntity _subject;
-    float _speed;
+    private float _speed;
     WaypointScript[] _waypoints;
 
     // If true, will return the subject to its position before the animation
