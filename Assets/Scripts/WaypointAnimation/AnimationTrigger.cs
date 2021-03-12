@@ -15,7 +15,7 @@ public class AnimationTrigger : MonoBehaviour
 
     List<AnimationController> _animationControllers;
     bool _activated;
-    PlayerMovement _playerMovement;
+    private PlayerMovement _playerMovement;
 
     /// <summary>
     /// Checks if the player collided with its collider 
