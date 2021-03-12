@@ -77,10 +77,6 @@ public class WaypointCollectionScript : MonoBehaviour
     Vector2 GetLastPos(int i, bool canBeNoMoving)
     {
         int prevI = i;
-        //if (i == 4)
-        //{
-        //    Debug.Log("I dont deserve love");
-        //}
         do
         {
             prevI--;
