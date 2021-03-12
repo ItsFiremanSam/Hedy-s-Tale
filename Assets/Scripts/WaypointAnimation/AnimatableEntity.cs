@@ -10,7 +10,7 @@ using UnityEngine;
 public abstract class AnimatableEntity : MonoBehaviour
 {
     public float Speed = 400;
-    bool _isAnimated;
+    private bool _isAnimated;
 
     public abstract IEnumerator MoveTo(Vector2 pos, float speed);
     public abstract IEnumerator Speak(TalkAction ta);
