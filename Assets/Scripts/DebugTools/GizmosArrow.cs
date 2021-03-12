@@ -7,6 +7,8 @@ public static class GizmosArrow
     /// </summary>
     /// <remarks>
     /// Will not draw anything if attempting to draw an arrow from and towards the same position
+    /// SOURCE: https://forum.unity.com/threads/debug-drawarrow.85980/
+    ///     Changed to be used for 2d
     /// </remarks>
     public static void Draw(Vector2 pos1, Vector2 pos2, Color color)
     {
