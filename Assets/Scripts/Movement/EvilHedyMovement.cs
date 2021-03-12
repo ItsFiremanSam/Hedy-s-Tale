@@ -22,7 +22,7 @@ public class EvilHedyMovement : AnimatableEntity
         _currentVelocity = Vector2.zero;
     }
 
-    bool Move(Vector2 velocity)
+    private bool Move(Vector2 velocity)
     {
         if (_currentVelocity != Vector2.zero) return false;
 
