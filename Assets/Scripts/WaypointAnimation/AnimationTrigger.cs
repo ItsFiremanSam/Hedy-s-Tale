@@ -13,9 +13,9 @@ public class AnimationTrigger : MonoBehaviour
 {
     public bool DrawGizmos = true;
 
-    List<AnimationController> _animationControllers;
-    bool _activated;
-    PlayerMovement _playerMovement;
+    private List<AnimationController> _animationControllers;
+    private bool _activated;
+    private PlayerMovement _playerMovement;
 
     /// <summary>
     /// Checks if the player collided with its collider 

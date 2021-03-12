@@ -8,8 +8,8 @@ public class EvilHedyMovement : AnimatableEntity
 
     public Text speechBubble;
 
-    Rigidbody2D _rigidBody;
-    Vector2 _currentVelocity;
+    private Rigidbody2D _rigidBody;
+    private Vector2 _currentVelocity;
 
     private void Awake()
     {
@@ -22,7 +22,7 @@ public class EvilHedyMovement : AnimatableEntity
         _currentVelocity = Vector2.zero;
     }
 
-    bool Move(Vector2 velocity)
+    private bool Move(Vector2 velocity)
     {
         if (_currentVelocity != Vector2.zero) return false;
 

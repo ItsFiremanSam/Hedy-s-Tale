@@ -7,15 +7,15 @@ using UnityEngine;
 /// </summary>
 public class AnimationController
 {
-    AnimatableEntity _subject;
-    float _speed;
-    WaypointScript[] _waypoints;
+    private AnimatableEntity _subject;
+    private float _speed;
+    private WaypointScript[] _waypoints;
 
     // If true, will return the subject to its position before the animation
-    bool _returnToOrigin;
-    Vector3 _originPosition;
+    private bool _returnToOrigin;
+    private Vector3 _originPosition;
 
-    bool _isAtEnd = false;
+    private bool _isAtEnd = false;
 
     public AnimationController(AnimatableEntity subject, float speed, WaypointScript[] waypoints, bool returnToOrigin)
     {
