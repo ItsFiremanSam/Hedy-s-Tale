@@ -9,7 +9,7 @@ public class EvilHedyMovement : AnimatableEntity
     public Text speechBubble;
 
     Rigidbody2D _rigidBody;
-    Vector2 _currentVelocity;
+    private Vector2 _currentVelocity;
 
     private void Awake()
     {
