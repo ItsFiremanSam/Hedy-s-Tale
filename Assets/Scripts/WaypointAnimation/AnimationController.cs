@@ -12,7 +12,7 @@ public class AnimationController
     private WaypointScript[] _waypoints;
 
     // If true, will return the subject to its position before the animation
-    bool _returnToOrigin;
+    private bool _returnToOrigin;
     Vector3 _originPosition;
 
     bool _isAtEnd = false;
