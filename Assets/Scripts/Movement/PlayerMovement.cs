@@ -39,10 +39,15 @@ public class PlayerMovement : AnimatableEntity
     {
         _rigidBody.velocity = _currentVelocity;
 
-        animator.SetFloat("Speed", Mathf.Abs(_currentVelocity.magnitude));
+        animator.SetFloat("speed", Mathf.Abs(_currentVelocity.magnitude));
+
+        if (_currentVelocity != Vector2.zero)
+        {
+            animator.SetFloat("x", _currentVelocity.x);
+            animator.SetFloat("y", _currentVelocity.y);
+        }
 
         _currentVelocity = Vector2.zero;
-
     }
 
     bool Move(Vector2 velocity)
