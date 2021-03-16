@@ -7,6 +7,7 @@ public class PlayerMovement : AnimatableEntity
 {
     public Text speechBubble;
     public GameObject CinematicBars;
+    public Animator animator;
 
     [HideInInspector]
     public bool AnimationActive;
@@ -37,6 +38,15 @@ public class PlayerMovement : AnimatableEntity
     private void FixedUpdate()
     {
         _rigidBody.velocity = _currentVelocity;
+
+        animator.SetFloat("speed", Mathf.Abs(_currentVelocity.magnitude));
+
+        if (_currentVelocity != Vector2.zero)
+        {
+            animator.SetFloat("x", _currentVelocity.x);
+            animator.SetFloat("y", _currentVelocity.y);
+        }
+
         _currentVelocity = Vector2.zero;
     }
 
@@ -45,6 +55,7 @@ public class PlayerMovement : AnimatableEntity
         if (_currentVelocity != Vector2.zero) return false;
 
         _currentVelocity = velocity;
+
         return true;
     }
 
