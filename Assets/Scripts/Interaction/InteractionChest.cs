@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InteractionObject : MonoBehaviour
+public class InteractionChest : MonoBehaviour
 {
     [SerializeField] private GameObject _text;
+    [SerializeField] private bool _isKeyword;
     [SerializeField] private string _content;
     private bool _isInteracted;
 
@@ -35,20 +36,20 @@ public class InteractionObject : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.GetComponent<PlayerInteraction>())
+        if (collision.GetComponent<PlayerInteraction>() && !_isInteracted)
         {
             _text.SetActive(false);
             Debug.Log("Exiting");
         }
     }
 
-    public string GetContent()
+    public PuzzleBlock GetContent()
     {
         if(!_isInteracted)
         {
             _isInteracted = true;
             GetComponent<SpriteRenderer>().color = Color.red;
-            return _content;
+            return new PuzzleBlock(_isKeyword, _content);
         }
         else
         {

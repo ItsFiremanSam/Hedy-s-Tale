@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class PlayerInteraction : MonoBehaviour
 {
-    private bool _inTrigger;
-    private GameObject _interactibleObject;
-    private List<string> _inventory = new List<string>();
+    public bool _inTrigger;
+    public GameObject _interactibleObject;
+    private List<PuzzleBlock> _inventory = new List<PuzzleBlock>();
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.E) && _inTrigger)
         {
-            Debug.Log("Interacting with an InteractibleOjbect!");
-            string contentInteractibleObject = _interactibleObject.GetComponent<InteractionObject>().GetContent();
-            if (contentInteractibleObject != null)
+            Debug.Log("Interacting with an " + _interactibleObject.name);
+            PuzzleBlock puzzleBlock = _interactibleObject.GetComponent<InteractionChest>().GetContent();
+            if (puzzleBlock != null)
             {
-                _inventory.Add(contentInteractibleObject);
+                _inventory.Add(puzzleBlock);
             }
         }
     }
