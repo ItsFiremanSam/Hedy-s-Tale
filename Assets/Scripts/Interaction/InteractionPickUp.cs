@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InteractionChest : InteractableObject
+public class InteractionPickUp : InteractableObject
 {
     public override PuzzleBlock GetContent()
     {
         if (!_isInteracted)
         {
             _isInteracted = true;
-            GetComponent<SpriteRenderer>().color = Color.red;
+            gameObject.SetActive(false);
             return new PuzzleBlock(_isKeyword, _content);
         }
         else

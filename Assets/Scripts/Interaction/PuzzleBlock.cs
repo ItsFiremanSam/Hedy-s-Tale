@@ -12,4 +12,9 @@ public class PuzzleBlock
         _isKeyword = isKeyword;
         _content = content;
     }
+
+    public override string ToString()
+    {
+        return "Keyword: "+ _isKeyword + ", Content: " + _content;
+    }
 }
