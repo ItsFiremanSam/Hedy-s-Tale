@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PlayerInteraction : MonoBehaviour
 {
-    public bool _inTrigger;
-    public GameObject _interactibleObject;
+    private bool _inTrigger;
+    private GameObject _interactibleObject;
     private List<PuzzleBlock> _inventory = new List<PuzzleBlock>();
 
     private void Update()
