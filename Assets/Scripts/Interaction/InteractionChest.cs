@@ -10,6 +10,8 @@ public class InteractionChest : InteractableObject
         if (!_isInteracted)
         {
             _isInteracted = true;
+            SetIsInteracted(true);
+            ShowInteractionBubble(false);
             GetComponent<SpriteRenderer>().color = Color.red;
             return new PuzzleBlock(_puzzleBlockIsKeyword, _puzzleBlockContent);
         }

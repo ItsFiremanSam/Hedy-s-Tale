@@ -4,38 +4,49 @@ using UnityEngine;
 
 public abstract class InteractableObject : MonoBehaviour
 {
-    [SerializeField] protected GameObject _interactionBubbleText;
-    [SerializeField] protected bool _puzzleBlockIsKeyword;
-    [SerializeField] protected string _puzzleBlockContent;
+    [SerializeField]
+    protected GameObject _interactionBubbleText;
+    [SerializeField]
+    protected bool _puzzleBlockIsKeyword;
+    [SerializeField]
+    protected string _puzzleBlockContent;
     private bool _isInteracted;
     // Start is called before the first frame update
     void Start()
     {
-        _interactionBubbleText.SetActive(false);
+        ShowInteractionBubble(false);
     }
 
-    // Update is called once per frame
-    void Update()
+    protected void ShowInteractionBubble(bool showBubble)
     {
-        if (_isInteracted)
+        if (!_isInteracted && showBubble)
+        {
+            _interactionBubbleText.SetActive(true);
+        }
+        else
         {
             _interactionBubbleText.SetActive(false);
         }
     }
 
+    protected void SetIsInteracted(bool isInteracted)
+    {
+        _isInteracted = isInteracted;
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.GetComponent<PlayerInteraction>() && !_isInteracted)
+        if (collision.GetComponent<PlayerInteraction>())
         {
-            _interactionBubbleText.SetActive(true);
+            ShowInteractionBubble(true);
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.GetComponent<PlayerInteraction>() && !_isInteracted)
+        if (collision.GetComponent<PlayerInteraction>())
         {
-            _interactionBubbleText.SetActive(false);
+            ShowInteractionBubble(false);
         }
     }
     public abstract PuzzleBlock OnInteractWithPlayer();
