@@ -10,7 +10,7 @@ public class InteractionPickUp : InteractableObject
         {
             _isInteracted = true;
             gameObject.SetActive(false);
-            return new PuzzleBlock(_isKeyword, _content);
+            return new PuzzleBlock(_puzzleBlockIsKeyword, _puzzleBlockContent);
         }
         else
         {

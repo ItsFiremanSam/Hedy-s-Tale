@@ -10,7 +10,7 @@ public class InteractionChest : InteractableObject
         {
             _isInteracted = true;
             GetComponent<SpriteRenderer>().color = Color.red;
-            return new PuzzleBlock(_isKeyword, _content);
+            return new PuzzleBlock(_puzzleBlockIsKeyword, _puzzleBlockContent);
         }
         else
         {

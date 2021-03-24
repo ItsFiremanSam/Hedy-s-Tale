@@ -12,17 +12,11 @@ public class PlayerInteraction : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && _inTrigger)
         {
-            Debug.Log("Interacting with an " + _interactibleObject.name);
             PuzzleBlock puzzleBlock = _interactibleObject.GetComponent<InteractableObject>().GetContent();
             if (puzzleBlock != null)
             {
                 _inventory.Add(puzzleBlock);
             }
-        }
-
-        foreach(PuzzleBlock pb in _inventory)
-        {
-            Debug.Log(pb);
         }
     }
 
@@ -32,7 +26,6 @@ public class PlayerInteraction : MonoBehaviour
         {
             _inTrigger = true;
             _interactibleObject = collision.gameObject;
-            Debug.Log("Entering trigger:" + collision.name);
         }
     }
 
@@ -42,7 +35,6 @@ public class PlayerInteraction : MonoBehaviour
         {
             _inTrigger = false;
             _interactibleObject = null;
-            Debug.Log("Exiting trigger:" + collision.name);
         }
     }
 }

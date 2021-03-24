@@ -4,14 +4,14 @@ using UnityEngine;
 
 public abstract class InteractableObject : MonoBehaviour
 {
-    [SerializeField] protected GameObject _text;
-    [SerializeField] protected bool _isKeyword;
-    [SerializeField] protected string _content;
+    [SerializeField] protected GameObject _interactionBubbleText;
+    [SerializeField] protected bool _puzzleBlockIsKeyword;
+    [SerializeField] protected string _puzzleBlockContent;
     protected bool _isInteracted;
     // Start is called before the first frame update
     void Start()
     {
-        _text.SetActive(false);
+        _interactionBubbleText.SetActive(false);
     }
 
     // Update is called once per frame
@@ -19,15 +19,14 @@ public abstract class InteractableObject : MonoBehaviour
     {
         if (_isInteracted)
         {
-            _text.SetActive(false);
+            _interactionBubbleText.SetActive(false);
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.GetComponent<PlayerInteraction>() && !_isInteracted)
         {
-            _text.SetActive(true);
-            Debug.Log("Entering");
+            _interactionBubbleText.SetActive(true);
         }
     }
 
@@ -35,8 +34,7 @@ public abstract class InteractableObject : MonoBehaviour
     {
         if (collision.GetComponent<PlayerInteraction>() && !_isInteracted)
         {
-            _text.SetActive(false);
-            Debug.Log("Exiting");
+            _interactionBubbleText.SetActive(false);
         }
     }
     public abstract PuzzleBlock GetContent();
