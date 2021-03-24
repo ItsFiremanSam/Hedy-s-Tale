@@ -7,7 +7,7 @@ public abstract class InteractableObject : MonoBehaviour
     [SerializeField] protected GameObject _interactionBubbleText;
     [SerializeField] protected bool _puzzleBlockIsKeyword;
     [SerializeField] protected string _puzzleBlockContent;
-    protected bool _isInteracted;
+    private bool _isInteracted;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +22,7 @@ public abstract class InteractableObject : MonoBehaviour
             _interactionBubbleText.SetActive(false);
         }
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.GetComponent<PlayerInteraction>() && !_isInteracted)
@@ -37,5 +38,5 @@ public abstract class InteractableObject : MonoBehaviour
             _interactionBubbleText.SetActive(false);
         }
     }
-    public abstract PuzzleBlock GetContent();
+    public abstract PuzzleBlock OnInteractWithPlayer();
 }

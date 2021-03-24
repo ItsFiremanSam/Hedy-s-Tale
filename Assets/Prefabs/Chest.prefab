@@ -130,9 +130,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cc78e23f91837b489580ebd19ffdb8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _text: {fileID: 50645317859090027}
-  _isKeyword: 1
-  _content: Print
+  _interactionBubbleText: {fileID: 50645317859090027}
+  _puzzleBlockIsKeyword: 0
+  _puzzleBlockContent: 
 --- !u!1 &50645317859090027
 GameObject:
   m_ObjectHideFlags: 0

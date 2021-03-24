@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class InteractionPickUp : InteractableObject
 {
-    public override PuzzleBlock GetContent()
+    private bool _isInteracted;
+    public override PuzzleBlock OnInteractWithPlayer()
     {
         if (!_isInteracted)
         {
