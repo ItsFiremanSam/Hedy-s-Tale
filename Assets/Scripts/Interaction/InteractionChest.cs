@@ -5,6 +5,7 @@ using UnityEngine;
 public class InteractionChest : InteractableObject
 {
     private bool _isInteracted;
+
     public override PuzzleBlock OnInteractWithPlayer()
     {
         if (!_isInteracted)

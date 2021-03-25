@@ -18,7 +18,6 @@ public class PlayerInteraction : MonoBehaviour
                 _inventory.Add(puzzleBlock);
             }
         }
-
     }
 
     /*

@@ -11,7 +11,7 @@ public abstract class InteractableObject : MonoBehaviour
     [SerializeField]
     protected string _puzzleBlockContent;
     private bool _isInteracted;
-    // Start is called before the first frame update
+
     void Start()
     {
         ShowInteractionBubble(false);
@@ -49,5 +49,6 @@ public abstract class InteractableObject : MonoBehaviour
             ShowInteractionBubble(false);
         }
     }
+
     public abstract PuzzleBlock OnInteractWithPlayer();
 }
