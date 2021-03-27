@@ -15,7 +15,7 @@ public class PlayerMovement : AnimatableEntity
     Rigidbody2D _rigidBody;
     Vector2 _currentVelocity;
 
-    public CodingUIHandler CodingUIHandler;
+    public List<TempAnswerBlock> Inventory;
 
     private void Awake()
     {
@@ -28,27 +28,6 @@ public class PlayerMovement : AnimatableEntity
         if (!AnimationActive)
         {
             Move(new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized * Speed * Time.fixedDeltaTime);
-        }
-
-        if (Input.GetKeyDown("e"))
-        {
-            CodingUIHandler.ShowCodingUI(
-            new List<TempAnswerBlock>()
-            {
-                new TempAnswerBlock(true, "Print"),
-                new TempAnswerBlock(false, "(5)\nBranches"),
-                new TempAnswerBlock(false, "Apple"),
-                new TempAnswerBlock(false, "Pear"),
-                new TempAnswerBlock(true, "Use"),
-            },
-            new List<TempAnswerBlock>()
-            {
-                new TempAnswerBlock(true, "Use"),
-                new TempAnswerBlock(false, "(5)\nBranches"),
-                new TempAnswerBlock(false, "Pear"),
-            },
-            "You need to use 5 branches and after that a certain fruit"
-            );
         }
     }
 

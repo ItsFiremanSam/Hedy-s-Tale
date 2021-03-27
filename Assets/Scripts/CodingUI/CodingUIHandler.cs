@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -7,6 +8,7 @@ public class CodingUIHandler : MonoBehaviour
 {
     public GameObject KeywordPrefab;
     public GameObject NonKeywordPrefab;
+    public GameObject MissingBlockPrefab;
     public GameObject AnswerBlockPrefab;
 
     public Transform KeywordPanel;
@@ -25,15 +27,50 @@ public class CodingUIHandler : MonoBehaviour
 
         _answer = answer;
 
-        foreach (TempAnswerBlock block in inventory)
+        List<TempAnswerBlock> blocksToAdd = new List<TempAnswerBlock>();
+        List<TempAnswerBlock> inventoryCopy = inventory.ConvertAll(block => new TempAnswerBlock(block.IsKeyword, block.Content));
+        inventoryCopy.Shuffle();
+
+        foreach (TempAnswerBlock answerBlock in answer)
         {
-            if (block.IsKeyword) Instantiate(KeywordPrefab, KeywordPanel).GetComponent<DraggableCodingBlock>().SetAnswerBlock(block);
-            else Instantiate(NonKeywordPrefab, NonKeywordPanel).GetComponent<DraggableCodingBlock>().SetAnswerBlock(block);
+            TempAnswerBlock blockToAdd = new TempAnswerBlock(answerBlock.IsKeyword, null);
+            foreach (TempAnswerBlock inventoryBlock in inventory)
+            {
+                if (inventoryBlock.Equals(answerBlock))
+                {
+                    blockToAdd = inventoryBlock;
+                    inventoryCopy.Remove(inventoryBlock);
+                    break;
+                }
+            }
+            blocksToAdd.Add(blockToAdd);
+            Instantiate(AnswerBlockPrefab, AnswerPanel);
         }
 
-        for (int i = 0; i < answer.Count; i++)
+        while (blocksToAdd.Count < 6 && inventoryCopy.Count > 0)
         {
-            Instantiate(AnswerBlockPrefab, AnswerPanel);
+            blocksToAdd.Add(inventoryCopy[0]);
+            inventoryCopy.RemoveAt(0);
+        }
+
+        blocksToAdd.Shuffle();
+
+        foreach (TempAnswerBlock block in blocksToAdd)
+        {
+            if (block.IsKeyword)
+            {
+                if (block.Content != null)
+                    Instantiate(KeywordPrefab, KeywordPanel).GetComponent<DraggableCodingBlock>().SetAnswerBlock(block);
+                else
+                    Instantiate(MissingBlockPrefab, KeywordPanel);
+            }
+            else
+            {
+                if (block.Content != null)
+                    Instantiate(NonKeywordPrefab, NonKeywordPanel).GetComponent<DraggableCodingBlock>().SetAnswerBlock(block);
+                else
+                    Instantiate(MissingBlockPrefab, NonKeywordPanel);
+            }
         }
 
         DescriptionPanel.GetComponentInChildren<Text>().text = puzzleDescription;
@@ -58,7 +95,8 @@ public class CodingUIHandler : MonoBehaviour
         {
             Debug.Log("Correct Answer!");
             CloseCodingUI();
-        } else
+        }
+        else
         {
             Debug.Log("Incorrect Answer! Try again!");
         }
@@ -78,10 +116,11 @@ public class CodingUIHandler : MonoBehaviour
 }
 
 // TODO: Will change
+[Serializable]
 public struct TempAnswerBlock
 {
-    public readonly bool IsKeyword;
-    public readonly string Content;
+    public bool IsKeyword;
+    public string Content;
 
     public TempAnswerBlock(bool isKeyword, string content)
     {
