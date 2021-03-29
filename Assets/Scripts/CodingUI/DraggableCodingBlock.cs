@@ -31,7 +31,7 @@ public class DraggableCodingBlock : MonoBehaviour, IDragHandler, IBeginDragHandl
     public void SetAnswerBlock(PuzzleBlock answerBlock)
     {
         _answerBlock = answerBlock;
-        GetComponentInChildren<Text>().text = answerBlock.GetContent();
+        GetComponentInChildren<Text>().text = answerBlock.Content;
     }
 
     public PuzzleBlock GetAnswerBlock()

@@ -11314,11 +11314,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8319ab2b77a1c24459d6a927ceb16e3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Answer:
-  - IsKeyword: 1
-    Content: Use
-  - IsKeyword: 0
-    Content: Branch
+  Answer: []
   CodingUIHandler: {fileID: 787142482}
   description: Use a branch to continue
 --- !u!58 &667276655
@@ -11671,6 +11667,7 @@ MonoBehaviour:
   AnswerPanel: {fileID: 795438287}
   DescriptionPanel: {fileID: 1304628375}
   CodingUIContainer: {fileID: 975654885}
+  MaxNumberOfPuzzleBlocks: 4
 --- !u!1 &795438286
 GameObject:
   m_ObjectHideFlags: 0
@@ -29480,20 +29477,20 @@ MonoBehaviour:
   Inventory:
   - IsKeyword: 1
     Content: Print
-  - IsKeyword: 0
-    Content: Pears
-  - IsKeyword: 0
+  - IsKeyword: 1
+    Content: Test
+  - IsKeyword: 1
+    Content: Other
+  - IsKeyword: 1
+    Content: Test
+  - IsKeyword: 1
     Content: Use
   - IsKeyword: 1
+    Content: Use
+  - IsKeyword: 0
     Content: Branch
   - IsKeyword: 0
-    Content: Mushroom
-  - IsKeyword: 0
-    Content: Tree
-  - IsKeyword: 0
-    Content: Water bottle
-  - IsKeyword: 1
-    Content: Drink
+    Content: Something else
 --- !u!212 &1226980545
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -40992,7 +40989,7 @@ MonoBehaviour:
   - IsKeyword: 0
     Content: Branch
   CodingUIHandler: {fileID: 787142482}
-  description: 
+  description: Use a branch
 --- !u!1 &2082096461
 GameObject:
   m_ObjectHideFlags: 0

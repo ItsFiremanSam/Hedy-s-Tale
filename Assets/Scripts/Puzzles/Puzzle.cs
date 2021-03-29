@@ -15,11 +15,16 @@ public class Puzzle : MonoBehaviour
     // TODO: Change with inventory system
     private PlayerMovement _playerMovement;
 
+    private void PuzzleSolved()
+    {
+        Debug.Log("Solved the puzzle: " + name);
+    }
+
     private void Update()
     {
         if (_playerMovement != null && Input.GetKeyDown("e"))
         {
-            CodingUIHandler.ShowCodingUI(_playerMovement.Inventory, Answer, description);
+            CodingUIHandler.ShowCodingUI(_playerMovement.Inventory, Answer, description, PuzzleSolved);
         }
     }
 

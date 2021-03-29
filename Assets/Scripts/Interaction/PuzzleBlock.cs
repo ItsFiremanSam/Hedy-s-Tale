@@ -1,36 +1,29 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[Serializable]
 public class PuzzleBlock
 {
-    private bool _isKeyword;
-    private string _content;
+    public bool IsKeyword;
+    public string Content;
+
+    public PuzzleBlock(PuzzleBlock otherBlock)
+    {
+        IsKeyword = otherBlock.IsKeyword;
+        Content = otherBlock.Content;
+    }
 
     public PuzzleBlock(bool isKeyword, string content)
     {
-        _isKeyword = isKeyword;
-        _content = content;
-    }
-
-    public bool IsKeyword()
-    {
-        return _isKeyword;
-    }
-
-    public string GetContent()
-    {
-        return _content;
-    }
-
-    public override string ToString()
-    {
-        return "Keyword: "+ _isKeyword + ", Content: " + _content;
+        IsKeyword = isKeyword;
+        Content = content;
     }
 
     public bool Equals(PuzzleBlock otherBlock)
     {
-        return otherBlock._isKeyword == _isKeyword && otherBlock._content == _content;
+        return otherBlock.IsKeyword == IsKeyword && otherBlock.Content == Content;
     }
 
     public static bool IsCorrectAnswer(List<PuzzleBlock> correctAnswer, List<PuzzleBlock> answerToCheck)

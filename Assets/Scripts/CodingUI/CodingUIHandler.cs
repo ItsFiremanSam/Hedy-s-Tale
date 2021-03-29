@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -18,64 +19,77 @@ public class CodingUIHandler : MonoBehaviour
 
     public GameObject CodingUIContainer;
 
-    private List<PuzzleBlock> _answer;
+    public int MaxNumberOfPuzzleBlocks = 4;
 
-    // TODO: Clean up
-    public void ShowCodingUI(List<PuzzleBlock> inventory, List<PuzzleBlock> answer, string puzzleDescription)
+    private List<PuzzleBlock> _answer;
+    private Action _onCorrectAnswerCallback;
+
+    // TODO: Add delegate callback for when oncorrectanswer
+    public void ShowCodingUI(List<PuzzleBlock> inventory, List<PuzzleBlock> answer, string puzzleDescription, Action onCorrectAnswerCallback)
     {
         if (CodingUIContainer.activeSelf) return;
 
         _answer = answer;
+        _onCorrectAnswerCallback = onCorrectAnswerCallback;
 
-        List<PuzzleBlock> blocksToAdd = new List<PuzzleBlock>();
-        List<PuzzleBlock> inventoryCopy = inventory.ConvertAll(block => new PuzzleBlock(block.IsKeyword(), block.GetContent()));
-        inventoryCopy.Shuffle();
+        // Split the inventory by creating deep copies
+        List<PuzzleBlock> inventoryKeywords = inventory.CreateDeepCopy(true);
+        List<PuzzleBlock> inventoryNonKeywords = inventory.CreateDeepCopy(false);
 
-        foreach (PuzzleBlock answerBlock in answer)
-        {
-            PuzzleBlock blockToAdd = new PuzzleBlock(answerBlock.IsKeyword(), null);
-            foreach (PuzzleBlock inventoryBlock in inventory)
-            {
-                if (inventoryBlock.Equals(answerBlock))
-                {
-                    blockToAdd = inventoryBlock;
-                    inventoryCopy.Remove(inventoryBlock);
-                    break;
-                }
-            }
-            blocksToAdd.Add(blockToAdd);
-            Instantiate(AnswerBlockPrefab, AnswerPanel);
-        }
+        List<PuzzleBlock> answerKeywords = answer.CreateDeepCopy(true);
+        List<PuzzleBlock> answerNonKeywords = answer.CreateDeepCopy(false);
 
-        while (blocksToAdd.Count < 6 && inventoryCopy.Count > 0)
-        {
-            blocksToAdd.Add(inventoryCopy[0]);
-            inventoryCopy.RemoveAt(0);
-        }
+        // Create the Puzzle Block lists to use of the coding UI
+        List<PuzzleBlock> keywords = CreatePuzzleBlocksForPuzzle(inventoryKeywords, answerKeywords);
+        List<PuzzleBlock> nonKeywords = CreatePuzzleBlocksForPuzzle(inventoryNonKeywords, answerNonKeywords);
 
-        blocksToAdd.Shuffle();
+        SetCodingUI(keywords, nonKeywords, answer, puzzleDescription);
+    }
 
-        foreach (PuzzleBlock block in blocksToAdd)
-        {
-            if (block.IsKeyword())
-            {
-                if (block.GetContent() != null)
-                    Instantiate(KeywordPrefab, KeywordPanel).GetComponent<DraggableCodingBlock>().SetAnswerBlock(block);
-                else
-                    Instantiate(MissingBlockPrefab, KeywordPanel);
-            }
-            else
-            {
-                if (block.GetContent() != null)
-                    Instantiate(NonKeywordPrefab, NonKeywordPanel).GetComponent<DraggableCodingBlock>().SetAnswerBlock(block);
-                else
-                    Instantiate(MissingBlockPrefab, NonKeywordPanel);
-            }
-        }
+    private void SetCodingUI(List<PuzzleBlock> keywords, List<PuzzleBlock> nonKeywords, List<PuzzleBlock> answer, string puzzleDescription)
+    {
+        keywords.ForEach(b => AddToPanel(b, KeywordPanel, KeywordPrefab));
+        nonKeywords.ForEach(b => AddToPanel(b, NonKeywordPanel, NonKeywordPrefab));
+        answer.ForEach(b => Instantiate(AnswerBlockPrefab, AnswerPanel));
 
         DescriptionPanel.GetComponentInChildren<Text>().text = puzzleDescription;
 
         CodingUIContainer.SetActive(true);
+    }
+
+    private void AddToPanel(PuzzleBlock block, Transform panel, GameObject puzzleBlockPrefab)
+    {
+            if (block.Content != null)
+                Instantiate(puzzleBlockPrefab, panel).GetComponent<DraggableCodingBlock>().SetAnswerBlock(block);
+            else
+                Instantiate(MissingBlockPrefab, panel);
+    }
+
+    private List<PuzzleBlock> CreatePuzzleBlocksForPuzzle(List<PuzzleBlock> inventory, List<PuzzleBlock> answers)
+    {
+        List<PuzzleBlock> result = new List<PuzzleBlock>();
+
+        // Put answer puzzle blocks in result
+        foreach (PuzzleBlock answer in answers)
+        {
+            PuzzleBlock keyword;
+            if ((keyword = inventory.Where(e => e.Equals(answer)).FirstOrDefault()) != null)
+            {
+                result.Add(keyword);
+                inventory.Remove(keyword);
+            }
+            else result.Add(new PuzzleBlock(answer.IsKeyword, null));
+        }
+
+        // Fill the rest of the puzzleblocks
+        while (result.Count < MaxNumberOfPuzzleBlocks && inventory.Count > 0)
+        {
+            result.Add(inventory[0]);
+            inventory.RemoveAt(0);
+        }
+
+        // Return the shuffled array for a randomized outcome
+        return result.Shuffle();
     }
 
     public void CloseCodingUI()
@@ -93,11 +107,14 @@ public class CodingUIHandler : MonoBehaviour
     {
         if (IsAnswerCorrect())
         {
+            // TODO: Possibly show that answer is correct in GUI (maybe for half a seconds or so)
             Debug.Log("Correct Answer!");
+            _onCorrectAnswerCallback();
             CloseCodingUI();
         }
         else
         {
+            // TODO: Show that answer is incorrect in GUI
             Debug.Log("Incorrect Answer! Try again!");
         }
     }
