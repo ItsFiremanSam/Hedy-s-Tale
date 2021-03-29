@@ -6,7 +6,7 @@ using UnityEngine;
 public class Puzzle : MonoBehaviour
 {
     //[SerializeReference]
-    public List<TempAnswerBlock> Answer;
+    public List<PuzzleBlock> Answer;
     public CodingUIHandler CodingUIHandler;
 
     [TextArea(minLines: 3, maxLines: 10)]

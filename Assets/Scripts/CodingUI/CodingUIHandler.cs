@@ -18,23 +18,23 @@ public class CodingUIHandler : MonoBehaviour
 
     public GameObject CodingUIContainer;
 
-    private List<TempAnswerBlock> _answer;
+    private List<PuzzleBlock> _answer;
 
-
-    public void ShowCodingUI(List<TempAnswerBlock> inventory, List<TempAnswerBlock> answer, string puzzleDescription)
+    // TODO: Clean up
+    public void ShowCodingUI(List<PuzzleBlock> inventory, List<PuzzleBlock> answer, string puzzleDescription)
     {
         if (CodingUIContainer.activeSelf) return;
 
         _answer = answer;
 
-        List<TempAnswerBlock> blocksToAdd = new List<TempAnswerBlock>();
-        List<TempAnswerBlock> inventoryCopy = inventory.ConvertAll(block => new TempAnswerBlock(block.IsKeyword, block.Content));
+        List<PuzzleBlock> blocksToAdd = new List<PuzzleBlock>();
+        List<PuzzleBlock> inventoryCopy = inventory.ConvertAll(block => new PuzzleBlock(block.IsKeyword(), block.GetContent()));
         inventoryCopy.Shuffle();
 
-        foreach (TempAnswerBlock answerBlock in answer)
+        foreach (PuzzleBlock answerBlock in answer)
         {
-            TempAnswerBlock blockToAdd = new TempAnswerBlock(answerBlock.IsKeyword, null);
-            foreach (TempAnswerBlock inventoryBlock in inventory)
+            PuzzleBlock blockToAdd = new PuzzleBlock(answerBlock.IsKeyword(), null);
+            foreach (PuzzleBlock inventoryBlock in inventory)
             {
                 if (inventoryBlock.Equals(answerBlock))
                 {
@@ -55,18 +55,18 @@ public class CodingUIHandler : MonoBehaviour
 
         blocksToAdd.Shuffle();
 
-        foreach (TempAnswerBlock block in blocksToAdd)
+        foreach (PuzzleBlock block in blocksToAdd)
         {
-            if (block.IsKeyword)
+            if (block.IsKeyword())
             {
-                if (block.Content != null)
+                if (block.GetContent() != null)
                     Instantiate(KeywordPrefab, KeywordPanel).GetComponent<DraggableCodingBlock>().SetAnswerBlock(block);
                 else
                     Instantiate(MissingBlockPrefab, KeywordPanel);
             }
             else
             {
-                if (block.Content != null)
+                if (block.GetContent() != null)
                     Instantiate(NonKeywordPrefab, NonKeywordPanel).GetComponent<DraggableCodingBlock>().SetAnswerBlock(block);
                 else
                     Instantiate(MissingBlockPrefab, NonKeywordPanel);
@@ -104,43 +104,13 @@ public class CodingUIHandler : MonoBehaviour
 
     private bool IsAnswerCorrect()
     {
-        List<TempAnswerBlock> answerToCheck = new List<TempAnswerBlock>();
+        List<PuzzleBlock> answerToCheck = new List<PuzzleBlock>();
         foreach (Transform answerBLock in AnswerPanel)
         {
             if (answerBLock.childCount == 0) return false;
             answerToCheck.Add(answerBLock.GetComponentInChildren<DraggableCodingBlock>().GetAnswerBlock());
         }
 
-        return TempAnswerBlock.IsCorrectAnswer(_answer, answerToCheck);
-    }
-}
-
-// TODO: Will change
-[Serializable]
-public struct TempAnswerBlock
-{
-    public bool IsKeyword;
-    public string Content;
-
-    public TempAnswerBlock(bool isKeyword, string content)
-    {
-        IsKeyword = isKeyword;
-        Content = content;
-    }
-    public bool Equals(TempAnswerBlock otherBlock)
-    {
-        return otherBlock.IsKeyword == IsKeyword && otherBlock.Content == Content;
-    }
-
-    public static bool IsCorrectAnswer(List<TempAnswerBlock> correctAnswer, List<TempAnswerBlock> answerToCheck)
-    {
-        for (int i = 0; i < answerToCheck.Count; i++)
-        {
-            if (!correctAnswer[i].Equals(answerToCheck[i]))
-            {
-                return false;
-            }
-        }
-        return true;
+        return PuzzleBlock.IsCorrectAnswer(_answer, answerToCheck);
     }
 }

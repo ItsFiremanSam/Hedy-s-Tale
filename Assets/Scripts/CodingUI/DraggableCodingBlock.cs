@@ -16,7 +16,7 @@ public class DraggableCodingBlock : MonoBehaviour, IDragHandler, IBeginDragHandl
     private int _originalSiblingIndex;
 
     // TODO: Change this to proper class
-    private TempAnswerBlock _answerBlock;
+    private PuzzleBlock _answerBlock;
 
     private void Awake()
     {
@@ -28,13 +28,13 @@ public class DraggableCodingBlock : MonoBehaviour, IDragHandler, IBeginDragHandl
 
     }
 
-    public void SetAnswerBlock(TempAnswerBlock answerBlock)
+    public void SetAnswerBlock(PuzzleBlock answerBlock)
     {
         _answerBlock = answerBlock;
-        GetComponentInChildren<Text>().text = answerBlock.Content;
+        GetComponentInChildren<Text>().text = answerBlock.GetContent();
     }
 
-    public TempAnswerBlock GetAnswerBlock()
+    public PuzzleBlock GetAnswerBlock()
     {
         return _answerBlock;
     }

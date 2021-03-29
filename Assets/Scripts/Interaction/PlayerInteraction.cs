@@ -8,6 +8,11 @@ public class PlayerInteraction : MonoBehaviour
     private GameObject _interactibleObject;
     private List<PuzzleBlock> _inventory = new List<PuzzleBlock>();
 
+    public List<PuzzleBlock> GetInventory()
+    {
+        return _inventory;
+    }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.E) && _inTrigger)

@@ -15,7 +15,7 @@ public class PlayerMovement : AnimatableEntity
     Rigidbody2D _rigidBody;
     Vector2 _currentVelocity;
 
-    public List<TempAnswerBlock> Inventory;
+    public List<PuzzleBlock> Inventory;
 
     private void Awake()
     {
