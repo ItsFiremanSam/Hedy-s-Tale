@@ -8,10 +8,9 @@ public class InteractionChest : InteractableObject
 
     protected override void OnInteractWithPlayer(PlayerInteraction playerInteraction)
     {
-        // Is used to stop the interaction bubble from being displayed after it is activated.
         if (!_isInteracted)
         {
-            playerInteraction.GetInventory().Add(PuzzleBlock);
+            playerInteraction.Inventory.Add(PuzzleBlock);
 
             _isInteracted = true;
             ShowInteractionBubble(false);

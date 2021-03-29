@@ -8,7 +8,7 @@ public class InteractionPickUp : InteractableObject
 
     protected override void OnInteractWithPlayer(PlayerInteraction playerInteraction)
     {
-        playerInteraction.GetInventory().Add(PuzzleBlock);
+        playerInteraction.Inventory.Add(PuzzleBlock);
 
         Destroy(gameObject);
     }

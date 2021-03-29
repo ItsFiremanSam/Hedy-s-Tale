@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerInteraction : MonoBehaviour
 {
-    public List<PuzzleBlock> _inventory = new List<PuzzleBlock>();
+    public List<PuzzleBlock> Inventory = new List<PuzzleBlock>();
 
     public delegate void InteractionHandler(PlayerInteraction playerInteraction);
     public event InteractionHandler InteractionEvent;
@@ -15,10 +15,5 @@ public class PlayerInteraction : MonoBehaviour
         {
             if (InteractionEvent != null) InteractionEvent(this);
         }
-    }
-
-    public List<PuzzleBlock> GetInventory()
-    {
-        return _inventory;
     }
 }
