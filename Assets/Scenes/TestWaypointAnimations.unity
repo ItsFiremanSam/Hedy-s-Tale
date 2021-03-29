@@ -130,6 +130,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5979487619007110658, guid: 10ee5b238a61d6f439d07c5ae256474e,
         type: 3}
+      propertyPath: PuzzleBlock.Content
+      value: Branch
+      objectReference: {fileID: 0}
+    - target: {fileID: 5979487619007110658, guid: 10ee5b238a61d6f439d07c5ae256474e,
+        type: 3}
       propertyPath: _puzzleBlockContent
       value: Branch
       objectReference: {fileID: 0}
@@ -12179,7 +12184,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &719478672
 RectTransform:
   m_ObjectHideFlags: 0
@@ -29778,6 +29783,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2ffaf210091ad24ebdb7ac78aa744ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _inventory:
+  - IsKeyword: 0
+    Content: 
+  - IsKeyword: 0
+    Content: 
+  - IsKeyword: 0
+    Content: 
+  - IsKeyword: 0
+    Content: 
 --- !u!4 &1640227633 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7344574210087128628, guid: 995ed82f08fab5a429bf61729c08763c,
@@ -29795,6 +29809,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chest
+      objectReference: {fileID: 0}
+    - target: {fileID: 50645315964878888, guid: 3866c2129c6ccd74bb7455e35b2df341,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 50645315964878892, guid: 3866c2129c6ccd74bb7455e35b2df341,
         type: 3}
@@ -29853,13 +29872,33 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 50645315964878893, guid: 3866c2129c6ccd74bb7455e35b2df341,
         type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 50645315964878893, guid: 3866c2129c6ccd74bb7455e35b2df341,
+        type: 3}
+      propertyPath: PuzzleBlock.Content
+      value: Print
+      objectReference: {fileID: 0}
+    - target: {fileID: 50645315964878893, guid: 3866c2129c6ccd74bb7455e35b2df341,
+        type: 3}
       propertyPath: _puzzleBlockContent
       value: Print
       objectReference: {fileID: 0}
     - target: {fileID: 50645315964878893, guid: 3866c2129c6ccd74bb7455e35b2df341,
         type: 3}
+      propertyPath: PuzzleBlock.IsKeyword
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 50645315964878893, guid: 3866c2129c6ccd74bb7455e35b2df341,
+        type: 3}
       propertyPath: _puzzleBlockIsKeyword
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 50645317859090027, guid: 3866c2129c6ccd74bb7455e35b2df341,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3866c2129c6ccd74bb7455e35b2df341, type: 3}

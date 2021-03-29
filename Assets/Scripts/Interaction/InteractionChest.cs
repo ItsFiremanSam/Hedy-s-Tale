@@ -4,21 +4,18 @@ using UnityEngine;
 
 public class InteractionChest : InteractableObject
 {
-    private bool _isInteracted;
+    public PuzzleBlock PuzzleBlock;
 
-    public override PuzzleBlock OnInteractWithPlayer()
+    protected override void OnInteractWithPlayer(PlayerInteraction playerInteraction)
     {
+        // Is used to stop the interaction bubble from being displayed after it is activated.
         if (!_isInteracted)
         {
+            playerInteraction.GetInventory().Add(PuzzleBlock);
+
             _isInteracted = true;
-            SetIsInteracted(true);
             ShowInteractionBubble(false);
             GetComponent<SpriteRenderer>().color = Color.red;
-            return new PuzzleBlock(_puzzleBlockIsKeyword, _puzzleBlockContent);
-        }
-        else
-        {
-            return null;
         }
     }
 }
