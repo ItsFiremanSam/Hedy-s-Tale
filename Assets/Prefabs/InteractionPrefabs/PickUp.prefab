@@ -113,9 +113,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4c96b9f4c27be64ca81f690c905ae10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionBubbleText: {fileID: 5979487620176987196}
-  _puzzleBlockIsKeyword: 0
-  _puzzleBlockContent: 
+  PuzzleBlock:
+    IsKeyword: 0
+    Content: 
 --- !u!1 &5979487620176987196
 GameObject:
   m_ObjectHideFlags: 0
@@ -134,7 +134,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5979487620176987195
 RectTransform:
   m_ObjectHideFlags: 0
