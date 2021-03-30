@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class InteractionPickUp : InteractableObject
 {
-    public override PuzzleBlock OnInteractWithPlayer()
+    public PuzzleBlock PuzzleBlock;
+
+    protected override void OnInteractWithPlayer(PlayerInteraction playerInteraction)
     {
-        gameObject.SetActive(false);
-        return new PuzzleBlock(_puzzleBlockIsKeyword, _puzzleBlockContent);
+        playerInteraction.Inventory.Add(PuzzleBlock);
+
+        Destroy(gameObject);
     }
 }

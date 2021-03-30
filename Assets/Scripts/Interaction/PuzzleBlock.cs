@@ -1,20 +1,17 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[Serializable]
 public class PuzzleBlock
 {
-    private bool _isKeyword;
-    private string _content;
+    public bool IsKeyword;
+    public string Content;
 
     public PuzzleBlock(bool isKeyword, string content)
     {
-        _isKeyword = isKeyword;
-        _content = content;
-    }
-
-    public override string ToString()
-    {
-        return "Keyword: "+ _isKeyword + ", Content: " + _content;
+        IsKeyword = isKeyword;
+        Content = content;
     }
 }
