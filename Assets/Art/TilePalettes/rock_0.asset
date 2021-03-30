@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: hill_14
+  m_Name: rock_0
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -7239043738957073464, guid: 635355a048c247e49947f96b4a3c1325,
+  m_Sprite: {fileID: -2182124076254010665, guid: 87200e7f9b24dec429700d478f2eac89,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
