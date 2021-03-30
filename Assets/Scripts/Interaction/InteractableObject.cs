@@ -4,16 +4,14 @@ using UnityEngine;
 
 public abstract class InteractableObject : MonoBehaviour
 {
-    [SerializeField]
     protected GameObject _interactionBubbleText;
-    [SerializeField]
-    protected bool _puzzleBlockIsKeyword;
-    [SerializeField]
-    protected string _puzzleBlockContent;
-    private bool _isInteracted;
+
+    // Is used to stop the interaction bubble from being displayed after it is activated.
+    protected bool _isInteracted;
 
     void Start()
     {
+        _interactionBubbleText = transform.GetChild(0).gameObject;
         ShowInteractionBubble(false);
     }
 
@@ -29,26 +27,30 @@ public abstract class InteractableObject : MonoBehaviour
         }
     }
 
-    protected void SetIsInteracted(bool isInteracted)
-    {
-        _isInteracted = isInteracted;
-    }
-
+    /*
+     * We cannot use the method "OnTriggerStay2D" to check input of the player, because "OnTriggerStay2D" is like "FixedUpdate". 
+     * "OnTriggerStay2D" and "FixedUpdate" doesn't always register the input of the player.
+     * Source: https://forum.unity.com/threads/need-help-with-ontriggerstay-and-getkeydown.200356/
+     */
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.GetComponent<PlayerInteraction>())
+        PlayerInteraction player = collision.GetComponent<PlayerInteraction>();
+        if (player)
         {
+            player.InteractionEvent += OnInteractWithPlayer;
             ShowInteractionBubble(true);
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.GetComponent<PlayerInteraction>())
+        PlayerInteraction player = collision.GetComponent<PlayerInteraction>();
+        if (player)
         {
+            player.InteractionEvent -= OnInteractWithPlayer;
             ShowInteractionBubble(false);
         }
     }
 
-    public abstract PuzzleBlock OnInteractWithPlayer();
+    protected abstract void OnInteractWithPlayer(PlayerInteraction playerInteraction);
 }

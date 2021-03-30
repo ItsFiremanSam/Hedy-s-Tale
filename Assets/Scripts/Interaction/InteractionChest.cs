@@ -4,21 +4,17 @@ using UnityEngine;
 
 public class InteractionChest : InteractableObject
 {
-    private bool _isInteracted;
+    public PuzzleBlock PuzzleBlock;
 
-    public override PuzzleBlock OnInteractWithPlayer()
+    protected override void OnInteractWithPlayer(PlayerInteraction playerInteraction)
     {
         if (!_isInteracted)
         {
+            playerInteraction.Inventory.Add(PuzzleBlock);
+
             _isInteracted = true;
-            SetIsInteracted(true);
             ShowInteractionBubble(false);
             GetComponent<SpriteRenderer>().color = Color.red;
-            return new PuzzleBlock(_puzzleBlockIsKeyword, _puzzleBlockContent);
-        }
-        else
-        {
-            return null;
         }
     }
 }
