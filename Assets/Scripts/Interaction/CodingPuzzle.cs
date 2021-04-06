@@ -9,8 +9,6 @@ public class CodingPuzzle : InteractableObject
     public List<PuzzleBlock> Answer;
     public string PuzzleDescription;
 
-    public Transform Barrier;
-
     private void Awake()
     {
         _codingUIHandler = FindObjectOfType<CodingUIHandler>();
@@ -24,7 +22,6 @@ public class CodingPuzzle : InteractableObject
     // TODO: Make animation possible using animation waypoint system
     public void OnPuzzleCompleteCallback()
     {
-        Debug.Log("OnPuzzleCompleteCallback: " + name);
-        Destroy(Barrier.gameObject);
+        Debug.Log("Correct answer");
     }
 }

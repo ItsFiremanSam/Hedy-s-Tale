@@ -6,7 +6,6 @@ public class DropBlock : MonoBehaviour, IDropHandler, IPointerClickHandler
 {
     public void OnDrop(PointerEventData eventData)
     {
-        //TODO: Improve
         if (eventData.pointerDrag == null) return;
         DraggableCodingBlock dragBlock = eventData.pointerDrag.GetComponent<DraggableCodingBlock>();
         if (transform.childCount > 0)

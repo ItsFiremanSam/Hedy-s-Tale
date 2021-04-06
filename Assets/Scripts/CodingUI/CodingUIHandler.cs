@@ -5,6 +5,9 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// This object will set up the coding puzzle and checks for the right answer 
+/// </summary>
 public class CodingUIHandler : MonoBehaviour
 {
     public GameObject KeywordPrefab;
@@ -19,12 +22,22 @@ public class CodingUIHandler : MonoBehaviour
 
     public GameObject CodingUIContainer;
 
+    // The maximum number of blocks per column in the coding ui
+    //  Can be changed if the coding UI changes its proportions 
     public int MaxNumberOfPuzzleBlocks = 4;
 
     private List<PuzzleBlock> _answer;
     private Action _onCorrectAnswerCallback;
 
-    // TODO: Add delegate callback for when oncorrectanswer
+    /// <summary>
+    /// This method is called to open up the puzzle
+    ///     It will use the proper inventory blocks using random blocks and the answer
+    ///     It will split the answer and inventory into keywords and nonkeywords for simplicity
+    /// </summary>
+    /// <param name="inventory"></param> The inventory of the player
+    /// <param name="answer"></param> The correct answer of this puzzle
+    /// <param name="puzzleDescription"></param> 
+    /// <param name="onCorrectAnswerCallback"></param> The function that will be called when the player finds the correct answer
     public void ShowCodingUI(List<PuzzleBlock> inventory, List<PuzzleBlock> answer, string puzzleDescription, Action onCorrectAnswerCallback)
     {
         if (CodingUIContainer.activeSelf) return;
@@ -46,6 +59,50 @@ public class CodingUIHandler : MonoBehaviour
         SetCodingUI(keywords, nonKeywords, answer, puzzleDescription);
     }
 
+    /// <summary>
+    /// This is the brains of this object
+    ///     1. It will look for the answer puzzle blocks in the inventory and put them in the list 
+    ///         a. If it does not find an answer puzzle block it will put a block without content in the list in stead
+    ///     2. It will fill up the list of puzzle blocks until the maximum amount per list is reached or the inventory copy is empty
+    ///     3. It will shuffle the list and then return it
+    /// </summary>
+    /// <param name="inventory"></param> A copy of the inventory containing either only keywords or only nonkeywords (same as answer)
+    /// <param name="answers"></param> A copy of the answer blocks containing either only keywords or only nonkeywords (same as inventory)
+    /// <returns></returns> The created shuffled list containing the user input blocks
+    private List<PuzzleBlock> CreatePuzzleBlocksForPuzzle(List<PuzzleBlock> inventory, List<PuzzleBlock> answers)
+    {
+        List<PuzzleBlock> result = new List<PuzzleBlock>();
+
+        // 1. Put answer puzzle blocks in result
+        foreach (PuzzleBlock answer in answers)
+        {
+            PuzzleBlock keyword;
+            if ((keyword = inventory.Where(e => e.Equals(answer)).FirstOrDefault()) != null)
+            {
+                result.Add(keyword);
+                inventory.Remove(keyword);
+            }
+            else result.Add(new PuzzleBlock(answer.IsKeyword, null));
+        }
+
+        // 2. Fill the rest of the puzzleblocks
+        while (result.Count < MaxNumberOfPuzzleBlocks && inventory.Count > 0)
+        {
+            result.Add(inventory[0]);
+            inventory.RemoveAt(0);
+        }
+
+        // 3. Return the shuffled array for a randomized outcome
+        return result.Shuffle();
+    }
+
+    /// <summary>
+    /// This will put the coding fill the coding UI with the proper blocks
+    /// </summary>
+    /// <param name="keywords"></param> A list of the user input keywords
+    /// <param name="nonKeywords"></param> A list of the user input non keywords
+    /// <param name="answer"></param> A list of the answer blocks
+    /// <param name="puzzleDescription"></param> 
     private void SetCodingUI(List<PuzzleBlock> keywords, List<PuzzleBlock> nonKeywords, List<PuzzleBlock> answer, string puzzleDescription)
     {
         keywords.ForEach(b => AddToPanel(b, KeywordPanel, KeywordPrefab));
@@ -59,42 +116,17 @@ public class CodingUIHandler : MonoBehaviour
 
     private void AddToPanel(PuzzleBlock block, Transform panel, GameObject puzzleBlockPrefab)
     {
-            if (block.Content != null)
-                Instantiate(puzzleBlockPrefab, panel).GetComponent<DraggableCodingBlock>().SetAnswerBlock(block);
-            else
-                Instantiate(MissingBlockPrefab, panel);
-    }
-
-    private List<PuzzleBlock> CreatePuzzleBlocksForPuzzle(List<PuzzleBlock> inventory, List<PuzzleBlock> answers)
-    {
-        List<PuzzleBlock> result = new List<PuzzleBlock>();
-
-        // Put answer puzzle blocks in result
-        foreach (PuzzleBlock answer in answers)
-        {
-            PuzzleBlock keyword;
-            if ((keyword = inventory.Where(e => e.Equals(answer)).FirstOrDefault()) != null)
-            {
-                result.Add(keyword);
-                inventory.Remove(keyword);
-            }
-            else result.Add(new PuzzleBlock(answer.IsKeyword, null));
-        }
-
-        // Fill the rest of the puzzleblocks
-        while (result.Count < MaxNumberOfPuzzleBlocks && inventory.Count > 0)
-        {
-            result.Add(inventory[0]);
-            inventory.RemoveAt(0);
-        }
-
-        // Return the shuffled array for a randomized outcome
-        return result.Shuffle();
+        if (block.Content != null)
+            Instantiate(puzzleBlockPrefab, panel).GetComponent<DraggableCodingBlock>().SetAnswerBlock(block);
+        else
+            Instantiate(MissingBlockPrefab, panel);
     }
 
     public void CloseCodingUI()
     {
         if (!CodingUIContainer.activeSelf) return;
+
+        _onCorrectAnswerCallback = null;
 
         foreach (Transform c in KeywordPanel) Destroy(c.gameObject);
         foreach (Transform c in NonKeywordPanel) Destroy(c.gameObject);
@@ -107,8 +139,6 @@ public class CodingUIHandler : MonoBehaviour
     {
         if (IsAnswerCorrect())
         {
-            // TODO: Possibly show that answer is correct in GUI (maybe for half a seconds or so)
-            Debug.Log("Correct Answer!");
             _onCorrectAnswerCallback();
             CloseCodingUI();
         }

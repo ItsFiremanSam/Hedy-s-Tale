@@ -15,8 +15,6 @@ public class PlayerMovement : AnimatableEntity
     Rigidbody2D _rigidBody;
     Vector2 _currentVelocity;
 
-    public List<PuzzleBlock> Inventory;
-
     private void Awake()
     {
         _rigidBody = GetComponent<Rigidbody2D>();

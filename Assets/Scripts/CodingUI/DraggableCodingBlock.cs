@@ -45,18 +45,15 @@ public class DraggableCodingBlock : MonoBehaviour, IDragHandler, IBeginDragHandl
 
         // Makes sure the dragging block is shown on top of everything
         transform.SetParent(_canvas.transform);
-
         if (_inDropBlock) return;
 
         transform.parent.SetAsLastSibling();
         CreatePlaceHolder();
     }
 
-
     public void OnDrag(PointerEventData eventData)
     {
-        // TODO: at middle of mouse!
-        _rectTransform.anchoredPosition += eventData.delta / _canvas.scaleFactor;
+        _rectTransform.position = eventData.position;
     }
 
     public void OnEndDrag(PointerEventData eventData)
