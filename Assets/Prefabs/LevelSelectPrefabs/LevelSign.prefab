@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4308950151925514451}
   - component: {fileID: 4308950151925514476}
   - component: {fileID: 4308950151925514477}
-  - component: {fileID: 5966161433594442647}
+  - component: {fileID: -6609907041371496926}
   m_Layer: 5
   m_Name: LevelSign
   m_TagString: Untagged
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &5966161433594442647
+--- !u!114 &-6609907041371496926
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -133,3 +133,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path:
     points: []
+  Points: []
