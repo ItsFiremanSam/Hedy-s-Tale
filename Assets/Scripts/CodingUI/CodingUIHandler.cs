@@ -28,29 +28,32 @@ public class CodingUIHandler : MonoBehaviour
 
     private List<PuzzleBlock> _answer;
     private Action _onCorrectAnswerCallback;
+    private Action _onWrongAnswerCallback;
 
     /// <summary>
     /// This method is called to open up the puzzle
     ///     It will use the proper inventory blocks using random blocks and the answer
     ///     It will split the answer and inventory into keywords and nonkeywords for simplicity
     /// </summary>
-    /// <param name="inventory"></param> The inventory of the player
-    /// <param name="answer"></param> The correct answer of this puzzle
+    /// <param name="inventory">The inventory of the player</param> 
+    /// <param name="answer">The correct answer of this puzzle</param> 
     /// <param name="puzzleDescription"></param> 
-    /// <param name="onCorrectAnswerCallback"></param> The function that will be called when the player finds the correct answer
-    public void ShowCodingUI(List<PuzzleBlock> inventory, List<PuzzleBlock> answer, string puzzleDescription, Action onCorrectAnswerCallback)
+    /// <param name="onCorrectAnswerCallback">The function that will be called when the player finds the correct answer</param> 
+    /// <param name="onWrongAnswerCallback">The function that will be called when the player puts in the wrong answer</param> 
+    public void ShowCodingUI(List<PuzzleBlock> inventory, List<PuzzleBlock> answer, string puzzleDescription, Action onCorrectAnswerCallback, Action onWrongAnswerCallback)
     {
         if (CodingUIContainer.activeSelf) return;
 
         _answer = answer;
         _onCorrectAnswerCallback = onCorrectAnswerCallback;
+        _onWrongAnswerCallback = onWrongAnswerCallback;
 
         // Split the inventory by creating deep copies
-        List<PuzzleBlock> inventoryKeywords = inventory.CreateDeepCopy(true);
-        List<PuzzleBlock> inventoryNonKeywords = inventory.CreateDeepCopy(false);
+        List<PuzzleBlock> inventoryKeywords = inventory.Where(block => block.IsKeyword).ToList();
+        List<PuzzleBlock> inventoryNonKeywords = inventory.Where(block => !block.IsKeyword).ToList();
 
-        List<PuzzleBlock> answerKeywords = answer.CreateDeepCopy(true);
-        List<PuzzleBlock> answerNonKeywords = answer.CreateDeepCopy(false);
+        List<PuzzleBlock> answerKeywords = answer.Where(block => block.IsKeyword).ToList();
+        List<PuzzleBlock> answerNonKeywords = answer.Where(block => !block.IsKeyword).ToList();
 
         // Create the Puzzle Block lists to use of the coding UI
         List<PuzzleBlock> keywords = CreatePuzzleBlocksForPuzzle(inventoryKeywords, answerKeywords);
@@ -62,13 +65,13 @@ public class CodingUIHandler : MonoBehaviour
     /// <summary>
     /// This is the brains of this object
     ///     1. It will look for the answer puzzle blocks in the inventory and put them in the list 
-    ///         a. If it does not find an answer puzzle block it will put a block without content in the list in stead
+    ///         a. If it does not find an answer puzzle block it will put a block without content in the list instead
     ///     2. It will fill up the list of puzzle blocks until the maximum amount per list is reached or the inventory copy is empty
     ///     3. It will shuffle the list and then return it
     /// </summary>
-    /// <param name="inventory"></param> A copy of the inventory containing either only keywords or only nonkeywords (same as answer)
-    /// <param name="answers"></param> A copy of the answer blocks containing either only keywords or only nonkeywords (same as inventory)
-    /// <returns></returns> The created shuffled list containing the user input blocks
+    /// <param name="inventory">A copy of the inventory containing either only keywords or only nonkeywords (same as answer)</param> 
+    /// <param name="answers">A copy of the answer blocks containing either only keywords or only nonkeywords (same as inventory)</param> 
+    /// <returns>The created shuffled list containing the user input blocks</returns> 
     private List<PuzzleBlock> CreatePuzzleBlocksForPuzzle(List<PuzzleBlock> inventory, List<PuzzleBlock> answers)
     {
         List<PuzzleBlock> result = new List<PuzzleBlock>();
@@ -76,11 +79,13 @@ public class CodingUIHandler : MonoBehaviour
         // 1. Put answer puzzle blocks in result
         foreach (PuzzleBlock answer in answers)
         {
-            PuzzleBlock keyword;
-            if ((keyword = inventory.Where(e => e.Equals(answer)).FirstOrDefault()) != null)
+            PuzzleBlock possiblePuzzleBlock = inventory
+                .Where(e => e.Equals(answer))
+                .FirstOrDefault();
+            if (possiblePuzzleBlock != null)
             {
-                result.Add(keyword);
-                inventory.Remove(keyword);
+                result.Add(possiblePuzzleBlock);
+                inventory.Remove(possiblePuzzleBlock);
             }
             else result.Add(new PuzzleBlock(answer.IsKeyword, null));
         }
@@ -99,9 +104,9 @@ public class CodingUIHandler : MonoBehaviour
     /// <summary>
     /// This will put the coding fill the coding UI with the proper blocks
     /// </summary>
-    /// <param name="keywords"></param> A list of the user input keywords
-    /// <param name="nonKeywords"></param> A list of the user input non keywords
-    /// <param name="answer"></param> A list of the answer blocks
+    /// <param name="keywords">A list of the user input keywords</param> 
+    /// <param name="nonKeywords">A list of the user input non keywords</param> 
+    /// <param name="answer">A list of the answer blocks</param> 
     /// <param name="puzzleDescription"></param> 
     private void SetCodingUI(List<PuzzleBlock> keywords, List<PuzzleBlock> nonKeywords, List<PuzzleBlock> answer, string puzzleDescription)
     {
@@ -144,6 +149,7 @@ public class CodingUIHandler : MonoBehaviour
         }
         else
         {
+            _onWrongAnswerCallback();
             // TODO: Show that answer is incorrect in GUI
             Debug.Log("Incorrect Answer! Try again!");
         }
@@ -158,6 +164,6 @@ public class CodingUIHandler : MonoBehaviour
             answerToCheck.Add(answerBLock.GetComponentInChildren<DraggableCodingBlock>().GetAnswerBlock());
         }
 
-        return PuzzleBlock.IsCorrectAnswer(_answer, answerToCheck);
+        return _answer.SequenceEqual(answerToCheck);
     }
 }

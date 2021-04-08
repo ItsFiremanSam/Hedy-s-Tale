@@ -6,6 +6,8 @@ public static class ListUtils
 {
     private static Random rng = new Random();
 
+    // Using custom method O(n) instead of list.OrderBy(item => rng.Next()) O(n log(n))
+    // Source: https://stackoverflow.com/questions/273313/randomize-a-listt/3456788
     public static List<T> Shuffle<T>(this List<T> list)
     {
         int n = list.Count;
@@ -19,10 +21,5 @@ public static class ListUtils
         }
 
         return list;
-    }
-
-    public static List<PuzzleBlock> CreateDeepCopy(this List<PuzzleBlock> list, bool isKeyword)
-    {
-        return list.Where(block => block.IsKeyword == isKeyword).Select(block => new PuzzleBlock(block)).ToList();
     }
 }

@@ -14,8 +14,6 @@ public class DraggableCodingBlock : MonoBehaviour, IDragHandler, IBeginDragHandl
     private GameObject _placeHolder = null;
     private Transform _dropBlockParent;
     private int _originalSiblingIndex;
-
-    // TODO: Change this to proper class
     private PuzzleBlock _answerBlock;
 
     private void Awake()
