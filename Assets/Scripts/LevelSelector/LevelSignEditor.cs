@@ -32,14 +32,20 @@ public class LevelSignEditor : Editor
                 cloudCanvasGroup.alpha = levelSelect.HigherLevelTransparency;
                 Handles.color = Color.green;
                 if (Handles.Button(cloud.transform.position, Quaternion.identity, 20, 20, Handles.RectangleHandleCap))
+                {
+                    Undo.RecordObject(target, "Set cloud level");
                     cloud.dissapearLevel = curLevel;
+                }
             }
             else
             {
                 cloudCanvasGroup.alpha = levelSelect.SameLevelTransparency;
                 Handles.color = Color.red;
                 if (Handles.Button(cloud.transform.position, Quaternion.identity, 20, 20, Handles.RectangleHandleCap))
+                {
+                    Undo.RecordObject(target, "Reset cloud level");
                     cloud.dissapearLevel = int.MaxValue;
+                }
             }
         }
     }
