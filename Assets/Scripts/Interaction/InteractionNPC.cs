@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class InteractionNPC : InteractableObject
 {
+    public GameObject dialogManager;
+    public Dialog dialog;
     protected override void OnInteractWithPlayer(PlayerInteraction playerInteraction)
     {
-        GetComponent<SpriteRenderer>().color = Color.blue;
+        dialogManager.GetComponent<ShowDialog>().StartDialog(dialog);
     }
 }
