@@ -10,7 +10,7 @@ using UnityEngine;
 /// <remarks>
 /// It can include a movement and other functionality, but maximum one of each
 /// </remarks>
-public class TalkMoveWaypointScript : WaypointScript
+public class TalkWalkWaypointScript : WaypointScript
 {
     public TalkAction TalkAction;
 
@@ -64,9 +64,9 @@ public class TalkMoveWaypointScript : WaypointScript
     private void DrawWalkGizmos()
     {
         WaypointCollectionScript wpcs = GetComponentInParent<WaypointCollectionScript>();
-        TalkMoveWaypointScript[] talkMoveWaypointScripts = wpcs.GetComponentsInChildren<TalkMoveWaypointScript>();
+        TalkWalkWaypointScript[] talkMoveWaypointScripts = wpcs.GetComponentsInChildren<TalkWalkWaypointScript>();
         Transform prevWaypoint = (wpcs.Subject && !wpcs.FromTrigger) ? wpcs.Subject.transform : wpcs.transform.parent;
-        foreach(TalkMoveWaypointScript talkMoveWaypointScript in wpcs.GetComponentsInChildren<TalkMoveWaypointScript>())
+        foreach(TalkWalkWaypointScript talkMoveWaypointScript in wpcs.GetComponentsInChildren<TalkWalkWaypointScript>())
         {
             if (talkMoveWaypointScript.gameObject.Equals(gameObject)) break;
             if (!talkMoveWaypointScript.noMoving) prevWaypoint = talkMoveWaypointScript.transform;

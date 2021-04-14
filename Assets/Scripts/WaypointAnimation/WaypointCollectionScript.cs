@@ -54,7 +54,7 @@ public class WaypointCollectionScript : MonoBehaviour
         do
         {
             prevI--;
-        } while (!canBeNoMoving && prevI >= 0 && transform.GetChild(prevI).GetComponent<TalkMoveWaypointScript>().noMoving);
+        } while (!canBeNoMoving && prevI >= 0 && transform.GetChild(prevI).GetComponent<TalkWalkWaypointScript>().noMoving);
 
         if (prevI >= 0) return transform.GetChild(prevI).position;
         else
