@@ -22,50 +22,24 @@ public class WaypointCollectionScript : MonoBehaviour
     // Make this true if the subject will start its position from the animation trigger
     // (Probably only used if the subject is the player itself)
     public bool FromTrigger;
-    public bool ShowMoveGizmos = true;
-    public bool ShowWaitOnGizmos = true;
-    public bool ShowTalkGizmos = true;
-    public bool ShowNonMovingGizmos = true;
 
     /// <summary>
     /// Draws the gizmos debug information to help with creating 
     /// </summary>
     private void OnDrawGizmos()
     {
-        if (transform.parent.GetComponent<AnimationTrigger>().DrawGizmos && Subject != null)
+        if (!transform.parent) return;
+        AnimationTrigger trigger = transform.parent.GetComponent<AnimationTrigger>();
+        WaypointScript[] waypointScripts = GetComponentsInChildren<WaypointScript>();
+        if (!trigger || !trigger.DrawGizmos || waypointScripts.Length == 0) return;
+
+        Transform firstTransform = (Subject && !FromTrigger) ? Subject.transform : trigger.transform;
+        waypointScripts[0].DrawGizmos(firstTransform);
+        for (int i = 1; i < waypointScripts.Length; i++)
         {
-            GUIStyle style = new GUIStyle();
-            style.normal.textColor = Color.black;
-            for (int i = 0; i < transform.childCount; i++)
-            {
-                Vector2 pos1 = GetLastPos(i, false);
-                Vector2 pos2 = transform.GetChild(i).position;
-
-                WaypointScript curWaypoint = transform.GetChild(i).GetComponent<WaypointScript>();
-
-                if (!curWaypoint.noMoving)
-                {
-                    if (ShowMoveGizmos) GizmosArrow.Draw(pos1, pos2, Color.blue);
-                }
-                else
-                {
-                    if (ShowNonMovingGizmos)
-                    {
-                        Gizmos.color = Color.magenta;
-                        Gizmos.DrawLine(GetLastPos(i, true), pos2);
-                    }
-                }
-
-                if (curWaypoint.WaypointToWaitOn != null) GizmosArrow.Draw(curWaypoint.WaypointToWaitOn.transform.position, pos2, Color.red);
-                if (ShowTalkGizmos && curWaypoint.TalkAction.Seconds > 0)
-                {
-                    string message = curWaypoint.TalkAction.Message;
-                    if (message == "") message = "*** ERROR: EMPTY MESSAGE ***";
-                    Handles.Label(curWaypoint.transform.position, message, style);
-                }
-            }
-            if (ShowMoveGizmos && ReturnToOrigin) GizmosArrow.Draw(GetLastPos(transform.childCount - 1, false), Subject.transform.position, Color.blue);
+            waypointScripts[i].DrawGizmos(waypointScripts[i - 1].transform);
         }
+        if (ReturnToOrigin) GizmosArrow.Draw(waypointScripts[waypointScripts.Length - 1].transform.position, firstTransform.position, Color.blue);
     }
 
     /// <summary>
@@ -80,7 +54,7 @@ public class WaypointCollectionScript : MonoBehaviour
         do
         {
             prevI--;
-        } while (!canBeNoMoving && prevI >= 0 && transform.GetChild(prevI).GetComponent<WaypointScript>().noMoving);
+        } while (!canBeNoMoving && prevI >= 0 && transform.GetChild(prevI).GetComponent<TalkMoveWaypointScript>().noMoving);
 
         if (prevI >= 0) return transform.GetChild(prevI).position;
         else

@@ -11,11 +11,17 @@ using UnityEngine;
 /// </remarks>
 public class AnimationTrigger : MonoBehaviour
 {
+    public bool useCollider;
     public bool DrawGizmos = true;
 
     private List<AnimationController> _animationControllers;
     private bool _activated;
     private PlayerMovement _playerMovement;
+
+    private void Awake()
+    {
+        _playerMovement = FindObjectOfType<PlayerMovement>();
+    }
 
     /// <summary>
     /// Checks if the player collided with its collider 
@@ -24,18 +30,23 @@ public class AnimationTrigger : MonoBehaviour
     /// <param name="collision"></param>
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!_activated && (_playerMovement = collision.gameObject.GetComponent<PlayerMovement>()) != null && !_playerMovement.AnimationActive)
+        if (!_activated && collision.gameObject.GetComponent<PlayerMovement>() && !_playerMovement.AnimationActive)
         {
-            _animationControllers = new List<AnimationController>();
-            foreach (WaypointCollectionScript wps in GetComponentsInChildren<WaypointCollectionScript>())
-            {
-                AnimationController ac = new AnimationController(wps.Subject, wps.Subject.Speed * wps.SpeedMultiplier, wps.GetComponentsInChildren<WaypointScript>(), wps.ReturnToOrigin);
-                StartCoroutine(ac.Animate());
-                _animationControllers.Add(ac);
-            }
-            _activated = true;
-            _playerMovement.AnimationActive = true;
+            StartAnimation();
         }
+    }
+
+    public void StartAnimation()
+    {
+        _animationControllers = new List<AnimationController>();
+        foreach (WaypointCollectionScript wps in GetComponentsInChildren<WaypointCollectionScript>())
+        {
+            AnimationController ac = new AnimationController(wps.Subject, wps.SpeedMultiplier, wps.GetComponentsInChildren<WaypointScript>(), wps.ReturnToOrigin);
+            StartCoroutine(ac.Animate());
+            _animationControllers.Add(ac);
+        }
+        _activated = true;
+        _playerMovement.AnimationActive = true;
     }
 
     /// <summary>
@@ -59,5 +70,18 @@ public class AnimationTrigger : MonoBehaviour
             if (!ac.IsAtEnd()) return false;
         }
         return true;
+    }
+
+    private void OnValidate()
+    {
+        BoxCollider2D col = GetComponent<BoxCollider2D>();
+        if (!useCollider && col.enabled)
+        {
+            col.enabled = false;
+        }
+        if (useCollider && !col.enabled)
+        {
+            col.enabled = true;
+        }
     }
 }
