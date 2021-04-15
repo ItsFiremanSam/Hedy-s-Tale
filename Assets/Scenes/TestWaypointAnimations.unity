@@ -29783,15 +29783,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2ffaf210091ad24ebdb7ac78aa744ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _inventory:
-  - IsKeyword: 0
-    Content: 
-  - IsKeyword: 0
-    Content: 
-  - IsKeyword: 0
-    Content: 
-  - IsKeyword: 0
-    Content: 
+  Inventory: []
 --- !u!4 &1640227633 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7344574210087128628, guid: 995ed82f08fab5a429bf61729c08763c,
