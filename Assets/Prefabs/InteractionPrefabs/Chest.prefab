@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 50645315964878889}
   - component: {fileID: 50645315964878894}
   - component: {fileID: 50645315964878893}
+  - component: {fileID: 2016478290}
   m_Layer: 0
   m_Name: Chest
   m_TagString: InteractibleObject
@@ -130,8 +131,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PuzzleBlock:
-    IsKeyword: 0
-    Content: 
+    IsKeyword: 1
+    Content: ask
+  animator: {fileID: 2016478290}
+  Loot: {fileID: 0}
+--- !u!95 &2016478290
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50645315964878888}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 69bf68fffa279234ebc0d481100d73f1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &50645317859090027
 GameObject:
   m_ObjectHideFlags: 0

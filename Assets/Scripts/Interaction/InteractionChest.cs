@@ -5,6 +5,7 @@ using UnityEngine;
 public class InteractionChest : InteractableObject
 {
     public PuzzleBlock PuzzleBlock;
+    public Animator animator;
 
     protected override void OnInteractWithPlayer(PlayerInteraction playerInteraction)
     {
@@ -14,7 +15,7 @@ public class InteractionChest : InteractableObject
 
             _isInteracted = true;
             ShowInteractionBubble(false);
-            GetComponent<SpriteRenderer>().color = Color.red;
+            animator.SetBool("isInteracted", true);
         }
     }
 }
