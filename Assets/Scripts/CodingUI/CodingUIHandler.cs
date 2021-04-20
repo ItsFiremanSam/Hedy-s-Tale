@@ -30,6 +30,13 @@ public class CodingUIHandler : MonoBehaviour
     private Action _onCorrectAnswerCallback;
     private Action _onWrongAnswerCallback;
 
+    private PlayerMovement _playerMovement;
+
+    private void Awake()
+    {
+        _playerMovement = FindObjectOfType<PlayerMovement>();
+    }
+
     /// <summary>
     /// This method is called to open up the puzzle
     ///     It will use the proper inventory blocks using random blocks and the answer
@@ -43,6 +50,7 @@ public class CodingUIHandler : MonoBehaviour
     public void ShowCodingUI(List<PuzzleBlock> inventory, List<PuzzleBlock> answer, string puzzleDescription, Action onCorrectAnswerCallback, Action onWrongAnswerCallback)
     {
         if (CodingUIContainer.activeSelf) return;
+        _playerMovement.CodingUIActive = true;
 
         _answer = answer;
         _onCorrectAnswerCallback = onCorrectAnswerCallback;
@@ -130,6 +138,7 @@ public class CodingUIHandler : MonoBehaviour
     public void CloseCodingUI()
     {
         if (!CodingUIContainer.activeSelf) return;
+        _playerMovement.CodingUIActive = false;
 
         _onCorrectAnswerCallback = null;
 

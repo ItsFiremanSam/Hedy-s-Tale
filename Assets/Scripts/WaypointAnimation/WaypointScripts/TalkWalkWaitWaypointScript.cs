@@ -6,11 +6,12 @@ using UnityEngine;
 
 /// <summary>
 /// Is responsible for a single step of an animation
+/// (Used to be WaypointScript)
 /// </summary>
 /// <remarks>
 /// It can include a movement and other functionality, but maximum one of each
 /// </remarks>
-public class TalkWalkWaypointScript : WaypointScript
+public class TalkWalkWaitWaypointScript : WaypointScript
 {
     public TalkAction TalkAction;
 
@@ -19,7 +20,7 @@ public class TalkWalkWaypointScript : WaypointScript
 
     // If true, this waypoint won't include movement
     // Can be used to create conversations
-    public bool noMoving;
+    public bool noMoving = true;
 
     /// <summary>
     /// Is responsible for animating this waypoint
@@ -50,9 +51,8 @@ public class TalkWalkWaypointScript : WaypointScript
 
         if (TalkAction.Seconds > 0)
         {
-            string message = TalkAction.Message;
-            if (message == "") message = "*** ERROR: EMPTY MESSAGE ***";
-            Handles.Label(transform.position, message, GUIStyle.none);
+            string firstPart = TalkAction.Message != "" ? TalkAction.Message + " - " : "";
+            Handles.Label(transform.position, $"{firstPart}{TalkAction.Seconds}s", GUIStyle.none);
         }
     }
 
@@ -64,13 +64,14 @@ public class TalkWalkWaypointScript : WaypointScript
     private void DrawWalkGizmos()
     {
         WaypointCollectionScript wpcs = GetComponentInParent<WaypointCollectionScript>();
-        TalkWalkWaypointScript[] talkMoveWaypointScripts = wpcs.GetComponentsInChildren<TalkWalkWaypointScript>();
         Transform prevWaypoint = (wpcs.Subject && !wpcs.FromTrigger) ? wpcs.Subject.transform : wpcs.transform.parent;
-        foreach(TalkWalkWaypointScript talkMoveWaypointScript in wpcs.GetComponentsInChildren<TalkWalkWaypointScript>())
+
+        foreach(TalkWalkWaitWaypointScript talkWalkWaitWaypointScript in wpcs.GetComponentsInChildren<TalkWalkWaitWaypointScript>())
         {
-            if (talkMoveWaypointScript.gameObject.Equals(gameObject)) break;
-            if (!talkMoveWaypointScript.noMoving) prevWaypoint = talkMoveWaypointScript.transform;
+            if (talkWalkWaitWaypointScript.gameObject.Equals(gameObject)) break;
+            if (!talkWalkWaitWaypointScript.noMoving) prevWaypoint = talkWalkWaitWaypointScript.transform;
         }
+
         GizmosArrow.Draw(prevWaypoint.position, transform.position, Color.blue);
     }
 }

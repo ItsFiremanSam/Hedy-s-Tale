@@ -2,7 +2,9 @@
 using System.Collections;
 using UnityEngine;
 
-
+/// <summary>
+/// Used as a container for a talk action in waypoint animations
+/// </summary>
 [Serializable]
 public class TalkAction
 {

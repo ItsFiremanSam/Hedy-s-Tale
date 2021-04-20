@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7426278994110986792}
   - component: {fileID: 5950093220229846825}
   m_Layer: 0
-  m_Name: Waypoint
+  m_Name: Talk Walk Wait Waypoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40,12 +40,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 8663711518616734711}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b64e30d772b5234b9e016d66eaf3c50, type: 3}
+  m_Script: {fileID: 11500000, guid: 679456d85d4526e4c978c5ac4b107643, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   WaypointToWaitOn: {fileID: 0}
+  IsDone: 0
   TalkAction:
     Message: 
     Seconds: 0
   SpeedMultiplier: 1
-  noMoving: 0
+  noMoving: 1

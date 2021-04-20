@@ -11,16 +11,27 @@ using UnityEngine;
 /// </remarks>
 public class AnimationTrigger : MonoBehaviour
 {
-    public bool useCollider;
+    public bool useCollider = true;
     public bool DrawGizmos = true;
 
     private List<AnimationController> _animationControllers;
     private bool _activated;
     private PlayerMovement _playerMovement;
 
+    private CodingPuzzle _codingPuzzle;
+    private CodingBlocksAnimation _codingBlocksAnimation;
+
     private void Awake()
     {
         _playerMovement = FindObjectOfType<PlayerMovement>();
+        _codingPuzzle = GetComponentInParent<CodingPuzzle>();
+        if (_codingPuzzle) _codingBlocksAnimation = FindObjectOfType<CodingBlocksAnimation>();
+    }
+
+    public void ProgressCodingBlocksAnimation(int progressSteps)
+    {
+        if (_codingPuzzle)
+            _codingBlocksAnimation.ProgressAnimation(progressSteps);
     }
 
     /// <summary>
@@ -39,6 +50,7 @@ public class AnimationTrigger : MonoBehaviour
     public void StartAnimation()
     {
         _animationControllers = new List<AnimationController>();
+        if (_codingPuzzle) _codingBlocksAnimation.EnterCodingBlocksAnimation(_codingPuzzle.Answer);
         foreach (WaypointCollectionScript wps in GetComponentsInChildren<WaypointCollectionScript>())
         {
             AnimationController ac = new AnimationController(wps.Subject, wps.SpeedMultiplier, wps.GetComponentsInChildren<WaypointScript>(), wps.ReturnToOrigin);
@@ -58,12 +70,15 @@ public class AnimationTrigger : MonoBehaviour
     {
         if (_activated && IsAnimationDone())
         {
+            // Makes sure that application doesn't crash when there are no coding blocks being animated
+            if (_codingBlocksAnimation)
+                _codingBlocksAnimation.ExitCodingBlocksAnimation();
             _playerMovement.AnimationActive = false;
             gameObject.SetActive(false);
         }
     }
 
-    bool IsAnimationDone()
+    private bool IsAnimationDone()
     {
         foreach (AnimationController ac in _animationControllers)
         {
@@ -76,12 +91,8 @@ public class AnimationTrigger : MonoBehaviour
     {
         BoxCollider2D col = GetComponent<BoxCollider2D>();
         if (!useCollider && col.enabled)
-        {
             col.enabled = false;
-        }
         if (useCollider && !col.enabled)
-        {
             col.enabled = true;
-        }
     }
 }

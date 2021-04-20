@@ -41,26 +41,4 @@ public class WaypointCollectionScript : MonoBehaviour
         }
         if (ReturnToOrigin) GizmosArrow.Draw(waypointScripts[waypointScripts.Length - 1].transform.position, firstTransform.position, Color.blue);
     }
-
-    /// <summary>
-    /// Will get the previous position to use for debug drawing
-    /// </summary>
-    /// <param name="i">The childcount of the child that is being evaluated</param>
-    /// <param name="canBeNoMoving">If false, will skip waypoints that dont include movement</param>
-    /// <returns></returns>
-    Vector2 GetLastPos(int i, bool canBeNoMoving)
-    {
-        int prevI = i;
-        do
-        {
-            prevI--;
-        } while (!canBeNoMoving && prevI >= 0 && transform.GetChild(prevI).GetComponent<TalkWalkWaypointScript>().noMoving);
-
-        if (prevI >= 0) return transform.GetChild(prevI).position;
-        else
-        {
-            if (FromTrigger) return transform.parent.position;
-            else return Subject.transform.position;
-        }
-    }
 }

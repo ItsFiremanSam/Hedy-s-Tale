@@ -2,6 +2,9 @@
 using UnityEngine;
 using UnityEditor;
 
+/// <summary>
+/// This waypoint destroy an GameObject
+/// </summary>
 public class DestroyObjectWaypointScript : WaypointScript
 {
     public GameObject ObjectToDestroy;
@@ -29,6 +32,5 @@ public class DestroyObjectWaypointScript : WaypointScript
             Gizmos.DrawLine(destroyPosition - v0, destroyPosition + v0);
             Gizmos.DrawLine(destroyPosition - v1, destroyPosition + v1);
         }
-        //throw new System.NotImplementedException();
     }
 }
