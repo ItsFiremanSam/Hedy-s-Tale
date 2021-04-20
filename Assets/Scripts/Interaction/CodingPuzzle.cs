@@ -5,6 +5,7 @@ using UnityEngine;
 public class CodingPuzzle : InteractableObject
 {
     private CodingUIHandler _codingUIHandler;
+    private AnimationTrigger _animationTrigger;
 
     public List<PuzzleBlock> Answer;
     public string PuzzleDescription;
@@ -12,6 +13,7 @@ public class CodingPuzzle : InteractableObject
     private void Awake()
     {
         _codingUIHandler = FindObjectOfType<CodingUIHandler>();
+        _animationTrigger = GetComponentInChildren<AnimationTrigger>();
     }
 
     protected override void OnInteractWithPlayer(PlayerInteraction playerInteraction)
@@ -22,6 +24,10 @@ public class CodingPuzzle : InteractableObject
     // TODO: Make animation possible using animation waypoint system
     public void OnPuzzleCompleteCallback()
     {
+        _isInteracted = true;
+        _player.InteractionEvent -= OnInteractWithPlayer;
+        ShowInteractionBubble(false);
+        _animationTrigger.StartAnimation();
         Debug.Log("Correct answer");
     }
 
