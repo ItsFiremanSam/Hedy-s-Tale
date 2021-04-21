@@ -4,7 +4,7 @@ using UnityEngine;
 
 public abstract class InteractableObject : MonoBehaviour
 {
-    protected GameObject _interactionBubbleText;
+    protected GameObject _interactionText;
     protected PlayerInteraction _player;
 
     // Is used to stop the interaction bubble from being displayed after it is activated.
@@ -12,7 +12,7 @@ public abstract class InteractableObject : MonoBehaviour
 
     void Start()
     {
-        _interactionBubbleText = transform.GetChild(0).gameObject;
+        _interactionText = transform.GetChild(0).gameObject;
         ShowInteractionBubble(false);
     }
 
@@ -20,11 +20,11 @@ public abstract class InteractableObject : MonoBehaviour
     {
         if (showBubble)
         {
-            _interactionBubbleText.SetActive(true);
+            _interactionText.SetActive(true);
         }
         else
         {
-            _interactionBubbleText.SetActive(false);
+            _interactionText.SetActive(false);
         }
     }
 

@@ -5,7 +5,8 @@ using UnityEngine;
 public class InteractionChest : InteractableObject
 {
     public PuzzleBlock PuzzleBlock;
-    public Animator animator;
+    public Animator openChestAnimator;
+    public Animator codeBlockAnimator;
 
     protected override void OnInteractWithPlayer(PlayerInteraction playerInteraction)
     {
@@ -15,7 +16,8 @@ public class InteractionChest : InteractableObject
 
             _isInteracted = true;
             ShowInteractionBubble(false);
-            animator.SetBool("isInteracted", true);
+            openChestAnimator.SetBool("isInteracted", true);
+            codeBlockAnimator.SetBool("isChestOpened", true);
         }
     }
 }
