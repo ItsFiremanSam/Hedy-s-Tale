@@ -8,6 +8,7 @@ public class CodingPuzzle : InteractableObject
     private AnimationTrigger _animationTrigger;
 
     public List<PuzzleBlock> Answer;
+    [TextArea(4, 8)]
     public string PuzzleDescription;
 
     private void Awake()
