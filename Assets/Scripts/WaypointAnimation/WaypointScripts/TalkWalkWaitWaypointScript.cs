@@ -52,7 +52,7 @@ public class TalkWalkWaitWaypointScript : WaypointScript
         if (TalkAction.Seconds > 0)
         {
             string firstPart = TalkAction.Message != "" ? TalkAction.Message + " - " : "";
-            Handles.Label(transform.position, $"{firstPart}{TalkAction.Seconds}s", GUIStyle.none);
+            //Handles.Label(transform.position, $"{firstPart}{TalkAction.Seconds}s", GUIStyle.none);
         }
     }
 
