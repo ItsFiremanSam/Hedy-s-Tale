@@ -21,7 +21,7 @@ public class DraggableCodingBlock : MonoBehaviour, IDragHandler, IBeginDragHandl
         _originalSiblingIndex = transform.GetSiblingIndex();
         _rectTransform = GetComponent<RectTransform>();
         _canvasGroup = GetComponent<CanvasGroup>();
-        _canvas = GameObject.Find("Canvas").GetComponent<Canvas>();
+        _canvas = GameObject.Find("UI Canvas").GetComponent<Canvas>();
         _originalParent = transform.parent;
 
     }

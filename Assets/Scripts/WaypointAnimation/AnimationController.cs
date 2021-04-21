@@ -17,14 +17,16 @@ public class AnimationController
 
     private bool _isAtEnd = false;
 
-    public AnimationController(AnimatableEntity subject, float speed, WaypointScript[] waypoints, bool returnToOrigin)
+    public AnimationController(AnimatableEntity subject, float speedMultiplier, WaypointScript[] waypoints, bool returnToOrigin)
     {
         _subject = subject;
-        _speed = speed;
+        if (subject)
+        {
+            _speed = subject.Speed * speedMultiplier;
+            _originPosition = _subject.transform.position;
+        }
         _waypoints = waypoints;
         _returnToOrigin = returnToOrigin;
-
-        _originPosition = _subject.transform.position;
     }
 
     /// <summary>
@@ -37,7 +39,7 @@ public class AnimationController
         {
             yield return waypoint.Animate(_subject, _speed);
         }
-        if (_returnToOrigin) yield return _subject.MoveTo(_originPosition, _speed);
+        if (_subject && _returnToOrigin) yield return _subject.MoveTo(_originPosition, _speed);
         _isAtEnd = true;
     }
 
