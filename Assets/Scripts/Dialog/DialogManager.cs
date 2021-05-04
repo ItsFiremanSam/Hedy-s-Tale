@@ -89,6 +89,7 @@ public class DialogManager : MonoBehaviour
     {
         this.dialog = dialog;
         initalNPCTalkFirst = dialog.NPCTalkFirst;
+        doneDialog = false;
         StartCoroutine(PrintDialog());
     }
 }

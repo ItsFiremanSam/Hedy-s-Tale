@@ -36202,11 +36202,11 @@ MonoBehaviour:
   dialog:
     NPCName: Bob
     sentences:
-    - Bob
-    - Hedy
-    - Bob
-    - Hedy
-    - Bob
+    - Hallo ik ben Bob, ik ben een hond en ik ben bruin
+    - Hallo Bob, Ik ben Hedy, ik ben ook een hond en ik ben ook bruin
+    - 'Hoe gaat het? Met mij gaat het super goed! '
+    - Met mij gaat het super goed hoor!
+    - Ok ik ga weg doei!
     NPCTalkFirst: 1
 --- !u!58 &1597876730
 CircleCollider2D:

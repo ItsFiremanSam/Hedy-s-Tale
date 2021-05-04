@@ -53,8 +53,8 @@ MonoBehaviour:
   index: 0
   normalTypingSpeed: 0.1
   fastTypingSpeed: 0.001
-  _donePrinting: 0
-  _doneDialog: 1
+  donePrinting: 0
+  doneDialog: 1
 --- !u!1 &826417936946759669
 GameObject:
   m_ObjectHideFlags: 0
