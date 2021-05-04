@@ -7,16 +7,6 @@ using UnityEngine;
 public class Dialog
 {
     public string NPCName;
-    public string[] sentences;
+    public List<string> sentences = new List<string>();
     public bool NPCTalkFirst;
-
-    public string[] getDialog()
-    {
-        return sentences;
-    }
-
-    public bool getNPCTalkFirst()
-    {
-        return NPCTalkFirst;
-    }
 }

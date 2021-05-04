@@ -9,11 +9,10 @@ public class InteractionNPC : InteractableObject
 
     protected override void OnInteractWithPlayer(PlayerInteraction playerInteraction)
     {
-        if (!_isInteracted)
-        {
-            _isInteracted = true;
-            ShowInteractionBubble(false);
+        dialogManager.SetActive(true);
+        if (dialogManager.GetComponent<DialogManager>().doneDialog) {
             dialogManager.GetComponent<DialogManager>().StartDialog(dialog);
         }
+
     }
 }

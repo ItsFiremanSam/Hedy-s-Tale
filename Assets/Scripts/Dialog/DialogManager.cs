@@ -6,12 +6,22 @@ using TMPro;
 public class DialogManager : MonoBehaviour
 {
     public TextMeshProUGUI textDisplay;
+    public TextMeshProUGUI textName;
     public Dialog dialog;
     public int index = 0;
     public float normalTypingSpeed;
     public float fastTypingSpeed;
     private float typingSpeed;
-    public bool _donePrinting = true;
+    public bool donePrinting = true;
+    public bool doneDialog = true;
+    private bool initalNPCTalkFirst;
+
+    private PlayerMovement _playerMovement;
+
+    private void Awake()
+    {
+        _playerMovement = FindObjectOfType<PlayerMovement>();
+    }
 
     IEnumerator PrintDialog()
     {
@@ -19,27 +29,30 @@ public class DialogManager : MonoBehaviour
         if (dialog.NPCTalkFirst)
         {
             dialog.NPCTalkFirst = false;
-            textDisplay.text += dialog.NPCName + ": ";
+            textName.text = dialog.NPCName;
         }
         else
         {
             dialog.NPCTalkFirst = true;
-            textDisplay.text += "Hedy: ";
+            textName.text = "Hedy";
         }
-        foreach (char letter in dialog.getDialog()[index].ToCharArray())
+
+        foreach (char letter in dialog.sentences[index].ToCharArray())
         {
             textDisplay.text += letter;
             yield return new WaitForSeconds(typingSpeed);
         }
         index++;
-        _donePrinting = true;
+        donePrinting = true;
     }
 
     void Update()
     {
+        doneDialog = false;
+        _playerMovement.CodingUIActive = true;
         if (Input.GetKeyDown(KeyCode.E))
         {
-            if (_donePrinting)
+            if (donePrinting)
             {
                 NextSentence();
             }
@@ -52,25 +65,30 @@ public class DialogManager : MonoBehaviour
 
     public void NextSentence()
     {
-        if (index < dialog.getDialog().Length)
+        if (index < dialog.sentences.Count)
         {
-            _donePrinting = false;
+            donePrinting = false;
             textDisplay.text = "";
+            textName.text = "";
             StartCoroutine(PrintDialog());
         }
         else
         {
             textDisplay.text = "";
+            textName.text = "";
             index = 0;
-            _donePrinting = false;
+            donePrinting = false;
+            doneDialog = true;
+            dialog.NPCTalkFirst = initalNPCTalkFirst;
+            _playerMovement.CodingUIActive = false;
             gameObject.SetActive(false);
         }
     }
 
     public void StartDialog(Dialog dialog)
     {
-        gameObject.SetActive(true);
         this.dialog = dialog;
+        initalNPCTalkFirst = dialog.NPCTalkFirst;
         StartCoroutine(PrintDialog());
     }
 }
