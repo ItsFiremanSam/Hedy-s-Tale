@@ -4,26 +4,27 @@ using UnityEngine;
 
 public abstract class InteractableObject : MonoBehaviour
 {
-    protected GameObject _interactionBubbleText;
+    protected GameObject _interactionText;
+    protected PlayerInteraction _player;
 
     // Is used to stop the interaction bubble from being displayed after it is activated.
     protected bool _isInteracted;
 
     void Start()
     {
-        _interactionBubbleText = transform.GetChild(0).gameObject;
+        _interactionText = transform.GetChild(0).gameObject;
         ShowInteractionBubble(false);
     }
 
     protected void ShowInteractionBubble(bool showBubble)
     {
-        if (!_isInteracted && showBubble)
+        if (showBubble)
         {
-            _interactionBubbleText.SetActive(true);
+            _interactionText.SetActive(true);
         }
         else
         {
-            _interactionBubbleText.SetActive(false);
+            _interactionText.SetActive(false);
         }
     }
 
@@ -34,20 +35,21 @@ public abstract class InteractableObject : MonoBehaviour
      */
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        PlayerInteraction player = collision.GetComponent<PlayerInteraction>();
-        if (player)
+        if (_isInteracted) return;
+        _player = collision.GetComponent<PlayerInteraction>();
+        if (_player)
         {
-            player.InteractionEvent += OnInteractWithPlayer;
+            _player.InteractionEvent += OnInteractWithPlayer;
             ShowInteractionBubble(true);
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        PlayerInteraction player = collision.GetComponent<PlayerInteraction>();
-        if (player)
+        _player = collision.GetComponent<PlayerInteraction>();
+        if (_player)
         {
-            player.InteractionEvent -= OnInteractWithPlayer;
+            _player.InteractionEvent -= OnInteractWithPlayer;
             ShowInteractionBubble(false);
         }
     }
