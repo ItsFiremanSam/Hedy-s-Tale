@@ -10,9 +10,8 @@ public class InteractionNPC : InteractableObject
     protected override void OnInteractWithPlayer(PlayerInteraction playerInteraction)
     {
         dialogManager.SetActive(true);
-        if (dialogManager.GetComponent<DialogManager>().doneDialog) {
+        if (dialogManager.GetComponent<DialogManager>().isDialogDone) {
             dialogManager.GetComponent<DialogManager>().StartDialog(dialog);
         }
-
     }
 }

@@ -54,7 +54,7 @@ MonoBehaviour:
   normalTypingSpeed: 0.1
   fastTypingSpeed: 0.001
   donePrinting: 0
-  doneDialog: 1
+  isDialogDone: 1
 --- !u!1 &826417936946759669
 GameObject:
   m_ObjectHideFlags: 0
