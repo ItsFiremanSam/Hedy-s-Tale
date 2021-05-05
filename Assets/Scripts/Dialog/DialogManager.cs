@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
+using UnityEngine.UI;
+using System;
 
 public class DialogManager : MonoBehaviour
 {
-    public TextMeshProUGUI textDisplay;
-    public TextMeshProUGUI textName;
+    public Text textDisplay;
+    public Text textName;
     public Dialog dialog;
     public int index = 0;
     public float normalTypingSpeed;
@@ -15,6 +16,7 @@ public class DialogManager : MonoBehaviour
     public bool isSentenceDonePrinting;
     public bool isDialogDone = true;
     private bool initalNPCTalkFirst;
+    private Action _onCompleteCallback;
 
     private PlayerMovement _playerMovement;
 
@@ -76,6 +78,10 @@ public class DialogManager : MonoBehaviour
         }
         else
         {
+            if (_onCompleteCallback != null)
+            {
+                _onCompleteCallback();
+            }
             ResetDialog();
         }
     }
@@ -90,15 +96,17 @@ public class DialogManager : MonoBehaviour
         isDialogDone = true;
         typingSpeed = normalTypingSpeed;
         dialog.NPCTalkFirst = initalNPCTalkFirst;
-        _playerMovement.CodingUIActive = false;
+        _playerMovement.DialogUIActive = false;
+        _onCompleteCallback = null;
         gameObject.SetActive(false);
     }
 
     //Starting the first sentence of the dialog
-    public void StartDialog(Dialog dialog)
+    public void StartDialog(Dialog dialog, Action onCompleteCallback = null)
     {
+        _onCompleteCallback = onCompleteCallback;
         isDialogDone = false;
-        _playerMovement.CodingUIActive = true;
+        _playerMovement.DialogUIActive = true;
         this.dialog = dialog;
         initalNPCTalkFirst = dialog.NPCTalkFirst;
         StartCoroutine(PrintDialog());

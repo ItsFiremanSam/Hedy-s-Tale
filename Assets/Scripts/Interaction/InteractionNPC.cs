@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class InteractionNPC : InteractableObject
 {
-    public GameObject dialogManager;
-    public Dialog dialog;
+    public DialogManager DialogManager;
+    public Dialog Dialog;
 
     protected override void OnInteractWithPlayer(PlayerInteraction playerInteraction)
     {
-        dialogManager.SetActive(true);
-        if (dialogManager.GetComponent<DialogManager>().isDialogDone) {
-            dialogManager.GetComponent<DialogManager>().StartDialog(dialog);
+        if (DialogManager.isDialogDone) {
+            DialogManager.gameObject.SetActive(true);
+            DialogManager.StartDialog(Dialog);
         }
     }
 }

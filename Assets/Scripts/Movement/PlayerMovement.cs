@@ -14,6 +14,8 @@ public class PlayerMovement : AnimatableEntity
     public bool AnimationActive;
     [HideInInspector]
     public bool CodingUIActive;
+    [HideInInspector]
+    public bool DialogUIActive;
 
     Rigidbody2D _rigidBody;
     Vector2 _currentVelocity;
@@ -28,7 +30,7 @@ public class PlayerMovement : AnimatableEntity
     private void Update()
     {
         HandleAnimationVariables();
-        if (!AnimationActive && !CodingUIActive)
+        if (!AnimationActive && !CodingUIActive && !DialogUIActive)
         {
             Move(new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized * Speed * Time.fixedDeltaTime);
         }

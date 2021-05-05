@@ -6,6 +6,9 @@ public class CodingPuzzle : InteractableObject
 {
     private CodingUIHandler _codingUIHandler;
     private AnimationTrigger _animationTrigger;
+    public DialogManager DialogManager;
+    public Dialog Dialog;
+    private PlayerInteraction _playerIntercation;
 
     public List<PuzzleBlock> Answer;
     [TextArea(4, 8)]
@@ -19,7 +22,17 @@ public class CodingPuzzle : InteractableObject
 
     protected override void OnInteractWithPlayer(PlayerInteraction playerInteraction)
     {
-        _codingUIHandler.ShowCodingUI(playerInteraction.Inventory, Answer, PuzzleDescription, OnPuzzleCompleteCallback, OnPuzzleWrongCallback);
+        _playerIntercation = playerInteraction;
+        if (DialogManager.isDialogDone)
+        {
+            DialogManager.gameObject.SetActive(true);
+            DialogManager.StartDialog(Dialog, ShowCodingUICallback);
+        }
+    }
+
+    public void ShowCodingUICallback()
+    {
+        _codingUIHandler.ShowCodingUI(_playerIntercation.Inventory, Answer, PuzzleDescription, OnPuzzleCompleteCallback, OnPuzzleWrongCallback);
     }
 
     // TODO: Make animation possible using animation waypoint system
