@@ -18287,6 +18287,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 3995703265517770628, guid: 8680ba4a456108643b730fe282511efa,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1524457166}
     - target: {fileID: 3995703265517770629, guid: 8680ba4a456108643b730fe282511efa,
         type: 3}
       propertyPath: m_Pivot.x
@@ -36062,6 +36067,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1866133720}
   m_PrefabAsset: {fileID: 0}
+--- !u!20 &1524457166 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 3712216123857522823, guid: f678f2556a837b24bbe551001a9f6622,
+    type: 3}
+  m_PrefabInstance: {fileID: 1866133720}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1557354476
 GameObject:
   m_ObjectHideFlags: 0
@@ -40293,45 +40304,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3712216123857522823, guid: f678f2556a837b24bbe551001a9f6622,
-        type: 3}
-      propertyPath: m_BackGroundColor.b
-      value: 0.89411765
-      objectReference: {fileID: 0}
-    - target: {fileID: 3712216123857522823, guid: f678f2556a837b24bbe551001a9f6622,
-        type: 3}
-      propertyPath: m_BackGroundColor.g
-      value: 0.8039216
-      objectReference: {fileID: 0}
-    - target: {fileID: 3712216123857522823, guid: f678f2556a837b24bbe551001a9f6622,
-        type: 3}
-      propertyPath: m_BackGroundColor.r
-      value: 0.37254903
-      objectReference: {fileID: 0}
     - target: {fileID: 3712216123857522824, guid: f678f2556a837b24bbe551001a9f6622,
         type: 3}
       propertyPath: m_Name
       value: Main Camera
-      objectReference: {fileID: 0}
-    - target: {fileID: 3712216123857522825, guid: f678f2556a837b24bbe551001a9f6622,
-        type: 3}
-      propertyPath: m_UpscaleRT
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3712216123857522825, guid: f678f2556a837b24bbe551001a9f6622,
-        type: 3}
-      propertyPath: m_PixelSnapping
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3712216123857522825, guid: f678f2556a837b24bbe551001a9f6622,
-        type: 3}
-      propertyPath: m_RefResolutionX
-      value: 320
-      objectReference: {fileID: 0}
-    - target: {fileID: 3712216123857522825, guid: f678f2556a837b24bbe551001a9f6622,
-        type: 3}
-      propertyPath: m_RefResolutionY
-      value: 180
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f678f2556a837b24bbe551001a9f6622, type: 3}
