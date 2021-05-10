@@ -3,13 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
+using System.Diagnostics;
+using Debug = UnityEngine.Debug;
 
 public class DialogManager : MonoBehaviour
 {
     public Text textDisplay;
     public Text textName;
     public Dialog dialog;
-    public int index = 0;
+    private int index = 0;
     public float normalTypingSpeed;
     public float fastTypingSpeed;
     private float typingSpeed;
@@ -44,7 +46,7 @@ public class DialogManager : MonoBehaviour
         }
         
         //Prints each letter of the sentence
-        foreach (char letter in dialog.sentences[index].ToCharArray())
+        foreach (char letter in dialog.sentences[index])
         {
             textDisplay.text += letter;
             yield return new WaitForSeconds(typingSpeed);
@@ -105,10 +107,25 @@ public class DialogManager : MonoBehaviour
     public void StartDialog(Dialog dialog, Action onCompleteCallback = null)
     {
         _onCompleteCallback = onCompleteCallback;
-        isDialogDone = false;
-        _playerMovement.DialogUIActive = true;
-        this.dialog = dialog;
-        initalNPCTalkFirst = dialog.NPCTalkFirst;
-        StartCoroutine(PrintDialog());
+        if (dialog.sentences.Count != 0)
+        {
+            isDialogDone = false;
+            _playerMovement.DialogUIActive = true;
+            this.dialog = dialog;
+            initalNPCTalkFirst = dialog.NPCTalkFirst;
+            StartCoroutine(PrintDialog());
+        }
+        else
+        {
+#if DEBUG
+            StackTrace trace = new StackTrace();
+            Debug.LogWarning($"Dialog is empty! \n {trace}");
+#endif
+            if (onCompleteCallback != null)
+            {
+                _onCompleteCallback();
+            }
+            ResetDialog();
+        }
     }
 }

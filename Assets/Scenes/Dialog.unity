@@ -35443,7 +35443,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 585459750, guid: 1c2cf4d78c717ec43b8d7c2db7dfde03, type: 3}
       propertyPath: Dialog.sentences.Array.size
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 585459750, guid: 1c2cf4d78c717ec43b8d7c2db7dfde03, type: 3}
       propertyPath: Dialog.sentences.Array.data[0]
