@@ -6,7 +6,6 @@ public class CodingPuzzle : InteractableObject
 {
     private CodingUIHandler _codingUIHandler;
     private AnimationTrigger _animationTrigger;
-    public DialogManager DialogManager;
     public Dialog Dialog;
     private PlayerInteraction _playerIntercation;
 
@@ -22,11 +21,12 @@ public class CodingPuzzle : InteractableObject
 
     protected override void OnInteractWithPlayer(PlayerInteraction playerInteraction)
     {
+        DialogManager dialogManager = GameObject.Find("Dialog Manager").GetComponent<DialogManager>();
         _playerIntercation = playerInteraction;
-        if (DialogManager.isDialogDone)
+
+        if (dialogManager.isDialogDone)
         {
-            DialogManager.gameObject.SetActive(true);
-            DialogManager.StartDialog(Dialog, ShowCodingUICallback);
+            dialogManager.StartDialog(Dialog, ShowCodingUICallback);
         }
     }
 

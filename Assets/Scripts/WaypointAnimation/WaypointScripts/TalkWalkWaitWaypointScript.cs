@@ -14,6 +14,7 @@ using UnityEngine;
 public class TalkWalkWaitWaypointScript : WaypointScript
 {
     public TalkAction TalkAction;
+    public Dialog dialog;
 
     // This speed multiplier will be multiplied by the speed of the subject and the multiplier of the waypointcollection
     public float SpeedMultiplier = 1;
@@ -32,6 +33,11 @@ public class TalkWalkWaitWaypointScript : WaypointScript
     {
         if (!noMoving) yield return subject.MoveTo(transform.position, speed * SpeedMultiplier);
         if (TalkAction.Seconds > 0) yield return subject.Speak(TalkAction);
+
+        //TODO: Add dialog
+        //DialogManager dialogManager = GameObject.Find("Dialog Manager").GetComponent<DialogManager>();
+        //dialogManager.StartDialog(dialog);
+
 
         IsDone = true;
     }
