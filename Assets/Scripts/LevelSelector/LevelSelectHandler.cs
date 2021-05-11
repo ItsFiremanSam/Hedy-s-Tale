@@ -32,7 +32,6 @@ public class LevelSelectHandler : MonoBehaviour
         foreach (CloudScript cloud in CloudContainer.GetComponentsInChildren<CloudScript>())
         {
             if (LevelSignEditor.CheckIfCloudInRadiusOfPreviousLevelSigns(cloud, activeLevelSigns))
-                //if (LevelSignEditor.CheckIfCloudInRadiusOfLevelSign(cloud, GetComponentsInChildren<LevelSignScript>()[curMaxLevel]))
             {
                 cloud.gameObject.SetActive(false);
             }
