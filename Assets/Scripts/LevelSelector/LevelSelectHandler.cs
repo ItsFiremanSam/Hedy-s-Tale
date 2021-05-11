@@ -1,8 +1,6 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class LevelSelectHandler : MonoBehaviour
 {
@@ -16,17 +14,33 @@ public class LevelSelectHandler : MonoBehaviour
     [Range(0, 1)]
     public float LowerLevelTransparency = 0;
 
-    private void Awake()
+    private void Start()
     {
         if (!CloudContainer.gameObject.activeSelf)
             CloudContainer.gameObject.SetActive(true);
 
-        foreach (CloudScript cloudScript in CloudContainer.GetComponentsInChildren<CloudScript>())
-        {
-            if (cloudScript.dissapearLevel <= curMaxLevel) cloudScript.gameObject.SetActive(false);
-            else cloudScript.gameObject.SetActive(true);
+        HandleActiveClouds();
+    }
 
-            cloudScript.GetComponent<CanvasGroup>().alpha = 1;
+    public void HandleActiveClouds()
+    {
+        int[] temp =
+            GetComponentsInChildren<LevelSignScript>().Select(item => item.transform.GetSiblingIndex()).ToArray();
+        LevelSignScript[] activeLevelSigns =
+            GetComponentsInChildren<LevelSignScript>()
+            .Where(item => item.transform.GetSiblingIndex() <= curMaxLevel).ToArray();
+        foreach (CloudScript cloud in CloudContainer.GetComponentsInChildren<CloudScript>())
+        {
+            if (LevelSignEditor.CheckIfCloudInRadiusOfPreviousLevelSigns(cloud, activeLevelSigns))
+                //if (LevelSignEditor.CheckIfCloudInRadiusOfLevelSign(cloud, GetComponentsInChildren<LevelSignScript>()[curMaxLevel]))
+            {
+                cloud.gameObject.SetActive(false);
+            }
+            else
+            {
+                cloud.gameObject.SetActive(true);
+                cloud.GetComponent<CanvasGroup>().alpha = 1;
+            }
         }
     }
 
@@ -42,17 +56,18 @@ public class LevelSelectHandler : MonoBehaviour
         }
     }
 
-    // TODO: Turn level selecting off during animation
     public void GoToNextLevel()
     {
-        if (curMaxLevel > transform.childCount - 1) return;
+        if (curMaxLevel >= transform.childCount) return;
 
         curMaxLevel++;
-        CloudScript[] cloudsToAnimate = 
-            CloudContainer.GetComponentsInChildren<CloudScript>().Where(c => c.dissapearLevel == curMaxLevel).ToArray();
+        LevelSignScript currentLevelSign = GetComponentsInChildren<LevelSignScript>()[curMaxLevel];
 
-        foreach (CloudScript cloudScript in cloudsToAnimate)
-            cloudScript.StartDissapearingAnimation(0.5f, Random.Range(0, 360), 100);
+        foreach (CloudScript cloud in CloudContainer.GetComponentsInChildren<CloudScript>()
+            .Where(c => LevelSignEditor.CheckIfCloudInRadiusOfLevelSign(c, currentLevelSign)))
+        {
+            cloud.StartDissapearingAnimation(0.5f, Random.Range(0, 360), 100);
+        }
     }
 
     private void OnValidate()

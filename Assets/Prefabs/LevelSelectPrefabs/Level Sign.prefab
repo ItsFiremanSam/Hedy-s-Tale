@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4308950151925514477}
   - component: {fileID: -6609907041371496926}
   m_Layer: 5
-  m_Name: LevelSign
+  m_Name: Level Sign
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36,8 +36,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -410, y: -389}
-  m_SizeDelta: {x: 64, y: 64}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 32, y: 32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4308950151925514451
 CanvasRenderer:
@@ -131,6 +131,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98f2e69d2a42b5d45ad1d328d864bbf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path:
-    points: []
-  Points: []
+  CloudRadius: 250

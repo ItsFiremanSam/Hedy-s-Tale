@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
@@ -7,6 +8,7 @@ public class LevelSignScript : MonoBehaviour
 {
     private LevelSelectHandler _levelSelect;
     private Button _button;
+    public float CloudRadius = 100;
 
     private void Awake()
     {
@@ -16,9 +18,14 @@ public class LevelSignScript : MonoBehaviour
         // TODO: Add hover on buttons / more obvious level selection
     }
 
+    private void OnDrawGizmos()
+    {
+        GizmosCircle.Draw(transform.position, CloudRadius, Color.green);
+    }
+
     public void GoToLevel()
     {
-        if (_levelSelect.curMaxLevel < transform.GetSiblingIndex() + 1) return;
+        if (_levelSelect.curMaxLevel < transform.GetSiblingIndex()) return;
         // TODO: Do level transition
         Debug.Log($"Going to level: {name}");
     }

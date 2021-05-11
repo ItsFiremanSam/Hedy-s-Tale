@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Linq;
 using UnityEditor;
 using UnityEngine;
 
@@ -9,44 +8,61 @@ public class LevelSignEditor : Editor
 
     private void OnSceneGUI()
     {
-        Draw((LevelSignScript)target);
+        if (!Application.isPlaying)
+        {
+            Draw();
+        }
     }
 
-    private void Draw(LevelSignScript levelSign)
+    /// <summary>
+    /// This function is used for debuggin which clouds will dissapear for every levelsign when selected
+    /// </summary>
+    private void Draw()
     {
+        LevelSignScript levelSign = (LevelSignScript)target;
         LevelSelectHandler levelSelect = levelSign.GetComponentInParent<LevelSelectHandler>();
+        if (!levelSelect) return;
+        
         Transform cloudContainer = levelSelect.CloudContainer;
         if (!cloudContainer.gameObject.activeSelf) cloudContainer.gameObject.SetActive(true);
 
-        int curLevel = levelSign.transform.GetSiblingIndex() + 1;
+        int curSiblingIndex = levelSign.transform.GetSiblingIndex();
+        LevelSignScript[] previousLevelSigns =
+            levelSelect.GetComponentsInChildren<LevelSignScript>()
+            .Where(item => item.transform.GetSiblingIndex() < curSiblingIndex)
+            .ToArray();
+
         foreach (CloudScript cloud in cloudContainer.GetComponentsInChildren<CloudScript>())
         {
             CanvasGroup cloudCanvasGroup = cloud.GetComponent<CanvasGroup>();
-            if (cloud.dissapearLevel < curLevel)
+            if (CheckIfCloudInRadiusOfPreviousLevelSigns(cloud, previousLevelSigns))
             {
                 cloudCanvasGroup.alpha = levelSelect.LowerLevelTransparency;
-                continue;
             }
-            if (cloud.dissapearLevel > curLevel)
+            else if (CheckIfCloudInRadiusOfLevelSign(cloud, levelSign))
             {
-                cloudCanvasGroup.alpha = levelSelect.HigherLevelTransparency;
-                Handles.color = Color.green;
-                if (Handles.Button(cloud.transform.position, Quaternion.identity, 20, 20, Handles.RectangleHandleCap))
-                {
-                    Undo.RecordObject(target, "Set cloud level");
-                    cloud.dissapearLevel = curLevel;
-                }
+                cloudCanvasGroup.alpha = levelSelect.SameLevelTransparency;
             }
             else
             {
-                cloudCanvasGroup.alpha = levelSelect.SameLevelTransparency;
-                Handles.color = Color.red;
-                if (Handles.Button(cloud.transform.position, Quaternion.identity, 20, 20, Handles.RectangleHandleCap))
-                {
-                    Undo.RecordObject(target, "Reset cloud level");
-                    cloud.dissapearLevel = int.MaxValue;
-                }
+                cloudCanvasGroup.alpha = levelSelect.HigherLevelTransparency;
             }
         }
+    }
+
+    public static bool CheckIfCloudInRadiusOfPreviousLevelSigns(CloudScript cloud, LevelSignScript[] levelSigns) 
+    {
+        foreach (LevelSignScript levelSign in levelSigns)
+        {
+            if (CheckIfCloudInRadiusOfLevelSign(cloud, levelSign)) 
+                return true;
+        }
+        return false;
+    }
+
+    public static bool CheckIfCloudInRadiusOfLevelSign(CloudScript cloud, LevelSignScript levelSign)
+    {
+        return (cloud.GetComponent<RectTransform>().position - levelSign.GetComponent<RectTransform>().position).sqrMagnitude 
+            <= levelSign.CloudRadius * levelSign.CloudRadius;
     }
 }

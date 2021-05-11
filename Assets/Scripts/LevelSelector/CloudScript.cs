@@ -1,14 +1,13 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(CanvasGroup))]
 public class CloudScript : MonoBehaviour
 {
-    [HideInInspector]
-    public int dissapearLevel = int.MaxValue;
-
     private CanvasGroup _canvasGroup;
-    private bool startAnimation = false;
+    private bool _startAnimation = false;
 
     private float _animationTimer;
     private float _alphaChange;
@@ -27,10 +26,10 @@ public class CloudScript : MonoBehaviour
             _canvasGroup.alpha -= _alphaChange * Time.deltaTime;
             transform.position += _animationDirection * _speed * Time.deltaTime;
         }
-        else if (startAnimation)
+        else if (_startAnimation)
         {
             gameObject.SetActive(false);
-            startAnimation = false;
+            _startAnimation = false;
         }
     }
 
@@ -40,6 +39,6 @@ public class CloudScript : MonoBehaviour
         _animationTimer = Time.time + animationTime;
         _animationDirection = (Quaternion.AngleAxis(animationAngleInDegrees, Vector3.forward) * Vector3.right).normalized;
         _speed = speed;
-        startAnimation = true;
+        _startAnimation = true;
     }
 }

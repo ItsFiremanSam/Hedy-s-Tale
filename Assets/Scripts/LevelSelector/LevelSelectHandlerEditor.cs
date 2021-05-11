@@ -4,6 +4,9 @@ using UnityEngine;
 [CustomEditor(typeof(LevelSelectHandler))]
 public class LevelSelectHandlerEditor : Editor
 {
+    /// <summary>
+    /// For debugging only
+    /// </summary>
     public override void OnInspectorGUI()
     {
         DrawDefaultInspector();
