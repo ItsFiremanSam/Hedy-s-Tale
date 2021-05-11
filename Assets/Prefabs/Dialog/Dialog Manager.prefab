@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &826417936600935954
 Transform:
   m_ObjectHideFlags: 0
@@ -50,8 +50,7 @@ MonoBehaviour:
     NPCName: 
     sentences: []
     NPCTalkFirst: 0
-  index: 0
-  normalTypingSpeed: 0.1
+  normalTypingSpeed: 0.06
   fastTypingSpeed: 0.001
   isSentenceDonePrinting: 0
   isDialogDone: 1
@@ -305,7 +304,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 0.82
 --- !u!1 &7978374072607800566
 GameObject:
   m_ObjectHideFlags: 0

@@ -21,7 +21,7 @@ public class CodingPuzzle : InteractableObject
 
     protected override void OnInteractWithPlayer(PlayerInteraction playerInteraction)
     {
-        DialogManager dialogManager = GameObject.Find("Dialog Manager").GetComponent<DialogManager>();
+        DialogManager dialogManager = Resources.FindObjectsOfTypeAll<DialogManager>()[0];
         _playerIntercation = playerInteraction;
 
         if (dialogManager.isDialogDone)

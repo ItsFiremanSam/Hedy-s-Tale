@@ -26,8 +26,6 @@ public class DialogManager : MonoBehaviour
     private void Awake()
     {
         _playerMovement = FindObjectOfType<PlayerMovement>();
-        _canvas = GetComponentInChildren<Canvas>().gameObject;
-        _canvas.SetActive(false);
     }
 
     IEnumerator PrintDialog()
@@ -103,7 +101,7 @@ public class DialogManager : MonoBehaviour
         dialog.NPCTalkFirst = initalNPCTalkFirst;
         _playerMovement.DialogUIActive = false;
         _onCompleteCallback = null;
-        _canvas.SetActive(false);
+        gameObject.SetActive(false);
     }
 
     //Starting the first sentence of the dialog
@@ -112,8 +110,7 @@ public class DialogManager : MonoBehaviour
         _onCompleteCallback = onCompleteCallback;
         if (dialog.sentences.Count != 0)
         {
-            _canvas.SetActive(true);
-
+            gameObject.SetActive(true);
             isDialogDone = false;
             _playerMovement.DialogUIActive = true;
             this.dialog = dialog;
@@ -130,7 +127,6 @@ public class DialogManager : MonoBehaviour
             {
                 _onCompleteCallback();
             }
-            ResetDialog();
         }
     }
 }
