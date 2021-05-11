@@ -6,8 +6,12 @@ public class CodingPuzzle : InteractableObject
 {
     private CodingUIHandler _codingUIHandler;
     private AnimationTrigger _animationTrigger;
-    public Dialog Dialog;
+    public Dialog DialogFirst;
+    public Dialog DialogHasAnswer;
+    public Dialog DialogPuzzleCompleted;
+    private DialogManager dialogManager;
     private PlayerInteraction _playerIntercation;
+    private bool PuzzleComplete;
 
     public List<PuzzleBlock> Answer;
     [TextArea(4, 8)]
@@ -17,16 +21,35 @@ public class CodingPuzzle : InteractableObject
     {
         _codingUIHandler = FindObjectOfType<CodingUIHandler>();
         _animationTrigger = GetComponentInChildren<AnimationTrigger>();
+        dialogManager = Resources.FindObjectsOfTypeAll<DialogManager>()[0];
     }
 
     protected override void OnInteractWithPlayer(PlayerInteraction playerInteraction)
     {
-        DialogManager dialogManager = Resources.FindObjectsOfTypeAll<DialogManager>()[0];
         _playerIntercation = playerInteraction;
 
         if (dialogManager.isDialogDone)
         {
-            dialogManager.StartDialog(Dialog, ShowCodingUICallback);
+            bool hasAnswer = true;
+            foreach (PuzzleBlock block in Answer)
+            {
+                if (!_playerIntercation.Inventory.Contains(block))
+                {
+                    hasAnswer = false;
+                }
+            }
+            if (PuzzleComplete)
+            {
+                dialogManager.StartDialog(DialogPuzzleCompleted);
+            }
+            else if (hasAnswer)
+            {
+                dialogManager.StartDialog(DialogHasAnswer, ShowCodingUICallback);
+            }
+            else
+            {
+                dialogManager.StartDialog(DialogFirst, ShowCodingUICallback);
+            }
         }
     }
 
@@ -38,10 +61,11 @@ public class CodingPuzzle : InteractableObject
     // TODO: Make animation possible using animation waypoint system
     public void OnPuzzleCompleteCallback()
     {
-        _isInteracted = true;
-        _player.InteractionEvent -= OnInteractWithPlayer;
-        ShowInteractionBubble(false);
+        //_isInteracted = true;
+        //_player.InteractionEvent -= OnInteractWithPlayer;
+        //ShowInteractionBubble(false);
         _animationTrigger.StartAnimation();
+        PuzzleComplete = true;
         Debug.Log("Correct answer");
     }
 

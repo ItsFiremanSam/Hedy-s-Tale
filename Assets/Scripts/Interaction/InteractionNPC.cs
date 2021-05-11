@@ -7,7 +7,6 @@ public class InteractionNPC : InteractableObject
     //public GameObject dialogController;
     public Dialog Dialog;
 
-
     protected override void OnInteractWithPlayer(PlayerInteraction playerInteraction)
     {
         DialogManager dialogManager = Resources.FindObjectsOfTypeAll<DialogManager>()[0];
