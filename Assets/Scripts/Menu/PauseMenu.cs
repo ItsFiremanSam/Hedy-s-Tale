@@ -11,6 +11,9 @@ public class PauseMenu : MonoBehaviour
     public GameObject confirmationContainer;
     public Animator animator;
 
+    private const string OptionMainMenu = "MainMenu";
+    private const string OptionQuitGame = "QuitGame";
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -54,13 +57,14 @@ public class PauseMenu : MonoBehaviour
 
         switch (option)
         {
-            case "main_menu":
+            case OptionMainMenu:
                 yesButton.GetComponent<Button>().onClick.AddListener(LoadMainMenu);
                 break;
-            case "quit_game":
+            case OptionQuitGame:
                 yesButton.GetComponent<Button>().onClick.AddListener(QuitGame);
                 break;
             default:
+                Debug.LogError("Your entered option does not match any of the available options!");
                 break;
         }
     }
