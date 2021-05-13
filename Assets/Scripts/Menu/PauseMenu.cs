@@ -11,7 +11,6 @@ public class PauseMenu : MonoBehaviour
     public GameObject confirmationContainer;
     public Animator animator;
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
