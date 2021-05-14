@@ -40,14 +40,17 @@ public class CodingPuzzle : InteractableObject
             }
             if (PuzzleComplete)
             {
+                // if the puzzle is finished
                 dialogManager.StartDialog(DialogPuzzleCompleted);
             }
             else if (hasAnswer)
             {
+                // if Hedy got the answer before the puzzle
                 dialogManager.StartDialog(DialogHasAnswer, ShowCodingUICallback);
             }
             else
             {
+                // if Hedy doesn't got the answer before the puzzle
                 dialogManager.StartDialog(DialogFirst, ShowCodingUICallback);
             }
         }
@@ -64,9 +67,10 @@ public class CodingPuzzle : InteractableObject
         //_isInteracted = true;
         //_player.InteractionEvent -= OnInteractWithPlayer;
         //ShowInteractionBubble(false);
+
+        dialogManager.StartDialog(DialogPuzzleCompleted);
         _animationTrigger.StartAnimation();
         PuzzleComplete = true;
-        Debug.Log("Correct answer");
     }
 
     // Used for puzzles with limited amount of tries or similar
