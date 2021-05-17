@@ -34,10 +34,17 @@ public class TalkWalkWaitWaypointScript : WaypointScript
         if (!noMoving) yield return subject.MoveTo(transform.position, speed * SpeedMultiplier);
         if (TalkAction.Seconds > 0) yield return subject.Speak(TalkAction);
 
-        //TODO: Add dialog
-        //DialogManager dialogManager = GameObject.Find("Dialog Manager").GetComponent<DialogManager>();
-        //dialogManager.StartDialog(dialog);
 
+        if (dialog.sentences.Count > 0)
+        {
+            DialogManager dialogManager = Resources.FindObjectsOfTypeAll<DialogManager>()[0];
+            dialogManager.StartDialog(dialog);
+
+            while (!dialogManager.isDialogDone)
+            {
+                yield return null;
+            }
+        }
 
         IsDone = true;
     }
