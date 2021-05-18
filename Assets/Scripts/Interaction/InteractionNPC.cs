@@ -10,8 +10,7 @@ public class InteractionNPC : InteractableObject
     protected override void OnInteractWithPlayer(PlayerInteraction playerInteraction)
     {
         DialogManager dialogManager = Resources.FindObjectsOfTypeAll<DialogManager>()[0];
-        if (dialogManager.isDialogDone) {
-            dialogManager.StartDialog(Dialog);
-        }
+        if (!dialogManager.DialogActive)
+            StartCoroutine(dialogManager.StartDialog(Dialog));
     }
 }

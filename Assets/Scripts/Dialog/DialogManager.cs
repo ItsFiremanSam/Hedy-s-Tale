@@ -8,87 +8,52 @@ using Debug = UnityEngine.Debug;
 
 public class DialogManager : MonoBehaviour
 {
-    public Text textDisplay;
-    public Text textName;
-    public Dialog dialog;
-    private int index = 0;
-    public float normalTypingSpeed;
-    public float fastTypingSpeed;
-    public float _typingSpeed;
-    public bool isSentenceDonePrinting;
-    public bool isDialogDone = true;
-    private bool initalNPCTalkFirst;
-    private Action _onCompleteCallback;
+    public Text textDisplay, textName;
+    public float normalTalkingSpeed, fastTalkingSpeed;
+    public bool DialogActive { get; private set; }
+    private float _currentTalkingSpeed;
+    private const string _protagonistName = "Hedy";
 
     private PlayerMovement _playerMovement;
-    public GameObject container;
+    private GameObject _container;
 
     private void Awake()
     {
         _playerMovement = FindObjectOfType<PlayerMovement>();
-        _typingSpeed = normalTypingSpeed;
-        container.SetActive(false);
+        _currentTalkingSpeed = normalTalkingSpeed;
+        _container = transform.GetChild(0).gameObject;
+        _container.SetActive(false);
     }
 
-    IEnumerator PrintDialog()
+    IEnumerator PrintDialog(Dialog dialog)
     {
-        isSentenceDonePrinting = false;
-        textDisplay.text = "";
-        textName.text = "";
-        _typingSpeed = normalTypingSpeed;
-        //Switch between NPC and Hedy talking
-        if (dialog.NPCTalkFirst)
+        ShowDialog();
+        bool currentTalking = dialog.NPCTalkFirst;
+        foreach (string sentence in dialog.sentences)
         {
-            dialog.NPCTalkFirst = false;
-            textName.text = dialog.NPCName;
-        }
-        else
-        {
-            dialog.NPCTalkFirst = true;
-            textName.text = "Hedy";
-        }
-        
-        //Prints each letter of the sentence
-        foreach (char letter in dialog.sentences[index])
-        {
-            textDisplay.text += letter;
-            yield return new WaitForSeconds(_typingSpeed);
-        }
-        index++;
-        isSentenceDonePrinting = true;
-    }
-
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            //If the sentence is still printing, then fast forward the typing speed of that sentence. Otherwise go to the next sentence
-            if (isSentenceDonePrinting)
-            {
-                NextSentence();
-            }
+            //Switch between NPC and Hedy talking
+            if (currentTalking)
+                textName.text = dialog.NPCName;
             else
-            {
-                _typingSpeed = fastTypingSpeed;
-            }
-        }
-    }
+                textName.text = _protagonistName;
 
-    //Go to the next sentence if there's a sentence, otherwise close the dialog and reset it.
-    public void NextSentence()
-    {
-        if (index < dialog.sentences.Count)
-        {
-            StartCoroutine(PrintDialog());
-        }
-        else
-        {
-            if (_onCompleteCallback != null)
+            yield return new WaitForEndOfFrame();
+            Coroutine coroutine = StartCoroutine(AccelerateTalking());
+
+            //Prints each letter of the sentence
+            foreach (char letter in sentence)
             {
-                _onCompleteCallback();
+                textDisplay.text += letter;
+                yield return new WaitForSeconds(_currentTalkingSpeed);
             }
-            HideDialog();
+
+            StopCoroutine(coroutine);
+            yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.E));
+            ClearDialog();
+            currentTalking = !currentTalking;
         }
+
+        HideDialog();
     }
 
     //Reset the dialog so the dialog can be used multiple times
@@ -96,54 +61,42 @@ public class DialogManager : MonoBehaviour
     {
         textDisplay.text = "";
         textName.text = "";
-        index = 0;
-        isSentenceDonePrinting = false;
-        isDialogDone = true;
-        _typingSpeed = normalTypingSpeed;
-        dialog.NPCTalkFirst = initalNPCTalkFirst;
+        _currentTalkingSpeed = normalTalkingSpeed;
         _playerMovement.DialogUIActive = false;
-        _onCompleteCallback = null;
-        container.SetActive(false);
+        _container.SetActive(false);
+        DialogActive = false;
     }
 
     public void ClearDialog()
     {
         textDisplay.text = "";
         textName.text = "";
-        _typingSpeed = normalTypingSpeed;
-        isSentenceDonePrinting = false;
+        _currentTalkingSpeed = normalTalkingSpeed;
     }
 
     public void ShowDialog()
     {
-        container.SetActive(true);
-        isDialogDone = false;
+        _container.SetActive(true);
         _playerMovement.DialogUIActive = true;
-        _typingSpeed = normalTypingSpeed;
-        initalNPCTalkFirst = dialog.NPCTalkFirst;
+        _currentTalkingSpeed = normalTalkingSpeed;
+        DialogActive = true;
         ClearDialog();
     }
 
-    //Starting the first sentence of the dialog
-    public void StartDialog(Dialog dialog, Action onCompleteCallback = null)
+    private IEnumerator AccelerateTalking()
     {
-        _onCompleteCallback = onCompleteCallback;
-        if (dialog.sentences.Count != 0)
+        yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.E));
+        _currentTalkingSpeed = fastTalkingSpeed;
+    }
+
+    //Starting the first sentence of the dialog
+    public IEnumerator StartDialog(Dialog dialog)
+    {
+        if (dialog.sentences.Count == 0)
         {
-            this.dialog = dialog;
-            ShowDialog();
-            StartCoroutine(PrintDialog());
+            Debug.LogWarning($"Dialog is empty!");
+            yield return null;
         }
-        else
-        {
-#if DEBUG
-            StackTrace trace = new StackTrace();
-            Debug.LogWarning($"Dialog is empty! \n {trace}");
-#endif
-            if (onCompleteCallback != null)
-            {
-                _onCompleteCallback();
-            }
-        }
+        yield return PrintDialog(dialog);
     }
 }

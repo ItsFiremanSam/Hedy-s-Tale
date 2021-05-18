@@ -31,6 +31,6 @@ public class InteractionChest : InteractableObject
         yield return new WaitForSeconds(1.5f);
 
         DialogManager dialogManager = Resources.FindObjectsOfTypeAll<DialogManager>()[0];
-        dialogManager.StartDialog(dialog);
+        yield return dialogManager.StartDialog(dialog);
     }
 }

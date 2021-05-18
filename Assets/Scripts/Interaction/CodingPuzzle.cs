@@ -27,48 +27,41 @@ public class CodingPuzzle : InteractableObject
     protected override void OnInteractWithPlayer(PlayerInteraction playerInteraction)
     {
         _playerIntercation = playerInteraction;
+        StartCoroutine(OnInteract());
+    }
 
-        if (dialogManager.isDialogDone && !_codingUIHandler.CodingUIContainer.activeSelf)
+    public IEnumerator OnInteract()
+    {
+        if (dialogManager.DialogActive || _codingUIHandler.CodingUIContainer.activeSelf)
+            yield break;
+
+        bool hasAnswer = true;
+        foreach (PuzzleBlock block in Answer)
         {
-            bool hasAnswer = true;
-            foreach (PuzzleBlock block in Answer)
-            {
-                if (!_playerIntercation.Inventory.Contains(block))
-                {
-                    hasAnswer = false;
-                }
-            }
-            if (PuzzleComplete)
-            {
-                // if the puzzle is finished
-                dialogManager.StartDialog(DialogPuzzleCompleted);
-            }
-            else if (hasAnswer)
-            {
-                // if Hedy got the answer before the puzzle
-                dialogManager.StartDialog(DialogHasAnswer, ShowCodingUICallback);
-            }
-            else
-            {
-                // if Hedy doesn't got the answer before the puzzle
-                dialogManager.StartDialog(DialogFirst, ShowCodingUICallback);
-            }
+            if (!_playerIntercation.Inventory.Contains(block))
+                hasAnswer = false;
+        }
+        if (PuzzleComplete)
+        {
+            // if the puzzle is finished
+            yield return dialogManager.StartDialog(DialogPuzzleCompleted);
+        }
+        else if (hasAnswer)
+        {
+            // if Hedy got the answer before the puzzle
+            yield return dialogManager.StartDialog(DialogHasAnswer);
+            _codingUIHandler.ShowCodingUI(_playerIntercation.Inventory, Answer, PuzzleDescription, OnPuzzleCompleteCallback, OnPuzzleWrongCallback);
+        }
+        else
+        {
+            // if Hedy doesn't got the answer before the puzzle
+            yield return dialogManager.StartDialog(DialogFirst);
+            _codingUIHandler.ShowCodingUI(_playerIntercation.Inventory, Answer, PuzzleDescription, OnPuzzleCompleteCallback, OnPuzzleWrongCallback);
         }
     }
 
-    public void ShowCodingUICallback()
-    {
-        _codingUIHandler.ShowCodingUI(_playerIntercation.Inventory, Answer, PuzzleDescription, OnPuzzleCompleteCallback, OnPuzzleWrongCallback);
-    }
-
-    // TODO: Make animation possible using animation waypoint system
     public void OnPuzzleCompleteCallback()
     {
-        //_isInteracted = true;
-        //_player.InteractionEvent -= OnInteractWithPlayer;
-        //ShowInteractionBubble(false);
-
-        dialogManager.StartDialog(DialogPuzzleCompleted);
         _animationTrigger.StartAnimation();
         PuzzleComplete = true;
     }
