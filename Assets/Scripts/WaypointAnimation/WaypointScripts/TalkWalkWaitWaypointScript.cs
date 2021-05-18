@@ -37,7 +37,7 @@ public class TalkWalkWaitWaypointScript : WaypointScript
 
         if (dialog.sentences.Count > 0)
         {
-            DialogManager dialogManager = Resources.FindObjectsOfTypeAll<DialogManager>()[0];
+            DialogManager dialogManager = DialogManager.Instance;
             yield return dialogManager.StartDialog(dialog);
         }
 

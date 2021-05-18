@@ -30,7 +30,7 @@ public class InteractionChest : InteractableObject
         //yield on a new YieldInstruction that waits for 5 seconds.
         yield return new WaitForSeconds(1.5f);
 
-        DialogManager dialogManager = Resources.FindObjectsOfTypeAll<DialogManager>()[0];
+        DialogManager dialogManager = DialogManager.Instance;
         yield return dialogManager.StartDialog(dialog);
     }
 }

@@ -16,6 +16,7 @@ public class DialogManager : MonoBehaviour
 
     private PlayerMovement _playerMovement;
     private GameObject _container;
+    public static DialogManager Instance { get => FindObjectOfType<DialogManager>(); }
 
     private void Awake()
     {

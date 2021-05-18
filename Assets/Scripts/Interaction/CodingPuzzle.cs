@@ -21,7 +21,7 @@ public class CodingPuzzle : InteractableObject
     {
         _codingUIHandler = FindObjectOfType<CodingUIHandler>();
         _animationTrigger = GetComponentInChildren<AnimationTrigger>();
-        dialogManager = Resources.FindObjectsOfTypeAll<DialogManager>()[0];
+        dialogManager = DialogManager.Instance;
     }
 
     protected override void OnInteractWithPlayer(PlayerInteraction playerInteraction)
