@@ -28,7 +28,7 @@ public class CodingPuzzle : InteractableObject
     {
         _playerIntercation = playerInteraction;
 
-        if (dialogManager.isDialogDone)
+        if (dialogManager.isDialogDone && !_codingUIHandler.CodingUIContainer.activeSelf)
         {
             bool hasAnswer = true;
             foreach (PuzzleBlock block in Answer)

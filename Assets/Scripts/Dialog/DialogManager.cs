@@ -14,18 +14,20 @@ public class DialogManager : MonoBehaviour
     private int index = 0;
     public float normalTypingSpeed;
     public float fastTypingSpeed;
-    private float typingSpeed;
+    public float _typingSpeed;
     public bool isSentenceDonePrinting;
     public bool isDialogDone = true;
     private bool initalNPCTalkFirst;
     private Action _onCompleteCallback;
 
     private PlayerMovement _playerMovement;
-    private GameObject _canvas;
+    public GameObject container;
 
     private void Awake()
     {
         _playerMovement = FindObjectOfType<PlayerMovement>();
+        _typingSpeed = normalTypingSpeed;
+        container.SetActive(false);
     }
 
     IEnumerator PrintDialog()
@@ -33,7 +35,7 @@ public class DialogManager : MonoBehaviour
         isSentenceDonePrinting = false;
         textDisplay.text = "";
         textName.text = "";
-        typingSpeed = normalTypingSpeed;
+        _typingSpeed = normalTypingSpeed;
         //Switch between NPC and Hedy talking
         if (dialog.NPCTalkFirst)
         {
@@ -50,7 +52,7 @@ public class DialogManager : MonoBehaviour
         foreach (char letter in dialog.sentences[index])
         {
             textDisplay.text += letter;
-            yield return new WaitForSeconds(typingSpeed);
+            yield return new WaitForSeconds(_typingSpeed);
         }
         index++;
         isSentenceDonePrinting = true;
@@ -67,7 +69,7 @@ public class DialogManager : MonoBehaviour
             }
             else
             {
-                typingSpeed = fastTypingSpeed;
+                _typingSpeed = fastTypingSpeed;
             }
         }
     }
@@ -85,23 +87,41 @@ public class DialogManager : MonoBehaviour
             {
                 _onCompleteCallback();
             }
-            ResetDialog();
+            HideDialog();
         }
     }
 
     //Reset the dialog so the dialog can be used multiple times
-    public void ResetDialog()
+    public void HideDialog()
     {
         textDisplay.text = "";
         textName.text = "";
         index = 0;
         isSentenceDonePrinting = false;
         isDialogDone = true;
-        typingSpeed = normalTypingSpeed;
+        _typingSpeed = normalTypingSpeed;
         dialog.NPCTalkFirst = initalNPCTalkFirst;
         _playerMovement.DialogUIActive = false;
         _onCompleteCallback = null;
-        gameObject.SetActive(false);
+        container.SetActive(false);
+    }
+
+    public void ClearDialog()
+    {
+        textDisplay.text = "";
+        textName.text = "";
+        _typingSpeed = normalTypingSpeed;
+        isSentenceDonePrinting = false;
+    }
+
+    public void ShowDialog()
+    {
+        container.SetActive(true);
+        isDialogDone = false;
+        _playerMovement.DialogUIActive = true;
+        _typingSpeed = normalTypingSpeed;
+        initalNPCTalkFirst = dialog.NPCTalkFirst;
+        ClearDialog();
     }
 
     //Starting the first sentence of the dialog
@@ -110,11 +130,8 @@ public class DialogManager : MonoBehaviour
         _onCompleteCallback = onCompleteCallback;
         if (dialog.sentences.Count != 0)
         {
-            gameObject.SetActive(true);
-            isDialogDone = false;
-            _playerMovement.DialogUIActive = true;
             this.dialog = dialog;
-            initalNPCTalkFirst = dialog.NPCTalkFirst;
+            ShowDialog();
             StartCoroutine(PrintDialog());
         }
         else
