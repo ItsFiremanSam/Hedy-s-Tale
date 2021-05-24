@@ -101,20 +101,4 @@ public class PlayerMovement : AnimatableEntity
             while (!Move(velNorm)) yield return null;
         }
     }
-
-
-
-    public override IEnumerator Speak(TalkAction ta)
-    {
-        // TODO: Replace speaking with the new dialog system
-
-        //float endTime = Time.time + ta.Seconds;
-        // TODO: Start speech bubble
-        //speechBubble.text = ta.Message;
-        //while (Time.time < endTime) yield return null;
-        //speechBubble.text = "";
-        // TODO: Delete speech bubble
-
-        yield return null;
-    }
 }
