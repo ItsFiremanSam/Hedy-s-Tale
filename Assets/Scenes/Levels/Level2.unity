@@ -35018,7 +35018,7 @@ PrefabInstance:
     - target: {fileID: 885144594198433605, guid: 74b86e0c52c8a2b4686fab7b6c3a3fa1,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 885144594198433605, guid: 74b86e0c52c8a2b4686fab7b6c3a3fa1,
         type: 3}
@@ -35110,6 +35110,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 885144595299734171, guid: 74b86e0c52c8a2b4686fab7b6c3a3fa1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74b86e0c52c8a2b4686fab7b6c3a3fa1, type: 3}
 --- !u!1 &1012001759
@@ -35159,7 +35164,7 @@ Transform:
   - {fileID: 252424367}
   - {fileID: 744647136}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1256245597
 PrefabInstance:
@@ -35176,7 +35181,7 @@ PrefabInstance:
     - target: {fileID: 50645315964878892, guid: 3866c2129c6ccd74bb7455e35b2df341,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 50645315964878892, guid: 3866c2129c6ccd74bb7455e35b2df341,
         type: 3}
@@ -35230,8 +35235,33 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 50645315964878893, guid: 3866c2129c6ccd74bb7455e35b2df341,
         type: 3}
+      propertyPath: dialog.NPCName
+      value: Hedy
+      objectReference: {fileID: 0}
+    - target: {fileID: 50645315964878893, guid: 3866c2129c6ccd74bb7455e35b2df341,
+        type: 3}
       propertyPath: PuzzleBlock.Content
       value: is
+      objectReference: {fileID: 0}
+    - target: {fileID: 50645315964878893, guid: 3866c2129c6ccd74bb7455e35b2df341,
+        type: 3}
+      propertyPath: dialog.sentences.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 50645315964878893, guid: 3866c2129c6ccd74bb7455e35b2df341,
+        type: 3}
+      propertyPath: dialog.sentences.Array.data[0]
+      value: I found a new block!
+      objectReference: {fileID: 0}
+    - target: {fileID: 50645315964878893, guid: 3866c2129c6ccd74bb7455e35b2df341,
+        type: 3}
+      propertyPath: dialog.sentences.Array.data[1]
+      value: It says 'IS'
+      objectReference: {fileID: 0}
+    - target: {fileID: 50645315964878893, guid: 3866c2129c6ccd74bb7455e35b2df341,
+        type: 3}
+      propertyPath: dialog.sentences.Array.data[2]
+      value: I can use this to say what something is
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3866c2129c6ccd74bb7455e35b2df341, type: 3}
@@ -35432,7 +35462,7 @@ Transform:
   - {fileID: 162856828}
   - {fileID: 1652765621}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1472017492
 GameObject:
@@ -41806,6 +41836,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 50645315964878893, guid: 3866c2129c6ccd74bb7455e35b2df341,
         type: 3}
+      propertyPath: dialog.NPCName
+      value: Hedy
+      objectReference: {fileID: 0}
+    - target: {fileID: 50645315964878893, guid: 3866c2129c6ccd74bb7455e35b2df341,
+        type: 3}
       propertyPath: PuzzleBlock.Content
       value: purple?
       objectReference: {fileID: 0}
@@ -41813,6 +41848,21 @@ PrefabInstance:
         type: 3}
       propertyPath: PuzzleBlock.IsKeyword
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 50645315964878893, guid: 3866c2129c6ccd74bb7455e35b2df341,
+        type: 3}
+      propertyPath: dialog.sentences.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 50645315964878893, guid: 3866c2129c6ccd74bb7455e35b2df341,
+        type: 3}
+      propertyPath: dialog.sentences.Array.data[0]
+      value: What a beautiful purple colour
+      objectReference: {fileID: 0}
+    - target: {fileID: 50645315964878893, guid: 3866c2129c6ccd74bb7455e35b2df341,
+        type: 3}
+      propertyPath: dialog.sentences.Array.data[1]
+      value: That monkey must like sitting near these purple flowers
       objectReference: {fileID: 0}
     - target: {fileID: 50645315964878895, guid: 3866c2129c6ccd74bb7455e35b2df341,
         type: 3}
@@ -41992,7 +42042,7 @@ PrefabInstance:
     - target: {fileID: 4331455801888404367, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: GoToNextCodingBlock
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4451665186762438149, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -42096,8 +42146,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
-      propertyPath: CodingBlockSize
+      propertyPath: WaitSeconds
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: dialog.NPCName
+      value: Hedy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: CodingBlockSize
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -42108,6 +42168,21 @@ PrefabInstance:
         type: 3}
       propertyPath: TalkAction.Seconds
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: GoToNextCodingBlock
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: dialog.sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: dialog.sentences.Array.data[0]
+      value: Is you favourite colour purple?
       objectReference: {fileID: 0}
     - target: {fileID: 6172822254526831891, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -42169,6 +42244,11 @@ PrefabInstance:
       propertyPath: TalkAction.Seconds
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6935705626500962560, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: GoToNextCodingBlock
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7122267374763521420, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: noMoving
@@ -42183,6 +42263,11 @@ PrefabInstance:
         type: 3}
       propertyPath: TalkAction.Seconds
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7122267374763521420, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: GoToNextCodingBlock
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7198046702624829236, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -42214,6 +42299,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.19
       objectReference: {fileID: 0}
+    - target: {fileID: 7441273773521204476, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: WaitSeconds
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7662308332673906540, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_Name
@@ -42242,6 +42332,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
+      propertyPath: DialogFirst.NPCName
+      value: Monkey
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
       propertyPath: RewardBlock.Content
       value: carry?
       objectReference: {fileID: 0}
@@ -42249,6 +42344,11 @@ PrefabInstance:
         type: 3}
       propertyPath: RewardBlock.IsKeyword
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogHasAnswer.NPCName
+      value: Monkey
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -42284,6 +42384,16 @@ PrefabInstance:
         type: 3}
       propertyPath: Answer.Array.data[5].Content
       value: jump.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogHasAnswer.NPCTalkFirst
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogPuzzleCompleted.NPCName
+      value: Monkey
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -42367,6 +42477,93 @@ PrefabInstance:
         type: 3}
       propertyPath: Dialog.sentences.Array.data[13]
       value: Try making a list of all the actions.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogFirst.sentences.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogPuzzleCompleted.NPCTalkFirst
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogFirst.sentences.Array.data[0]
+      value: There's cliffs everywhere... I can't go on.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogFirst.sentences.Array.data[1]
+      value: Hey... you want to know the secret to climbing cliffs?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogFirst.sentences.Array.data[2]
+      value: Yeah! You'll tell me?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogFirst.sentences.Array.data[3]
+      value: If you can guess my favourite colour I'll tell you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogFirst.sentences.Array.data[4]
+      value: But there's so many colours!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogFirst.sentences.Array.data[5]
+      value: I'll give you a hint... it's the same colour as some of the flowers
+        here.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogHasAnswer.sentences.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogHasAnswer.sentences.Array.data[0]
+      value: Did you find my favourite colour?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogHasAnswer.sentences.Array.data[1]
+      value: I think so.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogHasAnswer.sentences.Array.data[2]
+      value: Let's hear it, ask me if you found the right colour.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogPuzzleCompleted.sentences.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogPuzzleCompleted.sentences.Array.data[0]
+      value: You did it! I'll tell you the secret now. If you want the helpful monkey
+        to help you up the cliff, you need to use the word 'carry'.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogPuzzleCompleted.sentences.Array.data[1]
+      value: Thanks so much!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogPuzzleCompleted.sentences.Array.data[2]
+      value: You're welcome. Goodbye.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogPuzzleCompleted.sentences.Array.data[3]
+      value: Bye.
       objectReference: {fileID: 0}
     - target: {fileID: 8660793725558201169, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -42526,6 +42723,16 @@ PrefabInstance:
         type: 3}
       propertyPath: noMoving
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2315414422462504425, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: WaitSeconds
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2315414422462504425, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: CodingBlockSize
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2867435346613850539, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -42829,6 +43036,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
+      propertyPath: DialogFirst.NPCName
+      value: Helpful Monkey
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
       propertyPath: RewardBlock.Content
       value: 
       objectReference: {fileID: 0}
@@ -42836,6 +43048,11 @@ PrefabInstance:
         type: 3}
       propertyPath: RewardBlock.IsKeyword
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogHasAnswer.NPCName
+      value: Helpful monkey
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -42871,6 +43088,16 @@ PrefabInstance:
         type: 3}
       propertyPath: Answer.Array.data[5].Content
       value: jump.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogHasAnswer.NPCTalkFirst
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogPuzzleCompleted.NPCName
+      value: Helpful monkey
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -42954,6 +43181,67 @@ PrefabInstance:
         type: 3}
       propertyPath: Dialog.sentences.Array.data[13]
       value: Try making a list of all the actions.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogFirst.sentences.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogPuzzleCompleted.NPCTalkFirst
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogFirst.sentences.Array.data[0]
+      value: There's cliffs everywhere... I can't go on.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogFirst.sentences.Array.data[1]
+      value: Just say the word and I'll help you up! Ask politely!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogFirst.sentences.Array.data[2]
+      value: The word....?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogFirst.sentences.Array.data[3]
+      value: You don't kow how to ask me? You should talk to the other two monkeys
+        then.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogHasAnswer.sentences.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogHasAnswer.sentences.Array.data[0]
+      value: Just say the word and I'll help you up! Ask politely!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogHasAnswer.sentences.Array.data[1]
+      value: I think I know what to ask you now.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogHasAnswer.sentences.Array.data[2]
+      value: Great, go ahead.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogPuzzleCompleted.sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogPuzzleCompleted.sentences.Array.data[0]
+      value: There you go. Have a nice trip!
       objectReference: {fileID: 0}
     - target: {fileID: 8660793725558201169, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -103739,7 +104027,7 @@ PrefabInstance:
     - target: {fileID: 1884795054148910516, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1884795054148910516, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -103838,6 +104126,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4331455801888404367, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
+      propertyPath: WaitSeconds
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4331455801888404367, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: dialog.NPCName
+      value: Hedy
+      objectReference: {fileID: 0}
+    - target: {fileID: 4331455801888404367, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
       propertyPath: TalkAction.Message
       value: spin
       objectReference: {fileID: 0}
@@ -103850,6 +104148,16 @@ PrefabInstance:
         type: 3}
       propertyPath: GoToNextCodingBlock
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4331455801888404367, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: dialog.sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4331455801888404367, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: dialog.sentences.Array.data[0]
+      value: '*jump*'
       objectReference: {fileID: 0}
     - target: {fileID: 4451665186762438149, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -103953,6 +104261,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
+      propertyPath: WaitSeconds
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: dialog.NPCName
+      value: Hedy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
       propertyPath: CodingBlockSize
       value: 1
       objectReference: {fileID: 0}
@@ -103965,6 +104283,16 @@ PrefabInstance:
         type: 3}
       propertyPath: TalkAction.Seconds
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: dialog.sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: dialog.sentences.Array.data[0]
+      value: '*jump*'
       objectReference: {fileID: 0}
     - target: {fileID: 6172822254526831891, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -104018,6 +104346,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6935705626500962560, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
+      propertyPath: WaitSeconds
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935705626500962560, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: dialog.NPCName
+      value: Hedy
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935705626500962560, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
       propertyPath: TalkAction.Message
       value: go right
       objectReference: {fileID: 0}
@@ -104026,10 +104364,30 @@ PrefabInstance:
       propertyPath: TalkAction.Seconds
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6935705626500962560, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: dialog.sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935705626500962560, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: dialog.sentences.Array.data[0]
+      value: '*spin*'
+      objectReference: {fileID: 0}
     - target: {fileID: 7122267374763521420, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: noMoving
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7122267374763521420, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: WaitSeconds
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7122267374763521420, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: dialog.NPCName
+      value: Hedy
       objectReference: {fileID: 0}
     - target: {fileID: 7122267374763521420, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -104040,6 +104398,16 @@ PrefabInstance:
         type: 3}
       propertyPath: TalkAction.Seconds
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7122267374763521420, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: dialog.sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7122267374763521420, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: dialog.sentences.Array.data[0]
+      value: '*go right*'
       objectReference: {fileID: 0}
     - target: {fileID: 7198046702624829236, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -104070,6 +104438,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 7441273773521204476, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: WaitSeconds
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7441273773521204476, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: CodingBlockSize
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7662308332673906540, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -104114,8 +104492,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
+      propertyPath: DialogFirst.NPCName
+      value: Monkey
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
       propertyPath: RewardBlock.Content
       value: could you
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogHasAnswer.NPCName
+      value: Monkey
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -104151,6 +104539,11 @@ PrefabInstance:
         type: 3}
       propertyPath: Answer.Array.data[5].Content
       value: jump.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogPuzzleCompleted.NPCName
+      value: Monkey
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -104233,6 +104626,204 @@ PrefabInstance:
         type: 3}
       propertyPath: Dialog.sentences.Array.data[13]
       value: Try making a list of all the actions.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogFirst.sentences.Array.size
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogPuzzleCompleted.NPCTalkFirst
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogFirst.sentences.Array.data[0]
+      value: Hey, I'm Hedy. Who are you?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogFirst.sentences.Array.data[1]
+      value: Do you want to play a game?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogFirst.sentences.Array.data[2]
+      value: Um, no thanks.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogFirst.sentences.Array.data[3]
+      value: No? Are you sure?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogFirst.sentences.Array.data[4]
+      value: Yes, I'm too tired.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogFirst.sentences.Array.data[5]
+      value: You look hungry, what do you say I get you some food?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogFirst.sentences.Array.data[6]
+      value: Really?! Yes I'd love that!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogFirst.sentences.Array.data[7]
+      value: You do need to win this game first though... it's called Simon Says.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogFirst.sentences.Array.data[8]
+      value: Alright... what's that?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogFirst.sentences.Array.data[9]
+      value: You should do the actions I tell you, but only if I say 'Simon says'
+        first.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogFirst.sentences.Array.data[10]
+      value: Can you give me an example?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogFirst.sentences.Array.data[11]
+      value: Of course. If I say 'jump' you DON'T jump. But if I say 'Simon says
+        jump' you DO jump. Get it?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogFirst.sentences.Array.data[12]
+      value: I'll do my best!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogFirst.sentences.Array.data[13]
+      value: You need to make a list of all the actions with the IS block... it should
+        be around here somewhere.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogHasAnswer.sentences.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogHasAnswer.sentences.Array.data[0]
+      value: I found the block!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogHasAnswer.sentences.Array.data[1]
+      value: That's great, I'll tell you how to play one more time.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogHasAnswer.sentences.Array.data[2]
+      value: Thanks.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogHasAnswer.sentences.Array.data[3]
+      value: You should do the actions I tell you, but only if I say 'Simon says'
+        first.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogHasAnswer.sentences.Array.data[4]
+      value: Let's do it!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogHasAnswer.sentences.Array.data[5]
+      value: You look hungry, what do you say I get you some food?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogHasAnswer.sentences.Array.data[6]
+      value: Really?! Yes I'd love that!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogHasAnswer.sentences.Array.data[7]
+      value: You do need to win this game first though... it's called Simon Says.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogHasAnswer.sentences.Array.data[8]
+      value: Alright... what's that?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogHasAnswer.sentences.Array.data[9]
+      value: You should do the actions I tell you, but only if I say 'Simon says'
+        first.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogHasAnswer.sentences.Array.data[10]
+      value: Can you give me an example?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogHasAnswer.sentences.Array.data[11]
+      value: Of course. If I say 'jump' you DON'T jump. But if I say 'Simon says
+        jump' you DO jump. Get it?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogHasAnswer.sentences.Array.data[12]
+      value: I'll do my best!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogHasAnswer.sentences.Array.data[13]
+      value: Try making a list of all the actions.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogPuzzleCompleted.sentences.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogPuzzleCompleted.sentences.Array.data[0]
+      value: That was perfect! *the monkey gives you food*
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogPuzzleCompleted.sentences.Array.data[1]
+      value: Thanks so much!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogPuzzleCompleted.sentences.Array.data[2]
+      value: By the way, there's a monkey around here who can help you up the cliff.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogPuzzleCompleted.sentences.Array.data[3]
+      value: That's great, where is he?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogPuzzleCompleted.sentences.Array.data[4]
+      value: You should follow the dirt path. Make sure to be poliFollow the dirt
+        path. Make sure to be polite when you ask him question. I'll give you a block
+        that says 'could you'.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogPuzzleCompleted.sentences.Array.data[5]
+      value: Thanks. Bye now.
       objectReference: {fileID: 0}
     - target: {fileID: 8660793725558201169, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
