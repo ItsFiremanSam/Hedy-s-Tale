@@ -4,8 +4,8 @@ using UnityEngine.Audio;
 public class SettingsMenu : MonoBehaviour
 {
     public AudioMixer audioMixer;
-    public GameObject pauseMenuUI;
     public GameObject settingsMenuUI;
+    public GameObject pauseMenuButtonContainer;
 
     public void SetVolume(float volume)
     {
@@ -14,7 +14,7 @@ public class SettingsMenu : MonoBehaviour
 
     public void LoadPauseMenu()
     {
-        pauseMenuUI.SetActive(true);
         settingsMenuUI.SetActive(false);
+        pauseMenuButtonContainer.SetActive(true);
     }
 }
