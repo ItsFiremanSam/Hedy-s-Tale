@@ -14,6 +14,8 @@ public class PlayerMovement : AnimatableEntity
     public bool AnimationActive;
     [HideInInspector]
     public bool CodingUIActive;
+    [HideInInspector]
+    public bool DialogUIActive;
 
     Rigidbody2D _rigidBody;
     Vector2 _currentVelocity;
@@ -28,7 +30,7 @@ public class PlayerMovement : AnimatableEntity
     private void Update()
     {
         HandleAnimationVariables();
-        if (!AnimationActive && !CodingUIActive)
+        if (!AnimationActive && !CodingUIActive && !DialogUIActive)
         {
             Move(new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized * Speed * Time.fixedDeltaTime);
         }
@@ -104,11 +106,15 @@ public class PlayerMovement : AnimatableEntity
 
     public override IEnumerator Speak(TalkAction ta)
     {
-        float endTime = Time.time + ta.Seconds;
+        // TODO: Replace speaking with the new dialog system
+
+        //float endTime = Time.time + ta.Seconds;
         // TODO: Start speech bubble
-        speechBubble.text = ta.Message;
-        while (Time.time < endTime) yield return null;
-        speechBubble.text = "";
+        //speechBubble.text = ta.Message;
+        //while (Time.time < endTime) yield return null;
+        //speechBubble.text = "";
         // TODO: Delete speech bubble
+
+        yield return null;
     }
 }
