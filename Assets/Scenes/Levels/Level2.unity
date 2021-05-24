@@ -783,7 +783,7 @@ Transform:
   m_LocalScale: {x: 1.4602051, y: 2.0260804, z: 1.0524}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &444379277 stripped
 MonoBehaviour:
@@ -861,7 +861,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &652764714
 GameObject:
@@ -32797,6 +32797,24 @@ Tilemap:
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+  - first: {x: 167, y: 34, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 6
+      m_TileSpriteIndex: 6
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 168, y: 34, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
   - first: {x: 174, y: 34, z: 0}
     second:
       serializedVersion: 2
@@ -32860,6 +32878,33 @@ Tilemap:
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+  - first: {x: 167, y: 35, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 2
+      m_TileSpriteIndex: 2
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 168, y: 35, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 30
+      m_TileSpriteIndex: 30
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 170, y: 35, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 37
+      m_TileSpriteIndex: 37
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
   - first: {x: 176, y: 35, z: 0}
     second:
       serializedVersion: 2
@@ -32919,6 +32964,42 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 30
       m_TileSpriteIndex: 30
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 153, y: 36, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 6
+      m_TileSpriteIndex: 6
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 154, y: 36, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 165, y: 36, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 6
+      m_TileSpriteIndex: 6
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 166, y: 36, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -32995,6 +33076,42 @@ Tilemap:
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+  - first: {x: 153, y: 37, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 2
+      m_TileSpriteIndex: 2
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 154, y: 37, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 30
+      m_TileSpriteIndex: 30
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 165, y: 37, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 91
+      m_TileSpriteIndex: 63
+      m_TileMatrixIndex: 3
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 166, y: 37, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 92
+      m_TileSpriteIndex: 64
+      m_TileMatrixIndex: 3
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
   - first: {x: 108, y: 38, z: 0}
     second:
       serializedVersion: 2
@@ -33055,6 +33172,24 @@ Tilemap:
       m_TileIndex: 143
       m_TileSpriteIndex: 84
       m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 165, y: 38, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 30
+      m_TileSpriteIndex: 30
+      m_TileMatrixIndex: 3
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 166, y: 38, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 3
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
@@ -33121,11 +33256,38 @@ Tilemap:
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+  - first: {x: 154, y: 40, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 37
+      m_TileSpriteIndex: 37
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
   - first: {x: 104, y: 41, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 19
       m_TileSpriteIndex: 19
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 165, y: 41, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 6
+      m_TileSpriteIndex: 6
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 166, y: 41, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -33148,6 +33310,24 @@ Tilemap:
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+  - first: {x: 154, y: 42, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 6
+      m_TileSpriteIndex: 6
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 155, y: 42, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
   - first: {x: 156, y: 42, z: 0}
     second:
       serializedVersion: 2
@@ -33162,6 +33342,42 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 140
       m_TileSpriteIndex: 81
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 165, y: 42, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 2
+      m_TileSpriteIndex: 2
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 166, y: 42, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 30
+      m_TileSpriteIndex: 30
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 154, y: 43, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 2
+      m_TileSpriteIndex: 2
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 155, y: 43, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 30
+      m_TileSpriteIndex: 30
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -33211,6 +33427,33 @@ Tilemap:
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+  - first: {x: 157, y: 44, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 37
+      m_TileSpriteIndex: 37
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 162, y: 44, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 6
+      m_TileSpriteIndex: 6
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 163, y: 44, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
   - first: {x: 181, y: 44, z: 0}
     second:
       serializedVersion: 2
@@ -33220,11 +33463,38 @@ Tilemap:
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+  - first: {x: 162, y: 45, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 2
+      m_TileSpriteIndex: 2
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 163, y: 45, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 30
+      m_TileSpriteIndex: 30
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
   - first: {x: 144, y: 46, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 19
       m_TileSpriteIndex: 19
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 161, y: 46, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 37
+      m_TileSpriteIndex: 37
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -33847,15 +34117,15 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 15
+  - m_RefCount: 20
     m_Data: {fileID: 11400000, guid: fa788072f7c21c94997b375c0864363c, type: 2}
-  - m_RefCount: 15
+  - m_RefCount: 22
     m_Data: {fileID: 11400000, guid: b6193c52c2776e741bf2bdcb19b89915, type: 2}
   - m_RefCount: 0
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 15
+  - m_RefCount: 21
     m_Data: {fileID: 11400000, guid: e6f9dacd7e5d1764388a15405e7c1eac, type: 2}
   - m_RefCount: 0
     m_Data: {fileID: 0}
@@ -33903,7 +34173,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: f686fd1c8d2bfd8408b0832a43e4fac6, type: 2}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 15
+  - m_RefCount: 21
     m_Data: {fileID: 11400000, guid: 13394f5a63954c94d97ff4c38ea81958, type: 2}
   - m_RefCount: 0
     m_Data: {fileID: 0}
@@ -33917,7 +34187,7 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 2
     m_Data: {fileID: 11400000, guid: 80586831f57d87f40aed158ca8adfb7a, type: 2}
-  - m_RefCount: 18
+  - m_RefCount: 22
     m_Data: {fileID: 11400000, guid: bb44d7ade5ceed041b79f2358b9d2f2d, type: 2}
   - m_RefCount: 0
     m_Data: {fileID: 0}
@@ -34025,9 +34295,9 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: a42e83accb590934ab46f16adedd7307, type: 2}
   - m_RefCount: 4
     m_Data: {fileID: 11400000, guid: 1eecfd4e70e21bb46be1e05bb9cf8fe6, type: 2}
-  - m_RefCount: 4
+  - m_RefCount: 5
     m_Data: {fileID: 11400000, guid: 79a19699646d1f44f80162ecf4bd78cb, type: 2}
-  - m_RefCount: 4
+  - m_RefCount: 5
     m_Data: {fileID: 11400000, guid: 946fbd4acbee4844ea9efc0119513b6b, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: f976bb499c1cd434fbb037808e1d1482, type: 2}
@@ -34146,17 +34416,17 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 15
+  - m_RefCount: 20
     m_Data: {fileID: 4769326805615712881, guid: 0833d0a9c15558b4f9233da52a5a3398,
       type: 3}
-  - m_RefCount: 15
+  - m_RefCount: 22
     m_Data: {fileID: -5174502484452219151, guid: 0833d0a9c15558b4f9233da52a5a3398,
       type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 15
+  - m_RefCount: 21
     m_Data: {fileID: -6134598441863174094, guid: 0833d0a9c15558b4f9233da52a5a3398,
       type: 3}
   - m_RefCount: 0
@@ -34209,7 +34479,7 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 15
+  - m_RefCount: 21
     m_Data: {fileID: 7319223985924458249, guid: 0833d0a9c15558b4f9233da52a5a3398,
       type: 3}
   - m_RefCount: 0
@@ -34226,7 +34496,7 @@ Tilemap:
   - m_RefCount: 2
     m_Data: {fileID: 8318197027722872379, guid: 0833d0a9c15558b4f9233da52a5a3398,
       type: 3}
-  - m_RefCount: 18
+  - m_RefCount: 22
     m_Data: {fileID: -5067297435677101628, guid: 0833d0a9c15558b4f9233da52a5a3398,
       type: 3}
   - m_RefCount: 0
@@ -34285,9 +34555,9 @@ Tilemap:
   - m_RefCount: 4
     m_Data: {fileID: 3417465014347333958, guid: 0833d0a9c15558b4f9233da52a5a3398,
       type: 3}
-  - m_RefCount: 4
+  - m_RefCount: 5
     m_Data: {fileID: 562070139079389486, guid: 0833d0a9c15558b4f9233da52a5a3398, type: 3}
-  - m_RefCount: 4
+  - m_RefCount: 5
     m_Data: {fileID: -7166374080489089252, guid: 0833d0a9c15558b4f9233da52a5a3398,
       type: 3}
   - m_RefCount: 1
@@ -34536,7 +34806,7 @@ Tilemap:
     m_Data: {fileID: -416845278348658696, guid: 0833d0a9c15558b4f9233da52a5a3398,
       type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 397
+  - m_RefCount: 423
     m_Data:
       e00: 1
       e01: 0
@@ -34590,26 +34860,26 @@ Tilemap:
       e31: NaN
       e32: 0
       e33: 7.47e-43
-  - m_RefCount: 0
+  - m_RefCount: 4
     m_Data:
-      e00: NaN
-      e01: 0
-      e02: 1.05e-43
+      e00: 0
+      e01: -1
+      e02: 0
       e03: 0
-      e10: NaN
+      e10: 1
       e11: 0
-      e12: NaN
+      e12: 0
       e13: 0
-      e20: 1.05e-43
+      e20: 0
       e21: 0
-      e22: 0
-      e23: -3.724723e+19
-      e30: 1.3e-43
-      e31: NaN
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
       e32: 0
-      e33: 7.24e-43
+      e33: 1
   m_TileColorArray:
-  - m_RefCount: 409
+  - m_RefCount: 439
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   - m_RefCount: 0
     m_Data: {r: -5.5643463, g: -5.5643463, b: -5.5643463, a: -5.5643463}
@@ -34659,7 +34929,7 @@ PrefabInstance:
     - target: {fileID: 826417936600935954, guid: 42f70fe7d757aa34e9d31c7d27711eb3,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 826417936600935954, guid: 42f70fe7d757aa34e9d31c7d27711eb3,
         type: 3}
@@ -34748,7 +35018,7 @@ PrefabInstance:
     - target: {fileID: 885144594198433605, guid: 74b86e0c52c8a2b4686fab7b6c3a3fa1,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 885144594198433605, guid: 74b86e0c52c8a2b4686fab7b6c3a3fa1,
         type: 3}
@@ -34901,12 +35171,12 @@ PrefabInstance:
     - target: {fileID: 50645315964878888, guid: 3866c2129c6ccd74bb7455e35b2df341,
         type: 3}
       propertyPath: m_Name
-      value: Chest
+      value: ChestIS
       objectReference: {fileID: 0}
     - target: {fileID: 50645315964878892, guid: 3866c2129c6ccd74bb7455e35b2df341,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 50645315964878892, guid: 3866c2129c6ccd74bb7455e35b2df341,
         type: 3}
@@ -35000,8 +35270,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Inventory:
-  - IsKeyword: 0
-    Content: Actions
+  - IsKeyword: 1
+    Content: ask
   - IsKeyword: 0
     Content: jump,
   - IsKeyword: 0
@@ -35162,7 +35432,7 @@ Transform:
   - {fileID: 162856828}
   - {fileID: 1652765621}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1472017492
 GameObject:
@@ -41463,6 +41733,1270 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 7}
   m_SizeDelta: {x: 170, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &1790433115
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2016478290, guid: 3866c2129c6ccd74bb7455e35b2df341, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 50645315964878888, guid: 3866c2129c6ccd74bb7455e35b2df341,
+        type: 3}
+      propertyPath: m_Name
+      value: flowers
+      objectReference: {fileID: 0}
+    - target: {fileID: 50645315964878892, guid: 3866c2129c6ccd74bb7455e35b2df341,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 50645315964878892, guid: 3866c2129c6ccd74bb7455e35b2df341,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 166.27863
+      objectReference: {fileID: 0}
+    - target: {fileID: 50645315964878892, guid: 3866c2129c6ccd74bb7455e35b2df341,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 31.677029
+      objectReference: {fileID: 0}
+    - target: {fileID: 50645315964878892, guid: 3866c2129c6ccd74bb7455e35b2df341,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 50645315964878892, guid: 3866c2129c6ccd74bb7455e35b2df341,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 50645315964878892, guid: 3866c2129c6ccd74bb7455e35b2df341,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 50645315964878892, guid: 3866c2129c6ccd74bb7455e35b2df341,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 50645315964878892, guid: 3866c2129c6ccd74bb7455e35b2df341,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 50645315964878892, guid: 3866c2129c6ccd74bb7455e35b2df341,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 50645315964878892, guid: 3866c2129c6ccd74bb7455e35b2df341,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 50645315964878892, guid: 3866c2129c6ccd74bb7455e35b2df341,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 50645315964878893, guid: 3866c2129c6ccd74bb7455e35b2df341,
+        type: 3}
+      propertyPath: PuzzleBlock.Content
+      value: purple?
+      objectReference: {fileID: 0}
+    - target: {fileID: 50645315964878893, guid: 3866c2129c6ccd74bb7455e35b2df341,
+        type: 3}
+      propertyPath: PuzzleBlock.IsKeyword
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 50645315964878895, guid: 3866c2129c6ccd74bb7455e35b2df341,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -4907192441395230533, guid: 98274766a6cb8bd418f40938726837c3,
+        type: 3}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3866c2129c6ccd74bb7455e35b2df341, type: 3}
+--- !u!1001 &1816677402
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 602064815998769924, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 602064815998769924, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 609888903666955645, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 609888903666955645, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 685082872573353614, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 685082872573353614, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 1065058462480813869, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1065058462480813869, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 1567122937282900200, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1567122937282900200, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 1884795054148910516, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1884795054148910516, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 170.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 1884795054148910516, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 34.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 1884795054148910516, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1884795054148910516, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1884795054148910516, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1884795054148910516, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1884795054148910516, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1884795054148910516, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1884795054148910516, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1884795054148910516, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2315414422462504425, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: noMoving
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2867435346613850539, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 2867435346613850539, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 3802940064727303772, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Subject
+      value: 
+      objectReference: {fileID: 1257147541}
+    - target: {fileID: 4276821107419243052, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: noMoving
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4276821107419243052, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: CodingBlockSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4276821107419243052, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: TalkAction.Message
+      value: go right
+      objectReference: {fileID: 0}
+    - target: {fileID: 4276821107419243052, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: TalkAction.Seconds
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4331455801888404367, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: noMoving
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4331455801888404367, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: TalkAction.Message
+      value: spin
+      objectReference: {fileID: 0}
+    - target: {fileID: 4331455801888404367, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: TalkAction.Seconds
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4331455801888404367, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: GoToNextCodingBlock
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4451665186762438149, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: noMoving
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4451665186762438149, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: CodingBlockSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4451665186762438149, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: TalkAction.Message
+      value: spin
+      objectReference: {fileID: 0}
+    - target: {fileID: 4451665186762438149, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: TalkAction.Seconds
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4451665186762438149, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: GoToNextCodingBlock
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4461740797136066684, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: noMoving
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4461740797136066684, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: CodingBlockSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4461740797136066684, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: TalkAction.Message
+      value: jump
+      objectReference: {fileID: 0}
+    - target: {fileID: 4461740797136066684, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: TalkAction.Seconds
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5425343966207715407, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: noMoving
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5425343966207715407, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: CodingBlockSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5425343966207715407, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: TalkAction.Message
+      value: jump
+      objectReference: {fileID: 0}
+    - target: {fileID: 5425343966207715407, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: TalkAction.Seconds
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5597087193315718736, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5597087193315718736, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 5904458662141186400, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: CodingBlockSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5904458662141186400, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: TalkAction.Message
+      value: jump
+      objectReference: {fileID: 0}
+    - target: {fileID: 5904458662141186400, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: TalkAction.Seconds
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5969868984378841597, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 5969868984378841597, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: CodingBlockSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: TalkAction.Message
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: TalkAction.Seconds
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6172822254526831891, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: CodingBlockSize
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6172822254526831891, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: TalkAction.Message
+      value: jump
+      objectReference: {fileID: 0}
+    - target: {fileID: 6172822254526831891, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: TalkAction.Seconds
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6187128544270234625, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6187128544270234625, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 6231031843235512885, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 6231031843235512885, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6290098581064816781, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 6290098581064816781, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935705626500962560, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: noMoving
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935705626500962560, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: TalkAction.Message
+      value: go right
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935705626500962560, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: TalkAction.Seconds
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7122267374763521420, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: noMoving
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7122267374763521420, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: TalkAction.Message
+      value: jump
+      objectReference: {fileID: 0}
+    - target: {fileID: 7122267374763521420, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: TalkAction.Seconds
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7198046702624829236, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: noMoving
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7198046702624829236, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: CodingBlockSize
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7198046702624829236, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: TalkAction.Seconds
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7371850097992470271, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: PuzzleBlock.Content
+      value: your favourite colour
+      objectReference: {fileID: 0}
+    - target: {fileID: 7391847553053017961, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7391847553053017961, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 7662308332673906540, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_Name
+      value: MonkeyPuzzle2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogManager
+      value: 
+      objectReference: {fileID: 444379277}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Dialog.NPCName
+      value: Monkey
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: PuzzleDescription
+      value: Can you guess the monkey's favourite colour? It's the same as some flowers
+        around here...
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: RewardBlock.Content
+      value: carry?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: RewardBlock.IsKeyword
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Dialog.sentences.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[0].Content
+      value: ask
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[1].Content
+      value: is
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[2].Content
+      value: your favourite colour
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[3].Content
+      value: purple?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[4].Content
+      value: spin,
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[5].Content
+      value: jump.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[0].IsKeyword
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[1].IsKeyword
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Dialog.sentences.Array.data[0]
+      value: There's cliffs everywhere... I can't go on.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Dialog.sentences.Array.data[1]
+      value: Hey... you want to know the secret to climbing cliffs?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Dialog.sentences.Array.data[2]
+      value: yeah! You'll tell me.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Dialog.sentences.Array.data[3]
+      value: If you can guess my favourite colour I'll tell you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Dialog.sentences.Array.data[4]
+      value: But there's so many colours!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Dialog.sentences.Array.data[5]
+      value: I'll give you a hint... it's the same colour as some of the flowers
+        here.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Dialog.sentences.Array.data[6]
+      value: Great! I'll find them.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Dialog.sentences.Array.data[7]
+      value: You do need to win this game first though... it's called Simon Says.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Dialog.sentences.Array.data[8]
+      value: Alright... what's that?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Dialog.sentences.Array.data[9]
+      value: You should do the actions I tell you, but only if I say 'Simon says'
+        first.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Dialog.sentences.Array.data[10]
+      value: Can you give me an example?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Dialog.sentences.Array.data[11]
+      value: Of course. If I say 'jump' you DON'T jump. But if I say 'Simon says
+        jump' you DO jump. Get it?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Dialog.sentences.Array.data[12]
+      value: I'll do my best!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Dialog.sentences.Array.data[13]
+      value: Try making a list of all the actions.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8660793725558201169, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: noMoving
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8660793725558201169, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: TalkAction.Message
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8660793725558201169, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: TalkAction.Seconds
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8660793725558201169, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: GoToNextCodingBlock
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9130943912825816716, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 9130943912825816716, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.43
+      objectReference: {fileID: 0}
+    - target: {fileID: 9139838512746595662, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 9139838512746595662, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.23
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 21eb6d44e34b12d4385daac697669991, type: 3}
+--- !u!1001 &1897935330
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 602064815998769924, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 602064815998769924, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 609888903666955645, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 609888903666955645, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 685082872573353614, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 685082872573353614, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 1065058462480813869, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1065058462480813869, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 1567122937282900200, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 1567122937282900200, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 1884795054148910516, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1884795054148910516, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 170.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 1884795054148910516, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 39.63
+      objectReference: {fileID: 0}
+    - target: {fileID: 1884795054148910516, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1884795054148910516, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1884795054148910516, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1884795054148910516, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1884795054148910516, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1884795054148910516, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1884795054148910516, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1884795054148910516, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2315414422462504425, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: noMoving
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2867435346613850539, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 2867435346613850539, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 3802940064727303772, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Subject
+      value: 
+      objectReference: {fileID: 1257147541}
+    - target: {fileID: 4276821107419243052, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: noMoving
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4276821107419243052, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: CodingBlockSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4276821107419243052, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: TalkAction.Message
+      value: go right
+      objectReference: {fileID: 0}
+    - target: {fileID: 4276821107419243052, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: TalkAction.Seconds
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4331455801888404367, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: noMoving
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4331455801888404367, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: TalkAction.Message
+      value: spin
+      objectReference: {fileID: 0}
+    - target: {fileID: 4331455801888404367, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: TalkAction.Seconds
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4331455801888404367, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: GoToNextCodingBlock
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4451665186762438149, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: noMoving
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4451665186762438149, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: CodingBlockSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4451665186762438149, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: TalkAction.Message
+      value: spin
+      objectReference: {fileID: 0}
+    - target: {fileID: 4451665186762438149, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: TalkAction.Seconds
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4451665186762438149, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: GoToNextCodingBlock
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4461740797136066684, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: noMoving
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4461740797136066684, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: CodingBlockSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4461740797136066684, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: TalkAction.Message
+      value: jump
+      objectReference: {fileID: 0}
+    - target: {fileID: 4461740797136066684, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: TalkAction.Seconds
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5425343966207715407, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: noMoving
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5425343966207715407, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: CodingBlockSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5425343966207715407, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: TalkAction.Message
+      value: jump
+      objectReference: {fileID: 0}
+    - target: {fileID: 5425343966207715407, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: TalkAction.Seconds
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5597087193315718736, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5597087193315718736, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 5904458662141186400, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: CodingBlockSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5904458662141186400, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: TalkAction.Message
+      value: jump
+      objectReference: {fileID: 0}
+    - target: {fileID: 5904458662141186400, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: TalkAction.Seconds
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5969868984378841597, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 5969868984378841597, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: CodingBlockSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: TalkAction.Message
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: TalkAction.Seconds
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6172822254526831891, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: CodingBlockSize
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6172822254526831891, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: TalkAction.Message
+      value: jump
+      objectReference: {fileID: 0}
+    - target: {fileID: 6172822254526831891, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: TalkAction.Seconds
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6187128544270234625, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6187128544270234625, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 6231031843235512885, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 6231031843235512885, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6290098581064816781, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 6290098581064816781, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935705626500962560, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: noMoving
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935705626500962560, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: TalkAction.Message
+      value: go right
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935705626500962560, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: TalkAction.Seconds
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7122267374763521420, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: noMoving
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7122267374763521420, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: TalkAction.Message
+      value: jump
+      objectReference: {fileID: 0}
+    - target: {fileID: 7122267374763521420, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: TalkAction.Seconds
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7198046702624829236, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: noMoving
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7198046702624829236, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: CodingBlockSize
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7198046702624829236, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: TalkAction.Seconds
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7371850097992470271, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: PuzzleBlock.Content
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7391847553053017961, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7391847553053017961, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 7662308332673906540, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_Name
+      value: MonkeyPuzzle2Carry
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogManager
+      value: 
+      objectReference: {fileID: 444379277}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Dialog.NPCName
+      value: Helpful Monkey
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: PuzzleDescription
+      value: The monkey will carry you up... but you need to tell him to do so first.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: RewardBlock.Content
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: RewardBlock.IsKeyword
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Dialog.sentences.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[0].Content
+      value: could you
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[1].Content
+      value: carry?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[2].Content
+      value: your favourite colour
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[3].Content
+      value: purple?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[4].Content
+      value: spin,
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[5].Content
+      value: jump.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[0].IsKeyword
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[1].IsKeyword
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Dialog.sentences.Array.data[0]
+      value: There's cliffs everywhere... I can't go on.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Dialog.sentences.Array.data[1]
+      value: Just say the word and I'll help you up! Ask politely!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Dialog.sentences.Array.data[2]
+      value: The word....?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Dialog.sentences.Array.data[3]
+      value: Do you know it? If not, maybe tDo you know how to ask me? If not, you
+        should talk to the other two monkeys.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Dialog.sentences.Array.data[4]
+      value: Let me think.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Dialog.sentences.Array.data[5]
+      value: Give it a try.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Dialog.sentences.Array.data[6]
+      value: Great! I'll find them.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Dialog.sentences.Array.data[7]
+      value: You do need to win this game first though... it's called Simon Says.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Dialog.sentences.Array.data[8]
+      value: Alright... what's that?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Dialog.sentences.Array.data[9]
+      value: You should do the actions I tell you, but only if I say 'Simon says'
+        first.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Dialog.sentences.Array.data[10]
+      value: Can you give me an example?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Dialog.sentences.Array.data[11]
+      value: Of course. If I say 'jump' you DON'T jump. But if I say 'Simon says
+        jump' you DO jump. Get it?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Dialog.sentences.Array.data[12]
+      value: I'll do my best!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Dialog.sentences.Array.data[13]
+      value: Try making a list of all the actions.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8660793725558201169, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: noMoving
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8660793725558201169, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: TalkAction.Message
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8660793725558201169, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: TalkAction.Seconds
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8660793725558201169, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: GoToNextCodingBlock
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9130943912825816716, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 9130943912825816716, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.43
+      objectReference: {fileID: 0}
+    - target: {fileID: 9139838512746595662, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 9139838512746595662, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.23
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 21eb6d44e34b12d4385daac697669991, type: 3}
 --- !u!1 &1971288828
 GameObject:
   m_ObjectHideFlags: 0
@@ -102205,7 +103739,7 @@ PrefabInstance:
     - target: {fileID: 1884795054148910516, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1884795054148910516, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -102260,7 +103794,7 @@ PrefabInstance:
     - target: {fileID: 2315414422462504425, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: noMoving
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2867435346613850539, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -102522,6 +104056,11 @@ PrefabInstance:
       propertyPath: TalkAction.Seconds
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7371850097992470271, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: PuzzleBlock.Content
+      value: Actions
+      objectReference: {fileID: 0}
     - target: {fileID: 7391847553053017961, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -102535,7 +104074,7 @@ PrefabInstance:
     - target: {fileID: 7662308332673906540, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_Name
-      value: NPCmonkey
+      value: MonkeyPuzzle1
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -102572,6 +104111,11 @@ PrefabInstance:
         Simon says jump.
 
 '
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: RewardBlock.Content
+      value: could you
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}

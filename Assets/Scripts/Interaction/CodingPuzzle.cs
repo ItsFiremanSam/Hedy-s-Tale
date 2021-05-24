@@ -9,6 +9,7 @@ public class CodingPuzzle : InteractableObject
     public DialogManager DialogManager;
     public Dialog Dialog;
     private PlayerInteraction _playerIntercation;
+    public PuzzleBlock RewardBlock;
 
     public List<PuzzleBlock> Answer;
     [TextArea(4, 8)]
@@ -42,6 +43,10 @@ public class CodingPuzzle : InteractableObject
         _player.InteractionEvent -= OnInteractWithPlayer;
         ShowInteractionBubble(false);
         _animationTrigger.StartAnimation();
+        if (RewardBlock != null)
+        {
+            _player.Inventory.Add(RewardBlock);
+        }
         Debug.Log("Correct answer");
     }
 

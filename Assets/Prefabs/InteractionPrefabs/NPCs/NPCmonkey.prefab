@@ -109,6 +109,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1884795054148910516}
   - component: {fileID: 7767812622286252030}
+  - component: {fileID: 7371850097992470271}
   - component: {fileID: 7836411685114321133}
   - component: {fileID: 7836411685114321122}
   - component: {fileID: 7836411685114321132}
@@ -185,6 +186,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7371850097992470271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7662308332673906540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38ac8c3b341e098419d77b0a4af0d3d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PuzzleBlock:
+    IsKeyword: 0
+    Content: 
 --- !u!58 &7836411685114321133
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -234,6 +250,9 @@ MonoBehaviour:
     NPCName: 
     sentences: []
     NPCTalkFirst: 0
+  RewardBlock:
+    IsKeyword: 0
+    Content: 
   Answer:
   - IsKeyword: 1
     Content: print
