@@ -13,7 +13,7 @@ using UnityEngine;
 /// </remarks>
 public class TalkWalkWaitWaypointScript : WaypointScript
 {
-    public TalkAction TalkAction;
+    public Dialog dialog;
 
     // This speed multiplier will be multiplied by the speed of the subject and the multiplier of the waypointcollection
     public float SpeedMultiplier = 1;
@@ -21,6 +21,8 @@ public class TalkWalkWaitWaypointScript : WaypointScript
     // If true, this waypoint won't include movement
     // Can be used to create conversations
     public bool noMoving = true;
+
+    public float WaitSeconds;
 
     /// <summary>
     /// Is responsible for animating this waypoint
@@ -30,8 +32,16 @@ public class TalkWalkWaitWaypointScript : WaypointScript
     /// <returns></returns>
     protected override IEnumerator AnimateInstance(AnimatableEntity subject, float speed)
     {
-        if (!noMoving) yield return subject.MoveTo(transform.position, speed * SpeedMultiplier);
-        if (TalkAction.Seconds > 0) yield return subject.Speak(TalkAction);
+        if (!noMoving) 
+            yield return subject.MoveTo(transform.position, speed * SpeedMultiplier);
+
+        yield return new WaitForSeconds(WaitSeconds);
+
+        if (dialog.sentences.Count > 0)
+        {
+            DialogManager dialogManager = DialogManager.Instance;
+            yield return dialogManager.StartDialog(dialog);
+        }
 
         IsDone = true;
     }
@@ -48,12 +58,6 @@ public class TalkWalkWaitWaypointScript : WaypointScript
         {
             DrawWalkGizmos();
         }
-
-        if (TalkAction.Seconds > 0)
-        {
-            string firstPart = TalkAction.Message != "" ? TalkAction.Message + " - " : "";
-            //Handles.Label(transform.position, $"{firstPart}{TalkAction.Seconds}s", GUIStyle.none);
-        }
     }
 
 
@@ -66,7 +70,7 @@ public class TalkWalkWaitWaypointScript : WaypointScript
         WaypointCollectionScript wpcs = GetComponentInParent<WaypointCollectionScript>();
         Transform prevWaypoint = (wpcs.Subject && !wpcs.FromTrigger) ? wpcs.Subject.transform : wpcs.transform.parent;
 
-        foreach(TalkWalkWaitWaypointScript talkWalkWaitWaypointScript in wpcs.GetComponentsInChildren<TalkWalkWaitWaypointScript>())
+        foreach (TalkWalkWaitWaypointScript talkWalkWaitWaypointScript in wpcs.GetComponentsInChildren<TalkWalkWaitWaypointScript>())
         {
             if (talkWalkWaitWaypointScript.gameObject.Equals(gameObject)) break;
             if (!talkWalkWaitWaypointScript.noMoving) prevWaypoint = talkWalkWaitWaypointScript.transform;
