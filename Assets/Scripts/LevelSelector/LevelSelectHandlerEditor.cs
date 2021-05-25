@@ -14,5 +14,9 @@ public class LevelSelectHandlerEditor : Editor
         {
             ((LevelSelectHandler)target).GoToNextLevel();
         }
+        if (GUILayout.Button("Delete playerPrefs"))
+        {
+            PlayerPrefs.DeleteAll();
+        }
     }
 }
