@@ -27,6 +27,9 @@ public class InteractionChest : InteractableObject
 
     IEnumerator Coroutine()
     {
+        PlayerMovement playerMovement = FindObjectOfType<PlayerMovement>();
+        playerMovement.DialogUIActive = true;
+
         //yield on a new YieldInstruction that waits for 5 seconds.
         yield return new WaitUntil(() => openChestAnimator.GetCurrentAnimatorStateInfo(0).IsName("Opened") && codeBlockAnimator.GetCurrentAnimatorStateInfo(0).IsName("Idle again"));
         DialogManager dialogManager = DialogManager.Instance;
