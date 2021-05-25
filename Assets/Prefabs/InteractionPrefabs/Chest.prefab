@@ -136,6 +136,10 @@ MonoBehaviour:
     Content: ask
   openChestAnimator: {fileID: 2016478290}
   codeBlockAnimator: {fileID: 548117848101147484}
+  dialog:
+    NPCName: 
+    sentences: []
+    NPCTalkFirst: 0
 --- !u!95 &2016478290
 Animator:
   serializedVersion: 3
