@@ -3,17 +3,17 @@ guid: 32802a387cd5da14fbf79179233ffabe
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7890404150604001589
-    second: tree-trunk-small-mosy_0
+      213: 1150723674262980754
+    second: tree-trunk-small-mossy_0
   - first:
-      213: -2466989133332261431
-    second: tree-trunk-small-mosy_1
+      213: 2254586746968653841
+    second: tree-trunk-small-mossy_1
   - first:
-      213: 1695542687652435630
-    second: tree-trunk-small-mosy_2
+      213: -6093037203316264073
+    second: tree-trunk-small-mossy_2
   - first:
-      213: 942132114153879149
-    second: tree-trunk-small-mosy_3
+      213: -3250712705336912875
+    second: tree-trunk-small-mossy_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -99,7 +99,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tree-trunk-small-mosy_0
+      name: tree-trunk-small-mossy_0
       rect:
         serializedVersion: 2
         x: 0
@@ -113,14 +113,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 531f40315c8508d60800000000000000
-      internalID: 7890404150604001589
+      spriteID: 298c31fb51138ff00800000000000000
+      internalID: 1150723674262980754
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tree-trunk-small-mosy_1
+      name: tree-trunk-small-mossy_1
       rect:
         serializedVersion: 2
         x: 16
@@ -134,14 +134,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c55bf2347e73cdd0800000000000000
-      internalID: -2466989133332261431
+      spriteID: 110ce5873b6e94f10800000000000000
+      internalID: 2254586746968653841
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tree-trunk-small-mosy_2
+      name: tree-trunk-small-mossy_2
       rect:
         serializedVersion: 2
         x: 0
@@ -155,14 +155,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea6d80f4717c78710800000000000000
-      internalID: 1695542687652435630
+      spriteID: 773381522fe217ba0800000000000000
+      internalID: -6093037203316264073
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tree-trunk-small-mosy_3
+      name: tree-trunk-small-mossy_3
       rect:
         serializedVersion: 2
         x: 16
@@ -176,8 +176,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6631ab8a20231d00800000000000000
-      internalID: 942132114153879149
+      spriteID: 5145b8b740623e2d0800000000000000
+      internalID: -3250712705336912875
       vertices: []
       indices: 
       edges: []
