@@ -33,7 +33,7 @@ public class CloudScript : MonoBehaviour
         }
     }
 
-    public void StartDissapearingAnimation(float animationTime, float animationAngleInDegrees, float speed)
+    public void StartDisappearingAnimation(float animationTime, float animationAngleInDegrees, float speed)
     {
         _alphaChange = 1 / animationTime;
         _animationTimer = Time.time + animationTime;

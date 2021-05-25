@@ -22,7 +22,7 @@ public class LevelSignEditor : Editor
         LevelSignScript levelSign = (LevelSignScript)target;
         LevelSelectHandler levelSelect = levelSign.GetComponentInParent<LevelSelectHandler>();
         if (!levelSelect) return;
-        
+
         Transform cloudContainer = levelSelect.CloudContainer;
         if (!cloudContainer.gameObject.activeSelf) cloudContainer.gameObject.SetActive(true);
 
@@ -38,23 +38,21 @@ public class LevelSignEditor : Editor
             if (CheckIfCloudInRadiusOfPreviousLevelSigns(cloud, previousLevelSigns))
             {
                 cloudCanvasGroup.alpha = levelSelect.LowerLevelTransparency;
-            }
-            else if (CheckIfCloudInRadiusOfLevelSign(cloud, levelSign))
+            } else if (CheckIfCloudInRadiusOfLevelSign(cloud, levelSign))
             {
                 cloudCanvasGroup.alpha = levelSelect.SameLevelTransparency;
-            }
-            else
+            } else
             {
                 cloudCanvasGroup.alpha = levelSelect.HigherLevelTransparency;
             }
         }
     }
 
-    public static bool CheckIfCloudInRadiusOfPreviousLevelSigns(CloudScript cloud, LevelSignScript[] levelSigns) 
+    public static bool CheckIfCloudInRadiusOfPreviousLevelSigns(CloudScript cloud, LevelSignScript[] levelSigns)
     {
         foreach (LevelSignScript levelSign in levelSigns)
         {
-            if (CheckIfCloudInRadiusOfLevelSign(cloud, levelSign)) 
+            if (CheckIfCloudInRadiusOfLevelSign(cloud, levelSign))
                 return true;
         }
         return false;
@@ -62,7 +60,7 @@ public class LevelSignEditor : Editor
 
     public static bool CheckIfCloudInRadiusOfLevelSign(CloudScript cloud, LevelSignScript levelSign)
     {
-        return (cloud.GetComponent<RectTransform>().position - levelSign.GetComponent<RectTransform>().position).sqrMagnitude 
-            <= levelSign.CloudRadius * levelSign.CloudRadius;
+        return (cloud.GetComponent<RectTransform>().position - levelSign.GetComponent<RectTransform>().position).sqrMagnitude
+            <= levelSign.RelativeCloudRadius * levelSign.RelativeCloudRadius;
     }
 }

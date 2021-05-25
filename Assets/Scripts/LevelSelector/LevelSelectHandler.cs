@@ -1,10 +1,10 @@
-﻿using System.Collections;
+﻿using System;
 using System.Linq;
 using UnityEngine;
 
 public class LevelSelectHandler : MonoBehaviour
 {
-    public int curMaxLevel = 0;
+    public int CurrentMaxLevel = 0;
     public Transform CloudContainer;
 
     [Range(0, 1)]
@@ -14,21 +14,39 @@ public class LevelSelectHandler : MonoBehaviour
     [Range(0, 1)]
     public float LowerLevelTransparency = 0;
 
+    private const string CurrentMaxLevelPref = "currentMaxLevel";
+    private const string ShowAnimationPref = "showAnimation";
+
+    private static bool ShowAnimation
+    {
+        get => Convert.ToBoolean(PlayerPrefs.GetInt(ShowAnimationPref, 0));
+        set => PlayerPrefs.SetInt(ShowAnimationPref, Convert.ToInt32(value));
+    }
+
     private void Start()
     {
         if (!CloudContainer.gameObject.activeSelf)
             CloudContainer.gameObject.SetActive(true);
 
-        HandleActiveClouds();
+        CurrentMaxLevel = PlayerPrefs.GetInt(CurrentMaxLevelPref, 0);
+
+        if (ShowAnimation)
+        {
+            HandleActiveClouds(CurrentMaxLevel - 1);
+            GoToNextLevel();
+        }
+        else
+        {
+            HandleActiveClouds(CurrentMaxLevel);
+        }
     }
 
-    public void HandleActiveClouds()
+    public void HandleActiveClouds(int showLevel)
     {
-        int[] temp =
-            GetComponentsInChildren<LevelSignScript>().Select(item => item.transform.GetSiblingIndex()).ToArray();
-        LevelSignScript[] activeLevelSigns =
-            GetComponentsInChildren<LevelSignScript>()
-            .Where(item => item.transform.GetSiblingIndex() <= curMaxLevel).ToArray();
+        LevelSignScript[] activeLevelSigns = GetComponentsInChildren<LevelSignScript>()
+            .Where(item => item.transform.GetSiblingIndex() <= showLevel - 1)
+            .ToArray();
+
         foreach (CloudScript cloud in CloudContainer.GetComponentsInChildren<CloudScript>())
         {
             if (LevelSignEditor.CheckIfCloudInRadiusOfPreviousLevelSigns(cloud, activeLevelSigns))
@@ -49,7 +67,8 @@ public class LevelSelectHandler : MonoBehaviour
         for (int i = 0; i < levelSigns.Length; i++)
         {
             LevelSignScript levelSign = levelSigns[i];
-            if (levelSign.IsLastChild()) return;
+            if (levelSign.IsLastChild()) 
+                return;
 
             GizmosArrow.Draw(levelSign.transform.position, levelSigns[i + 1].transform.position, Color.red, 30, 20);
         }
@@ -57,21 +76,35 @@ public class LevelSelectHandler : MonoBehaviour
 
     public void GoToNextLevel()
     {
-        if (curMaxLevel >= transform.childCount) return;
+        ShowAnimation = false;
 
-        curMaxLevel++;
-        LevelSignScript currentLevelSign = GetComponentsInChildren<LevelSignScript>()[curMaxLevel];
+        if (CurrentMaxLevel - 1 >= transform.childCount)
+            return;
 
-        foreach (CloudScript cloud in CloudContainer.GetComponentsInChildren<CloudScript>()
-            .Where(c => LevelSignEditor.CheckIfCloudInRadiusOfLevelSign(c, currentLevelSign)))
-        {
-            cloud.StartDissapearingAnimation(0.5f, Random.Range(0, 360), 100);
-        }
+        LevelSignScript currentLevelSign = GetComponentsInChildren<LevelSignScript>()[CurrentMaxLevel - 1];
+
+        var disappearingClouds = CloudContainer.GetComponentsInChildren<CloudScript>()
+            .Where(c => LevelSignEditor.CheckIfCloudInRadiusOfLevelSign(c, currentLevelSign));
+
+        foreach (CloudScript cloud in disappearingClouds)
+            cloud.StartDisappearingAnimation(0.5f, UnityEngine.Random.Range(0, 360), 100);
     }
 
     private void OnValidate()
     {
-        if (curMaxLevel < 0) curMaxLevel = 0;
-        if (curMaxLevel > transform.childCount) curMaxLevel = transform.childCount;
+        if (CurrentMaxLevel < 1) 
+            CurrentMaxLevel = 1;
+
+        if (CurrentMaxLevel > transform.childCount + 1) 
+            CurrentMaxLevel = transform.childCount + 1;
+    }
+
+    public static void ShowNextLevelAnimation(int currentLevel)
+    {
+        if (PlayerPrefs.GetInt(CurrentMaxLevelPref, 1) <= currentLevel)
+        {
+            PlayerPrefs.SetInt(CurrentMaxLevelPref, currentLevel + 1);
+            ShowAnimation = true;
+        }
     }
 }
