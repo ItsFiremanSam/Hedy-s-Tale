@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using System;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SceneChanger : MonoBehaviour
@@ -13,6 +10,9 @@ public class SceneChanger : MonoBehaviour
         SceneManager.LoadScene(sceneName);
     }
 
+    /// <summary>
+    /// make the next level available for playing, and load the level select scene
+    /// </summary>
     private void ChangeSceneEndOfLevel()
     {
         LevelSelectHandler.ShowNextLevelAnimation(CurrentLevel);
