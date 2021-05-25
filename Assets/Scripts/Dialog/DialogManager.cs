@@ -49,7 +49,7 @@ public class DialogManager : MonoBehaviour
             }
 
             StopCoroutine(coroutine);
-            yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.E));
+            yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Space));
             ClearDialog();
             currentTalking = !currentTalking;
         }
@@ -86,7 +86,7 @@ public class DialogManager : MonoBehaviour
 
     private IEnumerator AccelerateTalking()
     {
-        yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.E));
+        yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Space));
         _currentTalkingSpeed = fastTalkingSpeed;
     }
 
