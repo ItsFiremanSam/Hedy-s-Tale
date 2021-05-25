@@ -64,7 +64,7 @@ public class CodingPuzzle : InteractableObject
     public void OnPuzzleCompleteCallback()
     {
         _animationTrigger.StartAnimation();
-        if (RewardBlock != null)
+        if (RewardBlock != null && !string.IsNullOrEmpty(RewardBlock.Content))
         {
             _player.Inventory.Add(RewardBlock);
         }
