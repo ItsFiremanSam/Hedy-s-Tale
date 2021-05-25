@@ -12,6 +12,7 @@ public class CodingPuzzle : InteractableObject
     private DialogManager dialogManager;
     private PlayerInteraction _playerIntercation;
     private bool PuzzleComplete;
+    public PuzzleBlock RewardBlock;
 
     public List<PuzzleBlock> Answer;
     [TextArea(4, 8)]
@@ -63,6 +64,11 @@ public class CodingPuzzle : InteractableObject
     public void OnPuzzleCompleteCallback()
     {
         _animationTrigger.StartAnimation();
+        if (RewardBlock != null)
+        {
+            _player.Inventory.Add(RewardBlock);
+        }
+        Debug.Log("Correct answer");
         PuzzleComplete = true;
     }
 

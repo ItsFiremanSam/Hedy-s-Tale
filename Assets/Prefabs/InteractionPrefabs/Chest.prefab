@@ -134,8 +134,8 @@ MonoBehaviour:
   PuzzleBlock:
     IsKeyword: 1
     Content: ask
-  openChestAnimator: {fileID: 0}
-  codeBlockAnimator: {fileID: 0}
+  openChestAnimator: {fileID: 2016478290}
+  codeBlockAnimator: {fileID: 548117848101147484}
 --- !u!95 &2016478290
 Animator:
   serializedVersion: 3
