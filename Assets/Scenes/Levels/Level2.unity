@@ -36017,6 +36017,8 @@ MonoBehaviour:
     Content: jump.
   - IsKeyword: 0
     Content: spin,
+  - IsKeyword: 0
+    Content: is
 --- !u!95 &1257147538
 Animator:
   serializedVersion: 3
