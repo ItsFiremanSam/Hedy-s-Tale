@@ -16,6 +16,7 @@ public class DialogManager : MonoBehaviour
 
     private PlayerMovement _playerMovement;
     private GameObject _container;
+    public GameObject interactionNextSentence;
     public static DialogManager Instance { get => FindObjectOfType<DialogManager>(); }
 
     private void Awake()
@@ -48,8 +49,10 @@ public class DialogManager : MonoBehaviour
                 yield return new WaitForSeconds(_currentTalkingSpeed);
             }
 
+            interactionNextSentence.SetActive(true);
+
             StopCoroutine(coroutine);
-            yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.E));
+            yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Space));
             ClearDialog();
             currentTalking = !currentTalking;
         }
@@ -73,6 +76,7 @@ public class DialogManager : MonoBehaviour
         textDisplay.text = "";
         textName.text = "";
         _currentTalkingSpeed = normalTalkingSpeed;
+        interactionNextSentence.SetActive(false);
     }
 
     public void ShowDialog()
@@ -86,7 +90,7 @@ public class DialogManager : MonoBehaviour
 
     private IEnumerator AccelerateTalking()
     {
-        yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.E));
+        yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Space));
         _currentTalkingSpeed = fastTalkingSpeed;
     }
 
