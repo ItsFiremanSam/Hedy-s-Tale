@@ -49,7 +49,7 @@ public class LevelSelectHandler : MonoBehaviour
 
         foreach (CloudScript cloud in CloudContainer.GetComponentsInChildren<CloudScript>())
         {
-            if (LevelSignEditor.CheckIfCloudInRadiusOfPreviousLevelSigns(cloud, activeLevelSigns))
+            if (CheckIfCloudInRadiusOfPreviousLevelSigns(cloud, activeLevelSigns))
             {
                 cloud.gameObject.SetActive(false);
             }
@@ -84,7 +84,7 @@ public class LevelSelectHandler : MonoBehaviour
         LevelSignScript currentLevelSign = GetComponentsInChildren<LevelSignScript>()[CurrentMaxLevel - 1];
 
         var disappearingClouds = CloudContainer.GetComponentsInChildren<CloudScript>()
-            .Where(c => LevelSignEditor.CheckIfCloudInRadiusOfLevelSign(c, currentLevelSign));
+            .Where(c => CheckIfCloudInRadiusOfLevelSign(c, currentLevelSign));
 
         foreach (CloudScript cloud in disappearingClouds)
             cloud.StartDisappearingAnimation(0.5f, UnityEngine.Random.Range(0, 360), 100);
@@ -106,5 +106,21 @@ public class LevelSelectHandler : MonoBehaviour
             PlayerPrefs.SetInt(CurrentMaxLevelPref, currentLevel + 1);
             ShowAnimation = true;
         }
+    }
+
+    private static bool CheckIfCloudInRadiusOfPreviousLevelSigns(CloudScript cloud, LevelSignScript[] levelSigns)
+    {
+        foreach (LevelSignScript levelSign in levelSigns)
+        {
+            if (CheckIfCloudInRadiusOfLevelSign(cloud, levelSign))
+                return true;
+        }
+        return false;
+    }
+
+    private static bool CheckIfCloudInRadiusOfLevelSign(CloudScript cloud, LevelSignScript levelSign)
+    {
+        return (cloud.GetComponent<RectTransform>().position - levelSign.GetComponent<RectTransform>().position).sqrMagnitude
+            <= levelSign.RelativeCloudRadius * levelSign.RelativeCloudRadius;
     }
 }
