@@ -6,15 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
+    path: Assets/Scenes/Menus/MainMenu.unity
     guid: 9df9607de0ed3244e974937c24478b64
   - enabled: 1
-    path: Assets/Scenes/FirstCutscene-Fireworks.unity
+    path: Assets/Scenes/Cutscenes/FirstCutscene-Fireworks.unity
     guid: 36d335239334ae94b9daf17d23722fa1
   - enabled: 1
-    path: Assets/Scenes/Level1.unity
+    path: Assets/Scenes/Levels/Level1.unity
     guid: 58d6310d333cc9447b04a8e101e0f72f
   - enabled: 1
-    path: Assets/Scenes/ThankYouDemo.unity
-    guid: b5a7fc7c7f59ca746bc1705edff297a5
+    path: Assets/Scenes/Levels/Level2.unity
+    guid: a5143eb5c1bba1d4dae17e2421970210
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level3.unity
+    guid: f73407db07b2ca042a78652733be0494
+  - enabled: 1
+    path: Assets/Scenes/Menus/LevelSelect.unity
+    guid: 0e51048098e852b49ba0021292dd5828
+  - enabled: 1
+    path: Assets/Scenes/Menus/EndDemo.unity
+    guid: ea17cd08810e24248930951e40594734
   m_configObjects: {}
