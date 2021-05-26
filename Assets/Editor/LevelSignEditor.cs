@@ -47,6 +47,20 @@ public class LevelSignEditor : Editor
             }
         }
     }
+    private static bool CheckIfCloudInRadiusOfPreviousLevelSigns(CloudScript cloud, LevelSignScript[] levelSigns)
+    {
+        foreach (LevelSignScript levelSign in levelSigns)
+        {
+            if (CheckIfCloudInRadiusOfLevelSign(cloud, levelSign))
+                return true;
+        }
+        return false;
+    }
 
-  
+    private static bool CheckIfCloudInRadiusOfLevelSign(CloudScript cloud, LevelSignScript levelSign)
+    {
+        return (cloud.GetComponent<RectTransform>().position - levelSign.GetComponent<RectTransform>().position).sqrMagnitude
+            <= levelSign.RelativeCloudRadius * levelSign.RelativeCloudRadius;
+    }
+
 }
