@@ -30,6 +30,7 @@ public class DraggableCodingBlock : MonoBehaviour, IDragHandler, IBeginDragHandl
     {
         _answerBlock = answerBlock;
         GetComponentInChildren<Text>().text = answerBlock.Content;
+        GetComponentInChildren<Text>().fontSize = 20;
     }
 
     public PuzzleBlock GetAnswerBlock()
