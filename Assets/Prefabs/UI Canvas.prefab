@@ -1869,10 +1869,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 0
-    m_Right: 0
-    m_Top: 0
-    m_Bottom: 10
+    m_Left: 70
+    m_Right: 20
+    m_Top: 40
+    m_Bottom: 40
   m_ChildAlignment: 7
   m_Spacing: 10
   m_ChildForceExpandWidth: 0
@@ -1970,6 +1970,7 @@ GameObject:
   - component: {fileID: 885144593868882512}
   - component: {fileID: 885144593868882514}
   - component: {fileID: 885144593868882513}
+  - component: {fileID: 7262712398618943955}
   m_Layer: 5
   m_Name: Puzzle Description Panel
   m_TagString: Untagged
@@ -2024,8 +2025,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9fad4ad8f266316438dd5a5d57ac5fd8, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: 613e14b6a3f88354b8005e6abe9726c4, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2034,6 +2035,31 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &7262712398618943955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 885144593868882527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 40
+    m_Right: 40
+    m_Top: 30
+    m_Bottom: 20
+  m_ChildAlignment: 0
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 1
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
 --- !u!1 &885144593912014659
 GameObject:
   m_ObjectHideFlags: 0
@@ -2425,7 +2451,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9fad4ad8f266316438dd5a5d57ac5fd8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 613e14b6a3f88354b8005e6abe9726c4, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2796,10 +2822,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 0
-    m_Right: 0
-    m_Top: 0
-    m_Bottom: 10
+    m_Left: 20
+    m_Right: 70
+    m_Top: 40
+    m_Bottom: 40
   m_ChildAlignment: 7
   m_Spacing: 10
   m_ChildForceExpandWidth: 0
@@ -2840,10 +2866,10 @@ RectTransform:
   m_Father: {fileID: 885144593868882512}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -20, y: -20}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 168, y: -130}
+  m_SizeDelta: {x: 256, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &885144594730061251
 CanvasRenderer:
@@ -2883,9 +2909,13 @@ MonoBehaviour:
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+    when an unknown printer took a galley of type and scrambled it to make a type
+    specimen book. It has survived not only five centuries, but also the leap into
+    electronic typesetting,
 --- !u!1 &885144594855493593
 GameObject:
   m_ObjectHideFlags: 0
@@ -2951,8 +2981,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9fad4ad8f266316438dd5a5d57ac5fd8, type: 3}
-  m_Type: 2
+  m_Sprite: {fileID: 21300000, guid: 613e14b6a3f88354b8005e6abe9726c4, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2974,10 +3004,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 30
-    m_Right: 30
-    m_Top: 30
-    m_Bottom: 30
+    m_Left: 40
+    m_Right: 40
+    m_Top: 40
+    m_Bottom: 40
   m_ChildAlignment: 0
   m_StartCorner: 0
   m_StartAxis: 0
@@ -3280,7 +3310,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &885144595299734172
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3512,28 +3542,13 @@ MonoBehaviour:
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed
     libero nisi. Suspendisse aliquet leo quis ligula tempus eleifend. Curabitur sollicitudin
     aliquet neque, nec faucibus odio ornare in. Aenean et dui quis nulla auctor convallis
     nec sit amet lacus. Suspendisse et euismod nunc, et posuere enim. Sed mollis
-    urna id lorem ornare tincidunt. Sed vel tellus aliquam, elementum dui vitae,
-    mattis urna. Nulla facilisi. Nam tempus tortor at justo aliquet, ut tincidunt
-    neque efficitur. Quisque id volutpat libero. Aenean eu ex quis purus condimentum
-    blandit et eget nunc. In hac habitasse platea dictumst. Phasellus lobortis purus
-    tortor.
-
-
-    Nunc eu ligula non odio congue dictum id ut urna. Nunc congue tellus
-    eleifend nibh condimentum volutpat. Donec ut orci convallis, imperdiet velit
-    et, finibus odio. Vivamus egestas dapibus quam suscipit commodo. Nulla lobortis
-    viverra egestas. Morbi vehicula lacinia libero sed convallis. In sollicitudin
-    sagittis metus sed lacinia. Mauris urna eros, congue in risus ut, pretium hendrerit
-    mi. Donec ultrices aliquet lorem, id commodo lacus vestibulum in. Fusce vel risus
-    eu massa molestie pharetra. Duis ex augue, rutrum imperdiet vestibulum ac, scelerisque
-    non mi. Aenean pulvinar purus ut varius pellentesque. Sed sit amet eros lorem.
-    Aenean eu sodales ex, non porttitor nulla. Praesent nec ultrices dolor. '
+    urna id lorem ornare tincidunt. '
 --- !u!1 &3157279581397040430
 GameObject:
   m_ObjectHideFlags: 0
@@ -3750,11 +3765,11 @@ RectTransform:
   m_Father: {fileID: 3904860396884477451}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 36}
-  m_Pivot: {x: 0, y: 1}
+  m_SizeDelta: {x: 0, y: 42}
+  m_Pivot: {x: 0.017502028, y: 0.7665811}
 --- !u!222 &778635640743742065
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3793,7 +3808,7 @@ MonoBehaviour:
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: Example
 --- !u!1 &3958237446253541140
@@ -4359,7 +4374,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: 0, y: 32}
-  m_SizeDelta: {x: -64, y: 240}
+  m_SizeDelta: {x: -64, y: 200}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &1414349543076169766
 CanvasRenderer:
@@ -4388,7 +4403,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9fad4ad8f266316438dd5a5d57ac5fd8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 613e14b6a3f88354b8005e6abe9726c4, type: 3}
   m_Type: 2
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4397,7 +4412,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 0.82
+  m_PixelsPerUnitMultiplier: 1
 --- !u!114 &6906286407509341236
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4411,10 +4426,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 24
-    m_Right: 88
-    m_Top: 24
-    m_Bottom: 24
+    m_Left: 40
+    m_Right: 40
+    m_Top: 36
+    m_Bottom: 28
   m_ChildAlignment: 0
   m_Spacing: 0
   m_ChildForceExpandWidth: 1
