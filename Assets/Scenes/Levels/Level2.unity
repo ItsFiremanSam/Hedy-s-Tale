@@ -36052,7 +36052,7 @@ MonoBehaviour:
   - IsKeyword: 0
     Content: spin,
   - IsKeyword: 0
-    Content: is
+    Content: is your
 --- !u!95 &1257147538
 Animator:
   serializedVersion: 3
@@ -42814,7 +42814,7 @@ PrefabInstance:
     - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: dialog.sentences.Array.data[0]
-      value: Is you favourite colour purple?
+      value: Is your favourite colour purple?
       objectReference: {fileID: 0}
     - target: {fileID: 6172822254526831891, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -42919,7 +42919,7 @@ PrefabInstance:
     - target: {fileID: 7371850097992470271, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: PuzzleBlock.Content
-      value: your favourite colour
+      value: favourite colour
       objectReference: {fileID: 0}
     - target: {fileID: 7391847553053017961, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -42995,12 +42995,12 @@ PrefabInstance:
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: Answer.Array.data[1].Content
-      value: is
+      value: is your
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: Answer.Array.data[2].Content
-      value: your favourite colour
+      value: favourite colour
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -43143,12 +43143,12 @@ PrefabInstance:
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.sentences.Array.data[4]
-      value: But there's so many colours!
+      value: But there are so many colours!
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.sentences.Array.data[5]
-      value: I'll give you a hint... it's the same colour as some of the flowers
+      value: I'll give you a hint... It's the same colour as some of the flowers
         here.
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
@@ -43169,7 +43169,7 @@ PrefabInstance:
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogHasAnswer.sentences.Array.data[2]
-      value: Let's hear it, ask me if you found the right colour.
+      value: Let's hear it! Ask me if you found the right colour.
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -43180,22 +43180,22 @@ PrefabInstance:
         type: 3}
       propertyPath: DialogPuzzleCompleted.sentences.Array.data[0]
       value: You did it! I'll tell you the secret now. If you want the helpful monkey
-        to help you up the cliff, you need to use the word 'carry'.
+        to help you up the cliff, you need to use the word 'throw'.
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogPuzzleCompleted.sentences.Array.data[1]
-      value: Thanks so much!
+      value: Thank you so much!
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogPuzzleCompleted.sentences.Array.data[2]
-      value: You're welcome. Goodbye.
+      value: You're welcome. Tell the other monkey I said hi!
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogPuzzleCompleted.sentences.Array.data[3]
-      value: Bye.
+      value: I will! Thank you!
       objectReference: {fileID: 0}
     - target: {fileID: 8660793725558201169, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -43269,12 +43269,12 @@ PrefabInstance:
     - target: {fileID: 685082872573353614, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.12
+      value: 3.68
       objectReference: {fileID: 0}
     - target: {fileID: 685082872573353614, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.37
+      value: 2.22
       objectReference: {fileID: 0}
     - target: {fileID: 1065058462480813869, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -43289,12 +43289,12 @@ PrefabInstance:
     - target: {fileID: 1567122937282900200, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.07
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1567122937282900200, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.19
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1884795054148910516, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -43359,12 +43359,37 @@ PrefabInstance:
     - target: {fileID: 2315414422462504425, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: WaitSeconds
-      value: 2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2315414422462504425, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: dialog.NPCName
+      value: Helpful monkey
       objectReference: {fileID: 0}
     - target: {fileID: 2315414422462504425, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: CodingBlockSize
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2315414422462504425, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: dialog.NPCTalkFirst
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2315414422462504425, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: dialog.sentences.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2315414422462504425, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: dialog.sentences.Array.data[0]
+      value: There you go. Have a nice trip!
+      objectReference: {fileID: 0}
+    - target: {fileID: 2315414422462504425, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: dialog.sentences.Array.data[1]
+      value: Thank you!
       objectReference: {fileID: 0}
     - target: {fileID: 2867435346613850539, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -43404,7 +43429,7 @@ PrefabInstance:
     - target: {fileID: 4331455801888404367, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: noMoving
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4331455801888404367, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -43489,12 +43514,12 @@ PrefabInstance:
     - target: {fileID: 5597087193315718736, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5597087193315718736, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.31
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5904458662141186400, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -43514,12 +43539,17 @@ PrefabInstance:
     - target: {fileID: 5969868984378841597, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.12
+      value: 0.62
       objectReference: {fileID: 0}
     - target: {fileID: 5969868984378841597, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.07
+      value: 1.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: noMoving
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -43554,12 +43584,12 @@ PrefabInstance:
     - target: {fileID: 6187128544270234625, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.12
+      value: 2.61
       objectReference: {fileID: 0}
     - target: {fileID: 6187128544270234625, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.29
+      value: 2.3
       objectReference: {fileID: 0}
     - target: {fileID: 6231031843235512885, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -43574,17 +43604,17 @@ PrefabInstance:
     - target: {fileID: 6290098581064816781, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.44
+      value: 1.75
       objectReference: {fileID: 0}
     - target: {fileID: 6290098581064816781, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.15
+      value: 2.12
       objectReference: {fileID: 0}
     - target: {fileID: 6935705626500962560, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: noMoving
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6935705626500962560, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -43599,7 +43629,7 @@ PrefabInstance:
     - target: {fileID: 7122267374763521420, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: noMoving
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7122267374763521420, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -43634,17 +43664,22 @@ PrefabInstance:
     - target: {fileID: 7391847553053017961, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.1
+      value: 0.96
       objectReference: {fileID: 0}
     - target: {fileID: 7391847553053017961, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.19
+      value: 1.74
+      objectReference: {fileID: 0}
+    - target: {fileID: 7441273773521204476, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: noMoving
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7662308332673906540, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_Name
-      value: MonkeyPuzzle2Carry
+      value: MonkeyPuzzle2Throw
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -43844,7 +43879,7 @@ PrefabInstance:
         type: 3}
       propertyPath: DialogFirst.sentences.Array.data[3]
       value: You don't kow how to ask me? You should talk to the other two monkeys
-        then.
+        first...
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -43879,7 +43914,7 @@ PrefabInstance:
     - target: {fileID: 8660793725558201169, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: noMoving
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8660793725558201169, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
