@@ -112944,21 +112944,23 @@ PrefabInstance:
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: PuzzleDescription
-      value: 'Make an array of actions using IS. Only do the actions simon says!
+      value: 'Make a list of actions using the ''IS'' block. Only do the actions
+        that Simon says!
 
-        Simon
-        says jump.
+
+        Simon says jump.
 
         Go right.
 
-        Simon says go right.
-
         Simon
-        says spin.
+        says go right.
+
+        Simon says spin.
 
         Go left.
 
-        Simon says jump.
+        Simon
+        says jump.
 
 '
       objectReference: {fileID: 0}
@@ -113107,7 +113109,7 @@ PrefabInstance:
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogPuzzleCompleted.NPCTalkFirst
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -113142,17 +113144,17 @@ PrefabInstance:
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.sentences.Array.data[6]
-      value: Really?! Yes I'd love that!
+      value: Really? I'd love that! Yes!
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.sentences.Array.data[7]
-      value: You do need to win this game first though... it's called Simon Says.
+      value: You do need to win this game first though... It's called 'Simon Says'.
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.sentences.Array.data[8]
-      value: Alright... what's that?
+      value: Allright... How does it work?
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -113168,13 +113170,13 @@ PrefabInstance:
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.sentences.Array.data[11]
-      value: Of course. If I say 'jump' you DON'T jump. But if I say 'Simon says
+      value: Of course. If I say 'jump' you DO NOT jump. But if I say 'Simon says
         jump' you DO jump. Get it?
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.sentences.Array.data[12]
-      value: I'll do my best!
+      value: I'll try my best!
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -113263,39 +113265,44 @@ PrefabInstance:
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogPuzzleCompleted.sentences.Array.size
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogPuzzleCompleted.sentences.Array.data[0]
-      value: That was perfect! *the monkey gives you food*
+      value: Did I do it correctly?
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogPuzzleCompleted.sentences.Array.data[1]
-      value: Thanks so much!
+      value: That was perfect! I've never seen someone dance that good! *the monkey
+        gives you food*
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogPuzzleCompleted.sentences.Array.data[2]
-      value: By the way, there's a monkey around here who can help you up the cliff.
+      value: Thank you so much!
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogPuzzleCompleted.sentences.Array.data[3]
-      value: That's great, where is he?
+      value: By the way, there's a monkey around here who can help you up the cliff.
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogPuzzleCompleted.sentences.Array.data[4]
-      value: You should follow the dirt path. Make sure to be poliFollow the dirt
-        path. Make sure to be polite when you ask him question. I'll give you a block
-        that says 'could you'.
+      value: That's great, where is he?
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogPuzzleCompleted.sentences.Array.data[5]
-      value: Thanks. Bye now.
+      value: You should follow the dirt path to the right. Make sure to be polite
+        when you ask him a question.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogPuzzleCompleted.sentences.Array.data[6]
+      value: Thanks! Bye now.
       objectReference: {fileID: 0}
     - target: {fileID: 8660793725558201169, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -113405,6 +113412,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7464826716262060512, guid: 74446c2ab1fd33b4eb77c5c0f1f73181,
+        type: 3}
+      propertyPath: dialog.sentences.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7464826716262060512, guid: 74446c2ab1fd33b4eb77c5c0f1f73181,
+        type: 3}
+      propertyPath: dialog.sentences.Array.data[0]
+      value: What a beautiful purple colour!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7464826716262060512, guid: 74446c2ab1fd33b4eb77c5c0f1f73181,
+        type: 3}
+      propertyPath: dialog.sentences.Array.data[1]
+      value: That monkey must like sitting near these purple flowers...
+      objectReference: {fileID: 0}
+    - target: {fileID: 7464826716262060512, guid: 74446c2ab1fd33b4eb77c5c0f1f73181,
+        type: 3}
+      propertyPath: dialog.sentences.Array.data[2]
+      value: I bet this is his favourite colour!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74446c2ab1fd33b4eb77c5c0f1f73181, type: 3}
