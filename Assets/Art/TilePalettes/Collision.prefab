@@ -121,6 +121,15 @@ Tilemap:
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+  - first: {x: -4, y: -13, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 248
+      m_TileSpriteIndex: 248
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
   - first: {x: -2, y: -13, z: 0}
     second:
       serializedVersion: 2
@@ -207,6 +216,15 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 41
       m_TileSpriteIndex: 140
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: -4, y: -12, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 247
+      m_TileSpriteIndex: 247
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2840,6 +2858,10 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 3d6ac204f33b4f544a34e0e2ec106fab, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 47a139ecfbf26fe4b9fb0fc57aeac153, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 34557c15d23dcc840a42f78e47b4d7d1, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: e9b3d68dccdcdab4da99c195fc052d02, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 1
     m_Data: {fileID: 5313156586201142367, guid: 21b83bb472c926e49ad7d3b1a4c2b37c,
@@ -3561,8 +3583,14 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: 5835729014558219009, guid: 613dce80526e8494f94de5c94c09d15c,
       type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 6163107263845780058, guid: 20fc4d639b133034eb7aafabe9e50ed9,
+      type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 4841499115667061556, guid: 20fc4d639b133034eb7aafabe9e50ed9,
+      type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 251
+  - m_RefCount: 253
     m_Data:
       e00: 1
       e01: 0
@@ -3581,7 +3609,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 251
+  - m_RefCount: 253
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   - m_RefCount: 0
     m_Data: {r: 0, g: 0, b: 0, a: 0}
