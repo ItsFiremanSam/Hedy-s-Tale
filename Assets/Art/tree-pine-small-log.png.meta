@@ -1,40 +1,28 @@
 fileFormatVersion: 2
-guid: 613dce80526e8494f94de5c94c09d15c
+guid: d6184db62d8add646a914866151ab103
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6016601511547237783
-    second: tree-pine_0
+      213: -277793446820235914
+    second: tree-pine-small-log_0
   - first:
-      213: -3081956221492282858
-    second: tree-pine_1
+      213: -1960747302928560240
+    second: tree-pine-small-log_1
   - first:
-      213: 5712928007403830108
-    second: tree-pine_2
+      213: -3187056947023085976
+    second: tree-pine-small-log_2
   - first:
-      213: 2147247147073880083
-    second: tree-pine_3
+      213: -594409398325342358
+    second: tree-pine-small-log_3
   - first:
-      213: -827770181925775709
-    second: tree-pine_4
+      213: 869946488720052259
+    second: tree-pine-small-log_4
   - first:
-      213: 5745779976274929013
-    second: tree-pine_5
+      213: -4568430190810638501
+    second: tree-pine-small-log_5
   - first:
-      213: 5807911305275099187
-    second: tree-pine_6
-  - first:
-      213: 2392026959667779761
-    second: tree-pine_7
-  - first:
-      213: 4490138085768853676
-    second: tree-pine_8
-  - first:
-      213: 7994415015630181338
-    second: tree-pine_9
-  - first:
-      213: 5835729014558219009
-    second: tree-pine_10
+      213: -6797911023983716806
+    second: tree-pine-small-log_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -120,70 +108,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tree-pine_0
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 795f9da82334f7350800000000000000
-      internalID: 6016601511547237783
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tree-pine_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 61ab5ac3521ba35d0800000000000000
-      internalID: -3081956221492282858
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tree-pine_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c5b7fac11c5684f40800000000000000
-      internalID: 5712928007403830108
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tree-pine_3
+      name: tree-pine-small-log_0
       rect:
         serializedVersion: 2
         x: 16
@@ -197,35 +122,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3104f4657ed8ccd10800000000000000
-      internalID: 2147247147073880083
+      spriteID: 6753959f454152cf0800000000000000
+      internalID: -277793446820235914
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tree-pine_4
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3a657aeb76b2384f0800000000000000
-      internalID: -827770181925775709
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tree-pine_5
+      name: tree-pine-small-log_1
       rect:
         serializedVersion: 2
         x: 0
@@ -239,14 +143,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5756b6b227c1dbf40800000000000000
-      internalID: 5745779976274929013
+      spriteID: 09f43aa67b60ac4e0800000000000000
+      internalID: -1960747302928560240
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tree-pine_6
+      name: tree-pine-small-log_2
       rect:
         serializedVersion: 2
         x: 16
@@ -260,14 +164,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 338c5ed7f88d99050800000000000000
-      internalID: 5807911305275099187
+      spriteID: 86e7fb9a79c45c3d0800000000000000
+      internalID: -3187056947023085976
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tree-pine_7
+      name: tree-pine-small-log_3
       rect:
         serializedVersion: 2
         x: 32
@@ -281,14 +185,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b8d728a8df223120800000000000000
-      internalID: 2392026959667779761
+      spriteID: a6f0aa13dcb30c7f0800000000000000
+      internalID: -594409398325342358
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tree-pine_8
+      name: tree-pine-small-log_4
       rect:
         serializedVersion: 2
         x: 0
@@ -302,14 +206,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca874ba9ccc205e30800000000000000
-      internalID: 4490138085768853676
+      spriteID: 320d1c9e8bba21c00800000000000000
+      internalID: 869946488720052259
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tree-pine_9
+      name: tree-pine-small-log_5
       rect:
         serializedVersion: 2
         x: 16
@@ -323,14 +227,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad39fa9b91ed1fe60800000000000000
-      internalID: 7994415015630181338
+      spriteID: b57df8f22fca990c0800000000000000
+      internalID: -4568430190810638501
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tree-pine_10
+      name: tree-pine-small-log_6
       rect:
         serializedVersion: 2
         x: 32
@@ -344,8 +248,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 10bde26ae9cacf050800000000000000
-      internalID: 5835729014558219009
+      spriteID: a361db8c0f7f8a1a0800000000000000
+      internalID: -6797911023983716806
       vertices: []
       indices: 
       edges: []
