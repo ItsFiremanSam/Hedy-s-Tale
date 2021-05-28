@@ -245,8 +245,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d176d476fecfc9e449cdb61dcac16617, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DialogManager: {fileID: 0}
-  Dialog:
+  DialogFirst:
+    NPCName: 
+    sentences: []
+    NPCTalkFirst: 0
+  DialogHasAnswer:
+    NPCName: 
+    sentences: []
+    NPCTalkFirst: 0
+  DialogPuzzleCompleted:
     NPCName: 
     sentences: []
     NPCTalkFirst: 0
