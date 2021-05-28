@@ -1,4 +1,4 @@
 # Auto detect text files and perform LF normalization
 * text=auto
-**/package-lock.json text eol=lf
+**/packages-lock.json text eol=lf
 **/manifest.json text eol=lf
