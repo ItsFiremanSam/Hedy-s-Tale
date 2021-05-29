@@ -747,6 +747,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPCPuzzle1
       objectReference: {fileID: 0}
+    - target: {fileID: 7767812622286252030, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: fdeac90f93ebf6640a02dafaa2674a24,
+        type: 3}
+    - target: {fileID: 7836411685114321122, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_Radius
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogManager
@@ -780,7 +791,7 @@ PrefabInstance:
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogHasAnswer.NPCName
-      value: Monkey
+      value: Grumpy goat
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -835,7 +846,7 @@ PrefabInstance:
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogPuzzleCompleted.NPCName
-      value: Monkey
+      value: Grumpy goat
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -1141,6 +1152,11 @@ PrefabInstance:
         type: 3}
       propertyPath: DialogPuzzleCompleted.sentences.Array.data[5]
       value: Thanks. Bye now.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321133, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 8660793725558201169, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -80022,7 +80038,7 @@ PrefabInstance:
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogHasAnswer.NPCName
-      value: Monkey
+      value: Farsighted bear
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -80077,7 +80093,7 @@ PrefabInstance:
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogPuzzleCompleted.NPCName
-      value: Monkey
+      value: Farsighted bear
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
