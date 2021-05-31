@@ -631,6 +631,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
+      propertyPath: GoToNextCodingBlock
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
       propertyPath: dialog.sentences.Array.size
       value: 0
       objectReference: {fileID: 0}
@@ -702,7 +707,7 @@ PrefabInstance:
     - target: {fileID: 6935705626500962560, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: CodingBlockSize
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6935705626500962560, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -860,6 +865,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7122267374763521420, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
+      propertyPath: GoToNextCodingBlock
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7122267374763521420, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
       propertyPath: dialog.NPCTalkFirst
       value: 0
       objectReference: {fileID: 0}
@@ -911,7 +921,7 @@ PrefabInstance:
     - target: {fileID: 7441273773521204476, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: CodingBlockSize
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7662308332673906540, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
