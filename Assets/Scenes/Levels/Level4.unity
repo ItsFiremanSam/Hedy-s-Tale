@@ -208,6 +208,11 @@ PrefabInstance:
       propertyPath: noMoving
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5950093220229846825, guid: 1df7cda00687b3f46b23e222b5839f73,
+        type: 3}
+      propertyPath: SpeedMultiplier
+      value: 0.6
+      objectReference: {fileID: 0}
     - target: {fileID: 7426278994110986792, guid: 1df7cda00687b3f46b23e222b5839f73,
         type: 3}
       propertyPath: m_RootOrder
@@ -300,12 +305,12 @@ PrefabInstance:
     - target: {fileID: 685082872573353614, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.12
+      value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 685082872573353614, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.37
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1065058462480813869, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -335,12 +340,12 @@ PrefabInstance:
     - target: {fileID: 1884795054148910516, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 94.83
+      value: 95
       objectReference: {fileID: 0}
     - target: {fileID: 1884795054148910516, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 23.67
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 1884795054148910516, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -387,6 +392,16 @@ PrefabInstance:
       propertyPath: noMoving
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2315414422462504425, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: dialog.sentences.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2315414422462504425, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: dialog.sentences.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2867435346613850539, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -425,7 +440,7 @@ PrefabInstance:
     - target: {fileID: 4331455801888404367, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: noMoving
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4331455801888404367, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -435,7 +450,7 @@ PrefabInstance:
     - target: {fileID: 4331455801888404367, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: dialog.NPCName
-      value: Grumpy goat
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4331455801888404367, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -460,12 +475,12 @@ PrefabInstance:
     - target: {fileID: 4331455801888404367, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: dialog.NPCTalkFirst
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4331455801888404367, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: dialog.sentences.Array.size
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4331455801888404367, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -487,7 +502,7 @@ PrefabInstance:
     - target: {fileID: 4331455801888404367, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: dialog.sentences.Array.data[3]
-      value: Thanks!
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4451665186762438149, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -557,12 +572,12 @@ PrefabInstance:
     - target: {fileID: 5597087193315718736, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.1
+      value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 5597087193315718736, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.31
+      value: 2.31
       objectReference: {fileID: 0}
     - target: {fileID: 5904458662141186400, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -613,6 +628,11 @@ PrefabInstance:
         type: 3}
       propertyPath: TalkAction.Seconds
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: GoToNextCodingBlock
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -682,12 +702,12 @@ PrefabInstance:
     - target: {fileID: 6935705626500962560, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: dialog.NPCName
-      value: 
+      value: Smiling Goat
       objectReference: {fileID: 0}
     - target: {fileID: 6935705626500962560, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: CodingBlockSize
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6935705626500962560, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -712,28 +732,110 @@ PrefabInstance:
     - target: {fileID: 6935705626500962560, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: dialog.sentences.Array.size
-      value: 0
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6935705626500962560, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: dialog.sentences.Array.data[0]
-      value: (The goat is smiling) Haha, you're funny.
+      value: What kind of key opens a banana? A mon-key!
       objectReference: {fileID: 0}
     - target: {fileID: 6935705626500962560, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: dialog.sentences.Array.data[1]
+      value: (The goat is smiling after your joke) Haha! You're funny.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935705626500962560, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: dialog.sentences.Array.data[2]
+      value: Thanks! Are you not grumpy anymore?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935705626500962560, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: dialog.sentences.Array.data[3]
+      value: No, that joke made me smile! Why do you want to cross the mountain?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935705626500962560, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: dialog.sentences.Array.data[4]
       value: Some fireworks scared me and I got lost in the woods. Now I'm trying
         to find my family.
       objectReference: {fileID: 0}
     - target: {fileID: 6935705626500962560, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
-      propertyPath: dialog.sentences.Array.data[2]
+      propertyPath: dialog.sentences.Array.data[5]
       value: I see... that's a good reason. You may continue. I will even give you
         a block that says 'continue'.
       objectReference: {fileID: 0}
     - target: {fileID: 6935705626500962560, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
-      propertyPath: dialog.sentences.Array.data[3]
+      propertyPath: dialog.sentences.Array.data[6]
+      value: Thank you so much!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935705626500962560, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: dialog.sentences.Array.data[7]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935705626500962560, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: dialog.sentences.Array.data[8]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935705626500962560, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: dialog.sentences.Array.data[9]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935705626500962560, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: dialog.sentences.Array.data[10]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935705626500962560, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: dialog.sentences.Array.data[11]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935705626500962560, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: dialog.sentences.Array.data[12]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935705626500962560, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: dialog.sentences.Array.data[13]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935705626500962560, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: dialog.sentences.Array.data[14]
+      value: (The goat is smiling after your joke) Haha! You're funny.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935705626500962560, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: dialog.sentences.Array.data[15]
+      value: Thanks!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935705626500962560, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: dialog.sentences.Array.data[16]
+      value: Thanks!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935705626500962560, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: dialog.sentences.Array.data[17]
+      value: Some fireworks scared me and I got lost in the woods. Now I'm trying
+        to find my family.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935705626500962560, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: dialog.sentences.Array.data[18]
+      value: I see... that's a good reason. You may continue. I will even give you
+        a block that says 'continue'.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935705626500962560, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: dialog.sentences.Array.data[19]
       value: Thanks!
       objectReference: {fileID: 0}
     - target: {fileID: 7122267374763521420, guid: 21eb6d44e34b12d4385daac697669991,
@@ -760,6 +862,11 @@ PrefabInstance:
         type: 3}
       propertyPath: TalkAction.Seconds
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7122267374763521420, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: GoToNextCodingBlock
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7122267374763521420, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -814,7 +921,7 @@ PrefabInstance:
     - target: {fileID: 7441273773521204476, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: CodingBlockSize
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7662308332673906540, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -850,7 +957,12 @@ PrefabInstance:
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: PuzzleDescription
-      value: 
+      value: 'The goat is very grumpy... You want to tell your story but don''t want
+        to make him grumpier.
+
+
+        Maybe check to see if he''s happy before
+        telling him your story? If he''s not happy you could tell him a joke?'
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -1032,7 +1144,7 @@ PrefabInstance:
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.sentences.Array.size
-      value: 14
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -1042,126 +1154,128 @@ PrefabInstance:
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.sentences.Array.data[0]
-      value: Hey, I'm Hedy. Who are you?
+      value: Hi, I'm Hedy! Who are you?
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.sentences.Array.data[1]
-      value: Do you want to play a game?
+      value: I'm a goat that lives on the mountain. What are you doing here?
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.sentences.Array.data[2]
-      value: Um, no thanks.
+      value: I am trying to find my way home, can I go past?
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.sentences.Array.data[3]
-      value: No? Are you sure?
+      value: Hmm... I don't know why you are here... I only let animals over the
+        mountain that I trust!
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.sentences.Array.data[4]
-      value: Yes, I'm too tired.
+      value: But don't you believe me?
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.sentences.Array.data[5]
-      value: You look hungry, what do you say I get you some food?
+      value: Hmm... You look like a nice dog. But I'm just a bit grumpy. Someone
+        stole my lunch!
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.sentences.Array.data[6]
-      value: Really?! Yes I'd love that!
+      value: Oh, that's terrible! Can I help you with that?
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.sentences.Array.data[7]
-      value: You do need to win this game first though... it's called Simon Says.
+      value: I don't know... I think you should wait. Maybe a joke will cheer me
+        up!
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.sentences.Array.data[8]
-      value: Alright... what's that?
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.sentences.Array.data[9]
-      value: You should do the actions I tell you, but only if I say 'Simon says'
-        first.
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.sentences.Array.data[10]
-      value: Can you give me an example?
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.sentences.Array.data[11]
-      value: Of course. If I say 'jump' you DON'T jump. But if I say 'Simon says
-        jump' you DO jump. Get it?
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.sentences.Array.data[12]
-      value: I'll do my best!
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.sentences.Array.data[13]
-      value: You need to make a list of all the actions with the IS block... it should
-        be around here somewhere.
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogHasAnswer.sentences.Array.size
-      value: 5
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogHasAnswer.sentences.Array.data[0]
-      value: I found the block!
+      value: Hi, I'm Hedy! Who are you?
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogHasAnswer.sentences.Array.data[1]
-      value: That's great, I'll tell you how to play one more time.
+      value: I'm a goat that lives on the mountain. What are you doing here?
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogHasAnswer.sentences.Array.data[2]
-      value: Thanks.
+      value: I am trying to find my family, can I go past?
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogHasAnswer.sentences.Array.data[3]
-      value: You should do the actions I tell you, but only if I say 'Simon says'
-        first.
+      value: Hmpf... I don't know why you are here... I only let animals over the
+        mountain that I trust!
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogHasAnswer.sentences.Array.data[4]
-      value: Let's do it!
+      value: But don't you believe me?
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogHasAnswer.sentences.Array.data[5]
-      value: You look hungry, what do you say I get you some food?
+      value: Hmpf... You look like a nice dog. But I'm just a bit grumpy. Someone
+        stole my lunch!
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogHasAnswer.sentences.Array.data[6]
-      value: Really?! Yes I'd love that!
+      value: Oh, that's terrible! Can I help you with that?
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogHasAnswer.sentences.Array.data[7]
-      value: You do need to win this game first though... it's called Simon Says.
+      value: I don't know... I think you should wait. Maybe a joke will cheer me
+        up!
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogHasAnswer.sentences.Array.data[8]
-      value: Alright... what's that?
+      value: Hmm... Not sure if I know any jokes...
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -1193,7 +1307,7 @@ PrefabInstance:
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogPuzzleCompleted.sentences.Array.size
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -1235,7 +1349,7 @@ PrefabInstance:
     - target: {fileID: 8660793725558201169, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: noMoving
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8660793725558201169, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -2909,6 +3023,36 @@ PrefabInstance:
         type: 3}
       propertyPath: noMoving
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950093220229846825, guid: 1df7cda00687b3f46b23e222b5839f73,
+        type: 3}
+      propertyPath: dialog.NPCName
+      value: Hedy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950093220229846825, guid: 1df7cda00687b3f46b23e222b5839f73,
+        type: 3}
+      propertyPath: SpeedMultiplier
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950093220229846825, guid: 1df7cda00687b3f46b23e222b5839f73,
+        type: 3}
+      propertyPath: dialog.sentences.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950093220229846825, guid: 1df7cda00687b3f46b23e222b5839f73,
+        type: 3}
+      propertyPath: dialog.sentences.Array.data[0]
+      value: What a beautiful field of flowers!
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950093220229846825, guid: 1df7cda00687b3f46b23e222b5839f73,
+        type: 3}
+      propertyPath: dialog.sentences.Array.data[1]
+      value: And it's so sunny here!
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950093220229846825, guid: 1df7cda00687b3f46b23e222b5839f73,
+        type: 3}
+      propertyPath: dialog.sentences.Array.data[2]
+      value: I'm glad I got over the mountain!
       objectReference: {fileID: 0}
     - target: {fileID: 7426278994110986792, guid: 1df7cda00687b3f46b23e222b5839f73,
         type: 3}
@@ -56493,7 +56637,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 550517433}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 94.9, y: 17.8, z: 0}
+  m_LocalPosition: {x: 95, y: 18, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 253757964}
@@ -56546,12 +56690,12 @@ PrefabInstance:
     - target: {fileID: 5950093220229846825, guid: 1df7cda00687b3f46b23e222b5839f73,
         type: 3}
       propertyPath: dialog.sentences.Array.data[0]
-      value: This mud is very thick.
+      value: There's thorns in this mud...
       objectReference: {fileID: 0}
     - target: {fileID: 5950093220229846825, guid: 1df7cda00687b3f46b23e222b5839f73,
         type: 3}
       propertyPath: dialog.sentences.Array.data[1]
-      value: I could never get through here.
+      value: How will I get through here?
       objectReference: {fileID: 0}
     - target: {fileID: 5950093220229846825, guid: 1df7cda00687b3f46b23e222b5839f73,
         type: 3}
@@ -56631,6 +56775,11 @@ PrefabInstance:
         type: 3}
       propertyPath: noMoving
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950093220229846825, guid: 1df7cda00687b3f46b23e222b5839f73,
+        type: 3}
+      propertyPath: SpeedMultiplier
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 7426278994110986792, guid: 1df7cda00687b3f46b23e222b5839f73,
         type: 3}
@@ -57181,6 +57330,12 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!4 &831528851 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3802940064727303775, guid: 21eb6d44e34b12d4385daac697669991,
+    type: 3}
+  m_PrefabInstance: {fileID: 167516743}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &914443467
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -79800,7 +79955,7 @@ PrefabInstance:
     - target: {fileID: 685082872573353614, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.12
+      value: 10.5
       objectReference: {fileID: 0}
     - target: {fileID: 685082872573353614, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -79887,6 +80042,11 @@ PrefabInstance:
       propertyPath: noMoving
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2315414422462504425, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: SpeedMultiplier
+      value: 0.8
+      objectReference: {fileID: 0}
     - target: {fileID: 2867435346613850539, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -79925,6 +80085,11 @@ PrefabInstance:
     - target: {fileID: 4331455801888404367, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: noMoving
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4331455801888404367, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: SpeedMultiplier
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4331455801888404367, guid: 21eb6d44e34b12d4385daac697669991,
@@ -80010,12 +80175,12 @@ PrefabInstance:
     - target: {fileID: 5597087193315718736, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.33
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 5597087193315718736, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.45
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5904458662141186400, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -80050,12 +80215,17 @@ PrefabInstance:
     - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: dialog.NPCName
-      value: Hedy
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: CodingBlockSize
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: SpeedMultiplier
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -80070,12 +80240,12 @@ PrefabInstance:
     - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: GoToNextCodingBlock
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: dialog.sentences.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -80134,6 +80304,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6935705626500962560, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
+      propertyPath: SpeedMultiplier
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935705626500962560, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
       propertyPath: TalkAction.Message
       value: go right
       objectReference: {fileID: 0}
@@ -80150,6 +80325,11 @@ PrefabInstance:
     - target: {fileID: 7122267374763521420, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: noMoving
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7122267374763521420, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: SpeedMultiplier
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7122267374763521420, guid: 21eb6d44e34b12d4385daac697669991,
@@ -80202,6 +80382,16 @@ PrefabInstance:
       propertyPath: WaitSeconds
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7441273773521204476, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: SpeedMultiplier
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7441273773521204476, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: GoToNextCodingBlock
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7662308332673906540, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_Name
@@ -80236,12 +80426,13 @@ PrefabInstance:
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: PuzzleDescription
-      value: 
+      value: The bear wants to know if you know how to walk around the thorny bushes.
+        He really cares for you!
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.NPCName
-      value: Farsighted bear
+      value: Wise bear
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -80256,7 +80447,7 @@ PrefabInstance:
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogHasAnswer.NPCName
-      value: Farsighted bear
+      value: Wise bear
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -80311,7 +80502,7 @@ PrefabInstance:
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogPuzzleCompleted.NPCName
-      value: Farsighted bear
+      value: Wise bear
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -80409,7 +80600,7 @@ PrefabInstance:
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.sentences.Array.size
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -80450,48 +80641,109 @@ PrefabInstance:
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogHasAnswer.sentences.Array.size
-      value: 3
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogHasAnswer.sentences.Array.data[0]
-      value: Did you find my favourite colour?
+      value: Hi there, who might you be?
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogHasAnswer.sentences.Array.data[1]
-      value: I think so.
+      value: Hi, I'm Hedy!
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogHasAnswer.sentences.Array.data[2]
-      value: Let's hear it, ask me if you found the right colour.
+      value: Ah, you want to get back to your family?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogHasAnswer.sentences.Array.data[3]
+      value: Yes! How did you know?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogHasAnswer.sentences.Array.data[4]
+      value: 'I''m very wise. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogHasAnswer.sentences.Array.data[5]
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogHasAnswer.sentences.Array.data[6]
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogHasAnswer.sentences.Array.data[7]
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogHasAnswer.sentences.Array.data[8]
+      value: So, if you want to go on you have to watch out on the muddy path!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogHasAnswer.sentences.Array.data[9]
+      value: Oh? Whats the problem there?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogHasAnswer.sentences.Array.data[10]
+      value: There are a lot of thorny bushes there... Watch out for them or the
+        thorns could get stuck in your fur!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogHasAnswer.sentences.Array.data[11]
+      value: How can I get past them?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogHasAnswer.sentences.Array.data[12]
+      value: You just need to check if the path is free. If there are bushes in the
+        way, you need to go around them.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogHasAnswer.sentences.Array.data[13]
+      value: All right, I think I know how to do that!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogHasAnswer.sentences.Array.data[14]
+      value: Please, show me how to do it! I want you to be able to cross safely.
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogPuzzleCompleted.sentences.Array.size
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogPuzzleCompleted.sentences.Array.data[0]
-      value: You did it! I'll tell you the secret now. If you want the helpful monkey
-        to help you up the cliff, you need to use the word 'carry'.
+      value: Well done Hedy! I'm sure you'll make it past those bushes.
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogPuzzleCompleted.sentences.Array.data[1]
-      value: Thanks so much!
+      value: Thank you bear!
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogPuzzleCompleted.sentences.Array.data[2]
-      value: You're welcome. Goodbye.
+      value: I'm certain you'll get to your family safely.
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogPuzzleCompleted.sentences.Array.data[3]
-      value: Bye.
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321133, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -80502,6 +80754,21 @@ PrefabInstance:
         type: 3}
       propertyPath: noMoving
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8660793725558201169, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: WaitSeconds
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8660793725558201169, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: CodingBlockSize
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8660793725558201169, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: SpeedMultiplier
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8660793725558201169, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -80516,7 +80783,7 @@ PrefabInstance:
     - target: {fileID: 8660793725558201169, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: GoToNextCodingBlock
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9130943912825816716, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -80670,6 +80937,80 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   useCollider: 1
   DrawGizmos: 1
+--- !u!1001 &1580359094
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 831528851}
+    m_Modifications:
+    - target: {fileID: 5950093220229846825, guid: 1df7cda00687b3f46b23e222b5839f73,
+        type: 3}
+      propertyPath: noMoving
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7426278994110986792, guid: 1df7cda00687b3f46b23e222b5839f73,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7426278994110986792, guid: 1df7cda00687b3f46b23e222b5839f73,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7426278994110986792, guid: 1df7cda00687b3f46b23e222b5839f73,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 7426278994110986792, guid: 1df7cda00687b3f46b23e222b5839f73,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7426278994110986792, guid: 1df7cda00687b3f46b23e222b5839f73,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7426278994110986792, guid: 1df7cda00687b3f46b23e222b5839f73,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7426278994110986792, guid: 1df7cda00687b3f46b23e222b5839f73,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7426278994110986792, guid: 1df7cda00687b3f46b23e222b5839f73,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7426278994110986792, guid: 1df7cda00687b3f46b23e222b5839f73,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7426278994110986792, guid: 1df7cda00687b3f46b23e222b5839f73,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7426278994110986792, guid: 1df7cda00687b3f46b23e222b5839f73,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663711518616734711, guid: 1df7cda00687b3f46b23e222b5839f73,
+        type: 3}
+      propertyPath: m_Name
+      value: Talk Walk Wait Waypoint (7)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1df7cda00687b3f46b23e222b5839f73, type: 3}
 --- !u!1001 &1702575047
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -80681,6 +81022,11 @@ PrefabInstance:
         type: 3}
       propertyPath: noMoving
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950093220229846825, guid: 1df7cda00687b3f46b23e222b5839f73,
+        type: 3}
+      propertyPath: SpeedMultiplier
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 7426278994110986792, guid: 1df7cda00687b3f46b23e222b5839f73,
         type: 3}
@@ -80827,6 +81173,11 @@ PrefabInstance:
         type: 3}
       propertyPath: noMoving
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950093220229846825, guid: 1df7cda00687b3f46b23e222b5839f73,
+        type: 3}
+      propertyPath: SpeedMultiplier
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 7426278994110986792, guid: 1df7cda00687b3f46b23e222b5839f73,
         type: 3}
