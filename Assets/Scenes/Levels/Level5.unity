@@ -9053,6 +9053,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
+      propertyPath: PuzzleDescription
+      value: Use the five branches you found to build the bridge up again piece by
+        piece.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
       propertyPath: DialogFirst.NPCName
       value: Hedy
       objectReference: {fileID: 0}
@@ -51729,8 +51735,11 @@ PrefabInstance:
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: PuzzleDescription
-      value: The bear wants to know if you know how to walk around the thorny bushes.
-        He really cares for you!
+      value: 'You promised the bear you''d find his necklace and give it to him.
+        In return he will let you pass through. He''s asking you to explain this
+        deal to him again.
+
+        Hint: use if like you did in the last level.'
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
