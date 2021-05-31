@@ -57,7 +57,6 @@ public class CodingPuzzle : InteractableObject
         {
             // if Hedy doesn't have the answer before the puzzle
             yield return dialogManager.StartDialog(DialogFirst);
-            //_codingUIHandler.ShowCodingUI(_playerIntercation.Inventory, Answer, PuzzleDescription, OnPuzzleCompleteCallback, OnPuzzleWrongCallback);
         }
     }
 
