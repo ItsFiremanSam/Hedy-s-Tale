@@ -211,20 +211,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Inventory:
   - IsKeyword: 1
+    Type: 0
     Content: repeat
   - IsKeyword: 1
+    Type: 0
     Content: is
   - IsKeyword: 1
+    Type: 0
     Content: if
   - IsKeyword: 1
+    Type: 0
     Content: times
   - IsKeyword: 1
+    Type: 0
     Content: print
   - IsKeyword: 0
+    Type: 0
     Content: I can
   - IsKeyword: 0
+    Type: 0
     Content: pass through
   - IsKeyword: 0
+    Type: 0
     Content: given
 --- !u!50 &24449959
 Rigidbody2D:
@@ -8830,12 +8838,12 @@ PrefabInstance:
     - target: {fileID: 1884795054148910516, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 95.618034
+      value: 95.75
       objectReference: {fileID: 0}
     - target: {fileID: 1884795054148910516, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 101.68375
+      value: 103.53
       objectReference: {fileID: 0}
     - target: {fileID: 1884795054148910516, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -8876,6 +8884,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859234543748732301, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859234543748732301, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -2.12
       objectReference: {fileID: 0}
     - target: {fileID: 2867435346613850539, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -8994,13 +9012,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7767812622286252030, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
-      propertyPath: m_Sprite
-      value: 
+      propertyPath: m_Size.x
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7767812622286252030, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
+      propertyPath: m_Size.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7767812622286252030, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9a4eb709414832041b6298ddd9539f80,
+        type: 3}
+    - target: {fileID: 7767812622286252030, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
       propertyPath: m_WasSpriteAssigned
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321122, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_Radius
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321122, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -9107,7 +9146,8 @@ PrefabInstance:
       propertyPath: DialogPuzzleCompleted.sentences.Array.data[0]
       value: I did it!
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7836411685114321133, guid: 21eb6d44e34b12d4385daac697669991, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 21eb6d44e34b12d4385daac697669991, type: 3}
 --- !u!212 &282180779 stripped
 SpriteRenderer:
@@ -9115,6 +9155,38 @@ SpriteRenderer:
     type: 3}
   m_PrefabInstance: {fileID: 282180778}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &282180780 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7662308332673906540, guid: 21eb6d44e34b12d4385daac697669991,
+    type: 3}
+  m_PrefabInstance: {fileID: 282180778}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &282180781
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 282180780}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.2}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4, y: 5}
+    newSize: {x: 4, y: 5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3, y: 4.5}
+  m_EdgeRadius: 0
 --- !u!4 &389311641 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7344574210087128628, guid: 995ed82f08fab5a429bf61729c08763c,
@@ -36091,6 +36163,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PuzzleBlock:
     IsKeyword: 0
+    Type: 0
     Content: five
   Amount: 5
   CurrentAmount: 0
@@ -50652,7 +50725,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 282180779}
-  puzzleSolvedSprite: {fileID: 0}
+  puzzleSolvedSprite: {fileID: 21300000, guid: 1e6a316b26e32ff4d8697048f8214ea0, type: 3}
 --- !u!4 &1964671673
 Transform:
   m_ObjectHideFlags: 0
@@ -53302,4 +53375,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PuzzleBlock:
     IsKeyword: 0
+    Type: 0
     Content: branch
