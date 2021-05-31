@@ -195,7 +195,7 @@ Transform:
   - {fileID: 103422790}
   - {fileID: 1879015007}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &24449958
 MonoBehaviour:
@@ -221,15 +221,11 @@ MonoBehaviour:
   - IsKeyword: 1
     Content: print
   - IsKeyword: 0
-    Content: my story
+    Content: I can
   - IsKeyword: 0
-    Content: a joke
+    Content: pass through
   - IsKeyword: 0
-    Content: smiling
-  - IsKeyword: 0
-    Content: path
-  - IsKeyword: 0
-    Content: free
+    Content: given
 --- !u!50 &24449959
 Rigidbody2D:
   serializedVersion: 4
@@ -392,7 +388,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &103422789
 GameObject:
@@ -8719,6 +8715,80 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1df7cda00687b3f46b23e222b5839f73, type: 3}
+--- !u!1001 &201588045
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5979487619007110658, guid: 10ee5b238a61d6f439d07c5ae256474e,
+        type: 3}
+      propertyPath: PuzzleBlock.Content
+      value: necklace
+      objectReference: {fileID: 0}
+    - target: {fileID: 5979487619007110659, guid: 10ee5b238a61d6f439d07c5ae256474e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5979487619007110659, guid: 10ee5b238a61d6f439d07c5ae256474e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 115.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5979487619007110659, guid: 10ee5b238a61d6f439d07c5ae256474e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 83.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 5979487619007110659, guid: 10ee5b238a61d6f439d07c5ae256474e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5979487619007110659, guid: 10ee5b238a61d6f439d07c5ae256474e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5979487619007110659, guid: 10ee5b238a61d6f439d07c5ae256474e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5979487619007110659, guid: 10ee5b238a61d6f439d07c5ae256474e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5979487619007110659, guid: 10ee5b238a61d6f439d07c5ae256474e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5979487619007110659, guid: 10ee5b238a61d6f439d07c5ae256474e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5979487619007110659, guid: 10ee5b238a61d6f439d07c5ae256474e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5979487619007110659, guid: 10ee5b238a61d6f439d07c5ae256474e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5979487619007110662, guid: 10ee5b238a61d6f439d07c5ae256474e,
+        type: 3}
+      propertyPath: m_Name
+      value: Necklace
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 10ee5b238a61d6f439d07c5ae256474e, type: 3}
 --- !u!4 &389311641 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7344574210087128628, guid: 995ed82f08fab5a429bf61729c08763c,
@@ -32086,7 +32156,7 @@ Transform:
   m_LocalScale: {x: 9.24, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &432040886
 PrefabInstance:
@@ -35204,7 +35274,7 @@ Transform:
   m_Children:
   - {fileID: 389311641}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &978833279
 GameObject:
@@ -35329,7 +35399,7 @@ Transform:
   m_LocalScale: {x: 0.75135016, y: 2.072833, z: 2.072833}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 89.227005}
 --- !u!1001 &1027271006
 PrefabInstance:
@@ -48788,7 +48858,7 @@ PrefabInstance:
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: Answer.Array.size
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -48799,7 +48869,7 @@ PrefabInstance:
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.NPCName
-      value: Wise bear
+      value: Farm bear
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -48814,7 +48884,12 @@ PrefabInstance:
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogHasAnswer.NPCName
-      value: Wise bear
+      value: Farm bear
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogFirst.NPCTalkFirst
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -48829,7 +48904,7 @@ PrefabInstance:
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: Answer.Array.data[1].Content
-      value: path
+      value: necklace
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -48839,17 +48914,17 @@ PrefabInstance:
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: Answer.Array.data[3].Content
-      value: free
+      value: given
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: Answer.Array.data[4].Content
-      value: continue
+      value: I can
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: Answer.Array.data[5].Content
-      value: else
+      value: pass through
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -48864,12 +48939,12 @@ PrefabInstance:
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogHasAnswer.NPCTalkFirst
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogPuzzleCompleted.NPCName
-      value: Wise bear
+      value: Farm bear
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -48889,7 +48964,7 @@ PrefabInstance:
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: Answer.Array.data[5].IsKeyword
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -48967,7 +49042,7 @@ PrefabInstance:
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.sentences.Array.size
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -48977,63 +49052,74 @@ PrefabInstance:
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.sentences.Array.data[0]
-      value: There's cliffs everywhere... I can't go on.
+      value: Who's there?
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.sentences.Array.data[1]
-      value: Hey... you want to know the secret to climbing cliffs?
+      value: I'm Hedy, nice to meet you.
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.sentences.Array.data[2]
-      value: Yeah! You'll tell me?
+      value: Hmm... this is private property, you know? You can't be here.
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.sentences.Array.data[3]
-      value: If you can guess my favourite colour I'll tell you.
+      value: Oh, I'm sorry! I'm just trying to find my family.
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.sentences.Array.data[4]
-      value: But there's so many colours!
+      value: Is that so? Well, I'm trying to find a necklace but we can't all have
+        everything.
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.sentences.Array.data[5]
-      value: I'll give you a hint... it's the same colour as some of the flowers
-        here.
+      value: I could help you find your necklace! Will you let me pass through then?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogFirst.sentences.Array.data[6]
+      value: I suppose... I dropped the necklace somewhere while I was watering the
+        flowers.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogFirst.sentences.Array.data[7]
+      value: It should be around here then. I'll find it for you!
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogHasAnswer.sentences.Array.size
-      value: 15
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogHasAnswer.sentences.Array.data[0]
-      value: Hi there, who might you be?
+      value: I found the necklace!
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogHasAnswer.sentences.Array.data[1]
-      value: Hi, I'm Hedy!
+      value: You did? All right...
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogHasAnswer.sentences.Array.data[2]
-      value: Ah, you want to get back to your family?
+      value: Can I pass through now?
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogHasAnswer.sentences.Array.data[3]
-      value: Yes! How did you know?
+      value: Hm... describe our deal to me once more please.
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogHasAnswer.sentences.Array.data[4]
-      value: 'I''m very wise. '
+      value: Sure.
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -49090,12 +49176,12 @@ PrefabInstance:
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogPuzzleCompleted.sentences.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogPuzzleCompleted.sentences.Array.data[0]
-      value: Well done Hedy! I'm sure you'll make it past those bushes.
+      value: Good luck finding your family.
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -49562,7 +49648,7 @@ Transform:
   - {fileID: 1563668069}
   - {fileID: 633864810}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1678850890
 PrefabInstance:
@@ -49698,7 +49784,7 @@ Transform:
   m_LocalScale: {x: 3.521875, y: 1.15, z: 1.15}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1879015006
 PrefabInstance:
@@ -49846,7 +49932,7 @@ Transform:
   m_Children:
   - {fileID: 1027271007}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1961086553
 PrefabInstance:
