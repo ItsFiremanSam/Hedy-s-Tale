@@ -57,11 +57,21 @@ public class CodingUIHandler : MonoBehaviour
         _onWrongAnswerCallback = onWrongAnswerCallback;
 
         // Split the inventory by creating deep copies
-        List<PuzzleBlock> inventoryKeywords = inventory.Where(block => block.IsKeyword).ToList();
-        List<PuzzleBlock> inventoryNonKeywords = inventory.Where(block => !block.IsKeyword).ToList();
+         List<PuzzleBlock> inventoryKeywords = inventory
+            .Where(block => block.Type == PuzzleBlockType.Keyword ||
+            (block.Type == PuzzleBlockType.Undefined && block.IsKeyword)).ToList();
+        List<PuzzleBlock> inventoryNonKeywords = inventory
+            .Where(block =>
+            (block.Type != PuzzleBlockType.Undefined && block.Type != PuzzleBlockType.Keyword) || // This check will be changed when new Coding UI is implemented (for now all not Undefined and not Keywords are non keywords)
+            (block.Type == PuzzleBlockType.Undefined && !block.IsKeyword)).ToList();
 
-        List<PuzzleBlock> answerKeywords = answer.Where(block => block.IsKeyword).ToList();
-        List<PuzzleBlock> answerNonKeywords = answer.Where(block => !block.IsKeyword).ToList();
+        List<PuzzleBlock> answerKeywords = answer
+            .Where(block => block.Type == PuzzleBlockType.Keyword ||
+            (block.Type == PuzzleBlockType.Undefined && block.IsKeyword)).ToList();
+        List<PuzzleBlock> answerNonKeywords = answer
+            .Where(block =>
+            (block.Type != PuzzleBlockType.Undefined && block.Type != PuzzleBlockType.Keyword) || // This check will be changed when new Coding UI is implemented (for now all not Undefined and not Keywords are non keywords)
+            (block.Type == PuzzleBlockType.Undefined && !block.IsKeyword)).ToList();
 
         // Create the Puzzle Block lists to use of the coding UI
         List<PuzzleBlock> keywords = CreatePuzzleBlocksForPuzzle(inventoryKeywords, answerKeywords);
@@ -95,7 +105,7 @@ public class CodingUIHandler : MonoBehaviour
                 result.Add(possiblePuzzleBlock);
                 inventory.Remove(possiblePuzzleBlock);
             }
-            else result.Add(new PuzzleBlock(answer.IsKeyword, null));
+            else result.Add(new PuzzleBlock(answer.IsKeyword, answer.Type, null));
         }
 
         // 2. Fill the rest of the puzzleblocks
