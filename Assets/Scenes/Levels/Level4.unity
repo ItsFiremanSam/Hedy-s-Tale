@@ -56680,12 +56680,12 @@ PrefabInstance:
     - target: {fileID: 5950093220229846825, guid: 1df7cda00687b3f46b23e222b5839f73,
         type: 3}
       propertyPath: dialog.sentences.Array.data[0]
-      value: This mud is very thick.
+      value: There's thorns in this mud...
       objectReference: {fileID: 0}
     - target: {fileID: 5950093220229846825, guid: 1df7cda00687b3f46b23e222b5839f73,
         type: 3}
       propertyPath: dialog.sentences.Array.data[1]
-      value: I could never get through here.
+      value: How will I get through here?
       objectReference: {fileID: 0}
     - target: {fileID: 5950093220229846825, guid: 1df7cda00687b3f46b23e222b5839f73,
         type: 3}
