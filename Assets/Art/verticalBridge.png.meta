@@ -56,9 +56,6 @@ TextureImporter:
   - first:
       213: 4374418463515257350
     second: verticalBridge_17
-  - first:
-      213: 1900555417649569623
-    second: verticalBridge_18
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -504,7 +501,7 @@ TextureImporter:
       name: verticalBridge_17
       rect:
         serializedVersion: 2
-        x: 32
+        x: 48
         y: 0
         width: 16
         height: 16
@@ -517,27 +514,6 @@ TextureImporter:
       bones: []
       spriteID: 60aacb87a6e05bc30800000000000000
       internalID: 4374418463515257350
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: verticalBridge_18
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 75f52f03511206a10800000000000000
-      internalID: 1900555417649569623
       vertices: []
       indices: 
       edges: []

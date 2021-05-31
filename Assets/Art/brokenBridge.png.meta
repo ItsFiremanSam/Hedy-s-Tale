@@ -1,64 +1,61 @@
 fileFormatVersion: 2
-guid: 0a33b6833d4dc4742ba513682e66a3f5
+guid: a9ce69ef3e3916e439ba2efd517a1edb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8805581670946437858
-    second: brokenBridge_0
+      213: 6735692643433351380
+    second: brokenBridge 1_0
   - first:
-      213: 3003643247213955698
-    second: brokenBridge_1
+      213: -3876118257843590137
+    second: brokenBridge 1_1
   - first:
-      213: -5557556043622181722
-    second: brokenBridge_2
+      213: 8500559725042616781
+    second: brokenBridge 1_2
   - first:
-      213: -954799713633417277
-    second: brokenBridge_3
+      213: -509534748682699250
+    second: brokenBridge 1_3
   - first:
-      213: 2619469460618294838
-    second: brokenBridge_4
+      213: -1545894617450271947
+    second: brokenBridge 1_4
   - first:
-      213: -5044844815861940700
-    second: brokenBridge_5
+      213: 5223235024385412102
+    second: brokenBridge 1_5
   - first:
-      213: -1772701275775023005
-    second: brokenBridge_6
+      213: 6113706519214199798
+    second: brokenBridge 1_6
   - first:
-      213: 1053390621851715722
-    second: brokenBridge_7
+      213: -5780717712469270798
+    second: brokenBridge 1_7
   - first:
-      213: 3198402906816723958
-    second: brokenBridge_8
+      213: -5558389024446945705
+    second: brokenBridge 1_8
   - first:
-      213: 6193458437854177449
-    second: brokenBridge_9
+      213: -6717908927346829748
+    second: brokenBridge 1_9
   - first:
-      213: 6080143463254330880
-    second: brokenBridge_10
+      213: 4613328692180424021
+    second: brokenBridge 1_10
   - first:
-      213: -8697590137462246276
-    second: brokenBridge_11
+      213: -6773032610978343760
+    second: brokenBridge 1_11
   - first:
-      213: -5716839121219836472
-    second: brokenBridge_12
+      213: -6633996643702334487
+    second: brokenBridge 1_12
   - first:
-      213: 4094539486100720275
-    second: brokenBridge_13
+      213: 9171680176617655541
+    second: brokenBridge 1_13
   - first:
-      213: 6225365422802728571
-    second: brokenBridge_14
+      213: -6090234320823731637
+    second: brokenBridge 1_14
   - first:
-      213: 1159455517990601449
-    second: brokenBridge_15
+      213: 8449489651343518883
+    second: brokenBridge 1_15
   - first:
-      213: 598792427032608177
-    second: brokenBridge_16
+      213: -3483345121632794763
+    second: brokenBridge 1_16
   - first:
-      213: -769386792454635783
-    second: brokenBridge_17
-  - first:
-      213: 6190001888460276152
-    second: brokenBridge_18
+      213: 8971459489787439673
+    second: brokenBridge 1_17
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -144,7 +141,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: brokenBridge_0
+      name: brokenBridge 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -158,14 +155,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e150c8ecf1a4cc580800000000000000
-      internalID: -8805581670946437858
+      spriteID: 4d88e00a5ccf97d50800000000000000
+      internalID: 6735692643433351380
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: brokenBridge_1
+      name: brokenBridge 1_1
       rect:
         serializedVersion: 2
         x: 16
@@ -179,14 +176,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27a403e8e951fa920800000000000000
-      internalID: 3003643247213955698
+      spriteID: 70ca3d52bf2453ac0800000000000000
+      internalID: -3876118257843590137
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: brokenBridge_2
+      name: brokenBridge 1_2
       rect:
         serializedVersion: 2
         x: 32
@@ -200,14 +197,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a4139839389fd2b0800000000000000
-      internalID: -5557556043622181722
+      spriteID: dc94823380e08f570800000000000000
+      internalID: 8500559725042616781
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: brokenBridge_3
+      name: brokenBridge 1_3
       rect:
         serializedVersion: 2
         x: 48
@@ -221,14 +218,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c74c3d18bedfb2f0800000000000000
-      internalID: -954799713633417277
+      spriteID: e0ebc0088d4cde8f0800000000000000
+      internalID: -509534748682699250
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: brokenBridge_4
+      name: brokenBridge 1_4
       rect:
         serializedVersion: 2
         x: 0
@@ -242,14 +239,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 636332c88993a5420800000000000000
-      internalID: 2619469460618294838
+      spriteID: 53b20b23901eb8ae0800000000000000
+      internalID: -1545894617450271947
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: brokenBridge_5
+      name: brokenBridge 1_5
       rect:
         serializedVersion: 2
         x: 16
@@ -263,14 +260,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42ef3936e5c1df9b0800000000000000
-      internalID: -5044844815861940700
+      spriteID: 60c0fdea498ac7840800000000000000
+      internalID: 5223235024385412102
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: brokenBridge_6
+      name: brokenBridge 1_6
       rect:
         serializedVersion: 2
         x: 32
@@ -284,14 +281,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3684c84f4991667e0800000000000000
-      internalID: -1772701275775023005
+      spriteID: 6f390caffaf38d450800000000000000
+      internalID: 6113706519214199798
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: brokenBridge_7
+      name: brokenBridge 1_7
       rect:
         serializedVersion: 2
         x: 48
@@ -305,14 +302,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a88033180356e9e00800000000000000
-      internalID: 1053390621851715722
+      spriteID: 2fed5793ed3c6cfa0800000000000000
+      internalID: -5780717712469270798
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: brokenBridge_8
+      name: brokenBridge 1_8
       rect:
         serializedVersion: 2
         x: 16
@@ -326,14 +323,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6fb33657f72036c20800000000000000
-      internalID: 3198402906816723958
+      spriteID: 756e862c1a2acd2b0800000000000000
+      internalID: -5558389024446945705
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: brokenBridge_9
+      name: brokenBridge 1_9
       rect:
         serializedVersion: 2
         x: 32
@@ -347,14 +344,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a8a17782a593f550800000000000000
-      internalID: 6193458437854177449
+      spriteID: c4611107c6135c2a0800000000000000
+      internalID: -6717908927346829748
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: brokenBridge_10
+      name: brokenBridge 1_10
       rect:
         serializedVersion: 2
         x: 48
@@ -368,14 +365,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 00e00be0442016450800000000000000
-      internalID: 6080143463254330880
+      spriteID: 5551889c006d50040800000000000000
+      internalID: 4613328692180424021
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: brokenBridge_11
+      name: brokenBridge 1_11
       rect:
         serializedVersion: 2
         x: 0
@@ -389,14 +386,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c743f9e0ad3fb4780800000000000000
-      internalID: -8697590137462246276
+      spriteID: 0b4df72b9ba5102a0800000000000000
+      internalID: -6773032610978343760
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: brokenBridge_12
+      name: brokenBridge 1_12
       rect:
         serializedVersion: 2
         x: 16
@@ -410,14 +407,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c5a2adbb15b9a0b0800000000000000
-      internalID: -5716839121219836472
+      spriteID: 9eb1df2733f4fe3a0800000000000000
+      internalID: -6633996643702334487
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: brokenBridge_13
+      name: brokenBridge 1_13
       rect:
         serializedVersion: 2
         x: 32
@@ -431,14 +428,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39a08d308f9b2d830800000000000000
-      internalID: 4094539486100720275
+      spriteID: 5fc89c8e68a584f70800000000000000
+      internalID: 9171680176617655541
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: brokenBridge_14
+      name: brokenBridge 1_14
       rect:
         serializedVersion: 2
         x: 48
@@ -452,14 +449,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b76f72f5ed0f46650800000000000000
-      internalID: 6225365422802728571
+      spriteID: b4ab86417242b7ba0800000000000000
+      internalID: -6090234320823731637
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: brokenBridge_15
+      name: brokenBridge 1_15
       rect:
         serializedVersion: 2
         x: 0
@@ -473,14 +470,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e242ba86a6371010800000000000000
-      internalID: 1159455517990601449
+      spriteID: 3ac6ba1121e924570800000000000000
+      internalID: 8449489651343518883
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: brokenBridge_16
+      name: brokenBridge 1_16
       rect:
         serializedVersion: 2
         x: 16
@@ -494,35 +491,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1bdf8733a865f4800800000000000000
-      internalID: 598792427032608177
+      spriteID: 577ccf2411ca8afc0800000000000000
+      internalID: -3483345121632794763
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: brokenBridge_17
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9fe3dd4e9c69255f0800000000000000
-      internalID: -769386792454635783
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: brokenBridge_18
+      name: brokenBridge 1_17
       rect:
         serializedVersion: 2
         x: 48
@@ -536,8 +512,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b10ca8ebed47e550800000000000000
-      internalID: 6190001888460276152
+      spriteID: 93a66958fd6018c70800000000000000
+      internalID: 8971459489787439673
       vertices: []
       indices: 
       edges: []
