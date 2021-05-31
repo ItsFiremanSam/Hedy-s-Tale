@@ -80713,7 +80713,7 @@ PrefabInstance:
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogHasAnswer.sentences.Array.data[13]
-      value: Allright, I think I know how to do that!
+      value: All right, I think I know how to do that!
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
