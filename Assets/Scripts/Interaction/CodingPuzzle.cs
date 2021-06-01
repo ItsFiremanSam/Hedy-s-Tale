@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Assets.Scripts.Interaction;
 using UnityEngine;
 
 public class CodingPuzzle : InteractableObject
@@ -13,6 +14,7 @@ public class CodingPuzzle : InteractableObject
     private PlayerInteraction _playerIntercation;
     private bool PuzzleComplete;
     public PuzzleBlock RewardBlock;
+    public SpriteChanger spriteChanger;
 
     public List<PuzzleBlock> Answer;
     [TextArea(4, 8)]
@@ -62,6 +64,10 @@ public class CodingPuzzle : InteractableObject
 
     public void OnPuzzleCompleteCallback()
     {
+        if (spriteChanger != null)
+        {
+            spriteChanger.ChangeSprite();
+        }
         _animationTrigger.StartAnimation();
         if (RewardBlock != null && !string.IsNullOrEmpty(RewardBlock.Content))
         {
