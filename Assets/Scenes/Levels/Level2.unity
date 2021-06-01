@@ -35734,6 +35734,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 855735149073533944, guid: 74b86e0c52c8a2b4686fab7b6c3a3fa1,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 855735149073533947, guid: 74b86e0c52c8a2b4686fab7b6c3a3fa1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 885144594198433601, guid: 74b86e0c52c8a2b4686fab7b6c3a3fa1,
         type: 3}
       propertyPath: m_Name
@@ -36030,18 +36040,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Inventory:
   - IsKeyword: 1
+    Type: 0
     Content: ask
   - IsKeyword: 0
+    Type: 0
     Content: jump,
   - IsKeyword: 0
+    Type: 0
     Content: go right,
   - IsKeyword: 0
+    Type: 0
     Content: go left,
   - IsKeyword: 0
+    Type: 0
     Content: jump.
   - IsKeyword: 0
+    Type: 0
     Content: spin,
   - IsKeyword: 0
+    Type: 0
     Content: is your
 --- !u!95 &1257147538
 Animator:
