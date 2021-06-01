@@ -52,7 +52,7 @@ public class DialogManager : MonoBehaviour
             interactionNextSentence.SetActive(true);
 
             StopCoroutine(coroutine);
-            yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Space));
+            yield return new WaitUntil(() => Time.timeScale != 0 && (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Space)));
             ClearDialog();
             currentTalking = !currentTalking;
         }
