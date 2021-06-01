@@ -11,19 +11,19 @@ public static class AudioPreferences
 
     public static float MasterVolume
     {
-        get => PlayerPrefs.GetFloat(MasterVolumePrefKey, -10);
+        get => PlayerPrefs.GetFloat(MasterVolumePrefKey, 0);
         set => PlayerPrefs.SetFloat(MasterVolumePrefKey, value);
     }
 
     public static float MusicVolume
     {
-        get => PlayerPrefs.GetFloat(MusicVolumePrefKey, -10);
+        get => PlayerPrefs.GetFloat(MusicVolumePrefKey, -8);
         set => PlayerPrefs.SetFloat(MusicVolumePrefKey, value);
     }
 
     public static float SFXVolume
     {
-        get => PlayerPrefs.GetFloat(SFXVolumePrefKey, -10);
+        get => PlayerPrefs.GetFloat(SFXVolumePrefKey, 0);
         set => PlayerPrefs.SetFloat(SFXVolumePrefKey, value);
     }
 }
