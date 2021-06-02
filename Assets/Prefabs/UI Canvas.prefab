@@ -1410,7 +1410,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: MAIN MENU
+  m_Text: RETURN TO MAIN MENU
 --- !u!114 &855735150573053323
 MonoBehaviour:
   m_ObjectHideFlags: 0
