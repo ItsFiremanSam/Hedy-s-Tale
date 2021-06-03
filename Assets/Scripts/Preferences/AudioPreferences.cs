@@ -17,7 +17,7 @@ public static class AudioPreferences
 
     public static float MusicVolume
     {
-        get => PlayerPrefs.GetFloat(MusicVolumePrefKey, 0);
+        get => PlayerPrefs.GetFloat(MusicVolumePrefKey, -8);
         set => PlayerPrefs.SetFloat(MusicVolumePrefKey, value);
     }
 
