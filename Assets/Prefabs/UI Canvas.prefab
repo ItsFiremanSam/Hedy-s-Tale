@@ -3794,8 +3794,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 2341734849288587217}
   textName: {fileID: 8625790839534873409}
-  normalTalkingSpeed: 0.06
-  fastTalkingSpeed: 0.001
+  normalTalkingSpeed: 0.03
+  fastTalkingSpeed: 0.000000001
   interactionNextSentence: {fileID: 5413162654892893196}
   dialogSound: {fileID: 146591423017103693}
 --- !u!1 &3311125781032154599
