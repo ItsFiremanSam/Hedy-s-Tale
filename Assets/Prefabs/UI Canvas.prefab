@@ -498,7 +498,7 @@ RectTransform:
   - {fileID: 2257784896096212572}
   - {fileID: 855735149986465185}
   m_Father: {fileID: 885144594198433605}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -2206,7 +2206,6 @@ RectTransform:
   - {fileID: 885144594510626729}
   - {fileID: 885144594239704306}
   - {fileID: 1810117629110274649}
-  - {fileID: 8669750416331793256}
   - {fileID: 855735149073533944}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -3772,6 +3771,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5159580351248999378}
+  - {fileID: 8669750416331793256}
   m_Father: {fileID: 885144594198433605}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5342,8 +5342,8 @@ Transform:
   m_LocalPosition: {x: -80.94525, y: 61.78601, z: -457.6875}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 885144594198433605}
-  m_RootOrder: 4
+  m_Father: {fileID: 1810117629110274649}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &146591423017103693
 AudioSource:
