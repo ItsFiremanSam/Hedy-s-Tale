@@ -36515,14 +36515,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stepSounds:
-  - {fileID: 8300000, guid: a68d8b53e70402545812b089d59e3d03, type: 3}
-  - {fileID: 8300000, guid: 40e3366f9e438c14f9ab6d93b0fcb097, type: 3}
-  - {fileID: 8300000, guid: 64ee9ca9b9633c94193315a0aa732038, type: 3}
-  - {fileID: 8300000, guid: 5044eb355a76e1a4d813ffcb7da3b807, type: 3}
-  - {fileID: 8300000, guid: 354bbca70b824e34ba7908aa2cf28463, type: 3}
-  - {fileID: 8300000, guid: 30c761d7ef90dd8469789e26dc0f9c96, type: 3}
-  - {fileID: 8300000, guid: 840b37a99be736c4bb6e03cc9130d2a2, type: 3}
-  - {fileID: 8300000, guid: c99a8c70fe2c3b942b5abc97bbc340c7, type: 3}
+  - {fileID: 8300000, guid: 5551e031617c8eb44b8d808155a54a89, type: 3}
+  - {fileID: 8300000, guid: e8708da561c080e40bd5c897ef237fd2, type: 3}
+  - {fileID: 8300000, guid: 74990dfef74556547ab228d9b6b8a5f6, type: 3}
+  - {fileID: 8300000, guid: fb9f6a2557596fb48b5757565d4396b4, type: 3}
+  - {fileID: 8300000, guid: 1a7e3531dbb46da40a25cdb286a22d53, type: 3}
   walkingSFXSource: {fileID: 1257147545}
 --- !u!82 &1257147545
 AudioSource:
@@ -36537,7 +36534,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.2
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
