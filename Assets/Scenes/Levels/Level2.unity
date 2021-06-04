@@ -36326,7 +36326,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91bac36695c87794592a9e37cc8e6c01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 250
+  Speed: 300
   speechBubble: {fileID: 0}
   CinematicBars: {fileID: 108011657}
   animator: {fileID: 1257147538}
