@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8206942301608700751}
   - component: {fileID: 3493477903195896556}
   m_Layer: 0
-  m_Name: WalkingSFXSource
+  m_Name: SFXSource
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46,7 +46,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 0.4
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
