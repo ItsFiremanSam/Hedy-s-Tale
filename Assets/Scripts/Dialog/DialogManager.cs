@@ -10,14 +10,21 @@ public class DialogManager : MonoBehaviour
 {
     public Text textDisplay, textName;
     public float normalTalkingSpeed, fastTalkingSpeed;
-    public bool DialogActive { get; private set; }
+    public bool DialogActive
+    {
+        get; private set;
+    }
     private float _currentTalkingSpeed;
     private const string _protagonistName = "Hedy";
 
     private PlayerMovement _playerMovement;
     private GameObject _container;
     public GameObject interactionNextSentence;
-    public static DialogManager Instance { get => FindObjectOfType<DialogManager>(); }
+    public static DialogManager Instance
+    {
+        get => FindObjectOfType<DialogManager>();
+    }
+    public AudioSource dialogSound;
 
     private void Awake()
     {
@@ -45,6 +52,10 @@ public class DialogManager : MonoBehaviour
             //Prints each letter of the sentence
             foreach (char letter in sentence)
             {
+
+                if (_currentTalkingSpeed == normalTalkingSpeed)
+                    dialogSound.Play(); // play the sound for each letter
+
                 textDisplay.text += letter;
                 yield return new WaitForSeconds(_currentTalkingSpeed);
             }
@@ -52,6 +63,7 @@ public class DialogManager : MonoBehaviour
             interactionNextSentence.SetActive(true);
 
             StopCoroutine(coroutine);
+            dialogSound.Play(); // play the sound for each letter
             yield return new WaitUntil(() => Time.timeScale != 0 && (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Space)));
             ClearDialog();
             currentTalking = !currentTalking;

@@ -10,6 +10,9 @@ public class InteractionChest : InteractableObject
     public Animator codeBlockAnimator;
     public Dialog dialog;
 
+    public AudioSource chestOpenSource;
+    public AudioSource itemFoundSource;
+
     protected override void OnInteractWithPlayer(PlayerInteraction playerInteraction)
     {
         if (!_isInteracted)
@@ -30,8 +33,15 @@ public class InteractionChest : InteractableObject
         PlayerMovement playerMovement = FindObjectOfType<PlayerMovement>();
         playerMovement.DialogUIActive = true;
 
+        chestOpenSource.Play();
+
         //yield on a new YieldInstruction that waits for 5 seconds.
         yield return new WaitUntil(() => openChestAnimator.GetCurrentAnimatorStateInfo(0).IsName("Opened") && codeBlockAnimator.GetCurrentAnimatorStateInfo(0).IsName("Idle again"));
+
+        itemFoundSource.Play();
+
+        yield return new WaitForSeconds(.5f);
+
         DialogManager dialogManager = DialogManager.Instance;
         yield return dialogManager.StartDialog(dialog);
     }
