@@ -15,6 +15,8 @@ public class CodingPuzzle : InteractableObject
     private bool PuzzleComplete;
     public PuzzleBlock RewardBlock;
     public SpriteChanger spriteChanger;
+    public List<CodingPuzzle> RequiredPuzzles = new List<CodingPuzzle>();
+    public List<PuzzleBlock> RequiredPuzzleBlockRewards = new List<PuzzleBlock>();
 
     public List<PuzzleBlock> Answer;
     [TextArea(4, 8)]
@@ -49,7 +51,7 @@ public class CodingPuzzle : InteractableObject
             // if the puzzle is finished
             yield return dialogManager.StartDialog(DialogPuzzleCompleted);
         }
-        else if (hasAnswer)
+        else if (hasAnswer || CheckRequiredPuzzles())
         {
             // if Hedy got the answer before the puzzle
             yield return dialogManager.StartDialog(DialogHasAnswer);
@@ -80,5 +82,25 @@ public class CodingPuzzle : InteractableObject
     // Used for puzzles with limited amount of tries or similar
     public void OnPuzzleWrongCallback()
     {
+    }
+
+    public bool CheckRequiredPuzzles()
+    {
+        if (RequiredPuzzles.Count > 0)
+        {
+            for (int i = 0; i < RequiredPuzzles.Count; i++)
+            {
+                if (!RequiredPuzzles[i].PuzzleComplete)
+                {
+                    return false;
+                }
+            }
+            foreach (PuzzleBlock pb in RequiredPuzzleBlockRewards)
+            {
+                _player.Inventory.Add(pb);
+            }
+            return true;
+        }
+        return false;
     }
 }
