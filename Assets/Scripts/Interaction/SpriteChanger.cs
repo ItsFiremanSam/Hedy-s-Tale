@@ -9,9 +9,7 @@ namespace Assets.Scripts.Interaction
 
         public void ChangeSprite()
         {
-
             spriteRenderer.sprite = puzzleSolvedSprite;
-
         }
     }
 }
