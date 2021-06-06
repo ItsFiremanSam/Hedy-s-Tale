@@ -8,6 +8,9 @@ public class InteractionWithoutAnimation : InteractableObject
     public Animator codeBlockAnimator;
     public Dialog dialog;
 
+    public AudioSource itemPickupSource;
+    public AudioSource itemFoundSource;
+
     protected override void OnInteractWithPlayer(PlayerInteraction playerInteraction)
     {
         if (!_isInteracted)
@@ -24,11 +27,19 @@ public class InteractionWithoutAnimation : InteractableObject
 
     IEnumerator Coroutine()
     {
+
+        itemPickupSource.Play();
+
         PlayerMovement playerMovement = FindObjectOfType<PlayerMovement>();
         playerMovement.DialogUIActive = true;
 
         //yield on a new YieldInstruction that waits for 5 seconds.
         yield return new WaitUntil(() => codeBlockAnimator.GetCurrentAnimatorStateInfo(0).IsName("Idle again"));
+
+        itemFoundSource.Play();
+
+        yield return new WaitForSeconds(.5f);
+
         DialogManager dialogManager = DialogManager.Instance;
         yield return dialogManager.StartDialog(dialog);
     }
