@@ -11,12 +11,17 @@ using UnityEngine.UI;
 public class CodingUIHandler : MonoBehaviour
 {
     public GameObject KeywordPrefab;
-    public GameObject NonKeywordPrefab;
-    public GameObject MissingBlockPrefab;
+    public GameObject StringPrefab;
+    public GameObject VariablePrefab;
+    public GameObject NumberPrefab;
+
     public GameObject AnswerBlockPrefab;
 
-    public Transform KeywordPanel;
-    public Transform NonKeywordPanel;
+    public Transform KeywordContainer;
+    public Transform StringContainer;
+    public Transform VariableContainer;
+    public Transform NumberContainer;
+
     public Transform AnswerPanel;
     public GameObject DescriptionPanel;
 
@@ -49,7 +54,8 @@ public class CodingUIHandler : MonoBehaviour
     /// <param name="onWrongAnswerCallback">The function that will be called when the player puts in the wrong answer</param> 
     public void ShowCodingUI(List<PuzzleBlock> inventory, List<PuzzleBlock> answer, string puzzleDescription, Action onCorrectAnswerCallback, Action onWrongAnswerCallback)
     {
-        if (CodingUIContainer.activeSelf) return;
+        if (CodingUIContainer.activeSelf)
+            return;
         _playerMovement.CodingUIActive = true;
 
         _answer = answer;
@@ -57,27 +63,26 @@ public class CodingUIHandler : MonoBehaviour
         _onWrongAnswerCallback = onWrongAnswerCallback;
 
         // Split the inventory by creating deep copies
-         List<PuzzleBlock> inventoryKeywords = inventory
-            .Where(block => block.Type == PuzzleBlockType.Keyword ||
-            (block.Type == PuzzleBlockType.Undefined && block.IsKeyword)).ToList();
-        List<PuzzleBlock> inventoryNonKeywords = inventory
-            .Where(block =>
-            (block.Type != PuzzleBlockType.Undefined && block.Type != PuzzleBlockType.Keyword) || // This check will be changed when new Coding UI is implemented (for now all not Undefined and not Keywords are non keywords)
-            (block.Type == PuzzleBlockType.Undefined && !block.IsKeyword)).ToList();
+        List<PuzzleBlock> inventoryKeywords = inventory.Where(block => block.Type == PuzzleBlockType.Keyword).ToList();
+        List<PuzzleBlock> inventoryStrings = inventory.Where(block => block.Type == PuzzleBlockType.String).ToList();
+        List<PuzzleBlock> inventoryVariables = inventory.Where(block => block.Type == PuzzleBlockType.Variable).ToList();
+        List<PuzzleBlock> inventoryNumbers = inventory.Where(block => block.Type == PuzzleBlockType.Number).ToList();
+        //List<PuzzleBlock> inventoryNonKeywords = inventory
+        //    .Where(block =>
+        //    (block.Type != PuzzleBlockType.Undefined && block.Type != PuzzleBlockType.Keyword) || // This check will be changed when new Coding UI is implemented (for now all not Undefined and not Keywords are non keywords)
+        //    (block.Type == PuzzleBlockType.Undefined && !block.IsKeyword)).ToList();
 
-        List<PuzzleBlock> answerKeywords = answer
-            .Where(block => block.Type == PuzzleBlockType.Keyword ||
-            (block.Type == PuzzleBlockType.Undefined && block.IsKeyword)).ToList();
-        List<PuzzleBlock> answerNonKeywords = answer
-            .Where(block =>
-            (block.Type != PuzzleBlockType.Undefined && block.Type != PuzzleBlockType.Keyword) || // This check will be changed when new Coding UI is implemented (for now all not Undefined and not Keywords are non keywords)
-            (block.Type == PuzzleBlockType.Undefined && !block.IsKeyword)).ToList();
+        List<PuzzleBlock> answerKeywords = answer.Where(block => block.Type == PuzzleBlockType.Keyword).ToList();
+        //List<PuzzleBlock> answerNonKeywords = answer
+        //    .Where(block =>
+        //    (block.Type != PuzzleBlockType.Undefined && block.Type != PuzzleBlockType.Keyword) || // This check will be changed when new Coding UI is implemented (for now all not Undefined and not Keywords are non keywords)
+        //    (block.Type == PuzzleBlockType.Undefined && !block.IsKeyword)).ToList();
 
         // Create the Puzzle Block lists to use of the coding UI
         List<PuzzleBlock> keywords = CreatePuzzleBlocksForPuzzle(inventoryKeywords, answerKeywords);
-        List<PuzzleBlock> nonKeywords = CreatePuzzleBlocksForPuzzle(inventoryNonKeywords, answerNonKeywords);
+        //List<PuzzleBlock> nonKeywords = CreatePuzzleBlocksForPuzzle(inventoryNonKeywords, answerNonKeywords);
 
-        SetCodingUI(keywords, nonKeywords, answer, puzzleDescription);
+        SetCodingUI(keywords, answer, puzzleDescription);
     }
 
     /// <summary>
@@ -100,12 +105,9 @@ public class CodingUIHandler : MonoBehaviour
             PuzzleBlock possiblePuzzleBlock = inventory
                 .Where(e => e.Equals(answer))
                 .FirstOrDefault();
-            if (possiblePuzzleBlock != null)
-            {
-                result.Add(possiblePuzzleBlock);
-                inventory.Remove(possiblePuzzleBlock);
-            }
-            else result.Add(new PuzzleBlock(answer.IsKeyword, answer.Type, null));
+
+            result.Add(possiblePuzzleBlock);
+            inventory.Remove(possiblePuzzleBlock);
         }
 
         // 2. Fill the rest of the puzzleblocks
@@ -126,10 +128,10 @@ public class CodingUIHandler : MonoBehaviour
     /// <param name="nonKeywords">A list of the user input non keywords</param> 
     /// <param name="answer">A list of the answer blocks</param> 
     /// <param name="puzzleDescription"></param> 
-    private void SetCodingUI(List<PuzzleBlock> keywords, List<PuzzleBlock> nonKeywords, List<PuzzleBlock> answer, string puzzleDescription)
+    private void SetCodingUI(List<PuzzleBlock> keywords, List<PuzzleBlock> answer, string puzzleDescription)
     {
         keywords.ForEach(b => AddToPanel(b, KeywordPanel, KeywordPrefab));
-        nonKeywords.ForEach(b => AddToPanel(b, NonKeywordPanel, NonKeywordPrefab));
+        //nonKeywords.ForEach(b => AddToPanel(b, NonKeywordPanel, NonKeywordPrefab));
         answer.ForEach(b => Instantiate(AnswerBlockPrefab, AnswerPanel));
 
         DescriptionPanel.GetComponentInChildren<Text>().text = puzzleDescription;
@@ -139,22 +141,22 @@ public class CodingUIHandler : MonoBehaviour
 
     private void AddToPanel(PuzzleBlock block, Transform panel, GameObject puzzleBlockPrefab)
     {
-        if (block.Content != null)
-            Instantiate(puzzleBlockPrefab, panel).GetComponent<DraggableCodingBlock>().SetAnswerBlock(block);
-        else
-            Instantiate(MissingBlockPrefab, panel);
+        Instantiate(puzzleBlockPrefab, panel).GetComponent<DraggableCodingBlock>().SetAnswerBlock(block);
     }
 
     public void CloseCodingUI()
     {
-        if (!CodingUIContainer.activeSelf) return;
+        if (!CodingUIContainer.activeSelf)
+            return;
         _playerMovement.CodingUIActive = false;
 
         _onCorrectAnswerCallback = null;
 
-        foreach (Transform c in KeywordPanel) Destroy(c.gameObject);
-        foreach (Transform c in NonKeywordPanel) Destroy(c.gameObject);
-        foreach (Transform c in AnswerPanel) Destroy(c.gameObject);
+        foreach (Transform c in KeywordPanel)
+            Destroy(c.gameObject);
+        //foreach (Transform c in NonKeywordPanel) Destroy(c.gameObject);
+        foreach (Transform c in AnswerPanel)
+            Destroy(c.gameObject);
 
         CodingUIContainer.SetActive(false);
     }
@@ -179,7 +181,8 @@ public class CodingUIHandler : MonoBehaviour
         List<PuzzleBlock> answerToCheck = new List<PuzzleBlock>();
         foreach (Transform answerBLock in AnswerPanel)
         {
-            if (answerBLock.childCount == 0) return false;
+            if (answerBLock.childCount == 0)
+                return false;
             answerToCheck.Add(answerBLock.GetComponentInChildren<DraggableCodingBlock>().GetAnswerBlock());
         }
 
