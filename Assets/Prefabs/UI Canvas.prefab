@@ -2728,7 +2728,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   KeywordPrefab: {fileID: 4762183835826571522, guid: 43288421828f7e94bb24c9b8fa9e16a4,
     type: 3}
-  NonKeywordPrefab: {fileID: 8525944201203290685, guid: 8daae124391db9a4fbf898b4c5a767ae,
+  StringPrefab: {fileID: 5708053032204178172, guid: 237bd63fe273df64dbd2f8f8ff82a5cd,
+    type: 3}
+  VariablePrefab: {fileID: 5708053032204178172, guid: 60b8baf1cdc15d44dad7aa50b401355f,
+    type: 3}
+  NumberPrefab: {fileID: 5708053032204178172, guid: e6df60c985059d24fba88a3d640fbe2b,
     type: 3}
 --- !u!1 &885144594550885636
 GameObject:
@@ -3108,8 +3112,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3137517500693581719, guid: b7d4666acd35cfa4cbf67cda61307dc4,
-          type: 3}
+      - m_Target: {fileID: 7173054343177902021}
         m_MethodName: OnCheckAnswer
         m_Mode: 1
         m_Arguments:

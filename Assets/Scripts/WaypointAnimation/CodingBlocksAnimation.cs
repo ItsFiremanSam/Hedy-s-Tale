@@ -7,7 +7,9 @@ using UnityEngine.UI;
 public class CodingBlocksAnimation : MonoBehaviour
 {
     public GameObject KeywordPrefab;
-    public GameObject NonKeywordPrefab;
+    public GameObject StringPrefab;
+    public GameObject VariablePrefab;
+    public GameObject NumberPrefab;
 
     private int _lastCodingBlock = 0;
     private List<GameObject> _codingBlocks;
@@ -28,8 +30,24 @@ public class CodingBlocksAnimation : MonoBehaviour
         _codingBlocks = new List<GameObject>(answer.Count);
         for (int i = 0; i < answer.Count; i++)
         {
+            GameObject codingBlock = null;
             PuzzleBlock currentPuzzleBlock = answer[i];
-            GameObject codingBlock = Instantiate(currentPuzzleBlock.IsKeyword ? KeywordPrefab : NonKeywordPrefab, _container);
+            Debug.Log(name);
+            switch (currentPuzzleBlock.Type)
+            {
+                case PuzzleBlockType.Keyword:
+                    codingBlock = Instantiate(KeywordPrefab, _container);
+                    break;
+                case PuzzleBlockType.String:
+                    codingBlock = Instantiate(StringPrefab, _container);
+                    break;
+                case PuzzleBlockType.Variable:
+                    codingBlock = Instantiate(VariablePrefab, _container);
+                    break;
+                case PuzzleBlockType.Number:
+                    codingBlock = Instantiate(NumberPrefab, _container);
+                    break;
+            }
             codingBlock.GetComponentInChildren<Text>().text = currentPuzzleBlock.Content;
             _codingBlocks.Add(codingBlock);
         }

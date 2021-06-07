@@ -28,13 +28,6 @@ public class DraggableCodingBlock : MonoBehaviour, IDragHandler, IBeginDragHandl
 
     public void SetAnswerBlock(PuzzleBlock answerBlock)
     {
-        List<Transform> temp = new List<Transform>();
-        foreach (Transform t in transform)
-        {
-            temp.Add(t);
-        }
-
-        Debug.Log(answerBlock);
         _answerBlock = answerBlock;
         GetComponentInChildren<Text>().text = answerBlock.Content;
         GetComponentInChildren<Text>().fontSize = 20;
