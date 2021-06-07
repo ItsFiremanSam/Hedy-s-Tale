@@ -10,6 +10,7 @@ using UnityEngine.UI;
 /// </summary>
 public class CodingUIHandler : MonoBehaviour
 {
+    [Header("Prefabs")]
     public GameObject KeywordPrefab;
     public GameObject StringPrefab;
     public GameObject VariablePrefab;
@@ -17,11 +18,13 @@ public class CodingUIHandler : MonoBehaviour
 
     public GameObject AnswerBlockPrefab;
 
+    [Header("Containers")]
     public Transform KeywordContainer;
     public Transform StringContainer;
     public Transform VariableContainer;
     public Transform NumberContainer;
 
+    [Header("Puzzle Panels")]
     public Transform AnswerPanel;
     public GameObject DescriptionPanel;
 
@@ -67,22 +70,19 @@ public class CodingUIHandler : MonoBehaviour
         List<PuzzleBlock> inventoryStrings = inventory.Where(block => block.Type == PuzzleBlockType.String).ToList();
         List<PuzzleBlock> inventoryVariables = inventory.Where(block => block.Type == PuzzleBlockType.Variable).ToList();
         List<PuzzleBlock> inventoryNumbers = inventory.Where(block => block.Type == PuzzleBlockType.Number).ToList();
-        //List<PuzzleBlock> inventoryNonKeywords = inventory
-        //    .Where(block =>
-        //    (block.Type != PuzzleBlockType.Undefined && block.Type != PuzzleBlockType.Keyword) || // This check will be changed when new Coding UI is implemented (for now all not Undefined and not Keywords are non keywords)
-        //    (block.Type == PuzzleBlockType.Undefined && !block.IsKeyword)).ToList();
 
         List<PuzzleBlock> answerKeywords = answer.Where(block => block.Type == PuzzleBlockType.Keyword).ToList();
-        //List<PuzzleBlock> answerNonKeywords = answer
-        //    .Where(block =>
-        //    (block.Type != PuzzleBlockType.Undefined && block.Type != PuzzleBlockType.Keyword) || // This check will be changed when new Coding UI is implemented (for now all not Undefined and not Keywords are non keywords)
-        //    (block.Type == PuzzleBlockType.Undefined && !block.IsKeyword)).ToList();
+        List<PuzzleBlock> answerStrings = answer.Where(block => block.Type == PuzzleBlockType.String).ToList();
+        List<PuzzleBlock> answerVariables = answer.Where(block => block.Type == PuzzleBlockType.Variable).ToList();
+        List<PuzzleBlock> answerNumbers = answer.Where(block => block.Type == PuzzleBlockType.Number).ToList();
 
         // Create the Puzzle Block lists to use of the coding UI
         List<PuzzleBlock> keywords = CreatePuzzleBlocksForPuzzle(inventoryKeywords, answerKeywords);
-        //List<PuzzleBlock> nonKeywords = CreatePuzzleBlocksForPuzzle(inventoryNonKeywords, answerNonKeywords);
+        List<PuzzleBlock> strings = CreatePuzzleBlocksForPuzzle(inventoryStrings, answerStrings);
+        List<PuzzleBlock> variables = CreatePuzzleBlocksForPuzzle(inventoryVariables, answerVariables);
+        List<PuzzleBlock> numbers = CreatePuzzleBlocksForPuzzle(inventoryNumbers, answerNumbers);
 
-        SetCodingUI(keywords, answer, puzzleDescription);
+        SetCodingUI(keywords, strings, variables, numbers, answer, puzzleDescription);
     }
 
     /// <summary>
@@ -128,10 +128,13 @@ public class CodingUIHandler : MonoBehaviour
     /// <param name="nonKeywords">A list of the user input non keywords</param> 
     /// <param name="answer">A list of the answer blocks</param> 
     /// <param name="puzzleDescription"></param> 
-    private void SetCodingUI(List<PuzzleBlock> keywords, List<PuzzleBlock> answer, string puzzleDescription)
+    private void SetCodingUI(List<PuzzleBlock> keywords, List<PuzzleBlock> strings, List<PuzzleBlock> variables, List<PuzzleBlock> numbers, List<PuzzleBlock> answer, string puzzleDescription)
     {
-        keywords.ForEach(b => AddToPanel(b, KeywordPanel, KeywordPrefab));
-        //nonKeywords.ForEach(b => AddToPanel(b, NonKeywordPanel, NonKeywordPrefab));
+        keywords.ForEach(b => AddToPanel(b, KeywordContainer, KeywordPrefab));
+        strings.ForEach(b => AddToPanel(b, StringContainer, StringPrefab));
+        variables.ForEach(b => AddToPanel(b, VariableContainer, VariablePrefab));
+        numbers.ForEach(b => AddToPanel(b, NumberContainer, NumberPrefab));
+
         answer.ForEach(b => Instantiate(AnswerBlockPrefab, AnswerPanel));
 
         DescriptionPanel.GetComponentInChildren<Text>().text = puzzleDescription;
@@ -152,9 +155,15 @@ public class CodingUIHandler : MonoBehaviour
 
         _onCorrectAnswerCallback = null;
 
-        foreach (Transform c in KeywordPanel)
+        foreach (Transform c in KeywordContainer)
             Destroy(c.gameObject);
-        //foreach (Transform c in NonKeywordPanel) Destroy(c.gameObject);
+        foreach (Transform c in StringContainer)
+            Destroy(c.gameObject);
+        foreach (Transform c in VariableContainer)
+            Destroy(c.gameObject);
+        foreach (Transform c in NumberContainer)
+            Destroy(c.gameObject);
+
         foreach (Transform c in AnswerPanel)
             Destroy(c.gameObject);
 

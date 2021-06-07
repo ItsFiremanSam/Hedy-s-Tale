@@ -732,6 +732,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
+      propertyPath: Answer.Array.data[0].Type
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[1].Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[2].Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[3].Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[4].Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[5].Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
       propertyPath: Dialog.sentences.Array.size
       value: 14
       objectReference: {fileID: 0}
@@ -15915,13 +15945,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Inventory:
   - IsKeyword: 1
-    Type: 0
+    Type: 1
     Content: ask
   - IsKeyword: 0
-    Type: 0
+    Type: 2
     Content: jump,
   - IsKeyword: 0
-    Type: 0
+    Type: 2
     Content: go right,
   - IsKeyword: 0
     Type: 0
@@ -15930,14 +15960,20 @@ MonoBehaviour:
     Type: 0
     Content: jump.
   - IsKeyword: 0
-    Type: 0
+    Type: 2
     Content: spin,
   - IsKeyword: 0
-    Type: 0
+    Type: 2
     Content: is your
   - IsKeyword: 0
     Type: 1
     Content: is
+  - IsKeyword: 0
+    Type: 3
+    Content: Actions
+  - IsKeyword: 0
+    Type: 4
+    Content: 9
 --- !u!114 &251469046
 MonoBehaviour:
   m_ObjectHideFlags: 0
