@@ -57941,6 +57941,11 @@ PrefabInstance:
       propertyPath: GoToNextCodingBlock
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8865548517938282934, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9130943912825816716, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -58624,6 +58629,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 243033855003932252, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 243033855003932252, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 602064815998769924, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -78837,6 +78852,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 243033855003932252, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 602064815998769924, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -79800,6 +79820,11 @@ PrefabInstance:
     - target: {fileID: 8660793725558201169, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: GoToNextCodingBlock
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8865548517938282934, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9130943912825816716, guid: 21eb6d44e34b12d4385daac697669991,
@@ -81566,6 +81591,11 @@ PrefabInstance:
     - target: {fileID: 8660793725558201169, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: GoToNextCodingBlock
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8865548517938282934, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9130943912825816716, guid: 21eb6d44e34b12d4385daac697669991,
