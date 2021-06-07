@@ -9,6 +9,8 @@ public class PlayerMovement : AnimatableEntity
     public GameObject CinematicBars;
     public Animator animator;
 
+    private bool _movementReset;
+
     // Hedy can't move when being animated or in the Coding UI
     [HideInInspector]
     public bool AnimationActive;
@@ -33,6 +35,15 @@ public class PlayerMovement : AnimatableEntity
         if (!AnimationActive && !CodingUIActive && !DialogUIActive)
         {
             Move(new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized * Speed * Time.fixedDeltaTime);
+
+            if (_movementReset) 
+                _movementReset = false;
+        }
+        else if (!_movementReset)
+        {
+            // Resets Hedy's movement at the start of an animation
+            Move(Vector2.zero);
+            _movementReset = true;
         }
     }
 
@@ -46,13 +57,17 @@ public class PlayerMovement : AnimatableEntity
     {
         if (AnimationActive)
         {
-            if (!CinematicBars.activeSelf) CinematicBars.SetActive(true);
-            if (_collider.enabled) _collider.enabled = false;
+            if (!CinematicBars.activeSelf)
+                CinematicBars.SetActive(true);
+            if (_collider.enabled)
+                _collider.enabled = false;
         }
         else
         {
-            if (CinematicBars.activeSelf) CinematicBars.SetActive(false);
-            if (!_collider.enabled) _collider.enabled = true;
+            if (CinematicBars.activeSelf)
+                CinematicBars.SetActive(false);
+            if (!_collider.enabled)
+                _collider.enabled = true;
         }
     }
 
@@ -67,17 +82,17 @@ public class PlayerMovement : AnimatableEntity
             animator.SetFloat("x", _currentVelocity.x);
             animator.SetFloat("y", _currentVelocity.y);
         }
-
-        _currentVelocity = Vector2.zero;
     }
 
-    bool Move(Vector2 velocity)
+    void Move(Vector2 velocity)
     {
-        if (_currentVelocity != Vector2.zero) return false;
+        //Debug.Log(velocity.sqrMagnitude);
+        if (velocity == Vector2.zero)
+        {
+            _currentVelocity = Vector2.zero;
+        }
 
         _currentVelocity = velocity;
-
-        return true;
     }
 
     /// <summary>
@@ -85,20 +100,23 @@ public class PlayerMovement : AnimatableEntity
     /// </summary>
     public override IEnumerator MoveTo(Vector2 pos, float speed)
     {
-        // TODO: Implement Unity built in pathfinding
-        while (true)
+        Vector2 velNorm = (pos - (Vector2)transform.position).normalized * speed * Time.deltaTime;
+        Vector2 vel = (pos - (Vector2)transform.position) * speed * Time.deltaTime;
+
+        while (velNorm.sqrMagnitude < vel.sqrMagnitude)
         {
             // Will move towards the direction of the new position
-            Vector2 velNorm = (pos - (Vector2)transform.position).normalized * speed * Time.fixedDeltaTime;
-            Vector2 vel = (pos - (Vector2)transform.position) * speed * Time.fixedDeltaTime;
-
-            // If the position is closer by than a single step in the right direction, take the last step and return
-            if (velNorm.sqrMagnitude > vel.sqrMagnitude)
-            {
-                while (!Move(vel)) yield return null;
-                break;
-            }
-            while (!Move(velNorm)) yield return null;
+            Move(velNorm);
+            yield return null;
+            velNorm = (pos - (Vector2)transform.position).normalized * speed * Time.fixedDeltaTime;
+            vel = (pos - (Vector2)transform.position) * speed * Time.fixedDeltaTime;
         }
+
+        // Set the last step
+        Move(velNorm);
+        yield return new WaitUntil(() => ((pos - (Vector2)transform.position) * speed * Time.deltaTime).sqrMagnitude < 0.1);
+
+        // Reset Hedy's movement 
+        Move(Vector2.zero);
     }
 }
