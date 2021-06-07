@@ -17,7 +17,7 @@ public class LevelSelectHandler : MonoBehaviour
     private const string CurrentMaxLevelPref = "currentMaxLevel";
     private const string ShowAnimationPref = "showAnimation";
 
-    private static bool ShowAnimation
+    public static bool ShowAnimation
     {
         get => Convert.ToBoolean(PlayerPrefs.GetInt(ShowAnimationPref, 0));
         set => PlayerPrefs.SetInt(ShowAnimationPref, Convert.ToInt32(value));

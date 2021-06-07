@@ -33,5 +33,6 @@ public class MainMenu : MonoBehaviour
     public void ResetCurrentMaxLevel()
     {
         PlayerPrefs.SetInt(CurrentMaxLevelPref, 0);
+        LevelSelectHandler.ShowAnimation = false;
     }
 }
