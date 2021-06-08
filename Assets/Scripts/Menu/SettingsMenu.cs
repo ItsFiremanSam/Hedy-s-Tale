@@ -7,7 +7,7 @@ public class SettingsMenu : MonoBehaviour
     public AudioMixer audioMixer;
     public Slider masterVolumeSlider, musicVolumeSlider, SFXVolumeSlider;
     public GameObject settingsMenuUI;
-    public GameObject pauseMenuButtonContainer;
+    public GameObject menuButtonContainer;
 
     /// <summary>
     /// The name of the exposed property of the master mixer
@@ -47,9 +47,9 @@ public class SettingsMenu : MonoBehaviour
         AudioPreferences.SFXVolume = volume;
     }
 
-    public void LoadPauseMenu()
+    public void LoadMenu()
     {
         settingsMenuUI.SetActive(false);
-        pauseMenuButtonContainer.SetActive(true);
+        menuButtonContainer.SetActive(true);
     }
 }

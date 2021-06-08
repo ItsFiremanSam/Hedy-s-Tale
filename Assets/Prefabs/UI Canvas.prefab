@@ -2374,7 +2374,7 @@ MonoBehaviour:
   musicVolumeSlider: {fileID: 2934936752853164019}
   SFXVolumeSlider: {fileID: 1588128174821775571}
   settingsMenuUI: {fileID: 855735149986465184}
-  pauseMenuButtonContainer: {fileID: 3958237446253541140}
+  menuButtonContainer: {fileID: 3958237446253541140}
 --- !u!1 &885144594239704305
 GameObject:
   m_ObjectHideFlags: 0

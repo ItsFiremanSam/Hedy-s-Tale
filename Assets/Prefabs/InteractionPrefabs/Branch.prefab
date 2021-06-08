@@ -222,7 +222,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3656655724871673323}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.880295, y: 1.5531082, z: 545.8807}
+  m_LocalPosition: {x: 0, y: 0, z: 545.8807}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5185247720013420792}
@@ -325,7 +325,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collection: {fileID: 0}
-  itemPickUpSource: {fileID: 257341076398229397}
+  itemPickUpClip: {fileID: 0}
+  sfxSource: {fileID: 0}
 --- !u!1 &9212641072140543370
 GameObject:
   m_ObjectHideFlags: 0
@@ -351,7 +352,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9212641072140543370}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 270.2033, y: 111.265816, z: -545.9722}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3656655724871673327}
