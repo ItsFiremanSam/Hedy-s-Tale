@@ -195,6 +195,7 @@ Transform:
   m_Children:
   - {fileID: 1879015007}
   - {fileID: 1758032545}
+  - {fileID: 1026095911}
   - {fileID: 1659477065}
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -8770,9 +8771,24 @@ PrefabInstance:
       objectReference: {fileID: 1118218066}
     - target: {fileID: 8641821558690201003, guid: 9f8f9455182eb59439664d5c0978a087,
         type: 3}
+      propertyPath: Dialog.NPCName
+      value: Hedy
+      objectReference: {fileID: 0}
+    - target: {fileID: 8641821558690201003, guid: 9f8f9455182eb59439664d5c0978a087,
+        type: 3}
       propertyPath: itemPickUpClip
       value: 
       objectReference: {fileID: 8300000, guid: 439698a0d0fabdf449be66c3e2eae7d5, type: 3}
+    - target: {fileID: 8641821558690201003, guid: 9f8f9455182eb59439664d5c0978a087,
+        type: 3}
+      propertyPath: Dialog.sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8641821558690201003, guid: 9f8f9455182eb59439664d5c0978a087,
+        type: 3}
+      propertyPath: Dialog.sentences.Array.data[0]
+      value: I have found a branch! I need it to repair the bridge.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f8f9455182eb59439664d5c0978a087, type: 3}
 --- !u!4 &208351110 stripped
@@ -9144,6 +9160,11 @@ PrefabInstance:
         type: 3}
       propertyPath: DialogPuzzleCompleted.sentences.Array.data[0]
       value: I did it!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8865548517938282934, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7836411685114321133, guid: 21eb6d44e34b12d4385daac697669991, type: 3}
@@ -38164,9 +38185,24 @@ PrefabInstance:
       objectReference: {fileID: 1118218066}
     - target: {fileID: 8641821558690201003, guid: 9f8f9455182eb59439664d5c0978a087,
         type: 3}
+      propertyPath: Dialog.NPCName
+      value: Hedy
+      objectReference: {fileID: 0}
+    - target: {fileID: 8641821558690201003, guid: 9f8f9455182eb59439664d5c0978a087,
+        type: 3}
       propertyPath: itemPickUpClip
       value: 
       objectReference: {fileID: 8300000, guid: 439698a0d0fabdf449be66c3e2eae7d5, type: 3}
+    - target: {fileID: 8641821558690201003, guid: 9f8f9455182eb59439664d5c0978a087,
+        type: 3}
+      propertyPath: Dialog.sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8641821558690201003, guid: 9f8f9455182eb59439664d5c0978a087,
+        type: 3}
+      propertyPath: Dialog.sentences.Array.data[0]
+      value: This branch is good enough to repair the bridge!
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f8f9455182eb59439664d5c0978a087, type: 3}
 --- !u!4 &1003885069 stripped
@@ -38175,6 +38211,92 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1003885068}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1026095910
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1026095911}
+  - component: {fileID: 1026095912}
+  m_Layer: 5
+  m_Name: Shadow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1026095911
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1026095910}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 24449957}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -0.439}
+  m_SizeDelta: {x: 1, y: 1}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!212 &1026095912
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1026095910}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 7
+  m_Sprite: {fileID: 21300000, guid: 52b7677d41669e049b9bbb5d27416da3, type: 3}
+  m_Color: {r: 0.26415092, g: 0.26415092, b: 0.26415092, a: 0.23921569}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.16, y: 0.16}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1001 &1027271006
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38482,6 +38604,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1207478370 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3656655724871673323, guid: 9f8f9455182eb59439664d5c0978a087,
+    type: 3}
+  m_PrefabInstance: {fileID: 5690852943470272220}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1207478371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207478370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4c96b9f4c27be64ca81f690c905ae10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PuzzleBlock:
+    IsKeyword: 0
+    Type: 0
+    Content: branch
+  itemPickUpClip: {fileID: 0}
+  sfxSource: {fileID: 0}
+  Dialog:
+    NPCName: 
+    sentences: []
+    NPCTalkFirst: 0
 --- !u!1001 &1241132647
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51267,6 +51417,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 243033855003932252, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 243033855003932252, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 243033855003932252, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 243033855003932252, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.59
+      objectReference: {fileID: 0}
     - target: {fileID: 602064815998769924, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -51636,6 +51806,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6834723426226078882, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0.27450982
+      objectReference: {fileID: 0}
+    - target: {fileID: 6834723426226078882, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6834723426226078882, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6834723426226078882, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6935705626500962560, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -52276,9 +52466,24 @@ PrefabInstance:
       objectReference: {fileID: 1118218066}
     - target: {fileID: 8641821558690201003, guid: 9f8f9455182eb59439664d5c0978a087,
         type: 3}
+      propertyPath: Dialog.NPCName
+      value: Hedy
+      objectReference: {fileID: 0}
+    - target: {fileID: 8641821558690201003, guid: 9f8f9455182eb59439664d5c0978a087,
+        type: 3}
       propertyPath: itemPickUpClip
       value: 
       objectReference: {fileID: 8300000, guid: 439698a0d0fabdf449be66c3e2eae7d5, type: 3}
+    - target: {fileID: 8641821558690201003, guid: 9f8f9455182eb59439664d5c0978a087,
+        type: 3}
+      propertyPath: Dialog.sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8641821558690201003, guid: 9f8f9455182eb59439664d5c0978a087,
+        type: 3}
+      propertyPath: Dialog.sentences.Array.data[0]
+      value: I am going to need this branch to repair the bridge!
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f8f9455182eb59439664d5c0978a087, type: 3}
 --- !u!4 &1520924344 stripped
@@ -53162,7 +53367,7 @@ PrefabInstance:
     - target: {fileID: 8206942301608700751, guid: 2e7781f86169f3348bc565d39368b365,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8206942301608700751, guid: 2e7781f86169f3348bc565d39368b365,
         type: 3}
@@ -55589,9 +55794,24 @@ PrefabInstance:
       objectReference: {fileID: 1118218066}
     - target: {fileID: 8641821558690201003, guid: 9f8f9455182eb59439664d5c0978a087,
         type: 3}
+      propertyPath: Dialog.NPCName
+      value: Hedy
+      objectReference: {fileID: 0}
+    - target: {fileID: 8641821558690201003, guid: 9f8f9455182eb59439664d5c0978a087,
+        type: 3}
       propertyPath: itemPickUpClip
       value: 
       objectReference: {fileID: 8300000, guid: 439698a0d0fabdf449be66c3e2eae7d5, type: 3}
+    - target: {fileID: 8641821558690201003, guid: 9f8f9455182eb59439664d5c0978a087,
+        type: 3}
+      propertyPath: Dialog.sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8641821558690201003, guid: 9f8f9455182eb59439664d5c0978a087,
+        type: 3}
+      propertyPath: Dialog.sentences.Array.data[0]
+      value: This branch is going straight to my branch collection!
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f8f9455182eb59439664d5c0978a087, type: 3}
 --- !u!4 &2118854088 stripped
@@ -55614,6 +55834,11 @@ PrefabInstance:
       objectReference: {fileID: 1659477064}
     - target: {fileID: 4311232222575573984, guid: 6a49fb1eb36578a4388276782ff5972b,
         type: 3}
+      propertyPath: Dialog.NPCName
+      value: Hedy
+      objectReference: {fileID: 0}
+    - target: {fileID: 4311232222575573984, guid: 6a49fb1eb36578a4388276782ff5972b,
+        type: 3}
       propertyPath: itemPickUpClip
       value: 
       objectReference: {fileID: 8300000, guid: 439698a0d0fabdf449be66c3e2eae7d5, type: 3}
@@ -55621,6 +55846,36 @@ PrefabInstance:
         type: 3}
       propertyPath: PuzzleBlock.Content
       value: necklace
+      objectReference: {fileID: 0}
+    - target: {fileID: 4311232222575573984, guid: 6a49fb1eb36578a4388276782ff5972b,
+        type: 3}
+      propertyPath: Dialog.sentences.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4311232222575573984, guid: 6a49fb1eb36578a4388276782ff5972b,
+        type: 3}
+      propertyPath: Dialog.sentences.Array.data[0]
+      value: Oh I found a necklace!
+      objectReference: {fileID: 0}
+    - target: {fileID: 4311232222575573984, guid: 6a49fb1eb36578a4388276782ff5972b,
+        type: 3}
+      propertyPath: Dialog.sentences.Array.data[1]
+      value: I think this is the missing necklace of the bear!
+      objectReference: {fileID: 0}
+    - target: {fileID: 4311232222575573984, guid: 6a49fb1eb36578a4388276782ff5972b,
+        type: 3}
+      propertyPath: Dialog.sentences.Array.data[2]
+      value: I should bring this necklace back to him!
+      objectReference: {fileID: 0}
+    - target: {fileID: 4311232222575573984, guid: 6a49fb1eb36578a4388276782ff5972b,
+        type: 3}
+      propertyPath: Dialog.sentences.Array.data[3]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4311232222575573984, guid: 6a49fb1eb36578a4388276782ff5972b,
+        type: 3}
+      propertyPath: Dialog.sentences.Array.data[4]
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8955114958907157433, guid: 6a49fb1eb36578a4388276782ff5972b,
         type: 3}
@@ -55774,9 +56029,24 @@ PrefabInstance:
       objectReference: {fileID: 1118218066}
     - target: {fileID: 8641821558690201003, guid: 9f8f9455182eb59439664d5c0978a087,
         type: 3}
+      propertyPath: Dialog.NPCName
+      value: Hedy
+      objectReference: {fileID: 0}
+    - target: {fileID: 8641821558690201003, guid: 9f8f9455182eb59439664d5c0978a087,
+        type: 3}
       propertyPath: itemPickUpClip
       value: 
       objectReference: {fileID: 8300000, guid: 439698a0d0fabdf449be66c3e2eae7d5, type: 3}
+    - target: {fileID: 8641821558690201003, guid: 9f8f9455182eb59439664d5c0978a087,
+        type: 3}
+      propertyPath: Dialog.sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8641821558690201003, guid: 9f8f9455182eb59439664d5c0978a087,
+        type: 3}
+      propertyPath: Dialog.sentences.Array.data[0]
+      value: Nice! A branch, this branch will be useful for repairing the bridge.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f8f9455182eb59439664d5c0978a087, type: 3}
 --- !u!4 &8955114958603418419 stripped
@@ -55785,27 +56055,3 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 5690852943470272220}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &8955114958603418423 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3656655724871673323, guid: 9f8f9455182eb59439664d5c0978a087,
-    type: 3}
-  m_PrefabInstance: {fileID: 5690852943470272220}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &8955114958603418425
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8955114958603418423}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4c96b9f4c27be64ca81f690c905ae10, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PuzzleBlock:
-    IsKeyword: 0
-    Type: 0
-    Content: branch
-  itemPickUpClip: {fileID: 0}
-  sfxSource: {fileID: 0}
