@@ -27,6 +27,14 @@ public class CodingPuzzle : InteractableObject
         _codingUIHandler = FindObjectOfType<CodingUIHandler>();
         _animationTrigger = GetComponentInChildren<AnimationTrigger>();
         dialogManager = DialogManager.Instance;
+
+        foreach (PuzzleBlock block in Answer)
+        {
+            if (block.Type == PuzzleBlockType.Undefined)
+            {
+                Debug.LogWarning("Puzzle '" + name + "' has answer puzzle block with type Undefined: " + block.Content);
+            }
+        }
     }
 
     protected override void OnInteractWithPlayer(PlayerInteraction playerInteraction)

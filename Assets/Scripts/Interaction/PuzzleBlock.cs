@@ -35,6 +35,11 @@ public class PuzzleBlock : IEquatable<PuzzleBlock>
 
     public bool Equals(PuzzleBlock otherBlock)
     {
+        if (Type == PuzzleBlockType.Undefined)
+            Debug.LogWarning("Puzzle block '" + Content + "' has type of Undefined");
+        if (otherBlock.Type == PuzzleBlockType.Undefined)
+            Debug.LogWarning("Puzzle block '" + otherBlock.Content + "' has type of Undefined");
+
         return Type == otherBlock.Type && otherBlock.Content == Content;
     }
 }
