@@ -9,16 +9,25 @@ public class CollectMultipleInteraction : InteractableObject
     public AudioClip itemPickUpClip;
     public AudioSource sfxSource;
 
+    public Dialog Dialog;
+
     protected override void OnInteractWithPlayer(PlayerInteraction playerInteraction)
     {
-        sfxSource.PlayOneShot(itemPickUpClip);
-
-        collection.CurrentAmount++;
-        if (collection.CurrentAmount == collection.Amount)
+        if (!_isInteracted)
         {
-                playerInteraction.Inventory.Add(collection.PuzzleBlock);
-        }
+            _isInteracted = true;
+            ShowInteractionBubble(false);
+            sfxSource.PlayOneShot(itemPickUpClip);
 
-        Destroy(gameObject);
+            collection.CurrentAmount++;
+            if (collection.CurrentAmount == collection.Amount)
+            {
+                playerInteraction.Inventory.Add(collection.PuzzleBlock);
+            }
+
+            DialogManager dialogManager = DialogManager.Instance;
+            if (!dialogManager.DialogActive)
+                StartCoroutine(dialogManager.StartDialog(Dialog, gameObject));
+        }
     }
 }
