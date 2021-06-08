@@ -18,24 +18,13 @@ public enum PuzzleBlockType
 [Serializable]
 public class PuzzleBlock : IEquatable<PuzzleBlock>
 {
-    [Obsolete]
-    [Header("The IsKeyword is obsolete, it is only used if type is set to Undefined")]
-    public bool IsKeyword;
     public PuzzleBlockType Type;
     public string Content;
 
     public PuzzleBlock(PuzzleBlock otherBlock)
     {
-        IsKeyword = otherBlock.IsKeyword;
         Type = otherBlock.Type;
         Content = otherBlock.Content;
-    }
-
-    public PuzzleBlock(bool isKeyword, PuzzleBlockType type, string content)
-    {
-        IsKeyword = isKeyword;
-        Type = type;
-        Content = content;
     }
 
     public PuzzleBlock(PuzzleBlockType type, string content)
@@ -46,24 +35,11 @@ public class PuzzleBlock : IEquatable<PuzzleBlock>
 
     public bool Equals(PuzzleBlock otherBlock)
     {
-        if (otherBlock.Content != Content)
-            return false;
-
-        // Check when this uses obsolete IsKeyword
         if (Type == PuzzleBlockType.Undefined)
-        {
-            if (otherBlock.Type == PuzzleBlockType.Undefined)
-                return IsKeyword == otherBlock.IsKeyword;
-
-            return (IsKeyword && otherBlock.Type == PuzzleBlockType.Keyword) || (!IsKeyword && otherBlock.Type != PuzzleBlockType.Keyword);
-        }
-
-        // Check when otherBlock uses obsolete IsKeyword
+            Debug.LogWarning("Puzzle block '" + Content + "' has type of Undefined");
         if (otherBlock.Type == PuzzleBlockType.Undefined)
-        {
-            return (otherBlock.IsKeyword && Type == PuzzleBlockType.Keyword) || (!otherBlock.IsKeyword && Type != PuzzleBlockType.Keyword);
-        }
+            Debug.LogWarning("Puzzle block '" + otherBlock.Content + "' has type of Undefined");
 
-        return Type == otherBlock.Type;
+        return Type == otherBlock.Type && otherBlock.Content == Content;
     }
 }

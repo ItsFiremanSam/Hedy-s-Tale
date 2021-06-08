@@ -36166,6 +36166,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 50645315964878893, guid: 3866c2129c6ccd74bb7455e35b2df341,
         type: 3}
+      propertyPath: PuzzleBlock.Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 50645315964878893, guid: 3866c2129c6ccd74bb7455e35b2df341,
+        type: 3}
       propertyPath: PuzzleBlock.Content
       value: is
       objectReference: {fileID: 0}
@@ -36227,26 +36232,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Inventory:
-  - IsKeyword: 1
-    Type: 0
+  - Type: 1
     Content: ask
-  - IsKeyword: 0
-    Type: 0
+  - Type: 2
     Content: jump,
-  - IsKeyword: 0
-    Type: 0
+  - Type: 2
     Content: go right,
-  - IsKeyword: 0
-    Type: 0
+  - Type: 2
     Content: go left,
-  - IsKeyword: 0
-    Type: 0
+  - Type: 2
     Content: jump.
-  - IsKeyword: 0
-    Type: 0
+  - Type: 2
     Content: spin,
-  - IsKeyword: 0
-    Type: 0
+  - Type: 2
     Content: is your
 --- !u!95 &1257147538
 Animator:
@@ -43148,6 +43146,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7371850097992470271, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
+      propertyPath: PuzzleBlock.Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7371850097992470271, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
       propertyPath: PuzzleBlock.Content
       value: favourite colour
       objectReference: {fileID: 0}
@@ -43183,6 +43186,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
+      propertyPath: RewardBlock.Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
       propertyPath: Answer.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -43211,6 +43219,26 @@ PrefabInstance:
         type: 3}
       propertyPath: DialogHasAnswer.NPCName
       value: Monkey
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[0].Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[1].Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[2].Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[3].Type
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -43969,6 +43997,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7371850097992470271, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
+      propertyPath: PuzzleBlock.Type
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7371850097992470271, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
       propertyPath: PuzzleBlock.Content
       value: 
       objectReference: {fileID: 0}
@@ -44032,6 +44065,21 @@ PrefabInstance:
         type: 3}
       propertyPath: DialogHasAnswer.NPCName
       value: Helpful monkey
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[0].Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[1].Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[2].Type
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -113318,6 +113366,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7371850097992470271, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
+      propertyPath: PuzzleBlock.Type
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7371850097992470271, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
       propertyPath: PuzzleBlock.Content
       value: Actions
       objectReference: {fileID: 0}
@@ -113355,6 +113408,11 @@ PrefabInstance:
         type: 3}
       propertyPath: Dialog.NPCName
       value: Monkey
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: RewardBlock.Type
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -113398,6 +113456,36 @@ PrefabInstance:
         type: 3}
       propertyPath: DialogHasAnswer.NPCName
       value: Monkey
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[0].Type
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[1].Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[2].Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[3].Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[4].Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[5].Type
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -113832,6 +113920,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7464826716262060512, guid: 74446c2ab1fd33b4eb77c5c0f1f73181,
+        type: 3}
+      propertyPath: PuzzleBlock.Type
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7464826716262060512, guid: 74446c2ab1fd33b4eb77c5c0f1f73181,
         type: 3}
