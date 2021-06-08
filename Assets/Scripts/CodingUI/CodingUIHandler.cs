@@ -17,6 +17,7 @@ public class CodingUIHandler : MonoBehaviour
     public GameObject NumberPrefab;
 
     public GameObject AnswerBlockPrefab;
+    public GameObject PunctuationBlockPrefab;
 
     [Header("Containers")]
     public Transform KeywordContainer;
@@ -154,7 +155,10 @@ public class CodingUIHandler : MonoBehaviour
         else
         {
             if (block.Content == "\\n")
+            {
                 lineCount++;
+                wordCount = 0;
+            }
             else if (block.Content == "\\t")
             {
                 instantiateAnswerIndent();
@@ -165,6 +169,13 @@ public class CodingUIHandler : MonoBehaviour
                 lineCount++;
                 instantiateAnswerIndent();
                 wordCount = 1;
+            }
+            else
+            {
+                GameObject punctuation = Instantiate(PunctuationBlockPrefab, AnswerPanel.GetChild(lineCount));
+                punctuation.GetComponent<Text>().text = block.Content;
+                if (block.Content == ",")
+                    punctuation.GetComponent<Text>().fontStyle = FontStyle.Italic;
             }
         }
 
