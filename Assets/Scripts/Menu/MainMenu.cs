@@ -29,6 +29,20 @@ public class MainMenu : MonoBehaviour
         settingsMenuUI.SetActive(true);
     }
 
+    public void StartNewGame(string option)
+    {
+
+        // check if game starts up for the first time
+        if (PlayerPrefs.GetInt(CurrentMaxLevelPref) == 0)
+        {
+            RestartGameAtFirstCutscene();
+            return;
+        }
+
+        OpenConfirmationMenu(option);
+
+    }
+
     public void OpenConfirmationMenu(string option)
     {
         menuButtonContainer.SetActive(false);
@@ -39,7 +53,7 @@ public class MainMenu : MonoBehaviour
         switch (option)
         {
             case OptionNewGame:
-                yesButton.GetComponent<Button>().onClick.AddListener(RestartGameAtAnimation);
+                yesButton.GetComponent<Button>().onClick.AddListener(RestartGameAtFirstCutscene);
                 yesButton.GetComponent<Button>().onClick.AddListener(ResetCurrentMaxLevel);
                 break;
             case OptionQuitGame:
@@ -56,7 +70,7 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
     }
 
-    public void RestartGameAtAnimation()
+    public void RestartGameAtFirstCutscene()
     {
         sceneChanger.ChangeScene("FirstCutscene-Fireworks");
     }
