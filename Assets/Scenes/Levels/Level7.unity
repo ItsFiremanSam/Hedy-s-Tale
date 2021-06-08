@@ -59320,6 +59320,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
+      propertyPath: RewardBlock.Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
       propertyPath: Answer.Array.size
       value: 10
       objectReference: {fileID: 0}
@@ -81798,56 +81803,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Inventory:
-  - IsKeyword: 0
-    Type: 1
+  - Type: 1
     Content: print
-  - IsKeyword: 0
-    Type: 1
+  - Type: 1
     Content: is
-  - IsKeyword: 0
-    Type: 1
+  - Type: 1
     Content: if
-  - IsKeyword: 0
-    Type: 1
+  - Type: 1
     Content: repeat
-  - IsKeyword: 0
-    Type: 1
+  - Type: 1
     Content: print
-  - IsKeyword: 0
-    Type: 3
+  - Type: 3
     Content: cabin
-  - IsKeyword: 0
-    Type: 2
+  - Type: 2
     Content: mine
-  - IsKeyword: 0
-    Type: 2
+  - Type: 2
     Content: listening
-  - IsKeyword: 0
-    Type: 3
+  - Type: 3
     Content: dog
-  - IsKeyword: 0
-    Type: 1
+  - Type: 1
     Content: bark
-  - IsKeyword: 0
-    Type: 2
+  - Type: 2
     Content: the fireworks
-  - IsKeyword: 0
-    Type: 2
+  - Type: 2
     Content: scared me
-  - IsKeyword: 0
-    Type: 2
+  - Type: 2
     Content: and then I
-  - IsKeyword: 0
-    Type: 2
+  - Type: 2
     Content: got lost
-  - IsKeyword: 0
-    Type: 1
+  - Type: 1
     Content: stop
-  - IsKeyword: 0
-    Type: 1
+  - Type: 1
     Content: times
-  - IsKeyword: 0
-    Type: 4
+  - Type: 4
     Content: 3
 --- !u!50 &2129100086
 Rigidbody2D:
