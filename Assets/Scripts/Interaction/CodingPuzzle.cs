@@ -36,7 +36,7 @@ public class CodingPuzzle : InteractableObject
             }
         }
 
-        if (RewardBlock.Type == PuzzleBlockType.Undefined)
+        if (RewardBlock.Type == PuzzleBlockType.Undefined && RewardBlock.Content != "")
         {
             Debug.LogWarning("Puzzle '" + name + "' has answer puzzle block with type Undefined: " + RewardBlock.Content);
         }
