@@ -32,7 +32,6 @@ public class CodingBlocksAnimation : MonoBehaviour
         {
             GameObject codingBlock = null;
             PuzzleBlock currentPuzzleBlock = answer[i];
-            Debug.Log(name);
             switch (currentPuzzleBlock.Type)
             {
                 case PuzzleBlockType.Keyword:
