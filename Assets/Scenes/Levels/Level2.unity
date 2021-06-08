@@ -43997,6 +43997,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7371850097992470271, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
+      propertyPath: PuzzleBlock.Type
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7371850097992470271, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
       propertyPath: PuzzleBlock.Content
       value: 
       objectReference: {fileID: 0}
@@ -44310,8 +44315,7 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.23
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 7371850097992470271, guid: 21eb6d44e34b12d4385daac697669991, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21eb6d44e34b12d4385daac697669991, type: 3}
 --- !u!1 &1971288828
 GameObject:
