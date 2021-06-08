@@ -40,6 +40,8 @@ public class CodingUIHandler : MonoBehaviour
 
     private PlayerMovement _playerMovement;
 
+    private int lineCount = 0, wordCount = 0;
+
     private void Awake()
     {
         _playerMovement = FindObjectOfType<PlayerMovement>();
@@ -135,11 +137,50 @@ public class CodingUIHandler : MonoBehaviour
         variables.ForEach(b => AddToPanel(b, VariableContainer, VariablePrefab));
         numbers.ForEach(b => AddToPanel(b, NumberContainer, NumberPrefab));
 
-        answer.ForEach(b => Instantiate(AnswerBlockPrefab, AnswerPanel));
+        answer.ForEach(b => InstantiateAnswerBlock(b));
 
         DescriptionPanel.GetComponentInChildren<Text>().text = puzzleDescription;
 
         CodingUIContainer.SetActive(true);
+    }
+
+    private void InstantiateAnswerBlock(PuzzleBlock block)
+    {
+        if (block.Type != PuzzleBlockType.None)
+        {
+            Instantiate(AnswerBlockPrefab, AnswerPanel.GetChild(lineCount));
+            wordCount++;
+        }
+        else
+        {
+            if (block.Content == "\\n")
+                lineCount++;
+            else if (block.Content == "\\t")
+            {
+                instantiateAnswerIndent();
+                wordCount++;
+            }
+            else if (block.Content == "\\n\\t")
+            {
+                lineCount++;
+                instantiateAnswerIndent();
+                wordCount = 1;
+            }
+        }
+
+        // TODO: Make this smarter when using different lines 
+        if (wordCount >= 5)
+        {
+            lineCount++;
+            wordCount = 0;
+        }
+    }
+
+    private void instantiateAnswerIndent()
+    {
+        GameObject indent = Instantiate(AnswerBlockPrefab, AnswerPanel.GetChild(lineCount));
+        Destroy(indent.GetComponent<DropBlock>());
+        indent.GetComponent<Image>().color = new Color(0, 0, 0, 0);
     }
 
     private void AddToPanel(PuzzleBlock block, Transform panel, GameObject puzzleBlockPrefab)
@@ -149,6 +190,8 @@ public class CodingUIHandler : MonoBehaviour
 
     public void CloseCodingUI()
     {
+        lineCount = 0;
+        wordCount = 0;
         if (!CodingUIContainer.activeSelf)
             return;
         _playerMovement.CodingUIActive = false;
@@ -164,8 +207,11 @@ public class CodingUIHandler : MonoBehaviour
         foreach (Transform c in NumberContainer)
             Destroy(c.gameObject);
 
-        foreach (Transform c in AnswerPanel)
-            Destroy(c.gameObject);
+        foreach (Transform answerLine in AnswerPanel)
+        {
+            foreach (Transform c in answerLine)
+                Destroy(c.gameObject);
+        }
 
         CodingUIContainer.SetActive(false);
     }
@@ -188,13 +234,23 @@ public class CodingUIHandler : MonoBehaviour
     private bool IsAnswerCorrect()
     {
         List<PuzzleBlock> answerToCheck = new List<PuzzleBlock>();
-        foreach (Transform answerBLock in AnswerPanel)
+        foreach (Transform answerLine in AnswerPanel)
         {
-            if (answerBLock.childCount == 0)
-                return false;
-            answerToCheck.Add(answerBLock.GetComponentInChildren<DraggableCodingBlock>().GetAnswerBlock());
+            if (answerLine.childCount == 0)
+                break;
+            foreach (Transform answerBlock in answerLine)
+            {
+                if (answerBlock.childCount == 0)
+                    continue;
+
+                PuzzleBlock block = answerBlock.GetComponentInChildren<DraggableCodingBlock>().GetAnswerBlock();
+                if (block.Type == PuzzleBlockType.None)
+                    continue;
+
+                answerToCheck.Add(block);
+            }
         }
 
-        return _answer.SequenceEqual(answerToCheck);
+        return _answer.Where(b => b.Type != PuzzleBlockType.None).SequenceEqual(answerToCheck);
     }
 }

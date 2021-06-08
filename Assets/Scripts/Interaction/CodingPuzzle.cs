@@ -56,7 +56,7 @@ public class CodingPuzzle : InteractableObject
         bool hasAnswer = true;
         foreach (PuzzleBlock block in Answer)
         {
-            if (!_playerIntercation.Inventory.Contains(block))
+            if (block.Type != PuzzleBlockType.None && !_playerIntercation.Inventory.Contains(block))
                 hasAnswer = false;
         }
         if (PuzzleComplete)
