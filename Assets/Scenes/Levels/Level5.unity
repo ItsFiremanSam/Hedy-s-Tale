@@ -213,29 +213,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Inventory:
-  - IsKeyword: 1
-    Type: 0
+  - Type: 1
     Content: repeat
-  - IsKeyword: 1
-    Type: 0
+  - Type: 1
     Content: is
-  - IsKeyword: 1
-    Type: 0
+  - Type: 1
     Content: if
-  - IsKeyword: 1
-    Type: 0
+  - Type: 1
     Content: times
-  - IsKeyword: 1
-    Type: 0
+  - Type: 1
     Content: print
-  - IsKeyword: 0
-    Type: 0
+  - Type: 2
     Content: I can
-  - IsKeyword: 0
-    Type: 0
+  - Type: 2
     Content: pass through
-  - IsKeyword: 0
-    Type: 0
+  - Type: 2
     Content: given
 --- !u!50 &24449959
 Rigidbody2D:
@@ -8991,6 +8983,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7371850097992470271, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
+      propertyPath: PuzzleBlock.Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7371850097992470271, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
       propertyPath: PuzzleBlock.Content
       value: lay down
       objectReference: {fileID: 0}
@@ -9075,6 +9072,31 @@ PrefabInstance:
         type: 3}
       propertyPath: DialogHasAnswer.NPCName
       value: Hedy
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[0].Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[1].Type
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[2].Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[3].Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[4].Type
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -38580,8 +38602,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PuzzleBlock:
-    IsKeyword: 0
-    Type: 0
+    Type: 4
     Content: 5
   Amount: 5
   CurrentAmount: 0
@@ -38623,8 +38644,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PuzzleBlock:
-    IsKeyword: 0
-    Type: 0
+    Type: 2
     Content: branch
   itemPickUpClip: {fileID: 0}
   sfxSource: {fileID: 0}
@@ -51894,6 +51914,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7371850097992470271, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
+      propertyPath: PuzzleBlock.Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7371850097992470271, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
       propertyPath: PuzzleBlock.Content
       value: go around
       objectReference: {fileID: 0}
@@ -52011,6 +52036,36 @@ PrefabInstance:
         type: 3}
       propertyPath: DialogFirst.NPCTalkFirst
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[0].Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[1].Type
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[2].Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[3].Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[4].Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[5].Type
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -55842,6 +55897,11 @@ PrefabInstance:
       propertyPath: itemPickUpClip
       value: 
       objectReference: {fileID: 8300000, guid: 439698a0d0fabdf449be66c3e2eae7d5, type: 3}
+    - target: {fileID: 4311232222575573984, guid: 6a49fb1eb36578a4388276782ff5972b,
+        type: 3}
+      propertyPath: PuzzleBlock.Type
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4311232222575573984, guid: 6a49fb1eb36578a4388276782ff5972b,
         type: 3}
       propertyPath: PuzzleBlock.Content

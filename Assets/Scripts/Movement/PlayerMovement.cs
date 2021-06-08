@@ -100,8 +100,8 @@ public class PlayerMovement : AnimatableEntity
     /// </summary>
     public override IEnumerator MoveTo(Vector2 pos, float speed)
     {
-        Vector2 velNorm = (pos - (Vector2)transform.position).normalized * speed * Time.deltaTime;
-        Vector2 vel = (pos - (Vector2)transform.position) * speed * Time.deltaTime;
+        Vector2 velNorm = (pos - (Vector2)transform.position).normalized * speed * Time.fixedDeltaTime;
+        Vector2 vel = (pos - (Vector2)transform.position) * speed * Time.fixedDeltaTime;
 
         while (velNorm.sqrMagnitude < vel.sqrMagnitude)
         {
@@ -114,7 +114,7 @@ public class PlayerMovement : AnimatableEntity
 
         // Set the last step
         Move(velNorm);
-        yield return new WaitUntil(() => ((pos - (Vector2)transform.position) * speed * Time.deltaTime).sqrMagnitude < 0.1);
+        yield return new WaitUntil(() => ((pos - (Vector2)transform.position) * speed * Time.fixedDeltaTime).sqrMagnitude < 0.1);
 
         // Reset Hedy's movement 
         Move(Vector2.zero);

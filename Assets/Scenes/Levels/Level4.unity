@@ -915,6 +915,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7371850097992470271, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
+      propertyPath: PuzzleBlock.Type
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7371850097992470271, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
       propertyPath: PuzzleBlock.Content
       value: goat
       objectReference: {fileID: 0}
@@ -966,6 +971,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
+      propertyPath: RewardBlock.Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
       propertyPath: Answer.Array.size
       value: 9
       objectReference: {fileID: 0}
@@ -993,6 +1003,51 @@ PrefabInstance:
         type: 3}
       propertyPath: DialogHasAnswer.NPCName
       value: Grumpy goat
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[0].Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[1].Type
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[2].Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[3].Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[4].Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[5].Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[6].Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[7].Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[8].Type
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -56396,35 +56451,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Inventory:
-  - IsKeyword: 1
-    Type: 0
+  - Type: 1
     Content: print
-  - IsKeyword: 1
-    Type: 0
+  - Type: 1
     Content: is
-  - IsKeyword: 1
-    Type: 0
+  - Type: 1
     Content: if
-  - IsKeyword: 1
-    Type: 0
+  - Type: 1
     Content: else
-  - IsKeyword: 1
-    Type: 0
+  - Type: 1
     Content: print
-  - IsKeyword: 0
-    Type: 0
+  - Type: 2
     Content: my story
-  - IsKeyword: 0
-    Type: 0
+  - Type: 2
     Content: a joke
-  - IsKeyword: 0
-    Type: 0
+  - Type: 2
     Content: smiling
-  - IsKeyword: 0
-    Type: 0
+  - Type: 2
     Content: path
-  - IsKeyword: 0
-    Type: 0
+  - Type: 2
     Content: free
 --- !u!95 &550517435
 Animator:
@@ -80280,6 +80325,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7371850097992470271, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
+      propertyPath: PuzzleBlock.Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7371850097992470271, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
       propertyPath: PuzzleBlock.Content
       value: go around
       objectReference: {fileID: 0}
@@ -80315,9 +80365,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7767812622286252030, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7767812622286252030, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 7935234321397735378, guid: afc1ef6bc0ce8144f84f8f02724f1345,
+      objectReference: {fileID: 21300000, guid: f82b8c6b267b04c489ce1831933ed257,
         type: 3}
     - target: {fileID: 7836411685114321122, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -80364,6 +80419,41 @@ PrefabInstance:
         type: 3}
       propertyPath: DialogHasAnswer.NPCName
       value: Wise bear
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[0].Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[1].Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[2].Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[3].Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[4].Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[5].Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[6].Type
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
