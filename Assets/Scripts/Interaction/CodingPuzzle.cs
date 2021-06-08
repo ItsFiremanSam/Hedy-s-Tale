@@ -35,6 +35,11 @@ public class CodingPuzzle : InteractableObject
                 Debug.LogWarning("Puzzle '" + name + "' has answer puzzle block with type Undefined: " + block.Content);
             }
         }
+
+        if (RewardBlock.Type == PuzzleBlockType.Undefined)
+        {
+            Debug.LogWarning("Puzzle '" + name + "' has answer puzzle block with type Undefined: " + RewardBlock.Content);
+        }
     }
 
     protected override void OnInteractWithPlayer(PlayerInteraction playerInteraction)
