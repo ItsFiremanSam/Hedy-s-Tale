@@ -9,12 +9,21 @@ public class InteractionPickUp : InteractableObject
     public AudioClip itemPickUpClip;
     public AudioSource sfxSource;
 
+    public Dialog Dialog;
+
     protected override void OnInteractWithPlayer(PlayerInteraction playerInteraction)
     {
-        sfxSource.PlayOneShot(itemPickUpClip);
+        if (!_isInteracted)
+        {
+            _isInteracted = true;
+            ShowInteractionBubble(false);
+            sfxSource.PlayOneShot(itemPickUpClip);
 
-        playerInteraction.Inventory.Add(PuzzleBlock);
+            playerInteraction.Inventory.Add(PuzzleBlock);
 
-        Destroy(gameObject);
+            DialogManager dialogManager = DialogManager.Instance;
+            if (!dialogManager.DialogActive)
+                StartCoroutine(dialogManager.StartDialog(Dialog, gameObject));
+        }
     }
 }

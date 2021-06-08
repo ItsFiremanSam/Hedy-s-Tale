@@ -25,6 +25,7 @@ public class DialogManager : MonoBehaviour
         get => FindObjectOfType<DialogManager>();
     }
     public AudioSource dialogSound;
+    private GameObject _destroyableObject;
 
     private void Awake()
     {
@@ -81,6 +82,7 @@ public class DialogManager : MonoBehaviour
         _playerMovement.DialogUIActive = false;
         _container.SetActive(false);
         DialogActive = false;
+        Destroy(_destroyableObject);
     }
 
     public void ClearDialog()
@@ -107,8 +109,9 @@ public class DialogManager : MonoBehaviour
     }
 
     //Starting the first sentence of the dialog
-    public IEnumerator StartDialog(Dialog dialog)
+    public IEnumerator StartDialog(Dialog dialog, GameObject destroyableObject = null)
     {
+        _destroyableObject = destroyableObject;
         if (dialog.sentences.Count == 0)
         {
             Debug.LogWarning($"Dialog is empty!");
