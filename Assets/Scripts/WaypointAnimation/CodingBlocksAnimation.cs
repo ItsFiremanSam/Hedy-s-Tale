@@ -32,6 +32,9 @@ public class CodingBlocksAnimation : MonoBehaviour
         {
             GameObject codingBlock = null;
             PuzzleBlock currentPuzzleBlock = answer[i];
+            if (currentPuzzleBlock.Type == PuzzleBlockType.None)
+                continue;
+
             switch (currentPuzzleBlock.Type)
             {
                 case PuzzleBlockType.Keyword:
