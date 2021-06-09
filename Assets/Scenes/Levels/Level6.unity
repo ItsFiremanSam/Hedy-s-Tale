@@ -14771,12 +14771,12 @@ PrefabInstance:
     - target: {fileID: 7426278994110986792, guid: 1df7cda00687b3f46b23e222b5839f73,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.41
+      value: 1.4
       objectReference: {fileID: 0}
     - target: {fileID: 7426278994110986792, guid: 1df7cda00687b3f46b23e222b5839f73,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.48
+      value: 6.53
       objectReference: {fileID: 0}
     - target: {fileID: 7426278994110986792, guid: 1df7cda00687b3f46b23e222b5839f73,
         type: 3}
@@ -87721,7 +87721,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 978833279}
   m_LocalRotation: {x: -0, y: -0, z: 0.7023194, w: 0.711862}
-  m_LocalPosition: {x: 146, y: 71.6, z: -7.1847286}
+  m_LocalPosition: {x: 126.03, y: 172.43, z: -7.1847286}
   m_LocalScale: {x: 0.5297206, y: 2.072833, z: 2.072833}
   m_Children: []
   m_Father: {fileID: 0}
@@ -88744,7 +88744,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1297463428}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 107.29, y: 145.44, z: 0}
+  m_LocalPosition: {x: 96.1, y: 103.58, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1469993968}
@@ -111547,17 +111547,22 @@ PrefabInstance:
     - target: {fileID: 685082872573353614, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.33
+      value: 2.72
       objectReference: {fileID: 0}
     - target: {fileID: 685082872573353614, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.59
+      value: 15.74
       objectReference: {fileID: 0}
     - target: {fileID: 759794271471485239, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_Name
       value: Talk Walk Wait Waypoint (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 759794271471485239, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1567122937282900200, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -111679,6 +111684,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Talk Walk Wait Waypoint (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5951515680695830415, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5969868984378841597, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -111738,22 +111748,22 @@ PrefabInstance:
     - target: {fileID: 6187128544270234625, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.91
+      value: 2.34
       objectReference: {fileID: 0}
     - target: {fileID: 6187128544270234625, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.83
+      value: 7.16
       objectReference: {fileID: 0}
     - target: {fileID: 6290098581064816781, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.46
+      value: 0.87
       objectReference: {fileID: 0}
     - target: {fileID: 6290098581064816781, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.16
+      value: 1.93
       objectReference: {fileID: 0}
     - target: {fileID: 6834723426226078882, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -111775,6 +111785,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935705626500962560, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: GoToNextCodingBlock
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7122267374763521420, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -112305,12 +112320,12 @@ PrefabInstance:
     - target: {fileID: 685082872573353614, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.49
+      value: 6.58
       objectReference: {fileID: 0}
     - target: {fileID: 685082872573353614, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.83
+      value: 4.18
       objectReference: {fileID: 0}
     - target: {fileID: 759794271471485239, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -112320,7 +112335,7 @@ PrefabInstance:
     - target: {fileID: 1567122937282900200, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.82
+      value: 5.76
       objectReference: {fileID: 0}
     - target: {fileID: 1567122937282900200, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -112331,6 +112346,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Talk Walk Wait Waypoint (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1636277679290462033, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1884795054148910516, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -112387,6 +112407,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2315414422462504425, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: noMoving
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3802940064727303772, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: Subject
@@ -112430,12 +112455,22 @@ PrefabInstance:
     - target: {fileID: 5969868984378841597, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.236996
+      value: 2.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 5969868984378841597, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.14
       objectReference: {fileID: 0}
     - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: dialog.NPCName
       value: Loki
+      objectReference: {fileID: 0}
+    - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: GoToNextCodingBlock
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -112475,22 +112510,27 @@ PrefabInstance:
     - target: {fileID: 6187128544270234625, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.67
+      value: 6.105
       objectReference: {fileID: 0}
     - target: {fileID: 6187128544270234625, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.05
+      value: 4.72
       objectReference: {fileID: 0}
     - target: {fileID: 6290098581064816781, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.216996
+      value: 5.94
       objectReference: {fileID: 0}
     - target: {fileID: 6290098581064816781, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.18
+      value: -0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935705626500962560, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: GoToNextCodingBlock
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7122267374763521420, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -112505,7 +112545,12 @@ PrefabInstance:
     - target: {fileID: 7391847553053017961, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.207
+      value: 3.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 7391847553053017961, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.13
       objectReference: {fileID: 0}
     - target: {fileID: 7441273773521204476, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
