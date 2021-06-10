@@ -20,7 +20,7 @@ public class PlayerMovement : AnimatableEntity
     Rigidbody2D _rigidBody;
     Vector2 _currentVelocity;
     private BoxCollider2D _collider;
-    private bool _isInactive;
+    private bool _resetVelocity = true;
 
     private void Awake()
     {
@@ -34,12 +34,12 @@ public class PlayerMovement : AnimatableEntity
         if (!AnimationActive && !CodingUIActive && !DialogUIActive)
         {
             _currentVelocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized * Speed * Time.fixedDeltaTime;
-            _isInactive = false;
+            _resetVelocity = true;
         }
-        else if (!_isInactive)
+        else if (_resetVelocity)
         {
             _currentVelocity = Vector2.zero;
-            _isInactive = true;
+            _resetVelocity = false;
         }
     }
 
@@ -86,7 +86,7 @@ public class PlayerMovement : AnimatableEntity
     /// </summary>
     public override IEnumerator MoveTo(Vector2 pos, float speed)
     {
-        _isInactive = true;
+        _resetVelocity = false;
         _currentVelocity = (pos - (Vector2)transform.position).normalized * speed * Time.fixedDeltaTime;
         yield return new WaitUntil(() => Vector2.Dot(_currentVelocity, pos - (Vector2)transform.position) < 0);
         _currentVelocity = Vector2.zero;
