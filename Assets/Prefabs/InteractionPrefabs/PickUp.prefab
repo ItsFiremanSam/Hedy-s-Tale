@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5979487619007110662}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.77, y: 0.44, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5979487620176987195}
@@ -114,7 +114,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PuzzleBlock:
     IsKeyword: 0
+    Type: 0
     Content: 
+  itemPickUpClip: {fileID: 0}
+  sfxSource: {fileID: 0}
 --- !u!1 &5979487620176987196
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,13 +10,22 @@ using UnityEngine.UI;
 /// </summary>
 public class CodingUIHandler : MonoBehaviour
 {
+    [Header("Prefabs")]
     public GameObject KeywordPrefab;
-    public GameObject NonKeywordPrefab;
-    public GameObject MissingBlockPrefab;
-    public GameObject AnswerBlockPrefab;
+    public GameObject StringPrefab;
+    public GameObject VariablePrefab;
+    public GameObject NumberPrefab;
 
-    public Transform KeywordPanel;
-    public Transform NonKeywordPanel;
+    public GameObject AnswerBlockPrefab;
+    public GameObject PunctuationBlockPrefab;
+
+    [Header("Containers")]
+    public Transform KeywordContainer;
+    public Transform StringContainer;
+    public Transform VariableContainer;
+    public Transform NumberContainer;
+
+    [Header("Puzzle Panels")]
     public Transform AnswerPanel;
     public GameObject DescriptionPanel;
 
@@ -31,6 +40,8 @@ public class CodingUIHandler : MonoBehaviour
     private Action _onWrongAnswerCallback;
 
     private PlayerMovement _playerMovement;
+
+    private int lineCount = 0, wordCount = 0;
 
     private void Awake()
     {
@@ -49,7 +60,8 @@ public class CodingUIHandler : MonoBehaviour
     /// <param name="onWrongAnswerCallback">The function that will be called when the player puts in the wrong answer</param> 
     public void ShowCodingUI(List<PuzzleBlock> inventory, List<PuzzleBlock> answer, string puzzleDescription, Action onCorrectAnswerCallback, Action onWrongAnswerCallback)
     {
-        if (CodingUIContainer.activeSelf) return;
+        if (CodingUIContainer.activeSelf)
+            return;
         _playerMovement.CodingUIActive = true;
 
         _answer = answer;
@@ -57,17 +69,23 @@ public class CodingUIHandler : MonoBehaviour
         _onWrongAnswerCallback = onWrongAnswerCallback;
 
         // Split the inventory by creating deep copies
-        List<PuzzleBlock> inventoryKeywords = inventory.Where(block => block.IsKeyword).ToList();
-        List<PuzzleBlock> inventoryNonKeywords = inventory.Where(block => !block.IsKeyword).ToList();
+        List<PuzzleBlock> inventoryKeywords = inventory.Where(block => block.Type == PuzzleBlockType.Keyword).ToList();
+        List<PuzzleBlock> inventoryStrings = inventory.Where(block => block.Type == PuzzleBlockType.String).ToList();
+        List<PuzzleBlock> inventoryVariables = inventory.Where(block => block.Type == PuzzleBlockType.Variable).ToList();
+        List<PuzzleBlock> inventoryNumbers = inventory.Where(block => block.Type == PuzzleBlockType.Number).ToList();
 
-        List<PuzzleBlock> answerKeywords = answer.Where(block => block.IsKeyword).ToList();
-        List<PuzzleBlock> answerNonKeywords = answer.Where(block => !block.IsKeyword).ToList();
+        List<PuzzleBlock> answerKeywords = answer.Where(block => block.Type == PuzzleBlockType.Keyword).ToList();
+        List<PuzzleBlock> answerStrings = answer.Where(block => block.Type == PuzzleBlockType.String).ToList();
+        List<PuzzleBlock> answerVariables = answer.Where(block => block.Type == PuzzleBlockType.Variable).ToList();
+        List<PuzzleBlock> answerNumbers = answer.Where(block => block.Type == PuzzleBlockType.Number).ToList();
 
         // Create the Puzzle Block lists to use of the coding UI
         List<PuzzleBlock> keywords = CreatePuzzleBlocksForPuzzle(inventoryKeywords, answerKeywords);
-        List<PuzzleBlock> nonKeywords = CreatePuzzleBlocksForPuzzle(inventoryNonKeywords, answerNonKeywords);
+        List<PuzzleBlock> strings = CreatePuzzleBlocksForPuzzle(inventoryStrings, answerStrings);
+        List<PuzzleBlock> variables = CreatePuzzleBlocksForPuzzle(inventoryVariables, answerVariables);
+        List<PuzzleBlock> numbers = CreatePuzzleBlocksForPuzzle(inventoryNumbers, answerNumbers);
 
-        SetCodingUI(keywords, nonKeywords, answer, puzzleDescription);
+        SetCodingUI(keywords, strings, variables, numbers, answer, puzzleDescription);
     }
 
     /// <summary>
@@ -90,12 +108,9 @@ public class CodingUIHandler : MonoBehaviour
             PuzzleBlock possiblePuzzleBlock = inventory
                 .Where(e => e.Equals(answer))
                 .FirstOrDefault();
-            if (possiblePuzzleBlock != null)
-            {
-                result.Add(possiblePuzzleBlock);
-                inventory.Remove(possiblePuzzleBlock);
-            }
-            else result.Add(new PuzzleBlock(answer.IsKeyword, null));
+
+            result.Add(possiblePuzzleBlock);
+            inventory.Remove(possiblePuzzleBlock);
         }
 
         // 2. Fill the rest of the puzzleblocks
@@ -116,35 +131,98 @@ public class CodingUIHandler : MonoBehaviour
     /// <param name="nonKeywords">A list of the user input non keywords</param> 
     /// <param name="answer">A list of the answer blocks</param> 
     /// <param name="puzzleDescription"></param> 
-    private void SetCodingUI(List<PuzzleBlock> keywords, List<PuzzleBlock> nonKeywords, List<PuzzleBlock> answer, string puzzleDescription)
+    private void SetCodingUI(List<PuzzleBlock> keywords, List<PuzzleBlock> strings, List<PuzzleBlock> variables, List<PuzzleBlock> numbers, List<PuzzleBlock> answer, string puzzleDescription)
     {
-        keywords.ForEach(b => AddToPanel(b, KeywordPanel, KeywordPrefab));
-        nonKeywords.ForEach(b => AddToPanel(b, NonKeywordPanel, NonKeywordPrefab));
-        answer.ForEach(b => Instantiate(AnswerBlockPrefab, AnswerPanel));
+        keywords.ForEach(b => AddToPanel(b, KeywordContainer, KeywordPrefab));
+        strings.ForEach(b => AddToPanel(b, StringContainer, StringPrefab));
+        variables.ForEach(b => AddToPanel(b, VariableContainer, VariablePrefab));
+        numbers.ForEach(b => AddToPanel(b, NumberContainer, NumberPrefab));
+
+        answer.ForEach(b => InstantiateAnswerBlock(b));
 
         DescriptionPanel.GetComponentInChildren<Text>().text = puzzleDescription;
 
         CodingUIContainer.SetActive(true);
     }
 
+    private void InstantiateAnswerBlock(PuzzleBlock block)
+    {
+        if (block.Type != PuzzleBlockType.None)
+        {
+            Instantiate(AnswerBlockPrefab, AnswerPanel.GetChild(lineCount));
+            wordCount++;
+        }
+        else
+        {
+            if (block.Content == "\\n")
+            {
+                lineCount++;
+                wordCount = 0;
+            }
+            else if (block.Content == "\\t")
+            {
+                instantiateAnswerIndent();
+                wordCount++;
+            }
+            else if (block.Content == "\\n\\t")
+            {
+                lineCount++;
+                instantiateAnswerIndent();
+                wordCount = 1;
+            }
+            else
+            {
+                GameObject punctuation = Instantiate(PunctuationBlockPrefab, AnswerPanel.GetChild(lineCount));
+                punctuation.GetComponent<Text>().text = block.Content;
+                if (block.Content == ",")
+                    punctuation.GetComponent<Text>().fontStyle = FontStyle.Italic;
+            }
+        }
+
+        // TODO: Make this smarter when using different lines 
+        if (wordCount >= 5)
+        {
+            lineCount++;
+            wordCount = 0;
+        }
+    }
+
+    private void instantiateAnswerIndent()
+    {
+        GameObject indent = Instantiate(AnswerBlockPrefab, AnswerPanel.GetChild(lineCount));
+        Destroy(indent.GetComponent<DropBlock>());
+        indent.GetComponent<Image>().color = new Color(0, 0, 0, 0);
+    }
+
     private void AddToPanel(PuzzleBlock block, Transform panel, GameObject puzzleBlockPrefab)
     {
-        if (block.Content != null)
-            Instantiate(puzzleBlockPrefab, panel).GetComponent<DraggableCodingBlock>().SetAnswerBlock(block);
-        else
-            Instantiate(MissingBlockPrefab, panel);
+        Instantiate(puzzleBlockPrefab, panel).GetComponent<DraggableCodingBlock>().SetAnswerBlock(block);
     }
 
     public void CloseCodingUI()
     {
-        if (!CodingUIContainer.activeSelf) return;
+        lineCount = 0;
+        wordCount = 0;
+        if (!CodingUIContainer.activeSelf)
+            return;
         _playerMovement.CodingUIActive = false;
 
         _onCorrectAnswerCallback = null;
 
-        foreach (Transform c in KeywordPanel) Destroy(c.gameObject);
-        foreach (Transform c in NonKeywordPanel) Destroy(c.gameObject);
-        foreach (Transform c in AnswerPanel) Destroy(c.gameObject);
+        foreach (Transform c in KeywordContainer)
+            Destroy(c.gameObject);
+        foreach (Transform c in StringContainer)
+            Destroy(c.gameObject);
+        foreach (Transform c in VariableContainer)
+            Destroy(c.gameObject);
+        foreach (Transform c in NumberContainer)
+            Destroy(c.gameObject);
+
+        foreach (Transform answerLine in AnswerPanel)
+        {
+            foreach (Transform c in answerLine)
+                Destroy(c.gameObject);
+        }
 
         CodingUIContainer.SetActive(false);
     }
@@ -167,12 +245,23 @@ public class CodingUIHandler : MonoBehaviour
     private bool IsAnswerCorrect()
     {
         List<PuzzleBlock> answerToCheck = new List<PuzzleBlock>();
-        foreach (Transform answerBLock in AnswerPanel)
+        foreach (Transform answerLine in AnswerPanel)
         {
-            if (answerBLock.childCount == 0) return false;
-            answerToCheck.Add(answerBLock.GetComponentInChildren<DraggableCodingBlock>().GetAnswerBlock());
+            if (answerLine.childCount == 0)
+                break;
+            foreach (Transform answerBlock in answerLine)
+            {
+                if (answerBlock.childCount == 0)
+                    continue;
+
+                PuzzleBlock block = answerBlock.GetComponentInChildren<DraggableCodingBlock>().GetAnswerBlock();
+                if (block.Type == PuzzleBlockType.None)
+                    continue;
+
+                answerToCheck.Add(block);
+            }
         }
 
-        return _answer.SequenceEqual(answerToCheck);
+        return _answer.Where(b => b.Type != PuzzleBlockType.None).SequenceEqual(answerToCheck);
     }
 }
