@@ -78,8 +78,9 @@ public class PlayerMovement : AnimatableEntity
     /// A coroutine that will move the gameobject to a certain position
     /// </summary>
     public override IEnumerator MoveTo(Vector2 pos, float speed)
-    {    
+    {
         _currentVelocity = (pos - (Vector2)transform.position).normalized * speed * Time.fixedDeltaTime;
         yield return new WaitUntil(() => Vector2.Dot(_currentVelocity, pos - (Vector2)transform.position) < 0);
+        _currentVelocity = Vector2.zero;
     }
 }
