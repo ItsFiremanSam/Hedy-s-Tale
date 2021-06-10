@@ -17,13 +17,22 @@ public class InteractionPickUp : InteractableObject
         {
             _isInteracted = true;
             ShowInteractionBubble(false);
-            sfxSource.PlayOneShot(itemPickUpClip);
-
             playerInteraction.Inventory.Add(PuzzleBlock);
-
-            DialogManager dialogManager = DialogManager.Instance;
-            if (!dialogManager.DialogActive)
-                StartCoroutine(dialogManager.StartDialog(Dialog, gameObject));
+            StartCoroutine(Coroutine());
         }
+    }
+
+    IEnumerator Coroutine()
+    {
+        sfxSource.PlayOneShot(itemPickUpClip);
+       
+        PlayerMovement playerMovement = FindObjectOfType<PlayerMovement>();
+        playerMovement.DialogUIActive = true;
+
+        yield return new WaitForSeconds(.5f);
+
+        DialogManager dialogManager = DialogManager.Instance;
+        if(!dialogManager.DialogActive)
+            yield return dialogManager.StartDialog(Dialog, gameObject);
     }
 }
