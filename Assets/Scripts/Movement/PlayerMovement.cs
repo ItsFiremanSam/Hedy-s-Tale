@@ -74,13 +74,6 @@ public class PlayerMovement : AnimatableEntity
 
     }
 
-    //bool Move(Vector2 velocity)
-    //{
-    //    //if (_currentVelocity != Vector2.zero) return false;
-
-    //    _currentVelocity = velocity;
-    //}
-
     /// <summary>
     /// A coroutine that will move the gameobject to a certain position
     /// </summary>
