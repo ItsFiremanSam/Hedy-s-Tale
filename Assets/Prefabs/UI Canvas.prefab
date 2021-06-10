@@ -7923,12 +7923,12 @@ PrefabInstance:
     - target: {fileID: 3493477903195896556, guid: 2e7781f86169f3348bc565d39368b365,
         type: 3}
       propertyPath: m_Pitch
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3493477903195896556, guid: 2e7781f86169f3348bc565d39368b365,
         type: 3}
       propertyPath: m_Volume
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 3493477903195896556, guid: 2e7781f86169f3348bc565d39368b365,
         type: 3}
