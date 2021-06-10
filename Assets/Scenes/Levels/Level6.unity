@@ -714,6 +714,18 @@ CompositeCollider2D:
         Y: 1690000000
       - X: 1340000000
         Y: 1700000000
+      - X: 1290000100
+        Y: 1700000000
+      - X: 1290000100
+        Y: 1700000041
+      - X: 1290000041
+        Y: 1700000100
+      - X: 1269999959
+        Y: 1700000100
+      - X: 1269999900
+        Y: 1700000041
+      - X: 1269999900
+        Y: 1700000000
       - X: 1250000000
         Y: 1700000000
       - X: 1250000000
@@ -757,6 +769,18 @@ CompositeCollider2D:
       - X: 1260000000
         Y: 1682499968
       - X: 1260000000
+        Y: 1690000000
+      - X: 1269999900
+        Y: 1690000000
+      - X: 1269999900
+        Y: 1689999959
+      - X: 1269999959
+        Y: 1689999900
+      - X: 1290000041
+        Y: 1689999900
+      - X: 1290000100
+        Y: 1689999959
+      - X: 1290000100
         Y: 1690000000
       - X: 1330000000
         Y: 1690000000
@@ -1038,22 +1062,32 @@ CompositeCollider2D:
         Y: 1668749952
       - X: 1300000000
         Y: 1669374976
-      - X: 1290000000
+      - X: 1290000100
         Y: 1669374976
-      - X: 1290000000
-        Y: 1668749952
-      - X: 1285624960
-        Y: 1669374976
-      - X: 1280625024
-        Y: 1669374976
-      - X: 1280000000
-        Y: 1668749952
-      - X: 1280000000
-        Y: 1669374976
-      - X: 1270000000
-        Y: 1669374976
-      - X: 1270000000
-        Y: 1668749952
+      - X: 1290000100
+        Y: 1669375017
+      - X: 1290000041
+        Y: 1669375076
+      - X: 1279999959
+        Y: 1669375076
+      - X: 1279999900
+        Y: 1669375017
+      - X: 1279999900
+        Y: 1668750068
+      - X: 1275624971
+        Y: 1669375075
+      - X: 1275624964
+        Y: 1669375076
+      - X: 1270625004
+        Y: 1669375076
+      - X: 1270624967
+        Y: 1669375061
+      - X: 1269999915
+        Y: 1668750009
+      - X: 1269999900
+        Y: 1668749972
+      - X: 1269999900
+        Y: 1668749966
       - X: 1265624960
         Y: 1669374976
       - X: 1260625024
@@ -1149,6 +1183,18 @@ CompositeCollider2D:
       - X: 1250000000
         Y: 1650000000
       - X: 1250000000
+        Y: 1660000000
+      - X: 1269999900
+        Y: 1660000000
+      - X: 1269999900
+        Y: 1659999959
+      - X: 1269999959
+        Y: 1659999900
+      - X: 1290000041
+        Y: 1659999900
+      - X: 1290000100
+        Y: 1659999959
+      - X: 1290000100
         Y: 1660000000
       - X: 1350000000
         Y: 1660000000
@@ -1324,6 +1370,18 @@ CompositeCollider2D:
         Y: 1490000000
       - X: 980000000
         Y: 1490000000
+    - - X: 1328749952
+        Y: 1629374976
+      - X: 1328749952
+        Y: 1630000000
+      - X: 1301250048
+        Y: 1630000000
+      - X: 1301250048
+        Y: 1629374976
+      - X: 1304375040
+        Y: 1620000000
+      - X: 1326249984
+        Y: 1620000000
     - - X: 960000000
         Y: 1500000000
       - X: 960000000
@@ -1396,18 +1454,6 @@ CompositeCollider2D:
         Y: 1510000000
       - X: 970000000
         Y: 1500000000
-    - - X: 1328749952
-        Y: 1629374976
-      - X: 1328749952
-        Y: 1630000000
-      - X: 1301250048
-        Y: 1630000000
-      - X: 1301250048
-        Y: 1629374976
-      - X: 1304375040
-        Y: 1620000000
-      - X: 1326249984
-        Y: 1620000000
     - - X: 1558125056
         Y: 1604375040
       - X: 1559374976
@@ -2666,38 +2712,6 @@ CompositeCollider2D:
         Y: 1580000000
       - X: 1406249984
         Y: 1580000000
-    - - X: 1399375033
-        Y: 1549999915
-      - X: 1400000085
-        Y: 1550624967
-      - X: 1400000100
-        Y: 1550625004
-      - X: 1400000100
-        Y: 1556875028
-      - X: 1400000085
-        Y: 1556875065
-      - X: 1398125116
-        Y: 1558750033
-      - X: 1398125090
-        Y: 1558750047
-      - X: 1391874959
-        Y: 1560000099
-      - X: 1391874949
-        Y: 1560000100
-      - X: 1383124975
-        Y: 1560000100
-      - X: 1383124943
-        Y: 1560000089
-      - X: 1379999920
-        Y: 1557500096
-      - X: 1379999900
-        Y: 1557500055
-      - X: 1379999900
-        Y: 1549999959
-      - X: 1379999959
-        Y: 1549999900
-      - X: 1399374996
-        Y: 1549999900
     - - X: 1329375033
         Y: 1549999915
       - X: 1330000085
@@ -2729,6 +2743,38 @@ CompositeCollider2D:
       - X: 1309999959
         Y: 1549999900
       - X: 1329374996
+        Y: 1549999900
+    - - X: 1399375033
+        Y: 1549999915
+      - X: 1400000085
+        Y: 1550624967
+      - X: 1400000100
+        Y: 1550625004
+      - X: 1400000100
+        Y: 1556875028
+      - X: 1400000085
+        Y: 1556875065
+      - X: 1398125116
+        Y: 1558750033
+      - X: 1398125090
+        Y: 1558750047
+      - X: 1391874959
+        Y: 1560000099
+      - X: 1391874949
+        Y: 1560000100
+      - X: 1383124975
+        Y: 1560000100
+      - X: 1383124943
+        Y: 1560000089
+      - X: 1379999920
+        Y: 1557500096
+      - X: 1379999900
+        Y: 1557500055
+      - X: 1379999900
+        Y: 1549999959
+      - X: 1379999959
+        Y: 1549999900
+      - X: 1399374996
         Y: 1549999900
     - - X: 1228749952
         Y: 1559374976
@@ -2884,14 +2930,6 @@ CompositeCollider2D:
         Y: 1502499968
       - X: 1143124992
         Y: 1502499968
-    - - X: 1110000000
-        Y: 1500000000
-      - X: 1090000000
-        Y: 1500000000
-      - X: 1090000000
-        Y: 1490000000
-      - X: 1110000000
-        Y: 1490000000
     - - X: 1378749952
         Y: 1499374976
       - X: 1378749952
@@ -2903,6 +2941,14 @@ CompositeCollider2D:
       - X: 1354375040
         Y: 1490000000
       - X: 1376249984
+        Y: 1490000000
+    - - X: 1110000000
+        Y: 1500000000
+      - X: 1090000000
+        Y: 1500000000
+      - X: 1090000000
+        Y: 1490000000
+      - X: 1110000000
         Y: 1490000000
     - - X: 1070000000
         Y: 1500000000
@@ -3460,12 +3506,6 @@ CompositeCollider2D:
         Y: 1290000000
       - X: 1010000000
         Y: 1290000000
-    - - X: 1119374976
-        Y: 1290000000
-      - X: 1120625024
-        Y: 1290000000
-      - X: 1120000000
-        Y: 1289374976
     - - X: 800000000
         Y: 1290000000
       - X: 800625024
@@ -3478,17 +3518,23 @@ CompositeCollider2D:
         Y: 1290000000
       - X: 1130000000
         Y: 1289374976
+    - - X: 1119374976
+        Y: 1290000000
+      - X: 1120625024
+        Y: 1290000000
+      - X: 1120000000
+        Y: 1289374976
     - - X: 809374976
         Y: 1290000000
       - X: 810625024
         Y: 1290000000
       - X: 810000000
         Y: 1289374976
-    - - X: 1159374976
+    - - X: 1149374976
         Y: 1280000000
-      - X: 1160000000
+      - X: 1150625024
         Y: 1280000000
-      - X: 1160000000
+      - X: 1150000000
         Y: 1279374976
     - - X: 870000000
         Y: 1280000000
@@ -3498,11 +3544,11 @@ CompositeCollider2D:
         Y: 1270000000
       - X: 870000000
         Y: 1270000000
-    - - X: 1149374976
+    - - X: 1159374976
         Y: 1280000000
-      - X: 1150625024
+      - X: 1160000000
         Y: 1280000000
-      - X: 1150000000
+      - X: 1160000000
         Y: 1279374976
     - - X: 1159374976
         Y: 1270000000
@@ -3618,17 +3664,17 @@ CompositeCollider2D:
         Y: 1244375040
       - X: 778750016
         Y: 1244375040
-    - - X: 1189374976
-        Y: 1230000000
-      - X: 1190000000
-        Y: 1230000000
-      - X: 1190000000
-        Y: 1229374976
     - - X: 730000000
         Y: 1230000000
       - X: 730625024
         Y: 1230000000
       - X: 730000000
+        Y: 1229374976
+    - - X: 1189374976
+        Y: 1230000000
+      - X: 1190000000
+        Y: 1230000000
+      - X: 1190000000
         Y: 1229374976
     - - X: 1189374976
         Y: 1220000000
@@ -3920,14 +3966,6 @@ CompositeCollider2D:
         Y: 1120000000
       - X: 1000000000
         Y: 1120000000
-    - - X: 830000000
-        Y: 1120000000
-      - X: 820000000
-        Y: 1120000000
-      - X: 820000000
-        Y: 1110000000
-      - X: 830000000
-        Y: 1110000000
     - - X: 870000000
         Y: 1120000000
       - X: 860000000
@@ -3935,6 +3973,14 @@ CompositeCollider2D:
       - X: 860000000
         Y: 1110000000
       - X: 870000000
+        Y: 1110000000
+    - - X: 830000000
+        Y: 1120000000
+      - X: 820000000
+        Y: 1120000000
+      - X: 820000000
+        Y: 1110000000
+      - X: 830000000
         Y: 1110000000
     - - X: 1078125056
         Y: 1104375040
@@ -4804,14 +4850,11 @@ CompositeCollider2D:
       - {x: 130.06248, y: 166.93748}
       - {x: 130, y: 166.87509}
       - {x: 129.99997, y: 166.9375}
-      - {x: 129, y: 166.93747}
-      - {x: 128.99997, y: 166.875}
-      - {x: 128.5625, y: 166.9375}
-      - {x: 128.06248, y: 166.93748}
-      - {x: 128, y: 166.87509}
-      - {x: 127.99998, y: 166.9375}
-      - {x: 127, y: 166.93747}
-      - {x: 126.99996, y: 166.875}
+      - {x: 127.99999, y: 166.93747}
+      - {x: 127.99996, y: 166.87502}
+      - {x: 127.5625, y: 166.93752}
+      - {x: 127.06249, y: 166.9375}
+      - {x: 126.99998, y: 166.875}
       - {x: 126.5625, y: 166.9375}
       - {x: 126.06249, y: 166.93748}
       - {x: 125.99999, y: 166.875}
@@ -5629,14 +5672,6 @@ CompositeCollider2D:
       - {x: 138.125, y: 158.99997}
       - {x: 138.125, y: 158.9375}
       - {x: 138.43753, y: 158}
-    - - {x: 132.93748, y: 154.99998}
-      - {x: 133.00002, y: 155.06252}
-      - {x: 133, y: 155.68752}
-      - {x: 132.8125, y: 155.87502}
-      - {x: 132.1875, y: 156.00002}
-      - {x: 131.31248, y: 156}
-      - {x: 130.99998, y: 155.74998}
-      - {x: 131.00003, y: 154.99998}
     - - {x: 139.93748, y: 154.99998}
       - {x: 140.00002, y: 155.06252}
       - {x: 140, y: 155.68752}
@@ -5645,6 +5680,14 @@ CompositeCollider2D:
       - {x: 138.31248, y: 156}
       - {x: 137.99998, y: 155.74998}
       - {x: 138.00003, y: 154.99998}
+    - - {x: 132.93748, y: 154.99998}
+      - {x: 133.00002, y: 155.06252}
+      - {x: 133, y: 155.68752}
+      - {x: 132.8125, y: 155.87502}
+      - {x: 132.1875, y: 156.00002}
+      - {x: 131.31248, y: 156}
+      - {x: 130.99998, y: 155.74998}
+      - {x: 131.00003, y: 154.99998}
     - - {x: 122.62498, y: 155}
       - {x: 122.875, y: 155.9375}
       - {x: 122.87497, y: 156}
@@ -5694,18 +5737,18 @@ CompositeCollider2D:
       - {x: 142, y: 151.99997}
       - {x: 142, y: 151.4375}
       - {x: 142.12502, y: 151.25}
-    - - {x: 118.62498, y: 151}
-      - {x: 118.875, y: 151.9375}
-      - {x: 118.87497, y: 152}
-      - {x: 116.12501, y: 151.99997}
-      - {x: 116.12501, y: 151.9375}
-      - {x: 116.43753, y: 151}
     - - {x: 130.62497, y: 151}
       - {x: 130.875, y: 151.9375}
       - {x: 130.87497, y: 152}
       - {x: 128.125, y: 151.99997}
       - {x: 128.125, y: 151.9375}
       - {x: 128.43753, y: 151}
+    - - {x: 118.62498, y: 151}
+      - {x: 118.875, y: 151.9375}
+      - {x: 118.87497, y: 152}
+      - {x: 116.12501, y: 151.99997}
+      - {x: 116.12501, y: 151.9375}
+      - {x: 116.43753, y: 151}
     - - {x: 114.3125, y: 150.25}
       - {x: 114.81251, y: 150.4375}
       - {x: 114.9375, y: 150.56252}
@@ -5726,16 +5769,16 @@ CompositeCollider2D:
       - {x: 106.99997, y: 150}
       - {x: 105, y: 149.99997}
       - {x: 105.00003, y: 149}
+    - - {x: 110.99998, y: 149}
+      - {x: 110.99998, y: 150}
+      - {x: 109, y: 149.99997}
+      - {x: 109.00003, y: 149}
     - - {x: 137.62497, y: 149}
       - {x: 137.875, y: 149.9375}
       - {x: 137.87497, y: 150}
       - {x: 135.125, y: 149.99997}
       - {x: 135.125, y: 149.9375}
       - {x: 135.43753, y: 149}
-    - - {x: 110.99998, y: 149}
-      - {x: 110.99998, y: 150}
-      - {x: 109, y: 149.99997}
-      - {x: 109.00003, y: 149}
     - - {x: 149.875, y: 147.99998}
       - {x: 150.00002, y: 148.06252}
       - {x: 150.00002, y: 149.00002}
@@ -6013,18 +6056,18 @@ CompositeCollider2D:
     - - {x: 73.00007, y: 121.93756}
       - {x: 73.00003, y: 122}
       - {x: 73.06244, y: 121.99994}
-    - - {x: 114.99998, y: 120}
-      - {x: 114.99998, y: 121}
-      - {x: 114, y: 120.99998}
-      - {x: 114.00003, y: 120}
-    - - {x: 101.99997, y: 120}
-      - {x: 101.99997, y: 121}
-      - {x: 101, y: 120.99998}
-      - {x: 101.00003, y: 120}
     - - {x: 76.99997, y: 120}
       - {x: 76.99997, y: 121}
       - {x: 76, y: 120.99998}
       - {x: 76.00003, y: 120}
+    - - {x: 101.99997, y: 120}
+      - {x: 101.99997, y: 121}
+      - {x: 101, y: 120.99998}
+      - {x: 101.00003, y: 120}
+    - - {x: 114.99998, y: 120}
+      - {x: 114.99998, y: 121}
+      - {x: 114, y: 120.99998}
+      - {x: 114.00003, y: 120}
     - - {x: 117.874985, y: 119.43751}
       - {x: 118, y: 119.6875}
       - {x: 117.99999, y: 119.937515}
@@ -6082,14 +6125,14 @@ CompositeCollider2D:
       - {x: 107.99998, y: 116}
       - {x: 107, y: 115.99998}
       - {x: 107.00003, y: 115}
-    - - {x: 102.99997, y: 115}
-      - {x: 102.99997, y: 116}
-      - {x: 102, y: 115.99998}
-      - {x: 102.00003, y: 115}
     - - {x: 80.99997, y: 115}
       - {x: 80.99997, y: 116}
       - {x: 80, y: 115.99998}
       - {x: 80.00003, y: 115}
+    - - {x: 102.99997, y: 115}
+      - {x: 102.99997, y: 116}
+      - {x: 102, y: 115.99998}
+      - {x: 102.00003, y: 115}
     - - {x: 115.874985, y: 114.43751}
       - {x: 116, y: 114.6875}
       - {x: 115.999985, y: 114.937515}
@@ -6392,14 +6435,14 @@ CompositeCollider2D:
       - {x: 73.125, y: 93.499985}
       - {x: 73, y: 93}
       - {x: 73.00003, y: 89}
-    - - {x: 104.99997, y: 99}
-      - {x: 104.99997, y: 100}
-      - {x: 104, y: 99.99997}
-      - {x: 104.00003, y: 99}
     - - {x: 86.99997, y: 99}
       - {x: 86.99997, y: 100}
       - {x: 86, y: 99.99997}
       - {x: 86.00003, y: 99}
+    - - {x: 104.99997, y: 99}
+      - {x: 104.99997, y: 100}
+      - {x: 104, y: 99.99997}
+      - {x: 104.00003, y: 99}
     - - {x: 107.31249, y: 98.25}
       - {x: 107.81251, y: 98.43751}
       - {x: 107.9375, y: 98.562515}
@@ -6432,10 +6475,6 @@ CompositeCollider2D:
       - {x: 81.99997, y: 96}
       - {x: 81, y: 95.99997}
       - {x: 81.00003, y: 95}
-    - - {x: 105.99997, y: 94}
-      - {x: 105.99997, y: 95}
-      - {x: 105, y: 94.99997}
-      - {x: 105.00003, y: 94}
     - - {x: 86.99997, y: 94}
       - {x: 86.99997, y: 95}
       - {x: 85.625, y: 94.99997}
@@ -6443,6 +6482,10 @@ CompositeCollider2D:
       - {x: 85.812515, y: 94.75001}
       - {x: 86, y: 94.74997}
       - {x: 86.00003, y: 94}
+    - - {x: 105.99997, y: 94}
+      - {x: 105.99997, y: 95}
+      - {x: 105, y: 94.99997}
+      - {x: 105.00003, y: 94}
     - - {x: 102.874985, y: 93.4375}
       - {x: 103, y: 93.68751}
       - {x: 102.99999, y: 93.93751}
@@ -13620,8 +13663,8 @@ Tilemap:
   - first: {x: 127, y: 166, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 21
-      m_TileSpriteIndex: 21
+      m_TileIndex: 67
+      m_TileSpriteIndex: 67
       m_TileMatrixIndex: 3
       m_TileColorIndex: 13
       m_TileObjectToInstantiateIndex: 65535
@@ -13629,8 +13672,8 @@ Tilemap:
   - first: {x: 128, y: 166, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 67
-      m_TileSpriteIndex: 67
+      m_TileIndex: 21
+      m_TileSpriteIndex: 21
       m_TileMatrixIndex: 3
       m_TileColorIndex: 13
       m_TileObjectToInstantiateIndex: 65535
@@ -14142,8 +14185,8 @@ Tilemap:
   - first: {x: 128, y: 169, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 69
-      m_TileSpriteIndex: 69
+      m_TileIndex: 68
+      m_TileSpriteIndex: 68
       m_TileMatrixIndex: 3
       m_TileColorIndex: 13
       m_TileObjectToInstantiateIndex: 65535
@@ -14421,9 +14464,9 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 5a1ace7ff9633f54da556878a4060246, type: 2}
   - m_RefCount: 83
     m_Data: {fileID: 11400000, guid: be038f9c9ca107d4c936c6156071c393, type: 2}
-  - m_RefCount: 50
+  - m_RefCount: 51
     m_Data: {fileID: 11400000, guid: 4d35732b077fe8a4584b5536976abda0, type: 2}
-  - m_RefCount: 82
+  - m_RefCount: 81
     m_Data: {fileID: 11400000, guid: d6da85614ec0fa6478e31066aa6ebdd6, type: 2}
   - m_RefCount: 18
     m_Data: {fileID: 11400000, guid: 18e621d1d3b0ef44db0dfc42695b2760, type: 2}
@@ -14621,10 +14664,10 @@ Tilemap:
   - m_RefCount: 83
     m_Data: {fileID: -8722614853763998606, guid: 635355a048c247e49947f96b4a3c1325,
       type: 3}
-  - m_RefCount: 50
+  - m_RefCount: 51
     m_Data: {fileID: 3087107433097831702, guid: 635355a048c247e49947f96b4a3c1325,
       type: 3}
-  - m_RefCount: 82
+  - m_RefCount: 81
     m_Data: {fileID: -8342835201978535853, guid: 635355a048c247e49947f96b4a3c1325,
       type: 3}
   - m_RefCount: 18
@@ -14912,7 +14955,7 @@ PrefabInstance:
     - target: {fileID: 7464826716262060512, guid: 74446c2ab1fd33b4eb77c5c0f1f73181,
         type: 3}
       propertyPath: dialog.sentences.Array.data[0]
-      value: The last tree has 9 banana's!
+      value: Wow! This tree has a bunch of bananas! I think it's 9 bananas in total.
       objectReference: {fileID: 0}
     - target: {fileID: 7464826716262060512, guid: 74446c2ab1fd33b4eb77c5c0f1f73181,
         type: 3}
@@ -15213,22 +15256,22 @@ PrefabInstance:
     - target: {fileID: 5950093220229846825, guid: 1df7cda00687b3f46b23e222b5839f73,
         type: 3}
       propertyPath: dialog.sentences.Array.size
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5950093220229846825, guid: 1df7cda00687b3f46b23e222b5839f73,
         type: 3}
       propertyPath: dialog.sentences.Array.data[0]
-      value: 
+      value: I've come very far, and I helped so many animals!
       objectReference: {fileID: 0}
     - target: {fileID: 5950093220229846825, guid: 1df7cda00687b3f46b23e222b5839f73,
         type: 3}
       propertyPath: dialog.sentences.Array.data[1]
-      value: 
+      value: I have to be close to my family, I can feel it!
       objectReference: {fileID: 0}
     - target: {fileID: 5950093220229846825, guid: 1df7cda00687b3f46b23e222b5839f73,
         type: 3}
       propertyPath: dialog.sentences.Array.data[2]
-      value: Maybe there's someone nearby who could help me...
+      value: Wait...
       objectReference: {fileID: 0}
     - target: {fileID: 7426278994110986792, guid: 1df7cda00687b3f46b23e222b5839f73,
         type: 3}
@@ -15373,6 +15416,85 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &329576715
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1856193752}
+    m_Modifications:
+    - target: {fileID: 5950093220229846825, guid: 1df7cda00687b3f46b23e222b5839f73,
+        type: 3}
+      propertyPath: noMoving
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950093220229846825, guid: 1df7cda00687b3f46b23e222b5839f73,
+        type: 3}
+      propertyPath: SpeedMultiplier
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7426278994110986792, guid: 1df7cda00687b3f46b23e222b5839f73,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7426278994110986792, guid: 1df7cda00687b3f46b23e222b5839f73,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7426278994110986792, guid: 1df7cda00687b3f46b23e222b5839f73,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 7426278994110986792, guid: 1df7cda00687b3f46b23e222b5839f73,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7426278994110986792, guid: 1df7cda00687b3f46b23e222b5839f73,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7426278994110986792, guid: 1df7cda00687b3f46b23e222b5839f73,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7426278994110986792, guid: 1df7cda00687b3f46b23e222b5839f73,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7426278994110986792, guid: 1df7cda00687b3f46b23e222b5839f73,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7426278994110986792, guid: 1df7cda00687b3f46b23e222b5839f73,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7426278994110986792, guid: 1df7cda00687b3f46b23e222b5839f73,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7426278994110986792, guid: 1df7cda00687b3f46b23e222b5839f73,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663711518616734711, guid: 1df7cda00687b3f46b23e222b5839f73,
+        type: 3}
+      propertyPath: m_Name
+      value: Talk Walk Wait Waypoint (7)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1df7cda00687b3f46b23e222b5839f73, type: 3}
 --- !u!1 &333559887
 GameObject:
   m_ObjectHideFlags: 0
@@ -15497,7 +15619,8 @@ PrefabInstance:
     - target: {fileID: 50645315964878893, guid: 3866c2129c6ccd74bb7455e35b2df341,
         type: 3}
       propertyPath: dialog.sentences.Array.data[0]
-      value: I found some + blocks.
+      value: I found some blocks with plus signs on them, maybe I can use them to
+        solve a puzzle!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3866c2129c6ccd74bb7455e35b2df341, type: 3}
@@ -15591,7 +15714,8 @@ PrefabInstance:
     - target: {fileID: 50645315964878893, guid: 3866c2129c6ccd74bb7455e35b2df341,
         type: 3}
       propertyPath: dialog.sentences.Array.data[0]
-      value: I found the = block.
+      value: I found a block with an equals sign on it, maybe I can use it to solve
+        a puzzle!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3866c2129c6ccd74bb7455e35b2df341, type: 3}
@@ -92929,12 +93053,12 @@ PrefabInstance:
     - target: {fileID: 5336166590211089078, guid: ecf5a2c4ffd15714683b819829190096,
         type: 3}
       propertyPath: dialog.sentences.Array.size
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5336166590211089078, guid: ecf5a2c4ffd15714683b819829190096,
         type: 3}
       propertyPath: dialog.sentences.Array.data[0]
-      value: 'Where are the nuts?! Where are the nuts?! '
+      value: 'Where are the nuts... Where are the nuts?! '
       objectReference: {fileID: 0}
     - target: {fileID: 5336166590211089078, guid: ecf5a2c4ffd15714683b819829190096,
         type: 3}
@@ -92944,7 +93068,17 @@ PrefabInstance:
     - target: {fileID: 5336166590211089078, guid: ecf5a2c4ffd15714683b819829190096,
         type: 3}
       propertyPath: dialog.sentences.Array.data[2]
-      value: I'm totally fine, just searching for nuts, here have this number!!
+      value: I'm totally fine, just searching for nuts!
+      objectReference: {fileID: 0}
+    - target: {fileID: 5336166590211089078, guid: ecf5a2c4ffd15714683b819829190096,
+        type: 3}
+      propertyPath: dialog.sentences.Array.data[3]
+      value: Your friends are asking to help count nuts... Can you get back?
+      objectReference: {fileID: 0}
+    - target: {fileID: 5336166590211089078, guid: ecf5a2c4ffd15714683b819829190096,
+        type: 3}
+      propertyPath: dialog.sentences.Array.data[4]
+      value: Yes yes, here have this block! I found it when looking for nuts!
       objectReference: {fileID: 0}
     - target: {fileID: 5336166590211089227, guid: ecf5a2c4ffd15714683b819829190096,
         type: 3}
@@ -93128,7 +93262,7 @@ PrefabInstance:
     - target: {fileID: 7464826716262060512, guid: 74446c2ab1fd33b4eb77c5c0f1f73181,
         type: 3}
       propertyPath: dialog.sentences.Array.data[0]
-      value: The third tree has 3 banana's
+      value: This tree has 3 bananas... That's not a lot...
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74446c2ab1fd33b4eb77c5c0f1f73181, type: 3}
@@ -93537,6 +93671,85 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &974725373
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1856193752}
+    m_Modifications:
+    - target: {fileID: 5950093220229846825, guid: 1df7cda00687b3f46b23e222b5839f73,
+        type: 3}
+      propertyPath: noMoving
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950093220229846825, guid: 1df7cda00687b3f46b23e222b5839f73,
+        type: 3}
+      propertyPath: SpeedMultiplier
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7426278994110986792, guid: 1df7cda00687b3f46b23e222b5839f73,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7426278994110986792, guid: 1df7cda00687b3f46b23e222b5839f73,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7426278994110986792, guid: 1df7cda00687b3f46b23e222b5839f73,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 7426278994110986792, guid: 1df7cda00687b3f46b23e222b5839f73,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7426278994110986792, guid: 1df7cda00687b3f46b23e222b5839f73,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7426278994110986792, guid: 1df7cda00687b3f46b23e222b5839f73,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7426278994110986792, guid: 1df7cda00687b3f46b23e222b5839f73,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7426278994110986792, guid: 1df7cda00687b3f46b23e222b5839f73,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7426278994110986792, guid: 1df7cda00687b3f46b23e222b5839f73,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7426278994110986792, guid: 1df7cda00687b3f46b23e222b5839f73,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7426278994110986792, guid: 1df7cda00687b3f46b23e222b5839f73,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663711518616734711, guid: 1df7cda00687b3f46b23e222b5839f73,
+        type: 3}
+      propertyPath: m_Name
+      value: Talk Walk Wait Waypoint (8)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1df7cda00687b3f46b23e222b5839f73, type: 3}
 --- !u!1 &978833279
 GameObject:
   m_ObjectHideFlags: 0
@@ -93655,13 +93868,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 978833279}
-  m_LocalRotation: {x: -0, y: -0, z: 0.7023194, w: 0.711862}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 126.03, y: 172.43, z: -7.1847286}
   m_LocalScale: {x: 0.5297206, y: 2.072833, z: 2.072833}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 14
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 89.227005}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!1 &993757215
 GameObject:
   m_ObjectHideFlags: 0
@@ -93980,7 +94193,7 @@ PrefabInstance:
     - target: {fileID: 7464826716262060512, guid: 74446c2ab1fd33b4eb77c5c0f1f73181,
         type: 3}
       propertyPath: dialog.sentences.Array.data[0]
-      value: The second tree has 4 banana's
+      value: This tree has 4 bananas!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74446c2ab1fd33b4eb77c5c0f1f73181, type: 3}
@@ -117387,7 +117600,7 @@ PrefabInstance:
     - target: {fileID: 50645315964878893, guid: 3866c2129c6ccd74bb7455e35b2df341,
         type: 3}
       propertyPath: dialog.sentences.Array.data[0]
-      value: 'I found a number, maybe I can use it somewhere. '
+      value: I found a block with a number on it, maybe I can use it to solve a puzzle!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3866c2129c6ccd74bb7455e35b2df341, type: 3}
@@ -117632,7 +117845,7 @@ PrefabInstance:
     - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: dialog.NPCName
-      value: Berry
+      value: Berry the Squirrel
       objectReference: {fileID: 0}
     - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -117647,38 +117860,39 @@ PrefabInstance:
     - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: dialog.sentences.Array.data[0]
-      value: How many! How many walnuts!!
+      value: And? How many nuts do we have?!
       objectReference: {fileID: 0}
     - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: dialog.sentences.Array.data[1]
-      value: The 5 of you have each collected 3 wallnuts, that is 15 total!
+      value: The five of you have each collected 3 nuts, so... that is 15 nuts in
+        total!
       objectReference: {fileID: 0}
     - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: dialog.sentences.Array.data[2]
-      value: Thats... NOT ENOUGH!! We need more more.
+      value: That's... NOT ENOUGH! We need many more nuts.
       objectReference: {fileID: 0}
     - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: dialog.sentences.Array.data[3]
-      value: I can't help you with that.
+      value: I can't help you with that...
       objectReference: {fileID: 0}
     - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: dialog.sentences.Array.data[4]
-      value: We know, thank you for counting, the humans are past the bridge in the
-        north.
+      value: We know, thank you for helping with the count. The humans are past the
+        bridge in the north.
       objectReference: {fileID: 0}
     - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: dialog.sentences.Array.data[5]
-      value: Finally, I can see my family again, goodbye Berry.
+      value: Thank you Berry! I hope that's where we find my family!
       objectReference: {fileID: 0}
     - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: dialog.sentences.Array.data[6]
-      value: Goodbye mister, we will collect more tasty walnuts.
+      value: Bye Hedy!
       objectReference: {fileID: 0}
     - target: {fileID: 6187128544270234625, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -117785,14 +117999,15 @@ PrefabInstance:
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: PuzzleDescription
-      value: "The squirrels need to know how many walnuts are in the pit.\n\nEach
-        squirrel has thrown 3 walnuts in the pit, use the X keyword (multiply) in
-        this puzzle. \n"
+      value: "The squirrels need to know how many nuts are in the pit. Each squirrel
+        has thrown 3 walnuts in the pit, use the X keyword (multiply) in this puzzle.
+        \n\nRemember to first enter the amount of squirrels, then enter the amount
+        of walnuts every squirrel have.\n"
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.NPCName
-      value: Berry
+      value: Berry the Squirrel
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -117802,7 +118017,7 @@ PrefabInstance:
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogHasAnswer.NPCName
-      value: Berry
+      value: Berry the Squirrel
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -117947,7 +118162,7 @@ PrefabInstance:
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogPuzzleCompleted.NPCName
-      value: Berry
+      value: Berry the Squirrel
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -117957,7 +118172,12 @@ PrefabInstance:
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.sentences.Array.size
-      value: 11
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogPuzzleCompleted.NPCTalkFirst
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -117967,27 +118187,28 @@ PrefabInstance:
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.sentences.Array.data[1]
-      value: Sorry, I don't have any, but I do have a question for you.
+      value: Sorry, I don't have any nuts...
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.sentences.Array.data[2]
-      value: First we need to introduce ourselves, I am berry!!
+      value: That's too bad, but you look really nice! I'm Berry!
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.sentences.Array.data[3]
-      value: My name is Hedy.
+      value: Hi! My name is Hedy.
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.sentences.Array.data[4]
-      value: Perfect, what is your question mister Hedy?
+      value: Hi Hedy! Did you want to ask me something?
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.sentences.Array.data[5]
-      value: A monkey told me you have seen some humans nearby.
+      value: Yes! A monkey told me you saw humans nearby! Do you know where you saw
+        them
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -117997,59 +118218,120 @@ PrefabInstance:
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.sentences.Array.data[7]
-      value: '*exited* That could be my family, where is this village?'
+      value: ' That could be my family! Where is this village?'
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.sentences.Array.data[8]
-      value: Hihi, we won't say, help us with our problem first!
+      value: Hihihi, if you help us find more nuts we will help you!
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.sentences.Array.data[9]
-      value: 'I''m so close, I will help you I need to know where it is. '
+      value: I'm really close to home now, so I'll help you!
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.sentences.Array.data[10]
+      value: Good good, we're missing 2 squirrels. We need them to count our nuts.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogFirst.sentences.Array.data[11]
+      value: Okay, do you know where these squirrels are?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogFirst.sentences.Array.data[12]
+      value: They are around here somewhere... If you find both of them let us know!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogFirst.sentences.Array.data[13]
       value: 'Good good, we''re missing 2 squirrels, we need them to count walnuts,
         find them and help us count. '
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
-      propertyPath: DialogFirst.sentences.Array.data[11]
-      value: 
+      propertyPath: DialogFirst.sentences.Array.data[14]
+      value: 'Good good, we''re missing 2 squirrels, we need them to count walnuts,
+        find them and help us count. '
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
-      propertyPath: DialogFirst.sentences.Array.data[12]
-      value: I'l be back soon.
+      propertyPath: DialogFirst.sentences.Array.data[15]
+      value: 'Good good, we''re missing 2 squirrels, we need them to count walnuts,
+        find them and help us count. '
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
-      propertyPath: DialogFirst.sentences.Array.data[13]
-      value: Before you leave, I saw some chests in the area, maybe they can help
-        you.
+      propertyPath: DialogFirst.sentences.Array.data[16]
+      value: 'Good good, we''re missing 2 squirrels, we need them to count walnuts,
+        find them and help us count. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogFirst.sentences.Array.data[17]
+      value: 'Good good, we''re missing 2 squirrels, we need them to count walnuts,
+        find them and help us count. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogFirst.sentences.Array.data[18]
+      value: 'Good good, we''re missing 2 squirrels, we need them to count walnuts,
+        find them and help us count. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogFirst.sentences.Array.data[19]
+      value: 'Good good, we''re missing 2 squirrels, we need them to count walnuts,
+        find them and help us count. '
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogHasAnswer.sentences.Array.size
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogHasAnswer.sentences.Array.data[0]
-      value: Yes yes, you found them, count the walnuts and we will tell you location.
+      value: Did youl find them?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogHasAnswer.sentences.Array.data[1]
+      value: Yes, I did!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogHasAnswer.sentences.Array.data[2]
+      value: Good good, if you tell us how many nuts we have, we will tell you where
+        the village is!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogHasAnswer.sentences.Array.data[3]
+      value: Did youl find them?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogHasAnswer.sentences.Array.data[4]
+      value: Did youl find them?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogHasAnswer.sentences.Array.data[5]
+      value: Did youl find them?
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogPuzzleCompleted.sentences.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogPuzzleCompleted.sentences.Array.data[0]
-      value: You have 26 banana's!
+      value: Nuts!
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -118099,17 +118381,17 @@ PrefabInstance:
     - target: {fileID: 8660793725558201169, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: dialog.NPCName
-      value: Hedy
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8660793725558201169, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: dialog.sentences.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8660793725558201169, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: dialog.sentences.Array.data[0]
-      value: I think I can squeeze through the fence.
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8764498491039987382, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -118255,12 +118537,12 @@ PrefabInstance:
     - target: {fileID: 685082872573353614, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.58
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 685082872573353614, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.18
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 759794271471485239, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -118270,12 +118552,12 @@ PrefabInstance:
     - target: {fileID: 1567122937282900200, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.76
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 1567122937282900200, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.71
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 1636277679290462033, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -118285,7 +118567,7 @@ PrefabInstance:
     - target: {fileID: 1636277679290462033, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1884795054148910516, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -118295,12 +118577,12 @@ PrefabInstance:
     - target: {fileID: 1884795054148910516, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 93.48
+      value: 97
       objectReference: {fileID: 0}
     - target: {fileID: 1884795054148910516, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 126.23
+      value: 122
       objectReference: {fileID: 0}
     - target: {fileID: 1884795054148910516, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -118347,6 +118629,21 @@ PrefabInstance:
       propertyPath: noMoving
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2315414422462504425, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: SpeedMultiplier
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2867435346613850539, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2867435346613850539, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 3802940064727303772, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: Subject
@@ -118355,7 +118652,22 @@ PrefabInstance:
     - target: {fileID: 3802940064727303775, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.17
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4331455801888404367, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: dialog.NPCName
+      value: Hedy
+      objectReference: {fileID: 0}
+    - target: {fileID: 4331455801888404367, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: dialog.sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4331455801888404367, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: dialog.sentences.Array.data[0]
+      value: I think I can squeeze through this fence...
       objectReference: {fileID: 0}
     - target: {fileID: 5223671485423216978, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -118367,15 +118679,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Talk Walk Wait Waypoint (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5398063873881949662, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5597087193315718736, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.7
+      value: -0.2
       objectReference: {fileID: 0}
     - target: {fileID: 5597087193315718736, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.8
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 5615393801846106146, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -118390,17 +118707,17 @@ PrefabInstance:
     - target: {fileID: 5969868984378841597, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.91
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5969868984378841597, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.14
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: dialog.NPCName
-      value: Loki
+      value: Loki the Monkey
       objectReference: {fileID: 0}
     - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -118410,32 +118727,32 @@ PrefabInstance:
     - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: dialog.sentences.Array.size
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: dialog.sentences.Array.data[0]
-      value: You have 21 banana's!
+      value: You have 21 bananas!
       objectReference: {fileID: 0}
     - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: dialog.sentences.Array.data[1]
-      value: Woww thanks, that's a lot more than I thought.
+      value: Wow, thanks. That's a lot more bananas than I thought...
       objectReference: {fileID: 0}
     - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: dialog.sentences.Array.data[2]
-      value: Can you show me the way to the squirrel?
+      value: Now, can you tell me the way to the squirrel?
       objectReference: {fileID: 0}
     - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: dialog.sentences.Array.data[3]
-      value: Of course, he is along the path past the fence north of me.
+      value: Sure! He is in a forest past the fence.
       objectReference: {fileID: 0}
     - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: dialog.sentences.Array.data[4]
-      value: Thanks for telling me, I will be on my way.
+      value: Thank you so much!
       objectReference: {fileID: 0}
     - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -118445,22 +118762,22 @@ PrefabInstance:
     - target: {fileID: 6187128544270234625, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.105
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6187128544270234625, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.72
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6290098581064816781, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.94
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6290098581064816781, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.9
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6935705626500962560, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -118469,8 +118786,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7122267374763521420, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
+      propertyPath: dialog.NPCName
+      value: Loki the Monkey
+      objectReference: {fileID: 0}
+    - target: {fileID: 7122267374763521420, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
       propertyPath: GoToNextCodingBlock
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7122267374763521420, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: dialog.NPCTalkFirst
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7122267374763521420, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: dialog.sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7122267374763521420, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: dialog.sentences.Array.data[0]
+      value: Wow,,, 21 bananas... That's a lot...
       objectReference: {fileID: 0}
     - target: {fileID: 7371850097992470271, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -118480,12 +118817,12 @@ PrefabInstance:
     - target: {fileID: 7391847553053017961, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.07
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7391847553053017961, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.13
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7441273773521204476, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -118510,14 +118847,13 @@ PrefabInstance:
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: PuzzleDescription
-      value: "Please count the banana's from the trees in order from left to right
-        and finish with the answer. \n\nIf you miss something search the area for
-        a chest, perhaps the missing block is in there."
+      value: You have to count the bananas from the left tree to the right tree.
+        Don't forget to also put down the answer!
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.NPCName
-      value: Loki
+      value: Loki the Monkey
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -118527,7 +118863,7 @@ PrefabInstance:
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogHasAnswer.NPCName
-      value: Loki
+      value: Loki the Monkey
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -118667,7 +119003,7 @@ PrefabInstance:
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogPuzzleCompleted.NPCName
-      value: Loki
+      value: Loki the Monkey
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -118677,7 +119013,7 @@ PrefabInstance:
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.sentences.Array.size
-      value: 14
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -118687,117 +119023,240 @@ PrefabInstance:
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.sentences.Array.data[1]
-      value: '*the monkey is not paying attention to you*'
+      value: '*Loki is not paying attention to you*'
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.sentences.Array.data[2]
-      value: Can you please help me, I'm trying to find my family!
+      value: Hello?
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.sentences.Array.data[3]
-      value: Oh sorry, I didn't noticed you there, I was trying to count all these
-        banana's.
+      value: '*Loki is still not paying attention to you*'
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.sentences.Array.data[4]
-      value: Have you seen any humans in the area?
+      value: Hello? Can you help me please?
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.sentences.Array.data[5]
-      value: No, I haven't seen any, but I know a squirrel who might have seen one.
+      value: Oh sorry, I didn't see you. I was trying to count all the bananas in
+        the trees.
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.sentences.Array.data[6]
-      value: Can you show me where the squirrel is!
+      value: Hmm, it seems like there are a lot of bananas...
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.sentences.Array.data[7]
-      value: '*laughs* sure, but first help me with my little math problem.'
+      value: Yes! This is a nice banana forest.
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.sentences.Array.data[8]
-      value: What is the problem?
+      value: Anyway... Can I ask something?
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.sentences.Array.data[9]
-      value: I can't see very well and need to know how many banana's there are in
-        each tree.
+      value: Sure! What did you want to ask?
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.sentences.Array.data[10]
-      value: I can help with that.
+      value: Have you seen any humans around here?
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.sentences.Array.data[11]
-      value: I hope so, please go to every banana tree and count the banana's, then
-        come back and add them all up.
+      value: No, sorry. But, I think a squirrel nearby has seen some.
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.sentences.Array.data[12]
-      value: I'l be back soon.
+      value: Really?! Can you tell me where the squirrel is?
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.sentences.Array.data[13]
-      value: Before you leave, I saw some chests in the area, maybe they can help
-        you.
+      value: Yes, but only if you help me count all the bananas...
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogFirst.sentences.Array.data[14]
+      value: How do I count them?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogFirst.sentences.Array.data[15]
+      value: Just go up to the trees and check how many bananas it has. Come back
+        when you checked all the trees!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogFirst.sentences.Array.data[16]
+      value: All right, I'll do that!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogFirst.sentences.Array.data[17]
+      value: There might also be some useful chests around here... Make sure to check
+        for them!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogFirst.sentences.Array.data[18]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogFirst.sentences.Array.data[19]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogFirst.sentences.Array.data[20]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogFirst.sentences.Array.data[21]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogFirst.sentences.Array.data[22]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogFirst.sentences.Array.data[23]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogFirst.sentences.Array.data[24]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogFirst.sentences.Array.data[25]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogFirst.sentences.Array.data[26]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogFirst.sentences.Array.data[27]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogFirst.sentences.Array.data[28]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogFirst.sentences.Array.data[29]
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogHasAnswer.sentences.Array.size
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogHasAnswer.sentences.Array.data[0]
-      value: 'I see you counted all the banana''s in the trees, please add them all
-        up for me from the left tree to the right. '
+      value: Did you count all the bananas?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogHasAnswer.sentences.Array.data[1]
+      value: Yes!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogHasAnswer.sentences.Array.data[2]
+      value: All right, now if you could tell me how many bananas are here...
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogHasAnswer.sentences.Array.data[3]
+      value: Did you count all the bananas?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogHasAnswer.sentences.Array.data[4]
+      value: Did you count all the bananas?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogHasAnswer.sentences.Array.data[5]
+      value: Did you count all the bananas?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogHasAnswer.sentences.Array.data[6]
+      value: Did you count all the bananas?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogHasAnswer.sentences.Array.data[7]
+      value: Did you count all the bananas?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogHasAnswer.sentences.Array.data[8]
+      value: Did you count all the bananas?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: DialogHasAnswer.sentences.Array.data[9]
+      value: Did you count all the bananas?
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogPuzzleCompleted.sentences.Array.size
-      value: 6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogPuzzleCompleted.sentences.Array.data[0]
-      value: You have 26 banana's!
+      value: I have so many bananas... I sure am happy now!
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogPuzzleCompleted.sentences.Array.data[1]
-      value: Wow thanks, that's a lot more than I thought.
+      value: Wow, thanks! There are a lot more bananas than I thought...
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogPuzzleCompleted.sentences.Array.data[2]
-      value: Can you show me the way to the squirrel?
+      value: I did help you... Can you tell me the way to the squirrel?
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogPuzzleCompleted.sentences.Array.data[3]
-      value: Of course, he is along the path past the fence north of me.
+      value: Of course! He is north of here, just follow the path.
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogPuzzleCompleted.sentences.Array.data[4]
-      value: Thanks for telling me, I will be on my way.
+      value: Thank you very much!
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogPuzzleCompleted.sentences.Array.data[5]
-      value: It was great meeting you, succes with your search!
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8660793725558201169, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -118807,12 +119266,17 @@ PrefabInstance:
     - target: {fileID: 8660793725558201169, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: dialog.NPCName
-      value: Hedy
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8660793725558201169, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: SpeedMultiplier
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 8660793725558201169, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: dialog.sentences.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8660793725558201169, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -118826,6 +119290,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21eb6d44e34b12d4385daac697669991, type: 3}
+--- !u!4 &1856193752 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3802940064727303775, guid: 21eb6d44e34b12d4385daac697669991,
+    type: 3}
+  m_PrefabInstance: {fileID: 1856193751}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1858532019
 GameObject:
   m_ObjectHideFlags: 0
@@ -118952,17 +119422,32 @@ PrefabInstance:
     - target: {fileID: 5950093220229846825, guid: 1df7cda00687b3f46b23e222b5839f73,
         type: 3}
       propertyPath: dialog.sentences.Array.data[0]
-      value: I have gone through a lot.
+      value: '*sniff* *sniff*'
       objectReference: {fileID: 0}
     - target: {fileID: 5950093220229846825, guid: 1df7cda00687b3f46b23e222b5839f73,
         type: 3}
       propertyPath: dialog.sentences.Array.data[1]
-      value: I can feel that my family is close.
+      value: Do I smell bananas?
       objectReference: {fileID: 0}
     - target: {fileID: 5950093220229846825, guid: 1df7cda00687b3f46b23e222b5839f73,
         type: 3}
       propertyPath: dialog.sentences.Array.data[2]
-      value: Let's search this area to find some clues.
+      value: I think I smell some north of here... Better take a look!
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950093220229846825, guid: 1df7cda00687b3f46b23e222b5839f73,
+        type: 3}
+      propertyPath: dialog.sentences.Array.data[3]
+      value: '*sniff* *sniff*'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950093220229846825, guid: 1df7cda00687b3f46b23e222b5839f73,
+        type: 3}
+      propertyPath: dialog.sentences.Array.data[4]
+      value: Do I smell bananas?
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950093220229846825, guid: 1df7cda00687b3f46b23e222b5839f73,
+        type: 3}
+      propertyPath: dialog.sentences.Array.data[5]
+      value: I think I smell some north of here... Better take a look!
       objectReference: {fileID: 0}
     - target: {fileID: 7426278994110986792, guid: 1df7cda00687b3f46b23e222b5839f73,
         type: 3}
@@ -127763,7 +128248,7 @@ PrefabInstance:
     - target: {fileID: 7464826716262060512, guid: 74446c2ab1fd33b4eb77c5c0f1f73181,
         type: 3}
       propertyPath: dialog.sentences.Array.data[0]
-      value: The first tree has 5 banana's
+      value: This tree has 5 bananas... better remember it!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74446c2ab1fd33b4eb77c5c0f1f73181, type: 3}
@@ -127814,6 +128299,54 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5336166590211089078, guid: ecf5a2c4ffd15714683b819829190096,
+        type: 3}
+      propertyPath: dialog.NPCName
+      value: Almond the Squirrel
+      objectReference: {fileID: 0}
+    - target: {fileID: 5336166590211089078, guid: ecf5a2c4ffd15714683b819829190096,
+        type: 3}
+      propertyPath: dialog.sentences.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5336166590211089078, guid: ecf5a2c4ffd15714683b819829190096,
+        type: 3}
+      propertyPath: dialog.sentences.Array.data[0]
+      value: This place is beautiful, right?
+      objectReference: {fileID: 0}
+    - target: {fileID: 5336166590211089078, guid: ecf5a2c4ffd15714683b819829190096,
+        type: 3}
+      propertyPath: dialog.sentences.Array.data[1]
+      value: It sure is... Do you know you have to get back to the rest to count
+        nuts?
+      objectReference: {fileID: 0}
+    - target: {fileID: 5336166590211089078, guid: ecf5a2c4ffd15714683b819829190096,
+        type: 3}
+      propertyPath: dialog.sentences.Array.data[2]
+      value: Yes, I should get back.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5336166590211089078, guid: ecf5a2c4ffd15714683b819829190096,
+        type: 3}
+      propertyPath: dialog.sentences.Array.data[3]
+      value: All right!
+      objectReference: {fileID: 0}
+    - target: {fileID: 5336166590211089078, guid: ecf5a2c4ffd15714683b819829190096,
+        type: 3}
+      propertyPath: dialog.sentences.Array.data[4]
+      value: Here, you could use this coding block. I found it next to this tree.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5336166590211089078, guid: ecf5a2c4ffd15714683b819829190096,
+        type: 3}
+      propertyPath: dialog.sentences.Array.data[5]
+      value: This place is beautiful, yes I should get back, here have this coding
+        block, you can use it to multiply numbers.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5336166590211089078, guid: ecf5a2c4ffd15714683b819829190096,
+        type: 3}
+      propertyPath: dialog.sentences.Array.data[6]
+      value: This place is beautiful, yes I should get back, here have this coding
+        block, you can use it to multiply numbers.
+      objectReference: {fileID: 0}
     - target: {fileID: 5336166590211089227, guid: ecf5a2c4ffd15714683b819829190096,
         type: 3}
       propertyPath: m_RootOrder

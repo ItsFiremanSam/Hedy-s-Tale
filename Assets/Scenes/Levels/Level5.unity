@@ -9060,8 +9060,8 @@ PrefabInstance:
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: PuzzleDescription
-      value: Use the five branches you found to build the bridge up again piece by
-        piece.
+      value: Use the five branches you found to build the bridge up again, piece
+        by piece.
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -9151,12 +9151,12 @@ PrefabInstance:
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.sentences.Array.data[2]
-      value: There's a lot of branches around here... that could work.
+      value: There are a lot of branches around here... That might work!
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogFirst.sentences.Array.data[3]
-      value: I should pick some of them up. Five should be enough.
+      value: I should pick some of them up. Five should be enough to fix the bridge!
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -38625,33 +38625,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1207478370 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3656655724871673323, guid: 9f8f9455182eb59439664d5c0978a087,
-    type: 3}
-  m_PrefabInstance: {fileID: 5690852943470272220}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1207478371
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1207478370}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4c96b9f4c27be64ca81f690c905ae10, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PuzzleBlock:
-    Type: 2
-    Content: branch
-  itemPickUpClip: {fileID: 0}
-  sfxSource: {fileID: 0}
-  Dialog:
-    NPCName: 
-    sentences: []
-    NPCTalkFirst: 0
 --- !u!1001 &1241132647
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -52000,6 +51973,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
+      propertyPath: RewardBlock.Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
       propertyPath: Answer.Array.size
       value: 6
       objectReference: {fileID: 0}
@@ -52007,7 +51985,7 @@ PrefabInstance:
         type: 3}
       propertyPath: PuzzleDescription
       value: 'You promised the bear you''d find his necklace and give it to him.
-        In return he will let you pass through. He''s asking you to explain this
+        In return, he will let you pass through. He''s asking you to explain this
         deal to him again.
 
         Hint: use if like you did in the last level.'
@@ -52020,7 +51998,7 @@ PrefabInstance:
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: RewardBlock.Content
-      value: 
+      value: branch
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -52270,7 +52248,7 @@ PrefabInstance:
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogHasAnswer.sentences.Array.size
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -55915,7 +55893,7 @@ PrefabInstance:
     - target: {fileID: 4311232222575573984, guid: 6a49fb1eb36578a4388276782ff5972b,
         type: 3}
       propertyPath: Dialog.sentences.Array.data[0]
-      value: Oh I found a necklace!
+      value: Oh, I found a necklace!
       objectReference: {fileID: 0}
     - target: {fileID: 4311232222575573984, guid: 6a49fb1eb36578a4388276782ff5972b,
         type: 3}

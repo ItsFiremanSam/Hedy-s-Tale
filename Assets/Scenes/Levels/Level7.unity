@@ -57084,7 +57084,7 @@ PrefabInstance:
     - target: {fileID: 2315414422462504425, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: dialog.sentences.Array.data[0]
-      value: '*sniff sniff*'
+      value: '*sniff* *sniff*'
       objectReference: {fileID: 0}
     - target: {fileID: 2315414422462504425, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -57474,7 +57474,7 @@ PrefabInstance:
     - target: {fileID: 7441273773521204476, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: dialog.sentences.Array.data[1]
-      value: But I should still check the rest first.
+      value: But I should still check the rest, first.
       objectReference: {fileID: 0}
     - target: {fileID: 7662308332673906540, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -58360,12 +58360,12 @@ PrefabInstance:
     - target: {fileID: 5950093220229846825, guid: 1df7cda00687b3f46b23e222b5839f73,
         type: 3}
       propertyPath: dialog.sentences.Array.data[0]
-      value: '*sniff sniff*'
+      value: '*sniff* *sniff*'
       objectReference: {fileID: 0}
     - target: {fileID: 5950093220229846825, guid: 1df7cda00687b3f46b23e222b5839f73,
         type: 3}
       propertyPath: dialog.sentences.Array.data[1]
-      value: This is it!!
+      value: This is it!
       objectReference: {fileID: 0}
     - target: {fileID: 5950093220229846825, guid: 1df7cda00687b3f46b23e222b5839f73,
         type: 3}
@@ -58543,17 +58543,17 @@ PrefabInstance:
     - target: {fileID: 5950093220229846825, guid: 1df7cda00687b3f46b23e222b5839f73,
         type: 3}
       propertyPath: dialog.sentences.Array.data[0]
-      value: '*sniff sniff*'
+      value: '*sniff* *sniff*'
       objectReference: {fileID: 0}
     - target: {fileID: 5950093220229846825, guid: 1df7cda00687b3f46b23e222b5839f73,
         type: 3}
       propertyPath: dialog.sentences.Array.data[1]
-      value: Yes, just like I thought.
+      value: Yes, just like I thought!
       objectReference: {fileID: 0}
     - target: {fileID: 5950093220229846825, guid: 1df7cda00687b3f46b23e222b5839f73,
         type: 3}
       propertyPath: dialog.sentences.Array.data[2]
-      value: This is it! I'm finally home.
+      value: This is it! I'm finally home!
       objectReference: {fileID: 0}
     - target: {fileID: 5950093220229846825, guid: 1df7cda00687b3f46b23e222b5839f73,
         type: 3}
@@ -58998,7 +58998,7 @@ PrefabInstance:
     - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: dialog.sentences.Array.data[0]
-      value: The fireworks scared me
+      value: The fireworks scared me...
       objectReference: {fileID: 0}
     - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -59113,12 +59113,12 @@ PrefabInstance:
     - target: {fileID: 6935705626500962560, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: dialog.sentences.Array.data[3]
-      value: I'll just check all of them
+      value: I'll just check all of them!
       objectReference: {fileID: 0}
     - target: {fileID: 6935705626500962560, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: dialog.sentences.Array.data[4]
-      value: Great, good luck!
+      value: Do that, good luck!
       objectReference: {fileID: 0}
     - target: {fileID: 6935705626500962560, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -59245,7 +59245,7 @@ PrefabInstance:
     - target: {fileID: 7122267374763521420, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: dialog.sentences.Array.data[0]
-      value: and then I got lost
+      value: ...and then I got lost...
       objectReference: {fileID: 0}
     - target: {fileID: 7122267374763521420, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -60043,12 +60043,12 @@ PrefabInstance:
     - target: {fileID: 5950093220229846825, guid: 1df7cda00687b3f46b23e222b5839f73,
         type: 3}
       propertyPath: dialog.sentences.Array.data[0]
-      value: '*sniff sniff*'
+      value: '*sniff* *sniff*'
       objectReference: {fileID: 0}
     - target: {fileID: 5950093220229846825, guid: 1df7cda00687b3f46b23e222b5839f73,
         type: 3}
       propertyPath: dialog.sentences.Array.data[1]
-      value: This isn't it either, must be the next one then.
+      value: This isn't it either... It has to be the next one then...
       objectReference: {fileID: 0}
     - target: {fileID: 7426278994110986792, guid: 1df7cda00687b3f46b23e222b5839f73,
         type: 3}
@@ -71116,18 +71116,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5950093220229846825, guid: 1df7cda00687b3f46b23e222b5839f73,
         type: 3}
+      propertyPath: dialog.NPCTalkFirst
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950093220229846825, guid: 1df7cda00687b3f46b23e222b5839f73,
+        type: 3}
       propertyPath: dialog.sentences.Array.size
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5950093220229846825, guid: 1df7cda00687b3f46b23e222b5839f73,
         type: 3}
       propertyPath: dialog.sentences.Array.data[0]
-      value: '*sniff sniff*'
+      value: '*sniff* *sniff*'
       objectReference: {fileID: 0}
     - target: {fileID: 5950093220229846825, guid: 1df7cda00687b3f46b23e222b5839f73,
         type: 3}
       propertyPath: dialog.sentences.Array.data[1]
-      value: No, this isn't it either.
+      value: This isn't it either... It has to be the next one then...
       objectReference: {fileID: 0}
     - target: {fileID: 7426278994110986792, guid: 1df7cda00687b3f46b23e222b5839f73,
         type: 3}
@@ -79350,17 +79355,22 @@ PrefabInstance:
     - target: {fileID: 7441273773521204476, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: dialog.sentences.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7441273773521204476, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: dialog.sentences.Array.data[0]
-      value: '*sniff sniff*'
+      value: '*sniff* *sniff*'
       objectReference: {fileID: 0}
     - target: {fileID: 7441273773521204476, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: dialog.sentences.Array.data[1]
-      value: No this isn't it, let's try the next one.
+      value: No... This isn't it...
+      objectReference: {fileID: 0}
+    - target: {fileID: 7441273773521204476, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: dialog.sentences.Array.data[2]
+      value: Let's try the next one...
       objectReference: {fileID: 0}
     - target: {fileID: 7662308332673906540, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -80450,7 +80460,7 @@ PrefabInstance:
     - target: {fileID: 5950093220229846825, guid: 1df7cda00687b3f46b23e222b5839f73,
         type: 3}
       propertyPath: dialog.sentences.Array.data[0]
-      value: '*sniff sniff*'
+      value: '*sniff* *sniff*'
       objectReference: {fileID: 0}
     - target: {fileID: 5950093220229846825, guid: 1df7cda00687b3f46b23e222b5839f73,
         type: 3}
@@ -81121,17 +81131,22 @@ PrefabInstance:
     - target: {fileID: 7441273773521204476, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: dialog.sentences.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7441273773521204476, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: dialog.sentences.Array.data[0]
-      value: '*sniff sniff*'
+      value: '*sniff* *sniff*'
       objectReference: {fileID: 0}
     - target: {fileID: 7441273773521204476, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: dialog.sentences.Array.data[1]
-      value: No this isn't it, let's try the next one.
+      value: No... This isn't it...
+      objectReference: {fileID: 0}
+    - target: {fileID: 7441273773521204476, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: dialog.sentences.Array.data[2]
+      value: Let's try the next one...
       objectReference: {fileID: 0}
     - target: {fileID: 7662308332673906540, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -81999,12 +82014,12 @@ PrefabInstance:
     - target: {fileID: 5950093220229846825, guid: 1df7cda00687b3f46b23e222b5839f73,
         type: 3}
       propertyPath: dialog.sentences.Array.data[0]
-      value: '*sniff sniff*'
+      value: '*sniff* *sniff*'
       objectReference: {fileID: 0}
     - target: {fileID: 5950093220229846825, guid: 1df7cda00687b3f46b23e222b5839f73,
         type: 3}
       propertyPath: dialog.sentences.Array.data[1]
-      value: This is it!!
+      value: This is it!
       objectReference: {fileID: 0}
     - target: {fileID: 5950093220229846825, guid: 1df7cda00687b3f46b23e222b5839f73,
         type: 3}
