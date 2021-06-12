@@ -36373,12 +36373,12 @@ PrefabInstance:
     - target: {fileID: 50645315964878892, guid: 3866c2129c6ccd74bb7455e35b2df341,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 148.65
+      value: 139.17
       objectReference: {fileID: 0}
     - target: {fileID: 50645315964878892, guid: 3866c2129c6ccd74bb7455e35b2df341,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 26.6
+      value: 38.4
       objectReference: {fileID: 0}
     - target: {fileID: 50645315964878892, guid: 3866c2129c6ccd74bb7455e35b2df341,
         type: 3}
@@ -36438,7 +36438,7 @@ PrefabInstance:
     - target: {fileID: 50645315964878893, guid: 3866c2129c6ccd74bb7455e35b2df341,
         type: 3}
       propertyPath: dialog.sentences.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 50645315964878893, guid: 3866c2129c6ccd74bb7455e35b2df341,
         type: 3}
@@ -36454,6 +36454,11 @@ PrefabInstance:
         type: 3}
       propertyPath: dialog.sentences.Array.data[2]
       value: I can use this block to say what something is!
+      objectReference: {fileID: 0}
+    - target: {fileID: 50645315964878893, guid: 3866c2129c6ccd74bb7455e35b2df341,
+        type: 3}
+      propertyPath: dialog.sentences.Array.data[3]
+      value: I can also use it to make lists
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3866c2129c6ccd74bb7455e35b2df341, type: 3}
