@@ -746,27 +746,27 @@ PrefabInstance:
     - target: {fileID: 7379713358664489921, guid: 4fcf635c6ea34b447a7b78c7a30cee37,
         type: 3}
       propertyPath: Inventory.Array.data[1].Content
-      value: jump,
+      value: jump
       objectReference: {fileID: 0}
     - target: {fileID: 7379713358664489921, guid: 4fcf635c6ea34b447a7b78c7a30cee37,
         type: 3}
       propertyPath: Inventory.Array.data[2].Content
-      value: go right,
+      value: go right
       objectReference: {fileID: 0}
     - target: {fileID: 7379713358664489921, guid: 4fcf635c6ea34b447a7b78c7a30cee37,
         type: 3}
       propertyPath: Inventory.Array.data[3].Content
-      value: go left,
+      value: go left
       objectReference: {fileID: 0}
     - target: {fileID: 7379713358664489921, guid: 4fcf635c6ea34b447a7b78c7a30cee37,
         type: 3}
       propertyPath: Inventory.Array.data[4].Content
-      value: jump.
+      value: jump
       objectReference: {fileID: 0}
     - target: {fileID: 7379713358664489921, guid: 4fcf635c6ea34b447a7b78c7a30cee37,
         type: 3}
       propertyPath: Inventory.Array.data[5].Content
-      value: spin,
+      value: spin
       objectReference: {fileID: 0}
     - target: {fileID: 7379713358664489921, guid: 4fcf635c6ea34b447a7b78c7a30cee37,
         type: 3}
@@ -113038,12 +113038,12 @@ PrefabInstance:
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: Answer.Array.size
-      value: 6
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: PuzzleDescription
-      value: 'Make a list of actions using the ''IS'' block. Only do the actions
+      value: 'Make a list of <b>actions</b> using the ''IS'' block. Only do the actions
         that Simon says!
 
 
@@ -113096,7 +113096,7 @@ PrefabInstance:
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: Answer.Array.data[3].Type
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -113106,6 +113106,21 @@ PrefabInstance:
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: Answer.Array.data[5].Type
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[6].Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[7].Type
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[8].Type
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
@@ -113126,22 +113141,37 @@ PrefabInstance:
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: Answer.Array.data[2].Content
-      value: jump,
+      value: jump
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: Answer.Array.data[3].Content
-      value: go right,
+      value: ','
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: Answer.Array.data[4].Content
-      value: spin,
+      value: go right
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: Answer.Array.data[5].Content
-      value: jump.
+      value: ','
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[6].Content
+      value: spin
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[7].Content
+      value: ','
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[8].Content
+      value: jump
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
