@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class SceneChanger : MonoBehaviour
 {
     public int CurrentLevel = 1;
+    private int LastLevel = 7;
 
     public void ChangeScene(string sceneName)
     {
@@ -15,8 +16,15 @@ public class SceneChanger : MonoBehaviour
     /// </summary>
     private void ChangeSceneEndOfLevel()
     {
-        LevelSelectHandler.ShowNextLevelAnimation(CurrentLevel);
-        SceneManager.LoadScene("LevelSelect");
+        if (CurrentLevel == LastLevel)
+        {
+            SceneManager.LoadScene("FinalCutscene");
+        }
+        else
+        {
+            LevelSelectHandler.ShowNextLevelAnimation(CurrentLevel);
+            SceneManager.LoadScene("LevelSelect");
+        }       
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
