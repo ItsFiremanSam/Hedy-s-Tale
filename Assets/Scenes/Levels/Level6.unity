@@ -92967,12 +92967,12 @@ PrefabInstance:
     - target: {fileID: 5494702445392732145, guid: ecf5a2c4ffd15714683b819829190096,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.7
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 5494702445392732145, guid: ecf5a2c4ffd15714683b819829190096,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.7
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 5494702445392732145, guid: ecf5a2c4ffd15714683b819829190096,
         type: 3}
@@ -116955,7 +116955,7 @@ RectTransform:
   m_GameObject: {fileID: 1591417579}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -1.2200347}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 2050800543}
   m_RootOrder: 0
@@ -117041,7 +117041,7 @@ RectTransform:
   m_GameObject: {fileID: 1634298868}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -1.2200347}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 29359760}
   m_RootOrder: 0
@@ -117454,12 +117454,12 @@ PrefabInstance:
     - target: {fileID: 243033855003932252, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 243033855003932252, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 243033855003932252, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -128186,6 +128186,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: NPCsquirrel X_block
+      objectReference: {fileID: 0}
+    - target: {fileID: 5494702445392732145, guid: ecf5a2c4ffd15714683b819829190096,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5494702445392732145, guid: ecf5a2c4ffd15714683b819829190096,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ecf5a2c4ffd15714683b819829190096, type: 3}
