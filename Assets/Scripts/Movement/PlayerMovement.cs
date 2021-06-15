@@ -8,6 +8,7 @@ public class PlayerMovement : AnimatableEntity
     public Text speechBubble;
     public GameObject CinematicBars;
     public Animator animator;
+    public Animator CinematicBarsAnimator;
 
     // Hedy can't move when being animated or in the Coding UI
     [HideInInspector]
@@ -54,17 +55,29 @@ public class PlayerMovement : AnimatableEntity
         if (AnimationActive)
         {
             if (!CinematicBars.activeSelf)
+            {
+                CinematicBarsAnimator.SetBool("EndOfAnimation", false);
                 CinematicBars.SetActive(true);
+            }
             if (_collider.enabled)
                 _collider.enabled = false;
         }
         else
         {
             if (CinematicBars.activeSelf)
-                CinematicBars.SetActive(false);
+            {
+                StartCoroutine(WaitCinematicBars());
+            }
             if (!_collider.enabled)
                 _collider.enabled = true;
         }
+    }
+
+    IEnumerator WaitCinematicBars()
+    {
+        CinematicBarsAnimator.SetBool("EndOfAnimation", true);
+        yield return new WaitUntil(() => CinematicBarsAnimator.GetCurrentAnimatorStateInfo(0).IsName("Fade Out Cinematic Bar"));
+        CinematicBars.SetActive(false);
     }
 
     private void FixedUpdate()
