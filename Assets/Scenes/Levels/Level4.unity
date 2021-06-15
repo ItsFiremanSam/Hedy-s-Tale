@@ -57200,6 +57200,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 914443467}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &914443469 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8934480374069150962, guid: 74b86e0c52c8a2b4686fab7b6c3a3fa1,
+    type: 3}
+  m_PrefabInstance: {fileID: 914443467}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1133477503
 GameObject:
   m_ObjectHideFlags: 0
@@ -79753,6 +79759,11 @@ PrefabInstance:
       propertyPath: CinematicBars
       value: 
       objectReference: {fileID: 914443468}
+    - target: {fileID: 7379713358664489934, guid: 4fcf635c6ea34b447a7b78c7a30cee37,
+        type: 3}
+      propertyPath: CinematicBarsAnimator
+      value: 
+      objectReference: {fileID: 914443469}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4fcf635c6ea34b447a7b78c7a30cee37, type: 3}
 --- !u!114 &1285382194 stripped

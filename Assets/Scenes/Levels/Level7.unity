@@ -60289,6 +60289,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74b86e0c52c8a2b4686fab7b6c3a3fa1, type: 3}
+--- !u!95 &963582521 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8934480374069150962, guid: 74b86e0c52c8a2b4686fab7b6c3a3fa1,
+    type: 3}
+  m_PrefabInstance: {fileID: 963582520}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1065062727
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -80494,6 +80500,11 @@ PrefabInstance:
       propertyPath: CinematicBars
       value: 
       objectReference: {fileID: 1181241393}
+    - target: {fileID: 7379713358664489934, guid: 4fcf635c6ea34b447a7b78c7a30cee37,
+        type: 3}
+      propertyPath: CinematicBarsAnimator
+      value: 
+      objectReference: {fileID: 963582521}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4fcf635c6ea34b447a7b78c7a30cee37, type: 3}
 --- !u!114 &1621685541 stripped
