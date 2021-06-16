@@ -875,9 +875,9 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 40
+  - time: 43.666668
     functionName: ChangeScene
-    data: EndDemo
+    data: EndOfGameScreen
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
