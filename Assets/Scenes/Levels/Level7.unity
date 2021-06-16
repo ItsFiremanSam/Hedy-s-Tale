@@ -59389,7 +59389,7 @@ PrefabInstance:
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: Answer.Array.size
-      value: 10
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -59399,9 +59399,9 @@ PrefabInstance:
 
 
         The
-        fireworks scared me,
+        fireworks scared me...
 
-        and then I got lost.'
+        ...and then I got lost.'
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -59441,22 +59441,22 @@ PrefabInstance:
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: Answer.Array.data[4].Type
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: Answer.Array.data[5].Type
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: Answer.Array.data[6].Type
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: Answer.Array.data[7].Type
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -59466,7 +59466,37 @@ PrefabInstance:
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: Answer.Array.data[9].Type
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[10].Type
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[11].Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[12].Type
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[13].Type
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[14].Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[15].Type
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -59496,37 +59526,67 @@ PrefabInstance:
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: Answer.Array.data[4].Content
-      value: print
+      value: \n\t
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: Answer.Array.data[5].Content
-      value: the fireworks
-      objectReference: {fileID: 0}
-    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
-        type: 3}
-      propertyPath: Answer.Array.data[6].Content
-      value: scared me
-      objectReference: {fileID: 0}
-    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
-        type: 3}
-      propertyPath: Answer.Array.data[7].Content
       value: print
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
+      propertyPath: Answer.Array.data[6].Content
+      value: ''''
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[7].Content
+      value: the fireworks
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
       propertyPath: Answer.Array.data[8].Content
-      value: and then I
+      value: scared me
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: Answer.Array.data[9].Content
-      value: got lost
+      value: ''''
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: DialogHasAnswer.NPCTalkFirst
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[10].Content
+      value: \n\t
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[11].Content
+      value: print
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[12].Content
+      value: ''''
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[13].Content
+      value: and then
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[14].Content
+      value: I got lost
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[15].Content
+      value: ''''
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -80358,12 +80418,12 @@ PrefabInstance:
     - target: {fileID: 7379713358664489921, guid: 4fcf635c6ea34b447a7b78c7a30cee37,
         type: 3}
       propertyPath: Inventory.Array.data[12].Content
-      value: and then I
+      value: and then
       objectReference: {fileID: 0}
     - target: {fileID: 7379713358664489921, guid: 4fcf635c6ea34b447a7b78c7a30cee37,
         type: 3}
       propertyPath: Inventory.Array.data[13].Content
-      value: got lost
+      value: I got lost
       objectReference: {fileID: 0}
     - target: {fileID: 7379713358664489921, guid: 4fcf635c6ea34b447a7b78c7a30cee37,
         type: 3}

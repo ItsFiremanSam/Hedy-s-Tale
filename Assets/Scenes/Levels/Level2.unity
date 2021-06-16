@@ -39270,7 +39270,7 @@ PrefabInstance:
     - target: {fileID: 50645315964878893, guid: 3866c2129c6ccd74bb7455e35b2df341,
         type: 3}
       propertyPath: dialog.sentences.Array.data[3]
-      value: I can also use it to make lists
+      value: I think I can also use it to make lists...
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3866c2129c6ccd74bb7455e35b2df341, type: 3}
@@ -47086,6 +47086,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: -1.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 3347368844359729123, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -7.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 3347368844359729123, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 2.62
       objectReference: {fileID: 0}
     - target: {fileID: 3802940064727303772, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -116103,6 +116113,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
+      propertyPath: Answer.Array.data[9].Type
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
       propertyPath: Dialog.sentences.Array.size
       value: 14
       objectReference: {fileID: 0}
@@ -116150,6 +116165,11 @@ PrefabInstance:
         type: 3}
       propertyPath: Answer.Array.data[8].Content
       value: jump
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: Answer.Array.data[9].Content
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
