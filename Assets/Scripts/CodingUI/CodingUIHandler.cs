@@ -30,6 +30,7 @@ public class CodingUIHandler : MonoBehaviour
     public GameObject DescriptionPanel;
 
     public GameObject CodingUIContainer;
+    public RectTransform HelpTooltipContainer;
 
     // The maximum number of blocks per column in the coding ui
     //  Can be changed if the coding UI changes its proportions 
@@ -196,7 +197,9 @@ public class CodingUIHandler : MonoBehaviour
 
     private void AddToPanel(PuzzleBlock block, Transform panel, GameObject puzzleBlockPrefab)
     {
-        Instantiate(puzzleBlockPrefab, panel).GetComponent<DraggableCodingBlock>().SetAnswerBlock(block);
+        DraggableCodingBlock draggable =  Instantiate(puzzleBlockPrefab, panel).GetComponent<DraggableCodingBlock>();
+        draggable.SetAnswerBlock(block);
+        draggable.HelpTooltip = HelpTooltipContainer;
     }
 
     public void CloseCodingUI()

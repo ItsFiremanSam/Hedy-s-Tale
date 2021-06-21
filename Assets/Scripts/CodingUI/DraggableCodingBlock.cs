@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class DraggableCodingBlock : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler
+public class DraggableCodingBlock : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler, IPointerEnterHandler, IPointerExitHandler
 {
     private RectTransform _rectTransform;
     private CanvasGroup _canvasGroup;
@@ -15,6 +15,8 @@ public class DraggableCodingBlock : MonoBehaviour, IDragHandler, IBeginDragHandl
     private Transform _dropBlockParent;
     private int _originalSiblingIndex;
     private PuzzleBlock _answerBlock;
+
+    public RectTransform HelpTooltip { get; set; }
 
     private void Awake()
     {
@@ -108,5 +110,17 @@ public class DraggableCodingBlock : MonoBehaviour, IDragHandler, IBeginDragHandl
         _rectTransform.anchorMin = new Vector2(0.5f, 0.5f);
         _rectTransform.anchorMax = new Vector2(0.5f, 0.5f);
         _rectTransform.anchoredPosition = Vector2.zero;
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        HelpTooltip.gameObject.SetActive(true);
+
+        HelpTooltip.anchoredPosition = _rectTransform.anchoredPosition;
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        HelpTooltip.gameObject.SetActive(false);
     }
 }
