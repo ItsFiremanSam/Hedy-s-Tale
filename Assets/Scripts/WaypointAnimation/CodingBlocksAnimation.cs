@@ -76,15 +76,19 @@ public class CodingBlocksAnimation : MonoBehaviour
     {
         for (int i = 0; i < _lastCodingBlock; i++)
         {
-            RectTransform codingBlockRect = _codingBlocks[i].transform.GetChild(0).transform.GetComponent<RectTransform>();
-            codingBlockRect.anchoredPosition = new Vector2(0, 0);
+            RectTransform codingBlockRect = _codingBlocks[i].transform.GetComponent<RectTransform>();
+            codingBlockRect.localScale = new Vector3(1, 1, 1);
+            codingBlockRect.pivot = new Vector2(0.5f, 0.5f);
+            //codingBlockRect.anchoredPosition = new Vector2(0, 0);
         }
 
         int newLastBlock = Mathf.Min(_lastCodingBlock + progressSteps, _codingBlocks.Count);
         for (int i = _lastCodingBlock; i < newLastBlock; i++)
         {
-            RectTransform codingBlockRect = _codingBlocks[i].transform.GetChild(0).transform.GetComponent<RectTransform>();
-            codingBlockRect.anchoredPosition = new Vector2(30, 0);
+            RectTransform codingBlockRect = _codingBlocks[i].transform.GetComponent<RectTransform>();
+            codingBlockRect.localScale = new Vector3(1.1f, 1.1f, 1);
+            codingBlockRect.pivot = new Vector2(-2, 0.5f);
+           // codingBlockRect.anchoredPosition = new Vector2(30, 0);
         }
 
         _lastCodingBlock = newLastBlock;

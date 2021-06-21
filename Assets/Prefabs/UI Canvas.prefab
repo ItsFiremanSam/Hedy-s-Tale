@@ -2353,7 +2353,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50fe6869fb269c7439636d7703ca97f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  KeywordPrefab: {fileID: 4762183835826571522, guid: 43288421828f7e94bb24c9b8fa9e16a4,
+  KeywordPrefab: {fileID: 740402271706473109, guid: 9e87808a989d8424a8e965ffe6f67981,
     type: 3}
   StringPrefab: {fileID: 5708053032204178172, guid: 237bd63fe273df64dbd2f8f8ff82a5cd,
     type: 3}
@@ -2694,7 +2694,7 @@ MonoBehaviour:
     m_Left: 20
     m_Right: 0
     m_Top: 0
-    m_Bottom: 60
+    m_Bottom: 250
   m_ChildAlignment: 6
   m_Spacing: 10
   m_ChildForceExpandWidth: 0
