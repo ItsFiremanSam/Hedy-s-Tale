@@ -38214,6 +38214,7 @@ MonoBehaviour:
   PuzzleBlock:
     Type: 4
     Content: 5
+    Explanation: 
   Amount: 5
   CurrentAmount: 0
 --- !u!4 &1118218067
@@ -51429,12 +51430,12 @@ PrefabInstance:
     - target: {fileID: 7371850097992470271, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: PuzzleBlock.Type
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7371850097992470271, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: PuzzleBlock.Content
-      value: go around
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7391847553053017961, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -51550,6 +51551,11 @@ PrefabInstance:
         type: 3}
       propertyPath: DialogHasAnswer.NPCName
       value: Farm bear
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: RewardBlock.Explanation
+      value: Use this block to fix the bridge!
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -52719,6 +52725,31 @@ PrefabInstance:
         type: 3}
       propertyPath: Inventory.Array.data[7].Content
       value: given
+      objectReference: {fileID: 0}
+    - target: {fileID: 7379713358664489921, guid: 4fcf635c6ea34b447a7b78c7a30cee37,
+        type: 3}
+      propertyPath: Inventory.Array.data[0].Explanation
+      value: Use this block to do something again!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7379713358664489921, guid: 4fcf635c6ea34b447a7b78c7a30cee37,
+        type: 3}
+      propertyPath: Inventory.Array.data[1].Explanation
+      value: Use this block to say what something is!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7379713358664489921, guid: 4fcf635c6ea34b447a7b78c7a30cee37,
+        type: 3}
+      propertyPath: Inventory.Array.data[2].Explanation
+      value: Use this block to choose between two options!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7379713358664489921, guid: 4fcf635c6ea34b447a7b78c7a30cee37,
+        type: 3}
+      propertyPath: Inventory.Array.data[3].Explanation
+      value: Use this block to say how many times you have to do something!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7379713358664489921, guid: 4fcf635c6ea34b447a7b78c7a30cee37,
+        type: 3}
+      propertyPath: Inventory.Array.data[4].Explanation
+      value: Use this block to say something!
       objectReference: {fileID: 0}
     - target: {fileID: 7379713358664489928, guid: 4fcf635c6ea34b447a7b78c7a30cee37,
         type: 3}
@@ -55285,6 +55316,11 @@ PrefabInstance:
         type: 3}
       propertyPath: PuzzleBlock.Content
       value: necklace
+      objectReference: {fileID: 0}
+    - target: {fileID: 4311232222575573984, guid: 6a49fb1eb36578a4388276782ff5972b,
+        type: 3}
+      propertyPath: PuzzleBlock.Explanation
+      value: A beautiful necklace, it's for the bear I think!
       objectReference: {fileID: 0}
     - target: {fileID: 4311232222575573984, guid: 6a49fb1eb36578a4388276782ff5972b,
         type: 3}

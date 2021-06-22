@@ -848,6 +848,11 @@ PrefabInstance:
       propertyPath: PuzzleBlock.Content
       value: goat
       objectReference: {fileID: 0}
+    - target: {fileID: 7371850097992470271, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: PuzzleBlock.Explanation
+      value: The grumpy goat that won't let you go over the mountain.
+      objectReference: {fileID: 0}
     - target: {fileID: 7391847553053017961, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -928,6 +933,11 @@ PrefabInstance:
         type: 3}
       propertyPath: DialogHasAnswer.NPCName
       value: Grumpy goat
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: RewardBlock.Explanation
+      value: Use this block to continue down the path!
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -81601,6 +81611,42 @@ PrefabInstance:
         type: 3}
       propertyPath: Inventory.Array.data[9].Content
       value: free
+      objectReference: {fileID: 0}
+    - target: {fileID: 7379713358664489921, guid: 4fcf635c6ea34b447a7b78c7a30cee37,
+        type: 3}
+      propertyPath: Inventory.Array.data[0].Explanation
+      value: Use this block to say something!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7379713358664489921, guid: 4fcf635c6ea34b447a7b78c7a30cee37,
+        type: 3}
+      propertyPath: Inventory.Array.data[1].Explanation
+      value: Use this block to say what something is!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7379713358664489921, guid: 4fcf635c6ea34b447a7b78c7a30cee37,
+        type: 3}
+      propertyPath: Inventory.Array.data[2].Explanation
+      value: Use this block to choose between two options!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7379713358664489921, guid: 4fcf635c6ea34b447a7b78c7a30cee37,
+        type: 3}
+      propertyPath: Inventory.Array.data[3].Explanation
+      value: Use this block to do something for the second option!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7379713358664489921, guid: 4fcf635c6ea34b447a7b78c7a30cee37,
+        type: 3}
+      propertyPath: Inventory.Array.data[4].Explanation
+      value: Use this block to say something!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7379713358664489921, guid: 4fcf635c6ea34b447a7b78c7a30cee37,
+        type: 3}
+      propertyPath: Inventory.Array.data[5].Explanation
+      value: 'Your adventure so far: you got scared during the fireworks and are
+        trying to find your way home.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7379713358664489921, guid: 4fcf635c6ea34b447a7b78c7a30cee37,
+        type: 3}
+      propertyPath: Inventory.Array.data[8].Explanation
+      value: The muddy path that's hard to walk on.
       objectReference: {fileID: 0}
     - target: {fileID: 7379713358664489928, guid: 4fcf635c6ea34b447a7b78c7a30cee37,
         type: 3}
