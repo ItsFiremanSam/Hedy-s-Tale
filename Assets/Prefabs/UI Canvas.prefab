@@ -2272,6 +2272,7 @@ MonoBehaviour:
   HelpTooltipContainer: {fileID: 4311133784827623889}
   ExplanationTextElement: {fileID: 4515580737815265964}
   TooltipOffset: {x: 175, y: -100, z: 0}
+  TooltipDelay: 1
   MaxNumberOfPuzzleBlocks: 6
 --- !u!1 &885144594381902302
 GameObject:
