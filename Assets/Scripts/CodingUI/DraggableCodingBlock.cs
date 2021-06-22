@@ -17,6 +17,8 @@ public class DraggableCodingBlock : MonoBehaviour, IDragHandler, IBeginDragHandl
     private PuzzleBlock _answerBlock;
 
     public RectTransform HelpTooltip { get; set; }
+    public Text ExplanationText { get; set; }
+    public Vector3 TooltipOffset { get; set; }
 
     private void Awake()
     {
@@ -114,9 +116,11 @@ public class DraggableCodingBlock : MonoBehaviour, IDragHandler, IBeginDragHandl
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        HelpTooltip.gameObject.SetActive(true);
+        if (string.IsNullOrWhiteSpace(_answerBlock.Explanation))
+            return;
 
-        HelpTooltip.anchoredPosition = _rectTransform.anchoredPosition;
+        HelpTooltip.gameObject.SetActive(true);
+        ExplanationText.text = _answerBlock.Explanation;
     }
 
     public void OnPointerExit(PointerEventData eventData)
@@ -136,7 +140,7 @@ public class DraggableCodingBlock : MonoBehaviour, IDragHandler, IBeginDragHandl
             return;
         }
 
-        Vector3 newPos = Input.mousePosition;
+        Vector3 newPos = Input.mousePosition + TooltipOffset;
         newPos.z = 0f;
 
         float rightEdgeToScreenEdgeDistance = Screen.width - (newPos.x + _rectTransform.rect.width * _canvas.scaleFactor / 2);

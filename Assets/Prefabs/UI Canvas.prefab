@@ -46,6 +46,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6492980959425598666}
   - component: {fileID: 2622983424832194048}
+  - component: {fileID: 4782594869364057027}
   m_Layer: 5
   m_Name: CU Help Overlay
   m_TagString: Untagged
@@ -71,7 +72,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 100, y: -50}
-  m_SizeDelta: {x: 200, y: 100}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2622983424832194048
 CanvasRenderer:
@@ -81,6 +82,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 248974117125599722}
   m_CullTransparentMesh: 0
+--- !u!114 &4782594869364057027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248974117125599722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 2
+  m_VerticalFit: 2
 --- !u!1 &292658570647929091
 GameObject:
   m_ObjectHideFlags: 0
@@ -2254,6 +2269,9 @@ MonoBehaviour:
   AnswerPanel: {fileID: 6109520791154549645}
   DescriptionPanel: {fileID: 1841565828977998993}
   CodingUIContainer: {fileID: 885144595066757026}
+  HelpTooltipContainer: {fileID: 4311133784827623889}
+  ExplanationTextElement: {fileID: 4515580737815265964}
+  TooltipOffset: {x: 175, y: -100, z: 0}
   MaxNumberOfPuzzleBlocks: 6
 --- !u!1 &885144594381902302
 GameObject:
@@ -2497,7 +2515,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &885144595066757027
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3622,7 +3640,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -4385,7 +4403,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4311133784827623889
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4404,7 +4422,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 175, y: -100}
+  m_AnchoredPosition: {x: 154.29, y: -120.01}
   m_SizeDelta: {x: 300, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4704721642453185458
@@ -4429,7 +4447,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -6535,7 +6553,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -7064,7 +7082,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -8465,15 +8483,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e7781f86169f3348bc565d39368b365, type: 3}
---- !u!82 &3403295121036219473 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 3493477903195896556, guid: 2e7781f86169f3348bc565d39368b365,
-    type: 3}
-  m_PrefabInstance: {fileID: 2252289394214301373}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7972875265557038578 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8206942301608700751, guid: 2e7781f86169f3348bc565d39368b365,
+    type: 3}
+  m_PrefabInstance: {fileID: 2252289394214301373}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &3403295121036219473 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3493477903195896556, guid: 2e7781f86169f3348bc565d39368b365,
     type: 3}
   m_PrefabInstance: {fileID: 2252289394214301373}
   m_PrefabAsset: {fileID: 0}
