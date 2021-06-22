@@ -19,6 +19,9 @@ public class DraggableCodingBlock : MonoBehaviour, IDragHandler, IBeginDragHandl
     public RectTransform HelpTooltip { get; set; }
     public Text ExplanationText { get; set; }
     public Vector3 TooltipOffset { get; set; }
+    public int DelayAmount { get; set; }
+
+    private Coroutine _showTooltip;
 
     private void Awake()
     {
@@ -119,13 +122,27 @@ public class DraggableCodingBlock : MonoBehaviour, IDragHandler, IBeginDragHandl
         if (string.IsNullOrWhiteSpace(_answerBlock.Explanation))
             return;
 
-        HelpTooltip.gameObject.SetActive(true);
-        ExplanationText.text = _answerBlock.Explanation;
+        _showTooltip = StartCoroutine(ShowTooltip());
+
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
+        // Cancel the showing of the tooltop
+        if (_showTooltip != null)
+            StopCoroutine(_showTooltip);
+
         HelpTooltip.gameObject.SetActive(false);
+    }
+
+    private IEnumerator ShowTooltip()
+    {
+        yield return new WaitForSeconds(DelayAmount);
+
+        HelpTooltip.gameObject.SetActive(true);
+        ExplanationText.text = _answerBlock.Explanation;
+
+        yield return null;
     }
 
     private void Update()
@@ -135,12 +152,10 @@ public class DraggableCodingBlock : MonoBehaviour, IDragHandler, IBeginDragHandl
 
     private void FollowCursor()
     {
-        if (!HelpTooltip.gameObject.activeSelf)
-        {
+        if (HelpTooltip == null || !HelpTooltip.gameObject.activeSelf)
             return;
-        }
 
-        Vector3 newPos = Input.mousePosition + TooltipOffset;
+        Vector3 newPos = Input.mousePosition + (TooltipOffset * _canvas.scaleFactor);
         newPos.z = 0f;
 
         float rightEdgeToScreenEdgeDistance = Screen.width - (newPos.x + _rectTransform.rect.width * _canvas.scaleFactor / 2);

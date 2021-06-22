@@ -34,6 +34,7 @@ public class CodingUIHandler : MonoBehaviour
     public RectTransform HelpTooltipContainer;
     public Text ExplanationTextElement;
     public Vector3 TooltipOffset;
+    public int TooltipDelay;
 
     // The maximum number of blocks per column in the coding ui
     //  Can be changed if the coding UI changes its proportions 
@@ -205,6 +206,7 @@ public class CodingUIHandler : MonoBehaviour
         draggable.HelpTooltip = HelpTooltipContainer;
         draggable.ExplanationText = ExplanationTextElement;
         draggable.TooltipOffset = TooltipOffset;
+        draggable.DelayAmount = TooltipDelay;
     }
 
     public void CloseCodingUI()
