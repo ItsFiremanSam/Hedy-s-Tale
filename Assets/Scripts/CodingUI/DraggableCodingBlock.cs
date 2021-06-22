@@ -123,4 +123,40 @@ public class DraggableCodingBlock : MonoBehaviour, IDragHandler, IBeginDragHandl
     {
         HelpTooltip.gameObject.SetActive(false);
     }
+
+    private void Update()
+    {
+        FollowCursor();
+    }
+
+    private void FollowCursor()
+    {
+        if (!HelpTooltip.gameObject.activeSelf)
+        {
+            return;
+        }
+
+        Vector3 newPos = Input.mousePosition;
+        newPos.z = 0f;
+
+        float rightEdgeToScreenEdgeDistance = Screen.width - (newPos.x + _rectTransform.rect.width * _canvas.scaleFactor / 2);
+        if (rightEdgeToScreenEdgeDistance < 0)
+        {
+            newPos.x += rightEdgeToScreenEdgeDistance;
+        }
+
+        float leftEdgeToScreenEdgeDistance = 0 - (newPos.x - _rectTransform.rect.width * _canvas.scaleFactor / 2);
+        if (leftEdgeToScreenEdgeDistance > 0)
+        {
+            newPos.x += leftEdgeToScreenEdgeDistance;
+        }
+
+        float topEdgeToScreenEdgeDistance = Screen.height - (newPos.y + _rectTransform.rect.height * _canvas.scaleFactor);
+        if (topEdgeToScreenEdgeDistance < 0)
+        {
+            newPos.y += topEdgeToScreenEdgeDistance;
+        }
+
+        HelpTooltip.transform.position = newPos;
+    }
 }
