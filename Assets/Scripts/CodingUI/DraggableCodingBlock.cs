@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class DraggableCodingBlock : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler
+public class DraggableCodingBlock : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler, IPointerEnterHandler, IPointerExitHandler
 {
     private RectTransform _rectTransform;
     private CanvasGroup _canvasGroup;
@@ -15,6 +15,14 @@ public class DraggableCodingBlock : MonoBehaviour, IDragHandler, IBeginDragHandl
     private Transform _dropBlockParent;
     private int _originalSiblingIndex;
     private PuzzleBlock _answerBlock;
+    private PlayerMovement _playerMovement;
+
+    public RectTransform HelpTooltip { get; set; }
+    public Text ExplanationText { get; set; }
+    public Vector3 TooltipOffset { get; set; }
+    public int DelayAmount { get; set; }
+
+    private Coroutine _showTooltip;
 
     private void Awake()
     {
@@ -23,7 +31,7 @@ public class DraggableCodingBlock : MonoBehaviour, IDragHandler, IBeginDragHandl
         _canvasGroup = GetComponent<CanvasGroup>();
         _canvas = GameObject.Find("UI Canvas").GetComponent<Canvas>();
         _originalParent = transform.parent;
-
+        _playerMovement = FindObjectOfType<PlayerMovement>();
     }
 
     public void SetAnswerBlock(PuzzleBlock answerBlock)
@@ -108,5 +116,71 @@ public class DraggableCodingBlock : MonoBehaviour, IDragHandler, IBeginDragHandl
         _rectTransform.anchorMin = new Vector2(0.5f, 0.5f);
         _rectTransform.anchorMax = new Vector2(0.5f, 0.5f);
         _rectTransform.anchoredPosition = Vector2.zero;
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        if (_playerMovement.AnimationActive)
+            return;
+        if (string.IsNullOrWhiteSpace(_answerBlock.Explanation))
+            return;
+
+        _showTooltip = StartCoroutine(ShowTooltip());
+
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        if (_playerMovement.AnimationActive)
+            return;
+        // Cancel the showing of the tooltop
+        if (_showTooltip != null)
+            StopCoroutine(_showTooltip);
+
+        HelpTooltip.gameObject.SetActive(false);
+    }
+
+    private IEnumerator ShowTooltip()
+    {
+        yield return new WaitForSeconds(DelayAmount);
+
+        HelpTooltip.gameObject.SetActive(true);
+        ExplanationText.text = _answerBlock.Explanation;
+
+        yield return null;
+    }
+
+    private void Update()
+    {
+        FollowCursor();
+    }
+
+    private void FollowCursor()
+    {
+        if (HelpTooltip == null || !HelpTooltip.gameObject.activeSelf)
+            return;
+
+        Vector3 newPos = Input.mousePosition + (TooltipOffset * _canvas.scaleFactor);
+        newPos.z = 0f;
+
+        float rightEdgeToScreenEdgeDistance = Screen.width - (newPos.x + _rectTransform.rect.width * _canvas.scaleFactor / 2);
+        if (rightEdgeToScreenEdgeDistance < 0)
+        {
+            newPos.x += rightEdgeToScreenEdgeDistance;
+        }
+
+        float leftEdgeToScreenEdgeDistance = 0 - (newPos.x - _rectTransform.rect.width * _canvas.scaleFactor / 2);
+        if (leftEdgeToScreenEdgeDistance > 0)
+        {
+            newPos.x += leftEdgeToScreenEdgeDistance;
+        }
+
+        float topEdgeToScreenEdgeDistance = Screen.height - (newPos.y + _rectTransform.rect.height * _canvas.scaleFactor);
+        if (topEdgeToScreenEdgeDistance < 0)
+        {
+            newPos.y += topEdgeToScreenEdgeDistance;
+        }
+
+        HelpTooltip.transform.position = newPos;
     }
 }

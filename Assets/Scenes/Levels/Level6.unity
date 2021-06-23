@@ -15520,6 +15520,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 50645315964878893, guid: 3866c2129c6ccd74bb7455e35b2df341,
         type: 3}
+      propertyPath: PuzzleBlock.Explanation
+      value: Use this block to add numbers together!
+      objectReference: {fileID: 0}
+    - target: {fileID: 50645315964878893, guid: 3866c2129c6ccd74bb7455e35b2df341,
+        type: 3}
       propertyPath: dialog.sentences.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -15612,6 +15617,11 @@ PrefabInstance:
         type: 3}
       propertyPath: PuzzleBlock.IsKeyword
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 50645315964878893, guid: 3866c2129c6ccd74bb7455e35b2df341,
+        type: 3}
+      propertyPath: PuzzleBlock.Explanation
+      value: Use this block to solve an equation!
       objectReference: {fileID: 0}
     - target: {fileID: 50645315964878893, guid: 3866c2129c6ccd74bb7455e35b2df341,
         type: 3}
@@ -94699,6 +94709,16 @@ PrefabInstance:
       propertyPath: Inventory.Array.data[1].Content
       value: +
       objectReference: {fileID: 0}
+    - target: {fileID: 7379713358664489921, guid: 4fcf635c6ea34b447a7b78c7a30cee37,
+        type: 3}
+      propertyPath: Inventory.Array.data[0].Explanation
+      value: Use this block to add numbers together!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7379713358664489921, guid: 4fcf635c6ea34b447a7b78c7a30cee37,
+        type: 3}
+      propertyPath: Inventory.Array.data[1].Explanation
+      value: Use this block to add numbers together!
+      objectReference: {fileID: 0}
     - target: {fileID: 7379713358664489928, guid: 4fcf635c6ea34b447a7b78c7a30cee37,
         type: 3}
       propertyPath: m_RootOrder
@@ -128593,6 +128613,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7464826716262060512, guid: 74446c2ab1fd33b4eb77c5c0f1f73181,
         type: 3}
+      propertyPath: PuzzleBlock.Explanation
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7464826716262060512, guid: 74446c2ab1fd33b4eb77c5c0f1f73181,
+        type: 3}
       propertyPath: dialog.sentences.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -128654,6 +128679,11 @@ PrefabInstance:
         type: 3}
       propertyPath: dialog.NPCName
       value: Almond the Squirrel
+      objectReference: {fileID: 0}
+    - target: {fileID: 5336166590211089078, guid: ecf5a2c4ffd15714683b819829190096,
+        type: 3}
+      propertyPath: PuzzleBlock.Explanation
+      value: Use this block to multiply numbers!
       objectReference: {fileID: 0}
     - target: {fileID: 5336166590211089078, guid: ecf5a2c4ffd15714683b819829190096,
         type: 3}

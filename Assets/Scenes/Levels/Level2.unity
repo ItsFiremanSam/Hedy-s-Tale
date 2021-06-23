@@ -735,7 +735,7 @@ Transform:
   m_Children:
   - {fileID: 1231910422}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &367533656
 GameObject:
@@ -999,6 +999,11 @@ PrefabInstance:
         type: 3}
       propertyPath: Inventory.Array.data[6].Content
       value: is your
+      objectReference: {fileID: 0}
+    - target: {fileID: 7379713358664489921, guid: 4fcf635c6ea34b447a7b78c7a30cee37,
+        type: 3}
+      propertyPath: Inventory.Array.data[0].Explanation
+      value: Use this block to ask questions!
       objectReference: {fileID: 0}
     - target: {fileID: 7379713358664489928, guid: 4fcf635c6ea34b447a7b78c7a30cee37,
         type: 3}
@@ -19090,7 +19095,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &744647135
 GameObject:
@@ -39231,7 +39236,7 @@ PrefabInstance:
     - target: {fileID: 3841723700284200914, guid: d4c4fa6d435ac324a8455bc3419ef77e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 3841723700284200914, guid: d4c4fa6d435ac324a8455bc3419ef77e,
         type: 3}
@@ -39426,6 +39431,12 @@ PrefabInstance:
         type: 3}
       propertyPath: PuzzleBlock.Content
       value: is
+      objectReference: {fileID: 0}
+    - target: {fileID: 50645315964878893, guid: 3866c2129c6ccd74bb7455e35b2df341,
+        type: 3}
+      propertyPath: PuzzleBlock.Explanation
+      value: Use this block to say what something is! It can also be used to make
+        lists!
       objectReference: {fileID: 0}
     - target: {fileID: 50645315964878893, guid: 3866c2129c6ccd74bb7455e35b2df341,
         type: 3}
@@ -46473,7 +46484,7 @@ PrefabInstance:
     - target: {fileID: 1884795054148910516, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1884795054148910516, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -47249,7 +47260,7 @@ PrefabInstance:
     - target: {fileID: 1884795054148910516, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 1884795054148910516, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -116235,7 +116246,13 @@ PrefabInstance:
     - target: {fileID: 7371850097992470271, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: PuzzleBlock.Content
-      value: Actions
+      value: actions
+      objectReference: {fileID: 0}
+    - target: {fileID: 7371850097992470271, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: PuzzleBlock.Explanation
+      value: This block is a list is a list of actions! You can put stuff in this
+        list with the 'IS' block!
       objectReference: {fileID: 0}
     - target: {fileID: 7391847553053017961, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -116286,24 +116303,22 @@ PrefabInstance:
         type: 3}
       propertyPath: PuzzleDescription
       value: 'Make a list of actions using the <b> ''Actions'' </b> and the <b>''IS''</b>
-        block. So: ''Actions is'' and then the list of actions Simon says.
+        block, after this put the actions Simon says!
 
-
-        Simon
-        says jump.
-
-        Go right.
-
-        Simon says go right.
-
-        Simon
-        says spin.
-
-        Go left.
 
         Simon says jump.
 
-'
+        Go
+        right.
+
+        Simon says go right.
+
+        Simon says spin.
+
+        Go
+        left.
+
+        Simon says jump.'
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -116788,7 +116803,7 @@ PrefabInstance:
     - target: {fileID: 7434187328447634126, guid: 74446c2ab1fd33b4eb77c5c0f1f73181,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7434187328447634126, guid: 74446c2ab1fd33b4eb77c5c0f1f73181,
         type: 3}
@@ -116849,6 +116864,11 @@ PrefabInstance:
         type: 3}
       propertyPath: PuzzleBlock.Content
       value: purple
+      objectReference: {fileID: 0}
+    - target: {fileID: 7464826716262060512, guid: 74446c2ab1fd33b4eb77c5c0f1f73181,
+        type: 3}
+      propertyPath: PuzzleBlock.Explanation
+      value: This has to be the monkey's favourite colour!
       objectReference: {fileID: 0}
     - target: {fileID: 7464826716262060512, guid: 74446c2ab1fd33b4eb77c5c0f1f73181,
         type: 3}

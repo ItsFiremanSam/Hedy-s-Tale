@@ -2,6 +2,9 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
+/// <summary>
+/// Grey slot in the coding UI. Blocks can be placed in here
+/// </summary>
 public class DropBlock : MonoBehaviour, IDropHandler, IPointerClickHandler
 {
     public void OnDrop(PointerEventData eventData)
