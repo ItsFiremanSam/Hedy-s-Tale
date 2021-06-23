@@ -395,7 +395,7 @@ PrefabInstance:
     - target: {fileID: 4331455801888404367, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: CodingBlockSize
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4331455801888404367, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -410,7 +410,7 @@ PrefabInstance:
     - target: {fileID: 4331455801888404367, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: GoToNextCodingBlock
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4331455801888404367, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -647,7 +647,7 @@ PrefabInstance:
     - target: {fileID: 6935705626500962560, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: CodingBlockSize
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6935705626500962560, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}

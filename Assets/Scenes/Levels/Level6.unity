@@ -118051,6 +118051,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7441273773521204476, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
+      propertyPath: WaitSeconds
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7441273773521204476, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
       propertyPath: CodingBlockSize
       value: 3
       objectReference: {fileID: 0}
@@ -118816,7 +118821,7 @@ PrefabInstance:
     - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: GoToNextCodingBlock
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -118917,6 +118922,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7441273773521204476, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: WaitSeconds
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7441273773521204476, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
