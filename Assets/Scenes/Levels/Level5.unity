@@ -8766,6 +8766,11 @@ PrefabInstance:
       propertyPath: PuzzleBlock.Content
       value: lay down
       objectReference: {fileID: 0}
+    - target: {fileID: 7371850097992470271, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: PuzzleBlock.Explanation
+      value: Use this block to lay down a branch to repair the bridge!
+      objectReference: {fileID: 0}
     - target: {fileID: 7391847553053017961, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.x

@@ -116246,12 +116246,13 @@ PrefabInstance:
     - target: {fileID: 7371850097992470271, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: PuzzleBlock.Content
-      value: Actions
+      value: actions
       objectReference: {fileID: 0}
     - target: {fileID: 7371850097992470271, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: PuzzleBlock.Explanation
-      value: This is a list! You can put stuff in the list with the 'IS' block!
+      value: This block is a list is a list of actions! You can put stuff in this
+        list with the 'IS' block!
       objectReference: {fileID: 0}
     - target: {fileID: 7391847553053017961, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
