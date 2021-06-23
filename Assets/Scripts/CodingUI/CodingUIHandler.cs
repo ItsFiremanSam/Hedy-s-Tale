@@ -36,6 +36,11 @@ public class CodingUIHandler : MonoBehaviour
     public Vector3 TooltipOffset;
     public int TooltipDelay;
 
+    [Header("Player feedback")]
+    public AudioSource SFXSource;
+    public AudioClip SuccessSound;
+    public AudioClip FailSound;
+
     // The maximum number of blocks per column in the coding ui
     //  Can be changed if the coding UI changes its proportions 
     public int MaxNumberOfPuzzleBlocks = 4;
@@ -242,11 +247,15 @@ public class CodingUIHandler : MonoBehaviour
         if (IsAnswerCorrect())
         {
             _onCorrectAnswerCallback();
+
+            SFXSource.PlayOneShot(SuccessSound);
+
             CloseCodingUI();
         }
         else
         {
             _onWrongAnswerCallback();
+            SFXSource.PlayOneShot(FailSound);
             // TODO: Show that answer is incorrect in GUI
             Debug.Log("Incorrect Answer! Try again!");
         }
