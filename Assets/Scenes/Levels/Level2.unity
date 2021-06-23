@@ -47330,7 +47330,7 @@ PrefabInstance:
     - target: {fileID: 2315414422462504425, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: CodingBlockSize
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2315414422462504425, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -47405,7 +47405,7 @@ PrefabInstance:
     - target: {fileID: 4331455801888404367, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: GoToNextCodingBlock
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4451665186762438149, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -47510,12 +47510,17 @@ PrefabInstance:
     - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: noMoving
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: dialog.NPCName
+      value: Helpful Monkey
       objectReference: {fileID: 0}
     - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: CodingBlockSize
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -47526,6 +47531,21 @@ PrefabInstance:
         type: 3}
       propertyPath: TalkAction.Seconds
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: dialog.sentences.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: dialog.sentences.Array.data[0]
+      value: Could you throw me?
+      objectReference: {fileID: 0}
+    - target: {fileID: 5983195983519705704, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: dialog.sentences.Array.data[1]
+      value: But of course! You are very polite.
       objectReference: {fileID: 0}
     - target: {fileID: 6172822254526831891, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -47565,12 +47585,12 @@ PrefabInstance:
     - target: {fileID: 6290098581064816781, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.75
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6290098581064816781, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.12
+      value: 1.55
       objectReference: {fileID: 0}
     - target: {fileID: 6935705626500962560, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -47587,6 +47607,11 @@ PrefabInstance:
       propertyPath: TalkAction.Seconds
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6935705626500962560, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: GoToNextCodingBlock
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7122267374763521420, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: noMoving
@@ -47601,6 +47626,11 @@ PrefabInstance:
         type: 3}
       propertyPath: TalkAction.Seconds
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7122267374763521420, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: GoToNextCodingBlock
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7198046702624829236, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -47640,7 +47670,12 @@ PrefabInstance:
     - target: {fileID: 7441273773521204476, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: noMoving
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7441273773521204476, guid: 21eb6d44e34b12d4385daac697669991,
+        type: 3}
+      propertyPath: WaitSeconds
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7662308332673906540, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
