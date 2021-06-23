@@ -15,6 +15,7 @@ public class DraggableCodingBlock : MonoBehaviour, IDragHandler, IBeginDragHandl
     private Transform _dropBlockParent;
     private int _originalSiblingIndex;
     private PuzzleBlock _answerBlock;
+    private PlayerMovement _playerMovement;
 
     public RectTransform HelpTooltip { get; set; }
     public Text ExplanationText { get; set; }
@@ -30,7 +31,7 @@ public class DraggableCodingBlock : MonoBehaviour, IDragHandler, IBeginDragHandl
         _canvasGroup = GetComponent<CanvasGroup>();
         _canvas = GameObject.Find("UI Canvas").GetComponent<Canvas>();
         _originalParent = transform.parent;
-
+        _playerMovement = FindObjectOfType<PlayerMovement>();
     }
 
     public void SetAnswerBlock(PuzzleBlock answerBlock)
@@ -119,6 +120,8 @@ public class DraggableCodingBlock : MonoBehaviour, IDragHandler, IBeginDragHandl
 
     public void OnPointerEnter(PointerEventData eventData)
     {
+        if (_playerMovement.AnimationActive)
+            return;
         if (string.IsNullOrWhiteSpace(_answerBlock.Explanation))
             return;
 
@@ -128,6 +131,8 @@ public class DraggableCodingBlock : MonoBehaviour, IDragHandler, IBeginDragHandl
 
     public void OnPointerExit(PointerEventData eventData)
     {
+        if (_playerMovement.AnimationActive)
+            return;
         // Cancel the showing of the tooltop
         if (_showTooltip != null)
             StopCoroutine(_showTooltip);
