@@ -2273,6 +2273,9 @@ MonoBehaviour:
   ExplanationTextElement: {fileID: 4515580737815265964}
   TooltipOffset: {x: 175, y: -100, z: 0}
   TooltipDelay: 1
+  SFXSource: {fileID: 3403295121036219473}
+  SuccessSound: {fileID: 8300000, guid: 6a87427e579e0a643863fc65d026d8ff, type: 3}
+  FailSound: {fileID: 8300000, guid: cdaaecb5eb8235c4ea5788774c3c4fe5, type: 3}
   MaxNumberOfPuzzleBlocks: 6
 --- !u!1 &885144594381902302
 GameObject:
