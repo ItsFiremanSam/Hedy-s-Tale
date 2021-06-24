@@ -8,6 +8,7 @@ public class PlayerMovement : AnimatableEntity
     public Text speechBubble;
     public GameObject CinematicBars;
     public Animator animator;
+    public Animator CinematicBarsAnimator;
 
     // Hedy can't move when being animated or in the Coding UI
     [HideInInspector]
@@ -20,6 +21,7 @@ public class PlayerMovement : AnimatableEntity
     Rigidbody2D _rigidBody;
     Vector2 _currentVelocity;
     private BoxCollider2D _collider;
+    private bool _resetVelocity = true;
 
     private void Awake()
     {
@@ -32,7 +34,13 @@ public class PlayerMovement : AnimatableEntity
         HandleAnimationVariables();
         if (!AnimationActive && !CodingUIActive && !DialogUIActive)
         {
-            Move(new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized * Speed * Time.fixedDeltaTime);
+            _currentVelocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized * Speed * Time.fixedDeltaTime;
+            _resetVelocity = true;
+        }
+        else if (_resetVelocity)
+        {
+            _currentVelocity = Vector2.zero;
+            _resetVelocity = false;
         }
     }
 
@@ -46,14 +54,30 @@ public class PlayerMovement : AnimatableEntity
     {
         if (AnimationActive)
         {
-            if (!CinematicBars.activeSelf) CinematicBars.SetActive(true);
-            if (_collider.enabled) _collider.enabled = false;
+            if (!CinematicBars.activeSelf)
+            {
+                CinematicBarsAnimator.SetBool("EndOfAnimation", false);
+                CinematicBars.SetActive(true);
+            }
+            if (_collider.enabled)
+                _collider.enabled = false;
         }
         else
         {
-            if (CinematicBars.activeSelf) CinematicBars.SetActive(false);
-            if (!_collider.enabled) _collider.enabled = true;
+            if (CinematicBars.activeSelf)
+            {
+                StartCoroutine(WaitCinematicBars());
+            }
+            if (!_collider.enabled)
+                _collider.enabled = true;
         }
+    }
+
+    IEnumerator WaitCinematicBars()
+    {
+        CinematicBarsAnimator.SetBool("EndOfAnimation", true);
+        yield return new WaitUntil(() => CinematicBarsAnimator.GetCurrentAnimatorStateInfo(0).IsName("Fade Out Cinematic Bar"));
+        CinematicBars.SetActive(false);
     }
 
     private void FixedUpdate()
@@ -68,16 +92,6 @@ public class PlayerMovement : AnimatableEntity
             animator.SetFloat("y", _currentVelocity.y);
         }
 
-        _currentVelocity = Vector2.zero;
-    }
-
-    bool Move(Vector2 velocity)
-    {
-        if (_currentVelocity != Vector2.zero) return false;
-
-        _currentVelocity = velocity;
-
-        return true;
     }
 
     /// <summary>
@@ -85,20 +99,9 @@ public class PlayerMovement : AnimatableEntity
     /// </summary>
     public override IEnumerator MoveTo(Vector2 pos, float speed)
     {
-        // TODO: Implement Unity built in pathfinding
-        while (true)
-        {
-            // Will move towards the direction of the new position
-            Vector2 velNorm = (pos - (Vector2)transform.position).normalized * speed * Time.fixedDeltaTime;
-            Vector2 vel = (pos - (Vector2)transform.position) * speed * Time.fixedDeltaTime;
-
-            // If the position is closer by than a single step in the right direction, take the last step and return
-            if (velNorm.sqrMagnitude > vel.sqrMagnitude)
-            {
-                while (!Move(vel)) yield return null;
-                break;
-            }
-            while (!Move(velNorm)) yield return null;
-        }
+        _resetVelocity = false;
+        _currentVelocity = (pos - (Vector2)transform.position).normalized * speed * Time.fixedDeltaTime;
+        yield return new WaitUntil(() => Vector2.Dot(_currentVelocity, pos - (Vector2)transform.position) < 0);
+        _currentVelocity = Vector2.zero;
     }
 }

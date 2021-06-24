@@ -21,16 +21,20 @@ public class PuzzleBlock : IEquatable<PuzzleBlock>
     public PuzzleBlockType Type;
     public string Content;
 
+    [TextArea(1, 4)]
+    public string Explanation;
+
     public PuzzleBlock(PuzzleBlock otherBlock)
     {
         Type = otherBlock.Type;
         Content = otherBlock.Content;
     }
 
-    public PuzzleBlock(PuzzleBlockType type, string content)
+    public PuzzleBlock(PuzzleBlockType type, string content, string explanation)
     {
         Type = type;
         Content = content;
+        Explanation = explanation;
     }
 
     public bool Equals(PuzzleBlock otherBlock)

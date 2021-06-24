@@ -17,17 +17,27 @@ public class CollectMultipleInteraction : InteractableObject
         {
             _isInteracted = true;
             ShowInteractionBubble(false);
-            sfxSource.PlayOneShot(itemPickUpClip);
 
             collection.CurrentAmount++;
             if (collection.CurrentAmount == collection.Amount)
             {
                 playerInteraction.Inventory.Add(collection.PuzzleBlock);
             }
-
-            DialogManager dialogManager = DialogManager.Instance;
-            if (!dialogManager.DialogActive)
-                StartCoroutine(dialogManager.StartDialog(Dialog, gameObject));
+            StartCoroutine(Coroutine());
         }
+    }
+
+    IEnumerator Coroutine()
+    {
+        sfxSource.PlayOneShot(itemPickUpClip);
+
+        PlayerMovement playerMovement = FindObjectOfType<PlayerMovement>();
+        playerMovement.DialogUIActive = true;
+
+        yield return new WaitForSeconds(.5f);
+
+        DialogManager dialogManager = DialogManager.Instance;
+        if (!dialogManager.DialogActive)
+            StartCoroutine(dialogManager.StartDialog(Dialog, gameObject));
     }
 }

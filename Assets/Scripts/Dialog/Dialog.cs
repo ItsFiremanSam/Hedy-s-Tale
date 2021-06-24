@@ -7,6 +7,7 @@ using UnityEngine;
 public class Dialog
 {
     public string NPCName;
+    [TextArea(1,4)]
     public List<string> sentences = new List<string>();
     public bool NPCTalkFirst;
 }
