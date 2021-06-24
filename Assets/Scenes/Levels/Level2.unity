@@ -44308,7 +44308,7 @@ PrefabInstance:
     - target: {fileID: 5950093220229846825, guid: 1df7cda00687b3f46b23e222b5839f73,
         type: 3}
       propertyPath: dialog.sentences.Array.data[4]
-      value: Hmm... alright then. How does it work?
+      value: Hmm... all right then. How does it work?
       objectReference: {fileID: 0}
     - target: {fileID: 5950093220229846825, guid: 1df7cda00687b3f46b23e222b5839f73,
         type: 3}
@@ -121255,7 +121255,7 @@ PrefabInstance:
     - target: {fileID: 7371850097992470271, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: PuzzleBlock.Content
-      value: Actions
+      value: actions
       objectReference: {fileID: 0}
     - target: {fileID: 7371850097992470271, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
@@ -121407,7 +121407,7 @@ PrefabInstance:
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
       propertyPath: Answer.Array.data[0].Content
-      value: Actions
+      value: actions
       objectReference: {fileID: 0}
     - target: {fileID: 7836411685114321132, guid: 21eb6d44e34b12d4385daac697669991,
         type: 3}
