@@ -1,4 +1,7 @@
 # Hedy's Tale
+## Play the game!
+You can play the game on itch.io with the following link: https://sbdutchie.itch.io/hedys-tale
+
 ## Main game
 This game is about Hedy, a dog that has gotten lost in a forest, far away from home. The goal for the player is to find their way back home, while solving puzzles on the way there. Every level, new ways to solve puzzles and more difficult puzzles emerge.
 
